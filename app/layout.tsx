@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
+import "./interior.css";
 const inter = localFont({
   src: "../public/fonts/Inter-Variable.ttf",
   display: "swap",
@@ -35,7 +36,9 @@ export const metadata: Metadata = {
       { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
       { url: "/favicon.svg", sizes: "any", type: "image/svg+xml" },
     ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
   manifest: "/site.webmanifest",
   openGraph: {

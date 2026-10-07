@@ -1,3 +1,4 @@
+import Link from "next/link";
 export function SupportCTA() {
   return (
     <section
@@ -15,15 +16,12 @@ export function SupportCTA() {
           that might otherwise go without them.
         </p>
         <div className="actions">
-          <a
-            className="button"
-            href="mailto:hello@zorasafefoundation.org?subject=Supporting%20the%20Foundation"
-          >
+          <Link className="button" href="/support">
             Support the Foundation
-          </a>
-          <a className="button button-outline" href="#partner">
+          </Link>
+          <Link className="button button-outline" href="/partner">
             Partner With Us
-          </a>
+          </Link>
         </div>
       </div>
     </section>

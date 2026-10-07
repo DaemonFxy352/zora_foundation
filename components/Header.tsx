@@ -8,25 +8,25 @@ const groups = [
   {
     label: "What We Do",
     links: [
-      ["Education & Resources", "/#work"],
-      ["Research", "/#research"],
-      ["Programs & Initiatives", "/#programs"],
+      ["Education & Resources", "/education"],
+      ["Programs & Initiatives", "/programs"],
+      ["Research", "/research"],
     ],
   },
   {
     label: "About",
     links: [
-      ["Our Mission", "/#mission"],
-      ["About the Foundation", "/#mission"],
-      ["Leadership", "/#mission"],
+      ["Our Mission", "/about#mission"],
+      ["About the Foundation", "/about"],
+      ["Leadership", "/leadership"],
     ],
   },
   {
     label: "Get Involved",
     links: [
-      ["Partner With Us", "/#partner"],
-      ["Support the Foundation", "/#support"],
-      ["Contact", "/#contact"],
+      ["Partner With Us", "/partner"],
+      ["Support the Foundation", "/support"],
+      ["Contact", "/contact"],
     ],
   },
 ];
@@ -87,11 +87,7 @@ export function Header() {
       <div className="container header-inner">
         <Brand />
         <div className="mobile-controls">
-          <Link
-            className="button button-small"
-            href="/#support"
-            onClick={close}
-          >
+          <Link className="button button-small" href="/support" onClick={close}>
             Support
           </Link>
           <button
@@ -113,7 +109,7 @@ export function Header() {
           className={`navigation${mobileOpen ? " is-open" : ""}`}
           aria-label="Main navigation"
         >
-          <Link className="nav-link" href="/#top" onClick={close}>
+          <Link className="nav-link" href="/" onClick={close}>
             Home
           </Link>
           {groups.map((group, index) => (
@@ -155,7 +151,7 @@ export function Header() {
           ))}
           <Link
             className="button button-small desktop-support"
-            href="/#support"
+            href="/support"
             onClick={close}
           >
             Support Our Work

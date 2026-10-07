@@ -1,86 +1,117 @@
 # ZoraSafe Foundation
 
-The Foundation’s public-interest website: closing the digital safety knowledge gap. Built with Next.js App Router, TypeScript, semantic React components, and plain responsive CSS. Deployment target: Vercel.
+Public-interest digital safety education, practical training, research, and technology access. The production site is https://www.zorasafefoundation.org, hosted on Vercel from `origin/main` in `DaemonFxy352/zora_foundation`.
 
-## Local development
+Built with Next.js App Router, TypeScript, semantic React components, and responsive CSS. No environment variables or service credentials are needed for the current site.
 
-Use Node.js 22 or later and npm.
+## Development and checks
+
+Use Node.js 22 or later and npm:
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Open http://localhost:3000. No environment variables or third-party service credentials are required. The generated `package-lock.json` pins dependencies; use `npm ci` for reproducible installs.
-
-## Quality checks and production
+Open http://localhost:3000. For verification and production:
 
 ```sh
 npm run typecheck
 npm run lint
 npm run build
+npm run verify:build
 npm start
 ```
 
-`npm run typecheck` generates Next.js route/image types before invoking TypeScript, so it also works on a fresh checkout. `npm run build` generates the production Next.js application. `npm start` serves that build locally. Vercel should import `DaemonFxy352/zora_foundation`, use the Next.js preset, repository root, and the standard build command. No custom output directory is needed. Hosting has not been configured or deployed by this implementation.
+Typechecking generates Next.js route and image types before invoking TypeScript. The production build statically renders the homepage, interior pages, and all published resource pages. `verify:build` examines emitted HTML for page metadata, internal links and anchor targets, image alt text, unique IDs, ARIA references, landmarks, and required guide sections. It requires a completed build and does not replace browser testing.
 
-## Structure
+Vercel uses the Next.js preset, repository root, and standard build command. Keep `package-lock.json` committed and use `npm ci` for reproducible installations.
 
-- `app/page.tsx`: homepage section composition.
-- `app/layout.tsx`: shared navigation, footer, local Inter font, and metadata.
-- `app/globals.css`: Foundation color tokens, component styles, responsive layouts, focus states, and reduced-motion behavior.
-- `app/accessibility/page.tsx`: accessibility statement and feedback contact.
-- `components/`: Header, Hero, WhyItMatters, WhatWeDo, Programs, ResearchImpact, Partnerships, SupportCTA, Footer, and shared brand/image primitives.
-- `public/brand/guide-point.svg`: Foundation Guide Point geometry.
-- `public/favicon.svg`, `favicon.ico`, `favicon-32.png`, and `apple-touch-icon.png`: approved Foundation favicons and Apple touch icon.
-- `public/site.webmanifest` and `public/icon-*.png`: approved standalone web app manifest and standard/maskable icons.
-- `public/images/`: the three locally hosted WebP images recovered from the supplied export.
-- `public/fonts/`: locally hosted Inter variable font and its SIL Open Font License.
+## Routes
 
-## Design authority and asset provenance
+| Route                                | Purpose                                                                        |
+| ------------------------------------ | ------------------------------------------------------------------------------ |
+| `/`                                  | Approved homepage; layout retained, CTAs now link to interior pages            |
+| `/education`                         | Resource center: audience/topic browsing, filters, formats, training pathways  |
+| `/education/recognize-a-scam`        | Scam warning signs and safe next steps                                         |
+| `/education/verify-before-you-trust` | Independent verification checklist                                             |
+| `/education/ai-impersonation`        | Responding to possible AI impersonation                                        |
+| `/education/suspicious-message`      | Unexpected email, text, and direct-message checklist                           |
+| `/education/account-safety`          | Passwords, sign-in protection, and recovery habits                             |
+| `/programs`                          | Four approved program areas and trusted-messenger model                        |
+| `/research`                          | Study / Translate / Prevent, priorities, future publications                   |
+| `/about`                             | Mission, public-interest focus, and relationship statement                     |
+| `/leadership`                        | Honest publication status and organizational inquiry pathway                   |
+| `/partner`                           | Collaboration opportunities and how to start                                   |
+| `/contact`                           | Working email links for general, partnership, training, and research inquiries |
+| `/support`                           | Funding priorities and support inquiries; no payment processing                |
+| `/accessibility`                     | Accessibility statement and feedback contact                                   |
 
-The final **ZoraSafe Foundation Identity Board, version 1.0 (October 2026)** takes precedence over the commercial `_ds` bundle. Layout follows `ZoraSafe Foundation Homepage v5.dc.html`, with the supplied research screenshot as supporting reference.
+## Architecture
 
-Both PNG logos in the ZIP (`assets/logo-horizontal.png` and `assets/logo-mark-flat.png`) contain the commercial fox. They are intentionally excluded. `components/Brand.tsx` reproduces the Foundation Guide Point SVG geometry from the v5 export and the identity board’s horizontal lockup: Inter wordmark, FOUNDATION tracked to wordmark width, and mark height matching the text block. The footer uses the approved white/mint reversed version. The Foundation is navy-led, with teal/mint support and orange confined to the mark’s small point.
+- `app/page.tsx` and existing homepage components: approved homepage composition.
+- `app/layout.tsx`: shared Header/Footer, local Inter, sitewide metadata, and icons.
+- `app/globals.css`: existing Foundation design tokens and homepage/shared styles.
+- `app/interior.css`: editorial interior layouts, resource controls, responsive rules, and print styles. Existing homepage layout rules are unchanged.
+- `components/interior/Page.tsx`: compact hero/breadcrumbs, CTA section, and editorial rows.
+- `components/interior/ResourceBrowser.tsx`: lightweight client-side audience, topic, and format controls with labeled selects, result announcements, reset, and empty states. Directory buttons select a collection and move focus to the results heading.
+- `components/interior/ResourceList.tsx`: reusable resource links generated from data.
+- `data/resources.ts`: typed content, taxonomies, publication information, source links, and related-resource relationships.
+- `app/education/[slug]/page.tsx`: one shared resource template; `generateStaticParams` builds published resources. Unknown slugs return 404.
+- `lib/metadata.ts`: page-specific title, description, canonical, Open Graph, and Twitter metadata with the approved shared social image.
+- `scripts/verify-build.mjs`: production HTML regression checks.
 
-The original design ZIP, screenshots, export runtime, and commercial design system are not needed at runtime and are not copied into the application.
+## Education & Resources
 
-## Replacing imagery
+The resource center begins with five real HTML guides. It supports six audiences, ten topics, and seven format categories. Guides can belong to multiple audiences and topics. Selecting multiple filters intersects their results. Printable Resources includes every guide marked `printView`; unpublished formats correctly return an empty result with reset guidance.
 
-Replace `public/images/hero.webp`, `community-workshop.webp`, or `research.webp`, then update the corresponding alt text and object position in `components/HomeImage.tsx`. Static imports supply intrinsic dimensions and blur placeholders; Next Image supplies responsive optimization. Images fill their containers with `object-fit: cover`.
+There is no text search or server-side index. Filters run locally, without an external dependency or analytics, and are not persisted in URLs. All five guides are present in the initial server-rendered resource list; JavaScript enables interactive filtering.
 
-The Programs image is intentionally tall alongside the 2×2 editorial grid on desktop, changes to a wide image above the grid on tablet, and returns to a taller crop on narrow mobile. Review faces and teaching materials at 1440, 1280, 768, 390, and 320 px when replacing assets. Prefer higher-resolution originals: the supplied community image is only 478×640. Supplied photographs are illustrative design assets; publication rights and representation should be confirmed before public launch.
+The model supports:
 
-## Navigation and unfinished destinations
+- Stable slug, title, summary, audience IDs, topic IDs, and format ID.
+- Reading time, ISO publication date, and updated date.
+- Optional `download: { url, label, fileType }`; omit it until a real downloadable file exists.
+- `printView` support, related slugs, introduction, warning signs, action steps, actions to avoid, help guidance, a discussion exercise, and public source links.
 
-Navigation uses disclosure buttons, normal links, Escape-to-close with focus return, outside-click dismissal, and a compact mobile menu. Homepage sections supply destinations until dedicated pages exist. Leadership currently goes to the mission section, as permitted for this first implementation; it does not assert unprovided leadership information.
+### Adding a resource
 
-Support, partnership, and research inquiry CTAs open `hello@zorasafefoundation.org` with relevant subjects. No payment system is connected, and no tax-deductibility claims are made. Privacy and Terms links currently open policy inquiries by email; they are not published policies. Replace these with approved pages before launch. Social links were omitted because no real profiles were supplied.
+1. Add a `Resource` entry to `data/resources.ts` with a unique URL-safe slug and supported taxonomy IDs.
+2. Write original plain-language content. Verify safety guidance against reliable primary sources and include those links. Do not invent statistics, endorsements, publications, or program availability.
+3. Set actual publication/update dates, estimated reading minutes, and valid related-resource slugs. Review the existing date convention (YYYY-MM-DD).
+4. Use `printView: true` for the standard printable guide. Add a download only when its file exists in `public/` or at a verified public URL; supply the file type in its accessible label.
+5. Add the new route to `scripts/verify-build.mjs` and run the commands above. Check the new resource, related links, filters, and print preview in a browser.
 
-## Verification status (October 7, 2026)
+No new page component or individual resource card is needed. The data shape can later become a CMS collection: preserve stable slugs, taxonomy IDs, related-resource references, and the publication fields. Replace the data access functions with a CMS adapter, then choose an appropriate publishing/revalidation workflow. No CMS migration is required to add launch content.
 
-The follow-up verification pass installed dependencies successfully and generated `package-lock.json` (Next.js 16.4.0). No redesign or feature expansion was made.
+### Print support
 
-- **Passed:** actual `npm run typecheck`, `npm run lint` (zero errors/warnings), and `npm run build` after fixes.
-- **Passed:** the local development server returned HTTP 200. Production-generated homepage HTML contains all four required official sentences and all four exact program names, with correct spaces and curly quotes.
-- **Passed:** production HTML checks for one H1, one main landmark, ordered headings, descriptive alt text on all three photos, unique IDs, and valid anchor/ARIA targets. Source styles retain visible focus indicators, reduced-motion support, and responsive breakpoints.
-- **Previously checked:** text contrast ratios: navy on white 14.63:1, body text on soft mint 8.02:1, Teal Deep on soft mint 5.50:1, footer text at least 7.12:1.
-- **Audit:** `npm audit --omit=dev` reports zero vulnerabilities. Full audit reports five high-severity findings in the development-only ESLint → fast-glob → micromatch → braces chain. The suggested force fix downgrades Next’s ESLint configuration across major versions and was not applied.
-- **Blocked:** Chromium still exits during launch with SIGABRT / EPERM. Desktop, laptop, tablet, mobile screenshots, keyboard interaction, measured overflow/touch targets, and browser-console QA remain unverified. Source/HTML inspection is not a substitute for browser QA.
-- **Blocked:** `git init -b main` still reports `.git: Operation not permitted`; the session permission profile marks `.git` read-only. No repository metadata, origin, branch, commit, or push was created. Remote inspection still reports `Could not resolve host: github.com`, despite the successful npm install.
+Every launch guide has a working **Print or save as PDF** button using the browser print dialog. Print CSS removes navigation, footer, filters, related-resource promotion, and buttons. It retains the Foundation logo, resource title, publication information, practical steps, sources, and original page URL. Background decoration is removed, margins use standard paper settings, and headings/list items avoid awkward breaks where possible.
 
-Defects fixed: internal cross-route links now use Next Link; the typecheck command generates Next’s types before running TypeScript; the mission eyebrow includes its required period. No errors were suppressed.
+These are printable HTML resources, not pre-generated PDF downloads. Paper sizes, pagination, and browser-added headers/footers depend on print settings. Verify both Letter and A4 previews when changing long content. Dedicated designed PDFs, videos, transcripts, workshop curricula, and facilitator toolkits are future work, not available downloads.
 
-Once browser and Git access are available, compare against the final v5 export at 1440/1280/768/390/320 px, verify interaction and console behavior, inspect the remote’s default branch/history, initialize or reconcile Git safely, review the final diff, and commit/push without force. Required origin: `https://github.com/DaemonFxy352/zora_foundation`. Use `main` if there is no existing remote history. Commit message: `Build initial ZoraSafe Foundation website`.
+## Training and public claims
 
-Current visual adaptations from v5 remain the requested grouped navigation, restrained hero Guide Point, responsive photo crops, and adjusted program spacing. No new visual changes were made in this pass; screenshot comparison remains outstanding.
+The resource center describes five developing training pathways: Community Workshops, Digital Confidence Training, Youth & Family Sessions, Train-the-Trainer, and Custom Community Training. There is no active nationwide-delivery claim or public registration system. Training links lead to the contact page’s training inquiry.
 
-## Social sharing
+Leadership names and biographies have not been supplied. Research reports are not yet published. Those pages state their status without fabricated people or publications. Support explains intended funding areas and says online giving is being set up; no donation backend, payment button, or tax-deductibility claim is included. Contact uses mailto links, not an unconnected form. Privacy and Terms remain email inquiry links pending approved policies.
 
-Production metadata in `app/layout.tsx` sets the canonical homepage, Open Graph, Twitter large-image card, robots, viewport, and navy theme color. Final favicon and touch-icon links are configured once through `metadata.icons`; `metadata.manifest` points to the supplied manifest. The accessibility page has its own canonical URL.
+## Foundation identity and assets
 
-The shared social image is `public/brand/zorasafe-foundation-social1.png` (1200×630 PNG), referenced by both card formats at `https://www.zorasafefoundation.org/brand/zorasafe-foundation-social1.png`. This is the approved final image. The older PNG and SVG are retained as unused historical assets; the SVG is not the source for the approved image. When replacing the image, preserve the dimensions and URL or update the metadata together. The PNG is a static public asset and requires no image-generation service or authentication.
+The final **ZoraSafe Foundation Identity Board, version 1.0 (October 2026)** is authoritative over the older commercial `_ds` bundle. The homepage follows `ZoraSafe Foundation Homepage v5.dc.html`. The commercial fox PNGs in the original design ZIP were excluded. `components/Brand.tsx` uses the Foundation Guide Point geometry, Inter wordmark, and tracked descriptor; the footer uses its approved reversed version.
 
-## Site icons
+- `public/brand/guide-point.svg`: Guide Point artwork.
+- `public/brand/zorasafe-foundation-social1.png`: approved final 1200×630 social preview. All page-level metadata reuses its absolute production URL. Older unused social assets are retained.
+- `public/favicon.svg`, `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`, `icon-maskable-512.png`, and `site.webmanifest`: approved favicon package served at its root URLs. `metadata.icons`/`metadata.manifest` provide one set of links. Theme color remains `#0F2A44`.
+- `public/fonts/`: local Inter variable font and SIL Open Font License.
+- `public/images/`: three WebP photos recovered from the supplied design export.
 
-The finalized package from `zorasafe-foundation-favicon.zip` is served unchanged from `public/` at its supplied root URLs. The SVG contains light/dark color variants of the Foundation Guide Point; Apple and app icons use the navy background. `app/layout.tsx` is the single source of icon/manifest link metadata, with the existing `#0F2A44` viewport theme color. The earlier file-convention icon was removed to avoid conflicting automatic links. The package ZIP and raw head snippet are not shipped.
+Replace homepage imagery in `public/images/hero.webp`, `community-workshop.webp`, or `research.webp`, then update alt text and object position in `components/HomeImage.tsx`. Next Image handles dimensions, blur placeholders, and responsive optimization. Review the desktop/tablet/mobile crops; the supplied community photo is only 478×640. No new imagery was added for the interior pages.
+
+## Verification and limitations
+
+For this implementation, actual TypeScript, lint, and production build commands passed. Production HTML checks passed for all 15 pages. All 13 new routes returned HTTP 200 locally, and an unknown resource slug returned 404. Resource-data checks confirmed valid taxonomies, dates, and related slugs.
+
+Chromium launch in the implementation environment still fails with SIGABRT/EPERM. Browser screenshots, measured horizontal overflow, interactive keyboard/filter behavior, and rendered print pagination remain unverified; the responsive/print CSS and semantic HTML checks do not substitute for that QA. Next browser review should cover 1440, 1280, 768, 390, and 320 px, filter/reset/empty states, mobile navigation, and Letter/A4 print preview.
+
+The earlier dependency audit found zero production vulnerabilities and five development-only findings in Next’s ESLint dependency chain. No forced major downgrade was applied; rerun `npm audit` when updating dependencies.

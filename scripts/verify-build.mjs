@@ -1,0 +1,125 @@
+import assert from "node:assert/strict";
+import { readFileSync, existsSync } from "node:fs";
+import { join } from "node:path";
+
+// Exercise the emitted production pages, not a separate mock renderer.
+const root = ".next/server/app";
+const routes = [
+  "/",
+  "/accessibility",
+  "/education",
+  "/programs",
+  "/research",
+  "/about",
+  "/leadership",
+  "/partner",
+  "/contact",
+  "/support",
+  ...[
+    "recognize-a-scam",
+    "verify-before-you-trust",
+    "ai-impersonation",
+    "suspicious-message",
+    "account-safety",
+  ].map((slug) => `/education/${slug}`),
+];
+const pages = new Map(
+  routes.map((route) => [
+    route,
+    readFileSync(
+      join(root, route === "/" ? "index.html" : `${route.slice(1)}.html`),
+      "utf8",
+    ),
+  ]),
+);
+const attr = (tag, name) =>
+  tag.match(new RegExp(`(?:^|\\s)${name}="([^"]*)"`))?.[1];
+const tags = (html, name) =>
+  [...html.matchAll(new RegExp(`<${name}\\b[^>]*>`, "g"))].map(
+    (match) => match[0],
+  );
+const origin = "https://www.zorasafefoundation.org";
+const image = `${origin}/brand/zorasafe-foundation-social1.png`;
+for (const [route, html] of pages) {
+  assert.equal(tags(html, "main").length, 1, `${route}: main landmark`);
+  assert.equal(tags(html, "h1").length, 1, `${route}: H1`);
+  const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
+  assert.equal(new Set(ids).size, ids.length, `${route}: duplicate IDs`);
+  for (const tag of tags(html, "img"))
+    assert.ok(attr(tag, "alt"), `${route}: missing image alt`);
+  for (const [, targets] of html.matchAll(
+    /aria-(?:labelledby|controls)="([^"]+)"/g,
+  ))
+    for (const id of targets.split(" "))
+      assert.ok(ids.includes(id), `${route}: missing ARIA target ${id}`);
+  const head = html.split("</head>")[0];
+  const meta = new Map(
+    tags(head, "meta").map((tag) => [
+      attr(tag, "property") ?? attr(tag, "name"),
+      attr(tag, "content"),
+    ]),
+  );
+  if (route !== "/accessibility") {
+    const canonical = tags(head, "link").find(
+      (tag) => attr(tag, "rel") === "canonical",
+    );
+    assert.equal(
+      attr(canonical, "href")?.replace(/\/$/, ""),
+      `${origin}${route === "/" ? "" : route}`,
+      `${route}: canonical`,
+    );
+    assert.equal(
+      meta.get("og:url")?.replace(/\/$/, ""),
+      `${origin}${route === "/" ? "" : route}`,
+      `${route}: OG URL`,
+    );
+    assert.ok(meta.get("description"), `${route}: description`);
+    assert.ok(meta.get("og:title"), `${route}: OG title`);
+    assert.ok(meta.get("twitter:title"), `${route}: Twitter title`);
+    assert.equal(meta.get("og:image"), image);
+    assert.equal(meta.get("twitter:image"), image);
+    assert.equal(meta.get("twitter:card"), "summary_large_image");
+  }
+  for (const tag of tags(html, "a")) {
+    const href = attr(tag, "href");
+    assert.ok(href && href !== "#", `${route}: empty link`);
+    if (!href.startsWith("/") && !href.startsWith("#")) continue;
+    const url = new URL(href.replaceAll("&amp;", "&"), `${origin}${route}`);
+    if (pages.has(url.pathname)) {
+      if (url.hash)
+        assert.ok(
+          pages.get(url.pathname).includes(`id="${url.hash.slice(1)}"`),
+          `${route}: missing target ${href}`,
+        );
+    } else
+      assert.ok(
+        existsSync(join("public", decodeURIComponent(url.pathname))),
+        `${route}: broken link ${href}`,
+      );
+  }
+  if (route.startsWith("/education/")) {
+    for (const text of [
+      "Key warning signs",
+      "What to do",
+      "What not to do",
+      "When to get help",
+      "Try it together",
+      "Sources &amp; further reading",
+      "Print or save as PDF",
+      "Keep learning",
+    ])
+      assert.ok(html.includes(text), `${route}: missing ${text}`);
+    assert.ok(
+      html.includes('class="print-brand"'),
+      `${route}: printable branding`,
+    );
+  }
+  assert.ok(
+    !/Lorem ipsum|TODO|\uFFFD/.test(html),
+    `${route}: placeholder/encoding artifact`,
+  );
+  console.log(
+    `PASS ${route}: metadata, landmarks, image alt text, links, ARIA targets${route.startsWith("/education/") ? ", guide sections" : ""}`,
+  );
+}
+console.log(`Verified ${pages.size} production pages.`);

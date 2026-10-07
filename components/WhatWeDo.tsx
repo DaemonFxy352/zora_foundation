@@ -1,28 +1,29 @@
+import Link from "next/link";
 import { Arrow } from "./Brand";
 const areas = [
   {
     name: "Educate",
     text: "Accessible scam, fraud, and digital safety education for people of every age.",
     link: "Education & resources",
-    href: "#programs",
+    href: "/education",
   },
   {
     name: "Equip",
     text: "Practical training, resources, and tools for the people and organizations that need them.",
     link: "Programs & initiatives",
-    href: "#programs",
+    href: "/programs",
   },
   {
     name: "Research",
     text: "Research into how scams are changing and which prevention efforts actually work.",
     link: "Research",
-    href: "#research",
+    href: "/research",
   },
   {
     name: "Collaborate",
     text: "Partnerships that bring digital safety programs to more communities.",
     link: "Partner with us",
-    href: "#partner",
+    href: "/partner",
   },
 ];
 export function WhatWeDo() {
@@ -49,10 +50,10 @@ export function WhatWeDo() {
                 <h3>{area.name}</h3>
               </div>
               <p>{area.text}</p>
-              <a className="text-link" href={area.href}>
+              <Link className="text-link" href={area.href}>
                 {area.link}
                 <Arrow />
-              </a>
+              </Link>
             </article>
           ))}
         </div>

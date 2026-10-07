@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Arrow, Point } from "./Brand";
 import { HomeImage } from "./HomeImage";
 const steps = [
@@ -42,12 +43,9 @@ export function ResearchImpact() {
             We evaluate programs to understand whether people leave better able
             to recognize risk and make safer decisions.
           </p>
-          <a
-            className="text-link"
-            href="mailto:hello@zorasafefoundation.org?subject=Research%20inquiry"
-          >
+          <Link className="text-link" href="/research">
             Explore Research <Arrow />
-          </a>
+          </Link>
         </div>
         <div className="research-photo photo">
           <HomeImage name="research" />

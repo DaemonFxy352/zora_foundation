@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Arrow, GuidePoint } from "./Brand";
 import { HomeImage } from "./HomeImage";
 
@@ -13,12 +14,12 @@ export function Hero() {
             bring it to communities, families, and the people who serve them.
           </p>
           <div className="actions">
-            <a className="button" href="#programs">
+            <Link className="button" href="/programs">
               Explore Programs <Arrow />
-            </a>
-            <a className="button button-outline" href="#partner">
+            </Link>
+            <Link className="button button-outline" href="/partner">
               Partner With Us
-            </a>
+            </Link>
           </div>
         </div>
         <div className="hero-visual">

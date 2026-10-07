@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Arrow } from "./Brand";
 export function Partnerships() {
   return (
@@ -19,12 +20,9 @@ export function Partnerships() {
             government, foundations, and responsible industry partners to expand
             digital safety education, research, and access.
           </p>
-          <a
-            className="button"
-            href="mailto:hello@zorasafefoundation.org?subject=Foundation%20partnership"
-          >
+          <Link className="button" href="/partner">
             Partner With the Foundation <Arrow />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -4,25 +4,25 @@ const columns = [
   {
     title: "Our work",
     links: [
-      ["Programs", "/#programs"],
-      ["Research", "/#research"],
-      ["Education & Resources", "/#work"],
+      ["Programs", "/programs"],
+      ["Research", "/research"],
+      ["Education & Resources", "/education"],
     ],
   },
   {
     title: "About",
     links: [
-      ["Our Mission", "/#mission"],
-      ["About the Foundation", "/#mission"],
-      ["Leadership", "/#mission"],
+      ["Our Mission", "/about#mission"],
+      ["About the Foundation", "/about"],
+      ["Leadership", "/leadership"],
     ],
   },
   {
     title: "Get involved",
     links: [
-      ["Partner With Us", "/#partner"],
-      ["Support Our Work", "/#support"],
-      ["Contact", "mailto:hello@zorasafefoundation.org"],
+      ["Partner With Us", "/partner"],
+      ["Support Our Work", "/support"],
+      ["Contact", "/contact"],
     ],
   },
 ];
