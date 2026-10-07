@@ -13,7 +13,7 @@ const siteUrl = "https://www.zorasafefoundation.org/";
 const description =
   "Safety through knowledge. Research that leads to real-world prevention.";
 const socialImage = {
-  url: `${siteUrl}brand/zorasafe-foundation-social.png`,
+  url: `${siteUrl}brand/zorasafe-foundation-social1.png`,
   width: 1200,
   height: 630,
   alt: "ZoraSafe Foundation — Safety through knowledge.",
