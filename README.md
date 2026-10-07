@@ -73,3 +73,9 @@ Defects fixed: internal cross-route links now use Next Link; the typecheck comma
 Once browser and Git access are available, compare against the final v5 export at 1440/1280/768/390/320 px, verify interaction and console behavior, inspect the remote’s default branch/history, initialize or reconcile Git safely, review the final diff, and commit/push without force. Required origin: `https://github.com/DaemonFxy352/zora_foundation`. Use `main` if there is no existing remote history. Commit message: `Build initial ZoraSafe Foundation website`.
 
 Current visual adaptations from v5 remain the requested grouped navigation, restrained hero Guide Point, responsive photo crops, and adjusted program spacing. No new visual changes were made in this pass; screenshot comparison remains outstanding.
+
+## Social sharing
+
+Production metadata in `app/layout.tsx` sets the canonical homepage, Open Graph, Twitter large-image card, robots, viewport, and navy theme color. The existing `app/icon.svg` remains the site icon. The accessibility page has its own canonical URL.
+
+The shared social image is `public/brand/zorasafe-foundation-social.png` (1200×630 PNG), referenced by both card formats at `https://www.zorasafefoundation.org/brand/zorasafe-foundation-social.png`. The adjacent SVG is its editable source, using the approved Guide Point and Inter. When replacing the image, preserve the dimensions and URL or update the metadata together. The PNG is a static public asset and requires no image-generation service or authentication.

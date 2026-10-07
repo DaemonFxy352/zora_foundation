@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
-export const metadata: Metadata = { title: "Accessibility statement" };
+export const metadata: Metadata = {
+  title: "Accessibility statement",
+  alternates: { canonical: "https://www.zorasafefoundation.org/accessibility" },
+};
 export default function Accessibility() {
   return (
     <main id="main-content" tabIndex={-1} className="section">
