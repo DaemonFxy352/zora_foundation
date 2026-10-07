@@ -32,7 +32,8 @@ npm start
 - `app/accessibility/page.tsx`: accessibility statement and feedback contact.
 - `components/`: Header, Hero, WhyItMatters, WhatWeDo, Programs, ResearchImpact, Partnerships, SupportCTA, Footer, and shared brand/image primitives.
 - `public/brand/guide-point.svg`: Foundation Guide Point geometry.
-- `app/icon.svg`: Foundation favicon.
+- `public/favicon.svg`, `favicon.ico`, `favicon-32.png`, and `apple-touch-icon.png`: approved Foundation favicons and Apple touch icon.
+- `public/site.webmanifest` and `public/icon-*.png`: approved standalone web app manifest and standard/maskable icons.
 - `public/images/`: the three locally hosted WebP images recovered from the supplied export.
 - `public/fonts/`: locally hosted Inter variable font and its SIL Open Font License.
 
@@ -76,6 +77,10 @@ Current visual adaptations from v5 remain the requested grouped navigation, rest
 
 ## Social sharing
 
-Production metadata in `app/layout.tsx` sets the canonical homepage, Open Graph, Twitter large-image card, robots, viewport, and navy theme color. The existing `app/icon.svg` remains the site icon. The accessibility page has its own canonical URL.
+Production metadata in `app/layout.tsx` sets the canonical homepage, Open Graph, Twitter large-image card, robots, viewport, and navy theme color. Final favicon and touch-icon links are configured once through `metadata.icons`; `metadata.manifest` points to the supplied manifest. The accessibility page has its own canonical URL.
 
 The shared social image is `public/brand/zorasafe-foundation-social1.png` (1200×630 PNG), referenced by both card formats at `https://www.zorasafefoundation.org/brand/zorasafe-foundation-social1.png`. This is the approved final image. The older PNG and SVG are retained as unused historical assets; the SVG is not the source for the approved image. When replacing the image, preserve the dimensions and URL or update the metadata together. The PNG is a static public asset and requires no image-generation service or authentication.
+
+## Site icons
+
+The finalized package from `zorasafe-foundation-favicon.zip` is served unchanged from `public/` at its supplied root URLs. The SVG contains light/dark color variants of the Foundation Guide Point; Apple and app icons use the navy background. `app/layout.tsx` is the single source of icon/manifest link metadata, with the existing `#0F2A44` viewport theme color. The earlier file-convention icon was removed to avoid conflicting automatic links. The package ZIP and raw head snippet are not shipped.
