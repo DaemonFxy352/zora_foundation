@@ -1,3 +1,5 @@
+import { contributorSchema, personSchema } from "./contributor-schema";
+import { resolveContributors } from "../data/contributors";
 import { siteUrl, socialImage } from "@/lib/metadata";
 import { audiences, formatLabel, type Resource } from "@/data/resources";
 
@@ -41,7 +43,8 @@ export function resourceSchema(resource: Resource) {
     learningResourceType: formatLabel(resource.format),
     isAccessibleForFree: true,
     publisher: { "@id": organizationId },
-    datePublished: resource.publishedAt,
+    ...contributorSchema(resource.editorial),
+    ...(resource.publishedAt ? { datePublished: resource.publishedAt } : {}),
     dateModified: resource.updatedAt,
     image: socialImage.url,
     audience: audiences
@@ -55,6 +58,19 @@ export function resourceSchema(resource: Resource) {
       name: source.label,
       url: source.url,
     })),
-    mainEntityOfPage: url,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+      ...(resource.editorial?.reviewedAt
+        ? { lastReviewed: resource.editorial.reviewedAt }
+        : {}),
+      ...(resource.editorial?.reviewers?.length
+        ? {
+            reviewedBy: resolveContributors(resource.editorial.reviewers).map(
+              personSchema,
+            ),
+          }
+        : {}),
+    },
   };
 }

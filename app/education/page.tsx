@@ -6,7 +6,7 @@ import {
   EditorialRows,
 } from "@/components/interior/Page";
 import { ResourceBrowser } from "@/components/interior/ResourceBrowser";
-import { formats } from "@/data/resources";
+import { formats, resourceSummaries } from "@/data/resources";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata(
   "Education & Resources",
@@ -53,7 +53,7 @@ export default function Education() {
           </Link>
         </div>
       </PageHero>
-      <ResourceBrowser />
+      <ResourceBrowser items={resourceSummaries()} />
       <section
         className="interior-section format-section"
         aria-labelledby="formats-heading"
@@ -65,7 +65,11 @@ export default function Education() {
             <p>
               Quick guides and checklists are available now. You can print each
               guide; dedicated download files and additional formats are
-              planned.
+              planned. Read our{" "}
+              <Link href="/editorial-standards">
+                editorial standards and corrections process
+              </Link>
+              .
             </p>
           </div>
           <dl className="format-directory">

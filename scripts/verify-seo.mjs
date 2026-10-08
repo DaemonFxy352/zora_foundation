@@ -1,26 +1,13 @@
+import { builtRoutes } from "./build-pages.mjs";
 import assert from "node:assert/strict";
-import { readFileSync, readdirSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
 const origin = "https://www.zorasafefoundation.org";
 const root = ".next/server/app";
 const read = (path) => readFileSync(join(root, path), "utf8");
 const preview = process.argv.includes("--preview");
-const pages = [
-  "index",
-  "education",
-  "programs",
-  "research",
-  "about",
-  "leadership",
-  "partner",
-  "contact",
-  "support",
-  "accessibility",
-  ...readdirSync(join(root, "education"))
-    .filter((f) => f.endsWith(".html"))
-    .map((f) => `education/${f.slice(0, -5)}`),
-];
+const pages = builtRoutes.map((r) => (r === "/" ? "index" : r.slice(1)));
 const decode = (text) =>
   text
     .replaceAll("&amp;", "&")
@@ -30,11 +17,24 @@ const sitemap = read("sitemap.xml.body");
 const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
   (m) => m[1],
 );
-assert.equal(new Set(locations).size, 14);
-assert.equal(locations.length, 14);
+assert.equal(new Set(locations).size, locations.length);
+assert.equal(locations.length, pages.length - 2);
+const titles = new Set();
+const descriptions = new Set();
 for (const page of pages) {
   const path = page === "index" ? "/" : `/${page}`;
   const html = read(`${page}.html`);
+  const title = html.match(/<title>(.*?)<\/title>/)?.[1];
+  const description = html.match(
+    /<meta name="description" content="([^"]+)"/,
+  )?.[1];
+  assert.ok(title && !titles.has(title), `${path}: missing/duplicate title`);
+  assert.ok(
+    description && !descriptions.has(description),
+    `${path}: missing/duplicate description`,
+  );
+  titles.add(title);
+  descriptions.add(description);
   const visible = decode(
     html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, ""),
   );
@@ -75,7 +75,7 @@ for (const page of pages) {
   );
   assert.equal(
     locations.includes(`${origin}${path}`),
-    page !== "accessibility",
+    !["accessibility", "editorial-standards"].includes(page),
   );
   if (page !== "index" && page !== "accessibility") {
     const crumbs = json.filter((item) => item["@type"] === "BreadcrumbList");
@@ -95,7 +95,8 @@ for (const page of pages) {
     assert.equal(guide.publisher["@id"], orgs[0]["@id"]);
     assert.equal(guide.author, undefined, "Do not invent author attribution");
     assert.ok(html.includes("Published by"));
-    assert.ok(html.includes(`dateTime="${guide.datePublished}"`));
+    if (guide.datePublished)
+      assert.ok(html.includes(`dateTime="${guide.datePublished}"`));
     if (guide.dateModified !== guide.datePublished)
       assert.ok(html.includes(`dateTime="${guide.dateModified}"`));
     const entry = sitemap.match(
@@ -107,19 +108,21 @@ for (const page of pages) {
     guide.audience.forEach((a) => assert.ok(visible.includes(a.audienceType)));
     guide.citation.forEach((c) => assert.ok(html.includes(`href="${c.url}"`)));
   }
-  assert.ok(
-    !json.some((item) =>
-      ["ScholarlyArticle", "Report", "Dataset", "Person", "FAQPage"].includes(
-        item["@type"],
+  if (!page.startsWith("research/"))
+    assert.ok(
+      !json.some((item) =>
+        ["ScholarlyArticle", "Report", "Dataset", "Person", "FAQPage"].includes(
+          item["@type"],
+        ),
       ),
-    ),
-    `${path}: unsupported research/person/FAQ schema`,
-  );
+      `${path}: unsupported research/person/FAQ schema`,
+    );
 }
 assert.equal(
   (sitemap.match(/<lastmod>/g) || []).length,
-  5,
-  "Only resources have maintained publication dates",
+  pages.filter((p) => p.startsWith("education/") || p.startsWith("research/"))
+    .length,
+  "Only resources and published reports have maintained dates",
 );
 const robots = read("robots.txt.body");
 assert.ok(robots.includes("User-Agent: *\nAllow: /"));
@@ -127,5 +130,5 @@ assert.equal(robots.includes(`Sitemap: ${origin}/sitemap.xml`), !preview);
 const missing = read("_not-found.html");
 assert.ok(missing.includes('name="robots" content="noindex"'));
 console.log(
-  `PASS SEO: ${pages.length} pages; canonical uniqueness; Organization, breadcrumbs and LearningResource validation; visible publisher, audience, dates and citations; 14 sitemap entries; truthful lastmod; ${preview ? "preview noindex" : "production indexing"}; 404 noindex.`,
+  `PASS SEO: ${pages.length} pages; canonical uniqueness; Organization, breadcrumbs and LearningResource validation; visible publisher, audience, dates and citations; ${locations.length} sitemap entries; truthful lastmod; ${preview ? "preview noindex" : "production indexing"}; 404 noindex.`,
 );

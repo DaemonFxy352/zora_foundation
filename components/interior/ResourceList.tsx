@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Arrow } from "@/components/Brand";
-import { formatLabel, type Resource } from "@/data/resources";
-export function ResourceList({ items }: { items: Resource[] }) {
+import { formatLabel } from "@/data/resource-taxonomy";
+import type { ResourceSummary } from "@/data/resources";
+export function ResourceList({ items }: { items: ResourceSummary[] }) {
   return (
     <ul className="resource-list">
       {items.map((resource) => (

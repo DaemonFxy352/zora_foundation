@@ -1,3 +1,4 @@
+import { publishedPublications } from "@/data/publications";
 import type { MetadataRoute } from "next";
 import { resources } from "@/data/resources";
 import { siteUrl } from "@/lib/metadata";
@@ -17,6 +18,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/contact",
       "/support",
     ].map((path) => ({ url: `${siteUrl}${path}` })),
+    ...publishedPublications().map((p) => ({
+      url: `${siteUrl}/research/${p.slug}`,
+      lastModified: p.updatedAt ?? p.publishedAt,
+    })),
     ...resources.map((resource) => ({
       url: `${siteUrl}/education/${resource.slug}`,
       lastModified: resource.updatedAt,

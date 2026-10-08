@@ -1,3 +1,8 @@
+import { ContentSections } from "@/components/content/ContentSections";
+import {
+  DateLabel,
+  EditorialResponsibility,
+} from "@/components/content/EditorialResponsibility";
 import { StructuredData } from "@/components/StructuredData";
 import { breadcrumbSchema, resourceSchema } from "@/lib/structured-data";
 import Link from "next/link";
@@ -29,14 +34,6 @@ export async function generateMetadata({
     resource.summary,
     `/education/${resource.slug}`,
   );
-}
-function dateLabel(date: string) {
-  return new Intl.DateTimeFormat("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-    timeZone: "UTC",
-  }).format(new Date(`${date}T00:00:00Z`));
 }
 export default async function ResourcePage({
   params,
@@ -76,19 +73,21 @@ export default async function ResourcePage({
             <h1>{r.title}</h1>
             <p className="page-intro">{r.summary}</p>
             <p className="resource-meta">
-              {r.readingMinutes} min read · Published{" "}
-              <time dateTime={r.publishedAt}>{dateLabel(r.publishedAt)}</time>
+              {r.readingMinutes} min read
+              {r.publishedAt && (
+                <>
+                  {" "}
+                  · Published <DateLabel date={r.publishedAt} />
+                </>
+              )}
               {r.updatedAt !== r.publishedAt && (
                 <>
                   {" "}
-                  · Updated{" "}
-                  <time dateTime={r.updatedAt}>{dateLabel(r.updatedAt)}</time>
+                  · Updated <DateLabel date={r.updatedAt} />
                 </>
               )}
             </p>
-            <p className="resource-meta">
-              Published by <Link href="/about">ZoraSafe Foundation</Link>.
-            </p>
+            <EditorialResponsibility value={r.editorial} />
             <p className="resource-meta">
               For:{" "}
               {audiences
@@ -106,9 +105,11 @@ export default async function ResourcePage({
               )}
             </div>
           </header>
-          <div className="reading-copy">
+          <section className="guide-section">
+            <h2>Why this matters</h2>
             <p>{r.intro}</p>
-          </div>
+          </section>
+          <ContentSections sections={r.sections ?? []} sources={r.sources} />
           <section className="guide-section">
             <h2>Key warning signs</h2>
             <ul>
@@ -137,14 +138,25 @@ export default async function ResourcePage({
             </ul>
           </section>
           <section className="guide-section help-note">
-            <h2>When to get help</h2>
+            <h2>What to do if it already happened</h2>
             <p>{r.help}</p>
             <p>
               For U.S. scam reporting, visit{" "}
               <a href="https://reportfraud.ftc.gov/">ReportFraud.ftc.gov</a>.
               For a personal identity-theft recovery plan, use{" "}
               <a href="https://www.identitytheft.gov/">IdentityTheft.gov</a>.
-              Outside the U.S., contact your local consumer-protection agency.
+              Internet-enabled crime can also be reported to{" "}
+              <a href="https://www.ic3.gov/">FBI / IC3</a>. Outside the U.S.,
+              contact your local consumer-protection agency.
+            </p>
+          </section>
+          <section className="guide-section">
+            <h2>When to get help</h2>
+            <p>
+              Ask a trusted person to help with practical next steps. Contact
+              the affected service directly for account or payment problems. For
+              an immediate threat to physical safety, contact local emergency
+              services.
             </p>
           </section>
           <section className="guide-section practice-note">
@@ -163,6 +175,7 @@ export default async function ResourcePage({
               {r.sources.map((source) => (
                 <li key={source.url}>
                   <a href={source.url}>{source.label}</a>
+                  {source.note && <p>{source.note}</p>}
                 </li>
               ))}
             </ul>

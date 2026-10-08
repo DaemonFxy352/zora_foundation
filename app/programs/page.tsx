@@ -118,7 +118,16 @@ export default function ProgramsPage() {
             </Link>{" "}
             are available now. Facilitator materials and structured training are
             in development; partners can help us understand what would make them
-            useful in practice.
+            useful in practice. For a group discussion, try{" "}
+            <Link href="/education/family-emergency-scams">
+              family emergency verification
+            </Link>{" "}
+            or the{" "}
+            <Link href="/education/phone-impersonation">
+              phone impersonation guide
+            </Link>
+            . Each includes a practice prompt and print support; these are
+            guides, not a completed facilitator curriculum.
           </p>
         </div>
       </section>

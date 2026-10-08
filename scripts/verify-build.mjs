@@ -1,28 +1,11 @@
+import { builtRoutes } from "./build-pages.mjs";
 import assert from "node:assert/strict";
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 
 // Exercise the emitted production pages, not a separate mock renderer.
 const root = ".next/server/app";
-const routes = [
-  "/",
-  "/accessibility",
-  "/education",
-  "/programs",
-  "/research",
-  "/about",
-  "/leadership",
-  "/partner",
-  "/contact",
-  "/support",
-  ...[
-    "recognize-a-scam",
-    "verify-before-you-trust",
-    "ai-impersonation",
-    "suspicious-message",
-    "account-safety",
-  ].map((slug) => `/education/${slug}`),
-];
+const routes = builtRoutes;
 const pages = new Map(
   routes.map((route) => [
     route,
@@ -43,6 +26,12 @@ const image = `${origin}/brand/zorasafe-foundation-social1.png`;
 for (const [route, html] of pages) {
   assert.equal(tags(html, "main").length, 1, `${route}: main landmark`);
   assert.equal(tags(html, "h1").length, 1, `${route}: H1`);
+  const levels = [...html.matchAll(/<h([1-6])\b/g)].map((m) => Number(m[1]));
+  assert.equal(levels[0], 1, `${route}: first heading`);
+  assert.ok(
+    levels.every((level, i) => i === 0 || level <= levels[i - 1] + 1),
+    `${route}: heading order`,
+  );
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
   assert.equal(new Set(ids).size, ids.length, `${route}: duplicate IDs`);
   for (const tag of tags(html, "img"))

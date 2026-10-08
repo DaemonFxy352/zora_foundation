@@ -137,3 +137,94 @@ proposed whitepaper architecture are in `docs/seo/phase1-20261007/`.
 - Do not publish report schemas or contributor credentials before the matching
   work and approved author information exist. The publication specification is
   documentation only; no report template or unpublished research is public.
+
+## Phase 2: authority resources and future publications
+
+The education center now contains ten guides. Five new routes cover human-targeted
+attacks, scam recovery, QR/link safety, phone impersonation and family emergency
+scams. The existing AI impersonation and verification URLs are expanded in place.
+`/editorial-standards` explains sources, dates, attribution and correction requests.
+
+### Resource authoring
+
+- `data/resources.ts` combines the original guides, targeted updates in
+  `data/resource-enhancements.ts`, and new guides in `data/authority-resources.ts`.
+- `data/resource-taxonomy.ts` owns audience/topic/format vocabulary. Reuse these
+  IDs; do not create duplicate collections just to target keywords.
+- `data/sources.ts` stores verified primary source labels, URLs and scope notes.
+  Optional narrative sections can reference only source URLs included in the
+  resource. Shared `ContentSections` renders readable headings and source links.
+- `publishedAt` is optional for newly prepared, unreleased material. Set its real
+  first-release date when publishing; never derive it from build time. Maintain
+  `updatedAt` when substantive content changes. `editorial.reviewedAt` records a
+  text/source check, not independent peer review.
+- Every resource must have summary, warning signs, actions, avoidance guidance,
+  recovery/help guidance, sources, practice example, taxonomy and related slugs.
+- `resourceSummaries()` supplies only directory data to the client-side browser;
+  full articles and citations remain rendered by server components.
+
+### Contributor and editorial responsibility model
+
+`data/contributors.ts` is intentionally empty. Add only approved public names,
+biographies, affiliations, credentials and optional HTTPS profile URLs. Resource
+and publication records reference registry IDs for authors, reviewers, editors
+and contributors. Unknown IDs fail validation rather than generating fictional
+bylines. `EditorialResponsibility` displays supplied roles and biography details;
+no people or expertise claims appear while the registry is empty.
+
+### Publication workflow
+
+`data/publications.ts` is intentionally empty. The `/research/[slug]` template is
+implemented but no report page is available until an approved record is published.
+Draft/review records never enter public static paths, research listings or sitemaps.
+Keep confidential draft text outside the web application repository/public assets.
+
+A publication supports title/subtitle, kind/schema type, contributor roles, dates,
+abstract, executive summary, findings, methods, limitations, full HTML sections,
+references, version, suggested citation, related education/research and optional
+PDF metadata. `PublicationArticle` renders the full HTML with the existing
+editorial/print system. `lib/publication-schema.ts` supports Report,
+ScholarlyArticle (studies only), Article and CreativeWork. These types are not
+emitted on empty research listings or educational placeholder pages.
+
+Before changing status to `published`:
+
+1. Obtain editorial approval and verify contributors, evidence, methods,
+   limitations, source references, dates and versions.
+2. Choose the appropriate schema type; a whitepaper is not automatically a
+   scholarly or peer-reviewed paper.
+3. Provide complete HTML. If supplied, place a matching PDF under
+   `public/research/<slug>/<version>.pdf`; record its actual byte size and version.
+   The publication catalog checks file presence, PDF signature and byte size.
+4. Check related slugs, source citations, accessible PDF reading order and
+   HTML/PDF agreement. Publication data validation is not scientific review.
+5. Run the checks below. Verify the canonical HTML page and PDF HTTP response
+   on a fresh local server. A PDF canonical response header is deferred until
+   there is a real companion file and separately authorized hosting review.
+
+No PDF, real contributor profile or unfinished report was added in Phase 2.
+The local TypeScript records can later map to CMS fields without changing URLs.
+
+### Checks
+
+```sh
+npm run build
+npm run lint
+npm run typecheck
+npm run verify:build
+npm run verify:seo
+npm run verify:content
+npm run verify:routes
+```
+
+The first two verification scripts inspect generated pages, including future
+prerendered report pages. The content tests execute actual data/schema/template
+code using the existing TypeScript dependency, with synthetic records only in
+memory. Tests cover draft exclusion, unknown identities, malformed publication
+records, schema variants, missing PDFs, source/related-link integrity and metadata
+uniqueness. No synthetic author or paper is included in application data.
+
+Browser QA must still check mobile/desktop keyboard navigation, filtering and
+Letter/A4 print previews. Static checks are not a substitute for rendered QA.
+
+`verify:routes` runs the actual Next production request handler in-process with Node HTTP request/response objects, without opening a listening socket. It verifies public routes, draft/unknown 404s, query canonicals and trailing-slash redirects. It does not substitute for browser hydration or visual QA.

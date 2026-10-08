@@ -1,3 +1,4 @@
+import { publishedPublications } from "@/data/publications";
 import Link from "next/link";
 import {
   InteriorPage,
@@ -44,6 +45,7 @@ const priorities = [
   ],
 ];
 export default function ResearchPage() {
+  const reports = publishedPublications();
   return (
     <InteriorPage>
       <PageHero
@@ -88,17 +90,37 @@ export default function ResearchPage() {
         <div className="container reports-section">
           <div>
             <p className="eyebrow">Reports & publications</p>
-            <h2>A place for findings people can use.</h2>
+            <h2>Currently published research</h2>
           </div>
           <div className="reading-copy">
-            <p>Research and reports will appear here as they are published.</p>
+            {reports.length ? (
+              <ul>
+                {reports.map((p) => (
+                  <li key={p.slug}>
+                    <Link href={`/research/${p.slug}`}>{p.title}</Link>
+                    <p>{p.summary}</p>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p>
+                There are no Foundation reports available yet. Research and
+                reports will appear here as they are published.
+              </p>
+            )}
+            <h3>In development</h3>
             <p>
-              There are no Foundation reports available yet. We intend to share
-              plain-language findings alongside the questions asked, methods
-              used, and limits of what the results can tell us.
+              We are preparing a publication approach that pairs readable HTML
+              with downloadable reports, sources, methods and limitations. This
+              is preparation for future work, not a claim of completed studies
+              or a publication schedule.
             </p>
             <p>
-              For existing public guidance, read our{" "}
+              For source-based education, start with{" "}
+              <Link href="/education/human-targeted-attacks">
+                what a human-targeted attack is
+              </Link>
+              , then read our{" "}
               <Link href="/education/ai-impersonation">
                 AI impersonation guide
               </Link>{" "}

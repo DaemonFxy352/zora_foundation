@@ -1,102 +1,16 @@
-export const audiences = [
-  {
-    id: "older-adults",
-    label: "Older adults",
-    description:
-      "Practical ways to check unexpected requests and use everyday technology with confidence.",
-  },
-  {
-    id: "youth-families",
-    label: "Youth & families",
-    description:
-      "Conversation starters and shared habits for messages, accounts, and online relationships.",
-  },
-  {
-    id: "caregivers",
-    label: "Caregivers",
-    description:
-      "Support someone’s safety while respecting their choices, privacy, and independence.",
-  },
-  {
-    id: "community-organizations",
-    label: "Community organizations",
-    description:
-      "Plain-language guidance to share at a front desk, in a group, or during a conversation.",
-  },
-  {
-    id: "educators-facilitators",
-    label: "Educators & facilitators",
-    description:
-      "Starting points for guided discussions and practical learning activities.",
-  },
-  {
-    id: "digital-confidence",
-    label: "People building digital confidence",
-    description:
-      "Small, manageable steps for safer accounts, messages, and everyday decisions.",
-  },
-] as const;
-export const topics = [
-  { id: "scams-fraud", label: "Scams & Fraud" },
-  { id: "impersonation", label: "Impersonation" },
-  { id: "phishing", label: "Phishing & Suspicious Messages" },
-  { id: "ai-deception", label: "AI-Generated Deception" },
-  { id: "privacy", label: "Online Privacy" },
-  { id: "account-safety", label: "Account & Password Safety" },
-  { id: "financial-fraud", label: "Financial Fraud" },
-  { id: "social-engineering", label: "Social Engineering" },
-  { id: "everyday-technology", label: "Safer Everyday Technology Use" },
-  { id: "recovery", label: "Recovery After a Scam" },
-] as const;
-export const formats = [
-  {
-    id: "quick-guide",
-    label: "Quick Guides",
-    description: "Short practical guidance for common risks.",
-    status: "Available now",
-  },
-  {
-    id: "checklist",
-    label: "Checklists",
-    description: "Step-by-step actions people can use in the moment.",
-    status: "Available now",
-  },
-  {
-    id: "printable",
-    label: "Printable Resources",
-    description:
-      "Materials for libraries, senior centers, schools, and community groups.",
-    status: "All five launch guides support printing",
-  },
-  {
-    id: "short-lesson",
-    label: "Short Lessons",
-    description: "Brief educational content for self-paced learning.",
-    status: "Planned",
-  },
-  {
-    id: "workshop",
-    label: "Workshop Materials",
-    description: "Resources for community-based training and group sessions.",
-    status: "In development",
-  },
-  {
-    id: "toolkit",
-    label: "Facilitator Toolkits",
-    description:
-      "Preparation and teaching materials for trusted local leaders.",
-    status: "In development",
-  },
-  {
-    id: "video",
-    label: "Videos",
-    description: "Short educational and explainer content.",
-    status: "Planned",
-  },
-] as const;
-export type AudienceId = (typeof audiences)[number]["id"];
-export type TopicId = (typeof topics)[number]["id"];
-export type FormatId = (typeof formats)[number]["id"];
+import type { EditorialResponsibility } from "./contributors";
+import type { Source } from "./sources";
+import type { ContentSection } from "../components/content/ContentSections";
+import { authorityResources } from "./authority-resources";
+import { resourceEnhancements } from "./resource-enhancements";
+import {
+  audiences,
+  type AudienceId,
+  type TopicId,
+  type FormatId,
+} from "./resource-taxonomy";
+export { audiences, topics, formats, formatLabel } from "./resource-taxonomy";
+export type { AudienceId, TopicId, FormatId } from "./resource-taxonomy";
 export type Resource = {
   slug: string;
   title: string;
@@ -105,7 +19,9 @@ export type Resource = {
   topics: TopicId[];
   format: FormatId;
   readingMinutes: number;
-  publishedAt: string;
+  publishedAt?: string;
+  editorial?: EditorialResponsibility;
+  sections?: ContentSection[];
   updatedAt: string;
   download?: { url: string; label: string; fileType: string };
   printView: boolean;
@@ -116,7 +32,7 @@ export type Resource = {
   avoid: string[];
   help: string;
   practice: { prompt: string; response: string };
-  sources: { label: string; url: string }[];
+  sources: Source[];
 };
 const allAudiences: AudienceId[] = audiences.map((a) => a.id);
 const publication = {
@@ -129,7 +45,7 @@ const recoverySource = {
   url: "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
 };
 
-export const resources: Resource[] = [
+const launchResources: Resource[] = [
   {
     slug: "recognize-a-scam",
     title: "Recognize a scam",
@@ -426,9 +342,45 @@ export const resources: Resource[] = [
     ],
   },
 ];
+export const resources: Resource[] = [
+  ...launchResources.map((r) => ({ ...r, ...resourceEnhancements[r.slug] })),
+  ...authorityResources,
+];
+
 export function getResource(slug: string) {
   return resources.find((resource) => resource.slug === slug);
 }
-export function formatLabel(id: FormatId) {
-  return formats.find((format) => format.id === id)!.label;
+export type ResourceSummary = Pick<
+  Resource,
+  | "slug"
+  | "title"
+  | "summary"
+  | "audience"
+  | "topics"
+  | "format"
+  | "readingMinutes"
+  | "printView"
+>;
+export function resourceSummaries(): ResourceSummary[] {
+  return resources.map(
+    ({
+      slug,
+      title,
+      summary,
+      audience,
+      topics,
+      format,
+      readingMinutes,
+      printView,
+    }) => ({
+      slug,
+      title,
+      summary,
+      audience,
+      topics,
+      format,
+      readingMinutes,
+      printView,
+    }),
+  );
 }

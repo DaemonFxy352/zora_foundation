@@ -1,15 +1,16 @@
 "use client";
 import { useRef, useState } from "react";
-import { audiences, topics, formats, resources } from "@/data/resources";
+import { audiences, topics, formats } from "@/data/resource-taxonomy";
+import type { ResourceSummary } from "@/data/resources";
 import { ResourceList } from "./ResourceList";
 import { Point, Arrow } from "@/components/Brand";
 
-export function ResourceBrowser() {
+export function ResourceBrowser({ items }: { items: ResourceSummary[] }) {
   const [audience, setAudience] = useState("");
   const [topic, setTopic] = useState("");
   const [format, setFormat] = useState("");
   const resultsHeading = useRef<HTMLHeadingElement>(null);
-  const visible = resources.filter(
+  const visible = items.filter(
     (r) =>
       (!audience || r.audience.some((a) => a === audience)) &&
       (!topic || r.topics.some((t) => t === topic)) &&
@@ -36,9 +37,9 @@ export function ResourceBrowser() {
               Practical resources, ready to use.
             </h2>
             <p>
-              Our first five guides are available to read, print, or save as a
-              PDF using your browser. This collection will grow as new materials
-              are published.
+              Our guides are available to read, print, or save as a PDF using
+              your browser. This collection will grow as new materials are
+              published.
             </p>
           </div>
           <fieldset className="resource-filters">
@@ -113,7 +114,7 @@ export function ResourceBrowser() {
                 <h3>No resources match these filters yet.</h3>
                 <p>
                   Try a different audience, topic, or format, or reset the
-                  filters to see all five launch guides. Videos, lessons, and
+                  filters to see all current guides. Videos, lessons, and
                   teaching toolkits will be added as they are ready.
                 </p>
               </div>

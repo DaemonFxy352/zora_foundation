@@ -651,3 +651,21 @@
     color: #000;
   }
 }
+
+/* Shared resource/publication text; no additional card layout. */
+.editorial-responsibility p + p {
+  margin-top: 8px;
+}
+.interior .section-evidence {
+  font-size: 16px;
+  margin-top: 18px;
+}
+.resource-article {
+  overflow-wrap: anywhere;
+}
+@media print {
+  .resource-page .section-evidence a::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+  }
+}
