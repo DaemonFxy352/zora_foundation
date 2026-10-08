@@ -1,6 +1,13 @@
+import { StructuredData } from "@/components/StructuredData";
+import { breadcrumbSchema, resourceSchema } from "@/lib/structured-data";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { resources, getResource, formatLabel } from "@/data/resources";
+import {
+  resources,
+  getResource,
+  formatLabel,
+  audiences,
+} from "@/data/resources";
 import { Brand } from "@/components/Brand";
 import { PrintButton } from "@/components/interior/PrintButton";
 import { ResourceList } from "@/components/interior/ResourceList";
@@ -44,6 +51,14 @@ export default async function ResourcePage({
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
   return (
     <main id="main-content" className="interior resource-page" tabIndex={-1}>
+      <StructuredData data={resourceSchema(r)} />
+      <StructuredData
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Education & Resources", path: "/education" },
+          { name: r.title, path: `/education/${r.slug}` },
+        ])}
+      />
       <div className="container">
         <nav className="breadcrumbs no-print" aria-label="Breadcrumb">
           <Link href="/">Home</Link>
@@ -70,6 +85,17 @@ export default async function ResourcePage({
                   <time dateTime={r.updatedAt}>{dateLabel(r.updatedAt)}</time>
                 </>
               )}
+            </p>
+            <p className="resource-meta">
+              Published by <Link href="/about">ZoraSafe Foundation</Link>.
+            </p>
+            <p className="resource-meta">
+              For:{" "}
+              {audiences
+                .filter((a) => r.audience.includes(a.id))
+                .map((a) => a.label)
+                .join("; ")}
+              .
             </p>
             <div className="actions">
               {r.printView && <PrintButton />}

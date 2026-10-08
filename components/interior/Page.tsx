@@ -1,20 +1,30 @@
 import Link from "next/link";
+import { StructuredData } from "@/components/StructuredData";
+import { breadcrumbSchema } from "@/lib/structured-data";
 import type { ReactNode } from "react";
 import { Arrow } from "@/components/Brand";
 
 export function PageHero({
   eyebrow,
+  path,
   title,
   intro,
   children,
 }: {
   eyebrow: string;
+  path: string;
   title: string;
   intro: string;
   children?: ReactNode;
 }) {
   return (
     <header className="page-hero">
+      <StructuredData
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: eyebrow, path },
+        ])}
+      />
       <div className="container">
         <nav className="breadcrumbs" aria-label="Breadcrumb">
           <Link href="/">Home</Link>

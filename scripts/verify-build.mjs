@@ -59,7 +59,7 @@ for (const [route, html] of pages) {
       attr(tag, "content"),
     ]),
   );
-  if (route !== "/accessibility") {
+  {
     const canonical = tags(head, "link").find(
       (tag) => attr(tag, "rel") === "canonical",
     );

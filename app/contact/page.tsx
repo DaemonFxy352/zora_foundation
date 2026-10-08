@@ -39,6 +39,7 @@ export default function ContactPage() {
   return (
     <InteriorPage>
       <PageHero
+        path="/contact"
         eyebrow="Contact"
         title="Start a conversation."
         intro="Have a question or an idea for making digital safety knowledge more accessible? Choose the inquiry that fits, or email us directly."

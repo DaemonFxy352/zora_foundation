@@ -39,6 +39,7 @@ export default function Education() {
   return (
     <InteriorPage>
       <PageHero
+        path="/education"
         eyebrow="Education & Resources"
         title="Digital safety knowledge people can use."
         intro="Practical, plain-language resources designed to help people recognize risk, make safer decisions, and navigate everyday technology with greater confidence."

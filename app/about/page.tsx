@@ -10,6 +10,7 @@ export default function AboutPage() {
   return (
     <InteriorPage>
       <PageHero
+        path="/about"
         eyebrow="About the Foundation"
         title="Closing the digital safety knowledge gap."
         intro="Safety through knowledge. We believe people should be able to take part in digital life with confidence, regardless of age, income, ZIP code, or technical experience."

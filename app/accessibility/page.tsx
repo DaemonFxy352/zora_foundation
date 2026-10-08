@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Accessibility statement",
-  alternates: { canonical: "https://www.zorasafefoundation.org/accessibility" },
-};
+import { pageMetadata } from "@/lib/metadata";
+export const metadata = pageMetadata(
+  "Accessibility statement",
+  "How ZoraSafe Foundation supports accessible digital safety education, and how to request help or report a website accessibility issue.",
+  "/accessibility",
+);
 export default function Accessibility() {
   return (
     <main id="main-content" tabIndex={-1} className="section">

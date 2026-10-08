@@ -1,0 +1,60 @@
+SCOPE,URL,HTTP STATUS CHAIN,REDIRECT LOCATION,CONTENT TYPE,NOTE
+production,https://www.zorasafefoundation.org/,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/education,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/programs,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/research,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/about,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/leadership,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/partner,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/contact,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/support,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/accessibility,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/education/recognize-a-scam,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/education/verify-before-you-trust,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/education/ai-impersonation,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/education/suspicious-message,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/education/account-safety,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/robots.txt,404,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/sitemap.xml,404,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/audit-not-a-real-page-20261007,404,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/education/not-a-resource,404,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/education/,308 → 200,/education,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/education?topic=phishing,200,,text/html; charset=utf-8,Observed GET; follow redirects
+production,https://www.zorasafefoundation.org/brand/zorasafe-foundation-social1.png,200,,image/png,Observed GET; follow redirects
+production variant,http://zorasafefoundation.org/,308 → 308 → 200,https://zorasafefoundation.org/; https://www.zorasafefoundation.org/,,Observed GET
+production variant,https://zorasafefoundation.org/,308 → 200,https://www.zorasafefoundation.org/,,Observed GET
+production variant,http://www.zorasafefoundation.org/,308 → 200,https://www.zorasafefoundation.org/,,Observed GET
+production variant,https://www.zorasafe.com/,200,,,Observed GET
+production variant,https://www.zorasafe.com/sitemap.xml,200,,,Observed GET
+source,https://consumer.ftc.gov/articles/how-avoid-scam,403,,,FTC curl blocked; browser retrieval confirmed four guides; exact AI URL in FTC search results
+source,https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams,403,,,FTC curl blocked; browser retrieval confirmed four guides; exact AI URL in FTC search results
+source,https://consumer.ftc.gov/articles/protect-your-personal-information-hackers-and-scammers,403,,,FTC curl blocked; browser retrieval confirmed four guides; exact AI URL in FTC search results
+source,https://consumer.ftc.gov/articles/what-do-if-you-were-scammed,403,,,FTC curl blocked; browser retrieval confirmed four guides; exact AI URL in FTC search results
+source,https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes,403,,,FTC curl blocked; browser retrieval confirmed four guides; exact AI URL in FTC search results
+source,https://www.cisa.gov/audiences/small-and-medium-businesses/secure-your-business/require-multifactor-authentication,200,,,Direct GET succeeds
+source,https://www.consumerfinance.gov/ask-cfpb/what-are-some-classic-warning-signs-of-possible-fraud-and-scams-en-2094/,200,,,Direct GET succeeds
+source,https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing,200,,,Direct GET succeeds
+external,https://reportfraud.ftc.gov/,200,,,Direct GET succeeds
+external,https://www.identitytheft.gov/,200,,,Direct GET succeeds
+external,https://www.zorasafe.com/about,200,,,Direct GET succeeds
+existing local dev server,/,200,,,GET; production output independently tested from next build
+existing local dev server,/education,200,,,GET; production output independently tested from next build
+existing local dev server,/programs,200,,,GET; production output independently tested from next build
+existing local dev server,/research,200,,,GET; production output independently tested from next build
+existing local dev server,/about,200,,,GET; production output independently tested from next build
+existing local dev server,/leadership,200,,,GET; production output independently tested from next build
+existing local dev server,/partner,200,,,GET; production output independently tested from next build
+existing local dev server,/contact,200,,,GET; production output independently tested from next build
+existing local dev server,/support,200,,,GET; production output independently tested from next build
+existing local dev server,/accessibility,200,,,GET; production output independently tested from next build
+existing local dev server,/education/recognize-a-scam,200,,,GET; production output independently tested from next build
+existing local dev server,/education/verify-before-you-trust,200,,,GET; production output independently tested from next build
+existing local dev server,/education/ai-impersonation,200,,,GET; production output independently tested from next build
+existing local dev server,/education/suspicious-message,200,,,GET; production output independently tested from next build
+existing local dev server,/education/account-safety,200,,,GET; production output independently tested from next build
+existing local dev server,/robots.txt,200,,,GET; production output independently tested from next build
+existing local dev server,/sitemap.xml,200,,,GET; production output independently tested from next build
+existing local dev server,/audit-not-a-real-page-20261007,404,,,GET; production output independently tested from next build
+existing local dev server,/education/not-a-resource,404,,,GET; production output independently tested from next build
+existing local dev server,/icon-512.png,200,,,GET; production output independently tested from next build
+existing local dev server,/site.webmanifest,200,,,GET; production output independently tested from next build

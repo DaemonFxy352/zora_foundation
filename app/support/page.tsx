@@ -27,6 +27,7 @@ export default function SupportPage() {
   return (
     <InteriorPage>
       <PageHero
+        path="/support"
         eyebrow="Support Our Work"
         title="Help bring digital safety education where it’s needed most."
         intro="Support can help us develop useful resources, learn what works, and make practical education more accessible through community relationships."

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   InteriorPage,
   PageHero,
@@ -46,6 +47,7 @@ export default function ResearchPage() {
   return (
     <InteriorPage>
       <PageHero
+        path="/research"
         eyebrow="Research & Impact"
         title="Research that leads to real-world prevention."
         intro="Our research direction connects what communities experience with what educators can teach. The goal is practical prevention, informed by evidence and improved through feedback."
@@ -94,6 +96,18 @@ export default function ResearchPage() {
               There are no Foundation reports available yet. We intend to share
               plain-language findings alongside the questions asked, methods
               used, and limits of what the results can tell us.
+            </p>
+            <p>
+              For existing public guidance, read our{" "}
+              <Link href="/education/ai-impersonation">
+                AI impersonation guide
+              </Link>{" "}
+              and{" "}
+              <Link href="/education/verify-before-you-trust">
+                verification checklist
+              </Link>
+              . These educational resources draw on public sources; they are not
+              Foundation research findings.
             </p>
           </div>
         </div>

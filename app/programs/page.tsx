@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { InteriorPage, PageHero, CTASection } from "@/components/interior/Page";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata(
@@ -67,6 +68,7 @@ export default function ProgramsPage() {
   return (
     <InteriorPage>
       <PageHero
+        path="/programs"
         eyebrow="Programs & Initiatives"
         title="Bringing digital safety into communities."
         intro="Four program areas connect knowledge with practice. We are developing programs with community partners, beginning with the needs people encounter in daily life."
@@ -110,9 +112,13 @@ export default function ProgramsPage() {
             materials they can use in their own communities.
           </p>
           <p>
-            Our launch guides are available now. Facilitator materials and
-            structured training are in development; partners can help us
-            understand what would make them useful in practice.
+            Our{" "}
+            <Link href="/education#resources">
+              practical digital safety guides
+            </Link>{" "}
+            are available now. Facilitator materials and structured training are
+            in development; partners can help us understand what would make them
+            useful in practice.
           </p>
         </div>
       </section>

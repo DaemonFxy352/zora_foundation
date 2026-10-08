@@ -115,3 +115,25 @@ For this implementation, actual TypeScript, lint, and production build commands 
 Chromium launch in the implementation environment still fails with SIGABRT/EPERM. Browser screenshots, measured horizontal overflow, interactive keyboard/filter behavior, and rendered print pagination remain unverified; the responsive/print CSS and semantic HTML checks do not substitute for that QA. Next browser review should cover 1440, 1280, 768, 390, and 320 px, filter/reset/empty states, mobile navigation, and Letter/A4 print preview.
 
 The earlier dependency audit found zero production vulnerabilities and five development-only findings in Next’s ESLint dependency chain. No forced major downgrade was applied; rerun `npm audit` when updating dependencies.
+
+## SEO and publication governance
+
+The Phase 1 audit, complete route inventories, source/status observations and
+proposed whitepaper architecture are in `docs/seo/phase1-20261007/`.
+
+- `app/sitemap.ts` explicitly lists public content routes and derives resource
+  dates from `data/resources.ts`. Add approved new destinations there; do not
+  include utilities, drafts, filters or build-time dates.
+- `app/robots.ts` advertises the production sitemap. Builds with
+  `VERCEL_ENV=preview` emit page `noindex` and omit the robots sitemap line.
+  Confirm deployment headers separately; robots directives are not access control.
+- `lib/structured-data.ts` holds the public Organization identity, breadcrumb
+  builder and source-backed educational resource markup. Publisher attribution
+  is not a claim of individual authorship or expert review.
+- `components/StructuredData.tsx` safely serializes server-rendered JSON-LD.
+- After `npm run build`, run `npm run verify:build` and `npm run verify:seo`.
+  To verify preview policy locally: `VERCEL_ENV=preview npm run build`, then
+  `npm run verify:seo -- --preview`. Rebuild normally before production testing.
+- Do not publish report schemas or contributor credentials before the matching
+  work and approved author information exist. The publication specification is
+  documentation only; no report template or unpublished research is public.

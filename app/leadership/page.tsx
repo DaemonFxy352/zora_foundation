@@ -10,6 +10,7 @@ export default function LeadershipPage() {
   return (
     <InteriorPage>
       <PageHero
+        path="/leadership"
         eyebrow="Leadership"
         title="People behind a public-interest mission."
         intro="Our work is centered on practical education, community relationships, and research that helps prevent harm."

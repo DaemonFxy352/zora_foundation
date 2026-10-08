@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { StructuredData } from "@/components/StructuredData";
+import { organization } from "@/lib/structured-data";
 import "./globals.css";
 import "./interior.css";
 const inter = localFont({
@@ -29,7 +31,7 @@ export const metadata: Metadata = {
   },
   description,
   alternates: { canonical: siteUrl },
-  robots: { index: true, follow: true },
+  robots: { index: process.env.VERCEL_ENV !== "preview", follow: true },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48" },
@@ -73,6 +75,9 @@ export default function RootLayout({
         <a className="skip-link" href="#main-content">
           Skip to main content
         </a>
+        <StructuredData
+          data={{ "@context": "https://schema.org", ...organization }}
+        />
         <Header />
         {children}
         <Footer />

@@ -32,6 +32,7 @@ export default function PartnerPage() {
   return (
     <InteriorPage>
       <PageHero
+        path="/partner"
         eyebrow="Partner With Us"
         title="Building safer communities takes all of us."
         intro="We welcome conversations with community organizations, nonprofits, libraries, universities, researchers, government agencies, foundations, and responsible corporate partners."
