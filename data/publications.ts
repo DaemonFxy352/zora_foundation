@@ -78,6 +78,8 @@ export function validatePublication(p: Publication): void {
     (p.editorial.reviewers?.length || p.editorial.reviewedAt)
   )
     throw new Error("Review status conflicts with attribution");
+  if (p.reviewStatus !== "editorial-review")
+    throw new Error("Published work requires recorded editorial review");
   if (!p.history?.length) throw new Error("Publication needs version history");
   const versions = new Set<string>();
   for (const [i, entry] of p.history.entries()) {

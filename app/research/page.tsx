@@ -104,8 +104,9 @@ export default function ResearchPage() {
               </ul>
             ) : (
               <p>
-                There are no Foundation reports available yet. Research and
-                reports will appear here as they are published.
+                No Foundation research reports are published on this website.
+                Publications will be listed here only after their authorship,
+                evidence, methods, and editorial approval have been verified.
               </p>
             )}
             <h3>In development</h3>

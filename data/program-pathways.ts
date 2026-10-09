@@ -3,7 +3,7 @@ export const programPathways = [
   {
     id: "older-adult-workshops",
     title: "Older-adult and senior-center workshops",
-    audience: "Older adults, caregivers, and senior-center staff.",
+    audience: "Older adults, caregivers, senior-serving organizations, senior centers, and retirement communities.",
     objective:
       "Practice checking a bank or family request through an independent contact before acting.",
     format:
@@ -31,7 +31,7 @@ export const programPathways = [
     id: "school-education",
     title: "School, youth, and teen education",
     audience:
-      "Teachers, school support staff, and youth-serving organizations.",
+      "Children and teenagers, with teachers, school support staff, and youth-serving organizations.",
     objective:
       "Practice recognizing pressure, protecting personal information, and finding a trusted adult. Adapt examples to the learners’ stage of development.",
     format:
@@ -44,7 +44,7 @@ export const programPathways = [
   {
     id: "library-learning",
     title: "Library and community learning",
-    audience: "Libraries, neighborhood groups, and community organizations.",
+    audience: "Libraries, neighborhood groups, community and nonprofit organizations, and institutional partners.",
     objective:
       "Help participants identify what a suspicious message requests and choose a genuine contact route.",
     format:

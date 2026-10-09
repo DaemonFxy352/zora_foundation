@@ -1,3 +1,11 @@
+# Current owner decisions — Phase 4.6
+
+The owner has selected all eight preliminary directions. They authorize implementation, **not final page, specialist, legal or release approval**. [Implementation and exact remaining questions](phase46-owner-implementation.md) supersede the alternatives below. Three shared confirmations remain: verified leadership assignments/biographies, operational inbox ownership/delivery, and website-specific policies/data practices. Unknown photos are held; named partnerships and new reports are not published. No payment or tax-status claim is introduced.
+
+The following Phase 4.5 decision worksheet is retained as historical context; its “all pending” selection status and old quotations do not describe the current candidate. All 27 formal page approvals remain pending.
+
+---
+
 # Foundation owner decisions — Phase 4.5
 
 **Eight decisions; all pending.** Review against application commit `bf0d45a` ([preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app)). Documentation baseline: `32d3d6e`. These are shared organizational facts, not eight additional page approvals. One answer per ID applies across the listed pages; the 27 current-hash editorial approvals still require authorized reviewers.

@@ -56,3 +56,14 @@ assert.ok(!/handouts|workshops|internal|test-report/.test(sitemap));
 console.log(
   `PASS release isolation: ${handouts.length} handouts and ${workshops.length} workshop drafts absent from routes, navigation, public assets and sitemap.`,
 );
+
+// Held imagery and unapproved policy drafts must not enter public build output.
+const heldNames = files("internal/held-assets").map((f) => f.split("/").at(-1));
+for (const file of assets) {
+  assert.ok(!heldNames.includes(file.split("/").at(-1)), `${file}: held asset exposed`);
+  if (/\.(?:js|json|html|rsc|txt|map|body|md)$/.test(file)) {
+    const text = readFileSync(file, "utf8");
+    assert.ok(!/PHASE46_UNAPPROVED_POLICY|internal\/held-assets|images\/(?:hero|community-workshop|research)\.webp/.test(text), `${file}: held material exposed`);
+  }
+}
+console.log("PASS held image and policy isolation.");

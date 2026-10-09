@@ -93,9 +93,9 @@ export default function AboutPage() {
         <div className="container section-intro">
           <h2>A public-interest mission.</h2>
           <p>
-            The Foundation may work with ZoraSafe, Inc. and other technology
-            partners. Its public-interest mission is broader than any single
-            technology or company.
+            Our public-interest mission focuses on practical digital safety
+              education. We welcome proposals for future collaboration from
+              organizations that share that purpose.
           </p>
           <Link className="text-link" href="/leadership">
             Leadership information

@@ -250,6 +250,10 @@ assert.throws(
   /version history/,
 );
 assert.throws(
+  () => publishedPublications([{ ...sample, reviewStatus: "not-recorded", editorial: { authors: sample.editorial.authors } }]),
+  /requires recorded editorial review/,
+);
+assert.throws(
   () => validatePublication({ ...sample, reviewStatus: "not-recorded" }),
   /conflicts/,
 );

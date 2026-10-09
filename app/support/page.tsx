@@ -37,7 +37,7 @@ export default function SupportPage() {
           <div className="section-intro">
             <h2>What support can make possible.</h2>
             <p>
-              These are areas of work that support can help fund. Specific
+              These are areas of work we are developing. Possible forms of support, specific
               opportunities and intended uses can be discussed with the
               Foundation.
             </p>
@@ -53,8 +53,10 @@ export default function SupportPage() {
           </div>
           <div className="reading-copy">
             <p>
-              Online giving is not available on this site. To discuss possible
-              support and confirm current arrangements, contact the Foundation.
+              Interested in supporting our work? Contact us to discuss supporting
+              Foundation education, research, and community initiatives. This is
+              a support inquiry, not a donation transaction; this site does not
+              accept payments.
             </p>
             <p>
               Tell us which area of work interests you and whether you are

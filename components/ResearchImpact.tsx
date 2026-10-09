@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Arrow, Point } from "./Brand";
-import { HomeImage } from "./HomeImage";
 const steps = [
   [
     "Study",
@@ -22,7 +21,7 @@ export function ResearchImpact() {
       className="section wash"
       aria-labelledby="research-heading"
     >
-      <div className="container two-column research-layout">
+      <div className="container research-layout research-text">
         <div>
           <p className="eyebrow">Research & impact</p>
           <h2 id="research-heading">
@@ -47,9 +46,6 @@ export function ResearchImpact() {
           <Link className="text-link" href="/research">
             Explore Research <Arrow />
           </Link>
-        </div>
-        <div className="research-photo photo">
-          <HomeImage name="research" />
         </div>
       </div>
     </section>

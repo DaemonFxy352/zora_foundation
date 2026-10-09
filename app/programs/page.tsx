@@ -72,7 +72,7 @@ export default function ProgramsPage() {
         path="/programs"
         eyebrow="Programs & Initiatives"
         title="Bringing digital safety into communities."
-        intro="Four program areas connect knowledge with practice. These programs are in development, beginning with the needs people encounter in daily life. We welcome prospective hosts; there is no public delivery schedule."
+        intro="We are developing practical digital safety education for families, schools, older adults, and community organizations. We welcome inquiries about pilot workshops, curriculum development, and future hosting opportunities. Workshops are not currently scheduled or bookable."
       />
       <section className="interior-section">
         <div className="container program-details">
@@ -192,8 +192,8 @@ export default function ProgramsPage() {
       </section>
       <CTASection
         title="Start with your community’s needs."
-        href="/partner"
-        label="Partner With Us"
+        href="/contact#training"
+        label="Discuss a Future Workshop"
       >
         <p>
           Tell us who you serve, what people are asking, and what a useful

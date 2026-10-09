@@ -3,7 +3,7 @@ import { InteriorPage, PageHero } from "@/components/interior/Page";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata(
   "Contact",
-  "Contact the ZoraSafe Foundation about general questions, partnerships, community training, and research collaboration.",
+  "Contact the ZoraSafe Foundation about educational resources, developing workshops, partnerships, research, support, or editorial corrections.",
   "/contact",
 );
 const inquiries = [
@@ -24,9 +24,30 @@ const inquiries = [
   {
     id: "training",
     title: "Training & community program inquiries",
-    text: "Share your location, audience, learning goals, accessibility needs, and potential timing. We are developing training pathways and can discuss what may be possible.",
+    text: "Tell us your audience, learning goals, host setting, and accessibility needs. We welcome pilot and curriculum-development inquiries; sending an inquiry does not reserve a workshop or confirm delivery.",
     subject: "Community training inquiry",
     label: "Discuss Community Training",
+  },
+  {
+    id: "schools-families",
+    title: "School & parent education inquiries",
+    text: "Discuss future learning for children, teenagers, parents, or educators. Describe the age group and learning goals without sending children’s names or personal incident details.",
+    subject: "School and parent education inquiry",
+    label: "Discuss School or Family Education",
+  },
+  {
+    id: "support",
+    title: "Support inquiries",
+    text: "Interested in supporting Foundation education, research, or community initiatives? Start a conversation about possible support. This is not a donation transaction; do not send payment details.",
+    subject: "Supporting the Foundation",
+    label: "Discuss Supporting the Foundation",
+  },
+  {
+    id: "corrections",
+    title: "Editorial corrections",
+    text: "Include the page address, the wording you are questioning, and a public source if available. Do not include private evidence or information about other people.",
+    subject: "Editorial correction",
+    label: "Send an Editorial Correction",
   },
   {
     id: "research",
@@ -76,7 +97,9 @@ export default function ContactPage() {
           <div className="contact-note reading-copy">
             <p>
               These links open your email app. You can also copy the address
-              above into the email service you use.
+              above into the email service you use. The website does not submit
+              or save your message, and opening a link does not send an email.
+              Include only the information needed to explain your inquiry.
             </p>
             <p>
               Please do not send passwords, one-time codes, account numbers, or

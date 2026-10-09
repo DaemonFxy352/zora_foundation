@@ -124,7 +124,7 @@ test("keyboard navigation, mobile menu and focus", async ({ page }) => {
     .click();
   await expect(page).toHaveURL(/\/education$/);
 });
-test("pathway inquiry links and local contact flows", async ({ page }) => {
+test("pathway inquiry links and local contact flows", async ({ page }, info) => {
   await page.goto("/programs#community-pathways");
   await expect(page.locator("#community-pathways")).toContainText(
     "not scheduled or bookable",
@@ -139,6 +139,25 @@ test("pathway inquiry links and local contact flows", async ({ page }) => {
     "href",
     /hello@zorasafefoundation.org/,
   );
+  for (const id of ["general", "training", "schools-families", "partnerships", "research", "support", "corrections"]) {
+    const link = page.locator(`#${id} a`);
+    await expect(link).toHaveAttribute("href", /^mailto:hello@zorasafefoundation\.org\?subject=.+/);
+    await link.focus();
+    await expect(link).toBeFocused();
+  }
+  await expect(page.locator("main form")).toHaveCount(0);
+  await expect(page.locator("main")).toContainText("opening a link does not send an email");
+  for (const kind of ["Privacy", "Terms"]) {
+    await expect(page.getByRole("link", { name: `${kind} inquiry`, exact: true })).toHaveAttribute(
+      "href", `mailto:hello@zorasafefoundation.org?subject=${kind}%20inquiry`,
+    );
+  }
+  await page.goto("/support");
+  await expect(page.locator("main")).toContainText("not a donation transaction");
+  await expect(page.getByRole("link", { name: "Discuss Supporting the Foundation", exact: true })).toHaveAttribute(
+    "href", "mailto:hello@zorasafefoundation.org?subject=Supporting%20the%20Foundation",
+  );
+  await page.screenshot({ path: info.outputPath("support-inquiry.png"), fullPage: true });
 });
 test("reflow at 200 percent zoom equivalent and 320 CSS pixels", async ({
   page,
@@ -188,6 +207,12 @@ test("draft and internal URLs return real 404s", async ({ request }) => {
     "/data/workshop-drafts.json",
     "/docs/training/teen-digital-safety.md",
     "/research/unpublished-example",
+    "/images/hero.webp",
+    "/images/community-workshop.webp",
+    "/images/research.webp",
+    "/internal/held-assets/hero.webp",
+    "/internal/legal/privacy-draft.md",
+    "/internal/legal/terms-draft.md",
   ])
     expect((await request.get(path)).status()).toBe(404);
 });

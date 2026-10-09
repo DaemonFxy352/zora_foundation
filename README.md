@@ -98,15 +98,17 @@ Leadership names and biographies have not been supplied. Research reports are no
 
 ## Foundation identity and assets
 
+**Phase 4.6 asset status:** three photos and two unused social exports are held outside public assets pending rights evidence. The homepage uses the recorded approved identity and text. See [asset-rights inventory](docs/release/phase4-20261008/asset-rights.md). Earlier implementation descriptions below are historical where they mention photos.
+
 The final **ZoraSafe Foundation Identity Board, version 1.0 (October 2026)** is authoritative over the older commercial `_ds` bundle. The homepage follows `ZoraSafe Foundation Homepage v5.dc.html`. The commercial fox PNGs in the original design ZIP were excluded. `components/Brand.tsx` uses the Foundation Guide Point geometry, Inter wordmark, and tracked descriptor; the footer uses its approved reversed version.
 
 - `public/brand/guide-point.svg`: Guide Point artwork.
-- `public/brand/zorasafe-foundation-social1.png`: approved final 1200×630 social preview. All page-level metadata reuses its absolute production URL. Older unused social assets are retained.
+- `public/brand/zorasafe-foundation-social1.png`: approved final 1200×630 social preview. All page-level metadata reuses its absolute production URL. Older unused social assets are now held under `internal/held-assets/`.
 - `public/favicon.svg`, `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`, `icon-maskable-512.png`, and `site.webmanifest`: approved favicon package served at its root URLs. `metadata.icons`/`metadata.manifest` provide one set of links. Theme color remains `#0F2A44`.
 - `public/fonts/`: local Inter variable font and SIL Open Font License.
-- `public/images/`: three WebP photos recovered from the supplied design export.
+- `internal/held-assets/`: three WebP photos recovered from the supplied design export; not publicly served.
 
-Replace homepage imagery in `public/images/hero.webp`, `community-workshop.webp`, or `research.webp`, then update alt text and object position in `components/HomeImage.tsx`. Next Image handles dimensions, blur placeholders, and responsive optimization. Review the desktop/tablet/mobile crops; the supplied community photo is only 478×640. No new imagery was added for the interior pages.
+Restoring photography requires verified rights and context plus a separately reviewed rendering change. `HomeImage.tsx` was removed in Phase 4.6; no unverified photo is imported.
 
 ## Verification and limitations
 

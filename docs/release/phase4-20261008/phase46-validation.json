@@ -1,0 +1,234 @@
+{
+  "phase": "4.6",
+  "environment": "local macOS; Node 24; production build",
+  "baseline": "c7bb588e18247cf30587033ef6c4a9efeeceb01c",
+  "browser": {
+    "passed": 46,
+    "expectedSkipped": 2,
+    "failed": 0,
+    "durationSeconds": 49.1,
+    "report": "playwright-report/index.html",
+    "artifacts": [
+      {
+        "path": "test-results/release-pathway-inquiry-links-and-local-contact-flows-desktop/support-inquiry.png",
+        "bytes": 286966,
+        "sha256": "826c40f15fe66c71609c5e05a35ce1ab595eeaed3353618d40d32b4b2d57782c"
+      },
+      {
+        "path": "test-results/release-pathway-inquiry-links-and-local-contact-flows-firefox/support-inquiry.png",
+        "bytes": 312737,
+        "sha256": "0822761287d4b2abccbd6c5d529f1998bb561f796ba9bc2e11ce90d2eb748086"
+      },
+      {
+        "path": "test-results/release-pathway-inquiry-links-and-local-contact-flows-mobile/support-inquiry.png",
+        "bytes": 933792,
+        "sha256": "55db21018ac1f1472108225b0de06e79f97a254e9da4b4e5c016d2d9121407be"
+      },
+      {
+        "path": "test-results/release-print-styles-and-Letter-PDF-artifact-desktop/teen-guide-letter.pdf",
+        "bytes": 344650,
+        "sha256": "cc59df2eb5719a0d94bc3ee67b5c054c5a092f9fa65f56c51e800d85506cbc25"
+      },
+      {
+        "path": "test-results/release-readable-and-navig-19e0c-ion-internet-safety-parents-desktop/-education-internet-safety-parents.png",
+        "bytes": 847761,
+        "sha256": "f488bf8ed93eb88fdbc8a6065a1db23845a24085d75c595ee7d5a233b2676081"
+      },
+      {
+        "path": "test-results/release-readable-and-navig-19e0c-ion-internet-safety-parents-firefox/-education-internet-safety-parents.png",
+        "bytes": 931507,
+        "sha256": "5b5292fd78831bde55d3d7602aab1d0896eaf7f7063880c34e8c9b7720ed3354"
+      },
+      {
+        "path": "test-results/release-readable-and-navig-19e0c-ion-internet-safety-parents-mobile/-education-internet-safety-parents.png",
+        "bytes": 2889292,
+        "sha256": "057c5b40f7dadee51feaaaa985a44139760f66d75ab65aeba1c4c86d60a681ad"
+      },
+      {
+        "path": "test-results/release-readable-and-navig-5a732--online-safety-older-adults-desktop/-education-online-safety-older-adults.png",
+        "bytes": 797657,
+        "sha256": "cf35ef5bf83306f21acbe1fc742096708f1b3bd06daca9025b04b1cf56c8cc7c"
+      },
+      {
+        "path": "test-results/release-readable-and-navig-5a732--online-safety-older-adults-firefox/-education-online-safety-older-adults.png",
+        "bytes": 874947,
+        "sha256": "0b468db8b042de6ed1863dcffe50918d134b68f219ec739fe521e5508c5b6a81"
+      },
+      {
+        "path": "test-results/release-readable-and-navig-5a732--online-safety-older-adults-mobile/-education-online-safety-older-adults.png",
+        "bytes": 2745081,
+        "sha256": "a8b27938ebcbb7bb8006429fa60dff286035989c66fcb6a44528aa8e35ce194d"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable--desktop/-.png",
+        "bytes": 860881,
+        "sha256": "0a588d85e4f149b2d871c36f02efad05431e2f772084ca7ef9814f334cdd4028"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable--firefox/-.png",
+        "bytes": 819075,
+        "sha256": "e3f65b3a8b828665d53f6d5384fb1b8b0dd705ca3cf81013c1a64f7070346481"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable--mobile/-.png",
+        "bytes": 2569318,
+        "sha256": "aae5643af88aeaa40c9d09feb56da781695d79d11e35a0e0ac05fda6876cb7e8"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-contact-desktop/-contact.png",
+        "bytes": 378072,
+        "sha256": "3d26c4324009e457c49e26704c21728bdf490a54ed819e3f25b54daf7e1312df"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-contact-firefox/-contact.png",
+        "bytes": 413888,
+        "sha256": "03996524af1099afc5a070c5d7cf2a797c8daffdd36228d891cf6588c162f99a"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-contact-mobile/-contact.png",
+        "bytes": 1397335,
+        "sha256": "8c187317ef4df7ac146d41d93bda61f70fb8525475865752d886850834ae5054"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-education-desktop/-education.png",
+        "bytes": 1323248,
+        "sha256": "aa5b35e0133d8ee0e026f4841cd29caa38a8bf7106da349260e9889af87fb943"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-education-firefox/-education.png",
+        "bytes": 1436091,
+        "sha256": "93fb54683a6ac376d4555cbc5923da43b84790ef99efd8f1d8e67883ed433443"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-education-mobile/-education.png",
+        "bytes": 4503429,
+        "sha256": "934f4af1fb01a136a314571ac398a06aeb31a061b65e78785ad92e7572cc01d7"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-education-payment-redirection-desktop/-education-payment-redirection.png",
+        "bytes": 826792,
+        "sha256": "4638c9b30b9848b38f3a0078ac95582babd3af0b8d1fd4e1e68b7a8ea33a6521"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-education-payment-redirection-firefox/-education-payment-redirection.png",
+        "bytes": 906529,
+        "sha256": "28f5432f8f6b368b412e61014f24094d54a31109cac8f64c08779797d14def62"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-education-payment-redirection-mobile/-education-payment-redirection.png",
+        "bytes": 2834338,
+        "sha256": "2b00f07966f46f420d60ed25778c686f739698c56280edc31b6c3254b58684f0"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-education-teen-online-safety-desktop/-education-teen-online-safety.png",
+        "bytes": 892169,
+        "sha256": "5e8c6556dcdfa2477d8964fe6e65d551656798f6ad7a798047a928ae9e8f4654"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-education-teen-online-safety-firefox/-education-teen-online-safety.png",
+        "bytes": 979282,
+        "sha256": "35e45c1a54bda7fbad395cdafd15cb37a72bcfbb6d09aa170a03c7d6a4651962"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-education-teen-online-safety-mobile/-education-teen-online-safety.png",
+        "bytes": 3060171,
+        "sha256": "d56e4124f81b3eec63b64af2e52fc1754821e9965adf310e20b1705c0ec0be8f"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-partner-desktop/-partner.png",
+        "bytes": 360290,
+        "sha256": "66c38daff49fea04b58fca14f5cacde683264fd15bf5bacd8c070f71f0346995"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-partner-firefox/-partner.png",
+        "bytes": 391077,
+        "sha256": "fb54238ae49dd169e685af580c4a770422633faca4f3c5fe9d295e78be55be19"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-partner-mobile/-partner.png",
+        "bytes": 1234294,
+        "sha256": "c1dcdb0f39800109dc94e27ddd924edd5802f48d8d8edac82b7a6b7d186e6639"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-programs-desktop/-programs.png",
+        "bytes": 1088941,
+        "sha256": "163e12e2491ac8831e0a0f7f4ccbe74f43436d2111f9d3e80190a9a19e64aac3"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-programs-firefox/-programs.png",
+        "bytes": 1169903,
+        "sha256": "d1d00fce93652301332946eddd26527d97e0d5a673e7e93544d69115e2af56ef"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-programs-mobile/-programs.png",
+        "bytes": 3799372,
+        "sha256": "706af823a9fc715aa18f270288ab816116c068a5c3ae9352df2465aad5d245e1"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-research-desktop/-research.png",
+        "bytes": 435131,
+        "sha256": "13454e2054aa9c0f8e83882a4891712cce61f2c184fcc9845b9495abc4be0c76"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-research-firefox/-research.png",
+        "bytes": 481631,
+        "sha256": "410e15520a87f7432090a5348b3da321721ed538bd6404170379c73131656b74"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-research-mobile/-research.png",
+        "bytes": 1488945,
+        "sha256": "8ea2b956968618ea5919097facfd81514462afc20a63e013afc519fd7ba8f6dd"
+      },
+      {
+        "path": "test-results/release-reflow-at-200-perc-d0063-uivalent-and-320-CSS-pixels-desktop/education-reflow-320.png",
+        "bytes": 1215483,
+        "sha256": "b9bf7b4cef823bb9663cb81924bf95144cc2c73486662ab0663fb8f23d46386e"
+      },
+      {
+        "path": "test-results/release-reflow-at-200-perc-d0063-uivalent-and-320-CSS-pixels-desktop/education-reflow-640.png",
+        "bytes": 1245611,
+        "sha256": "87fc4885be6543e073db6ca7449d67f95b8eded2a75974713781c5eefc3b4084"
+      },
+      {
+        "path": "test-results/release-reflow-at-200-perc-d0063-uivalent-and-320-CSS-pixels-firefox/education-reflow-320.png",
+        "bytes": 1493786,
+        "sha256": "1ccc31a64326d9b04fd1430cb8889969581006fe4b7a76796ea65da5e8a677fe"
+      },
+      {
+        "path": "test-results/release-reflow-at-200-perc-d0063-uivalent-and-320-CSS-pixels-firefox/education-reflow-640.png",
+        "bytes": 1376382,
+        "sha256": "2e44d2c30eec280d9dfcc72c86a53733a9474b43cee612aebdb927fcae24ef9c"
+      },
+      {
+        "path": "test-results/release-reflow-at-200-perc-d0063-uivalent-and-320-CSS-pixels-mobile/education-reflow-320.png",
+        "bytes": 4638680,
+        "sha256": "3b92421dbda0f4e8e645fa3ff967610eb924d72f391bfa158df8d1a9db1b989d"
+      },
+      {
+        "path": "test-results/release-reflow-at-200-perc-d0063-uivalent-and-320-CSS-pixels-mobile/education-reflow-640.png",
+        "bytes": 4234657,
+        "sha256": "c43a193f3030fee35ed02138e73929fa51ebff0dad0008c8ba191c3917b9685d"
+      }
+    ]
+  },
+  "checksPassed": [
+    "build",
+    "lint",
+    "typecheck",
+    "verify:content",
+    "verify:materials",
+    "verify:build",
+    "verify:seo",
+    "verify:routes",
+    "verify:accessibility",
+    "verify:release",
+    "verify:review"
+  ],
+  "ci": "Not run for Phase 4.6; push held. Phase 4.4 CI does not validate these changes.",
+  "approval": "All 27 public items pending; no human acceptance inferred.",
+  "editorialGate": {
+    "exitCode": 1,
+    "pendingPublicEntries": 27,
+    "result": "Expected NO-GO; no approval bypass"
+  }
+}

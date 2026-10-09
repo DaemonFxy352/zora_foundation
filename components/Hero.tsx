@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Arrow, GuidePoint } from "./Brand";
-import { HomeImage } from "./HomeImage";
 
 export function Hero() {
   return (
@@ -22,12 +21,9 @@ export function Hero() {
             </Link>
           </div>
         </div>
-        <div className="hero-visual">
+        <div className="hero-visual hero-identity" aria-hidden="true">
           <div className="hero-mark">
             <GuidePoint />
-          </div>
-          <div className="hero-photo">
-            <HomeImage name="hero" />
           </div>
         </div>
       </div>

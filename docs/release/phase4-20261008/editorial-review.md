@@ -2,6 +2,8 @@
 
 **No Foundation approval or professional review is asserted.**
 
+**Phase 4.6 current candidate:** [eight directions implemented/held and exact owner confirmations](phase46-owner-implementation.md). Organizational cards and hashes below reflect the local candidate; Phase 4.4 preview/artifact links are historical and do not show Phase 4.6 changes. All 27 approvals remain pending. Use the current local build for acceptance.
+
 Phase 4.5: use the [eight shared owner decisions](owner-decisions.md) and focused [child/teen](child-teen-review.md) and [fraud/recovery](fraud-recovery-review.md) packets to resolve repeated questions. These do not replace the item records below.
 
 `editorial-manifest.json` inventories 37 review items: 17 public educational guides, ten public organizational pages, seven private handouts and three private curricula. It records audience, source URLs, sensitive-topic flags, required expertise, priority, source location, content hash and changes relative to main commit `5ba89820ddcf57351e467223fda43b9a4d4a0c49`. That Git baseline is verified; the separately investigated production deployment is b092812 (see phase42-deployment-safety.md). “New” means new against that baseline, not newly published.
@@ -21,7 +23,7 @@ Source hashes cover composed resource records, handout/curriculum records, and o
 
 ## Phase 4.4 substantive review results
 
-**27 complete public items read; 27 improved. All approvals remain pending.** This workbook now records implemented corrections, not proposed work alone. [Machine-readable findings](phase44-editorial-results.json) associate recommendations with the current manifest hashes. Recommendations are AI-assisted editorial judgments, not authorization or verified specialist review. The ten internal drafts remain unpublished.
+**27 complete public items read; 27 improved. All approvals remain pending.** This workbook now records implemented corrections, not proposed work alone. [Machine-readable findings](phase44-editorial-results.json) associate recommendations with the historical Phase 4.4 hashes. Recommendations are AI-assisted editorial judgments, not authorization or verified specialist review. The ten internal drafts remain unpublished.
 
 The full-text pass covered intros, sections, warning signs, actions, response guidance, examples, sources and related links for all 17 composed guides, plus all ten organizational pages and imported homepage/program copy. Across these items, titles and summaries retain their search intent; fictional examples remain labeled; jargon was reduced; prevention, warning signs and response remain distinct. Source checks support the corrections, while readability, assistive-technology acceptance and specialist judgments remain human gates. No efficacy statistics, new program, new public resource or reviewer identity was added.
 
@@ -37,7 +39,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:recognize-a-scam` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/recognize-a-scam` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/recognize-a-scam).
+**URL:** `/education/recognize-a-scam` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/recognize-a-scam).
 
 **Audience:** Teenagers, Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -69,7 +71,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:verify-before-you-trust` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/verify-before-you-trust` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/verify-before-you-trust).
+**URL:** `/education/verify-before-you-trust` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/verify-before-you-trust).
 
 **Audience:** Teenagers, Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -101,7 +103,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:ai-impersonation` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/ai-impersonation` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/ai-impersonation).
+**URL:** `/education/ai-impersonation` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/ai-impersonation).
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators. **Type:** educational resource.
 
@@ -133,7 +135,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:suspicious-message` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/suspicious-message` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/suspicious-message).
+**URL:** `/education/suspicious-message` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/suspicious-message).
 
 **Audience:** Teenagers, Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -165,7 +167,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:account-safety` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/account-safety` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/account-safety).
+**URL:** `/education/account-safety` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/account-safety).
 
 **Audience:** Teenagers, Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -197,7 +199,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:human-targeted-attacks` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/human-targeted-attacks` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/human-targeted-attacks).
+**URL:** `/education/human-targeted-attacks` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/human-targeted-attacks).
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -229,7 +231,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:after-a-scam` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/after-a-scam` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/after-a-scam).
+**URL:** `/education/after-a-scam` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/after-a-scam).
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -261,7 +263,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:qr-link-safety` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/qr-link-safety` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/qr-link-safety).
+**URL:** `/education/qr-link-safety` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/qr-link-safety).
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -293,7 +295,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:phone-impersonation` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/phone-impersonation` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/phone-impersonation).
+**URL:** `/education/phone-impersonation` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/phone-impersonation).
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -325,7 +327,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:government-impersonation` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/government-impersonation` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/government-impersonation).
+**URL:** `/education/government-impersonation` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/government-impersonation).
 
 **Audience:** Older adults, Caregivers, Libraries, senior centers & community organizations, People building digital confidence. **Type:** educational resource.
 
@@ -357,7 +359,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:payment-redirection` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/payment-redirection` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/payment-redirection).
+**URL:** `/education/payment-redirection` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/payment-redirection).
 
 **Audience:** Libraries, senior centers & community organizations, Educators & facilitators, Caregivers, Older adults. **Type:** educational resource.
 
@@ -391,7 +393,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:online-safety-older-adults` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/online-safety-older-adults` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/online-safety-older-adults).
+**URL:** `/education/online-safety-older-adults` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/online-safety-older-adults).
 
 **Audience:** Older adults, Caregivers, People building digital confidence, Libraries, senior centers & community organizations. **Type:** educational resource.
 
@@ -425,7 +427,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:family-emergency-scams` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/family-emergency-scams` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/family-emergency-scams).
+**URL:** `/education/family-emergency-scams` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/family-emergency-scams).
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -457,7 +459,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:internet-safety-parents` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/internet-safety-parents` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/internet-safety-parents).
+**URL:** `/education/internet-safety-parents` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/internet-safety-parents).
 
 **Audience:** Parents & families, Caregivers, Educators & facilitators. **Type:** educational resource.
 
@@ -491,7 +493,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:online-safety-kids` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/online-safety-kids` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/online-safety-kids).
+**URL:** `/education/online-safety-kids` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/online-safety-kids).
 
 **Audience:** Children with a trusted adult, Parents & families, Educators & facilitators. **Type:** educational resource.
 
@@ -523,7 +525,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:teen-online-safety` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/teen-online-safety` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/teen-online-safety).
+**URL:** `/education/teen-online-safety` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/teen-online-safety).
 
 **Audience:** Teenagers, Parents & families, Educators & facilitators. **Type:** educational resource.
 
@@ -555,7 +557,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:gaming-scams` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/gaming-scams` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/gaming-scams).
+**URL:** `/education/gaming-scams` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/gaming-scams).
 
 **Audience:** Teenagers, Parents & families, Educators & facilitators. **Type:** educational resource.
 
@@ -589,7 +591,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/education` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education).
+**URL:** `/education` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -597,13 +599,13 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Full-content finding:** Training CTAs and descriptions implied delivery and existing partners.
 
-**Corrections implemented:** Changed CTA to discussion and described prospective hosts/planned sessions; retained 17 discoverable guides and honest format availability.
+**Corrections implemented (Phase 4.6):** Available public guides and developing training pathways retained; shared footer relationship neutralized.
 
-**Remaining factual/safety questions:** Owner: confirm planning capacity and inquiry handling. Human reviewers must accept filter/search usability and reading level.
+**Remaining factual/safety questions:** Manual resource-discovery acceptance and specialist guide review remain; assign responder for training inquiries.
 
 **Recommendation:** conditional approval — actual approval remains pending.
 
-**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
+**Sources:** Owner Phase 4.6 directions; inspected application/data and README authorization records; phase46-owner-implementation.md. Missing operational/legal facts remain explicitly unresolved.
 
 **Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
@@ -611,7 +613,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Candidate content hash (not approval):** `66d10a799bd45261916e46110e195b576c39211622d5e10e283f7c066c096aa0`
+**Candidate content hash (not approval):** `e1baa8912a8e6704b907b204ddf247a0a0f78912cfb868f2fe119cae0bf29d73`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -621,7 +623,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/programs` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/programs` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/programs).
+**URL:** `/programs` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/programs).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -629,13 +631,13 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Full-content finding:** Some present-tense claims conflicted with development status.
 
-**Corrections implemented:** Changed “offered”/partner delivery language to planned work; clarified no public schedule and that public guides do not establish a staffed training program.
+**Corrections implemented (Phase 4.6):** Explicit development-only pilot/curriculum/hosting inquiries, direct workshop inquiry CTA, and retirement/nonprofit/institutional audiences within existing pathways.
 
-**Remaining factual/safety questions:** Owner: confirm available staffing, host responsibilities and actual planning status before making commitments.
+**Remaining factual/safety questions:** Assign inquiry responsibility; confirm feasibility and safeguarding before any pilot commitment. Owner has authorized development inquiries, not workshop delivery.
 
 **Recommendation:** conditional approval — actual approval remains pending.
 
-**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
+**Sources:** Owner Phase 4.6 directions; inspected application/data and README authorization records; phase46-owner-implementation.md. Missing operational/legal facts remain explicitly unresolved.
 
 **Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
@@ -643,7 +645,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Candidate content hash (not approval):** `2287871735463b0335bee22ec100b08602fc86f50ab9c0e1ce84f948fd0f9306`
+**Candidate content hash (not approval):** `4330f2472ebdd5a834c2b6c1329ed71e9b756dbdcc0fb11e4a6bacc647da3826`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -653,7 +655,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/partner` · **State:** PENDING · **Priority:** P1: review before release
 
-**URL:** `/partner` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/partner).
+**URL:** `/partner` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/partner).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -661,13 +663,13 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Full-content finding:** Collaboration categories could be mistaken for existing relationships; inquiry lacked a privacy boundary.
 
-**Corrections implemented:** Explicitly described future collaboration invitations and excluded participant records/personal incident evidence.
+**Corrections implemented (Phase 4.6):** Prospective collaboration wording retained; shared footer named commercial relationship removed. Citations do not imply partnerships.
 
-**Remaining factual/safety questions:** Owner: confirm capacity, prospective-partner handling and any institutional relationships before naming them.
+**Remaining factual/safety questions:** Assign inquiry owner and policy responsibility. Evidence is needed only if an existing named relationship is proposed for publication.
 
 **Recommendation:** conditional approval — actual approval remains pending.
 
-**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
+**Sources:** Owner Phase 4.6 directions; inspected application/data and README authorization records; phase46-owner-implementation.md. Missing operational/legal facts remain explicitly unresolved.
 
 **Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
@@ -675,7 +677,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist.
 
-**Candidate content hash (not approval):** `f2830398aef41f3fe964122273362d0dc9cb5efd64bd847c15ff4213f7d0c38a`
+**Candidate content hash (not approval):** `f5683aaa293aaa49a413be596961a2e80d28e4eb2dbcf38a34e34ddf7819768a`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -685,7 +687,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/contact` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/contact` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/contact).
+**URL:** `/contact` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/contact).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -693,13 +695,13 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Full-content finding:** Inbox exclusions did not explicitly cover intimate images and offered no immediate alternative routes.
 
-**Corrections implemented:** Excluded intimate images and exploitation reporting; added bank/payment response, after-scam guide, CyberTipline and emergency directions without waiting for email; training CTA now requests discussion.
+**Corrections implemented (Phase 4.6):** Added school/parent, support and correction subjects; explained that mailto does not submit/save/send; kept urgent external referrals and data-minimization boundaries.
 
-**Remaining factual/safety questions:** Owner/safeguarding reviewer: confirm monitoring, escalation and privacy practices. This is not an emergency or exploitation-report intake service.
+**Remaining factual/safety questions:** Verify mailbox delivery/provider, accountable primary/backup, review frequency and sensitive-message/correction escalation. No MX answer was returned; no delivery claim is made.
 
 **Recommendation:** conditional approval — actual approval remains pending.
 
-**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
+**Sources:** Owner Phase 4.6 directions; inspected application/data and README authorization records; phase46-owner-implementation.md. Missing operational/legal facts remain explicitly unresolved.
 
 **Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
@@ -707,7 +709,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Candidate content hash (not approval):** `8569600f7e1d0f74dbeec53b4ff0d548132d61b69db9c05169e9f6c62297dd4c`
+**Candidate content hash (not approval):** `71fe7d6e11bdd11a726723aca504d854d5125003a0cb2a5dcc7b0c646c114582`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -719,7 +721,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/` · **State:** PENDING · **Priority:** P1: review before release
 
-**URL:** `/` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/).
+**URL:** `/` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -727,13 +729,13 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Full-content finding:** Homepage implied delivered programs, active partnerships, evaluated outcomes and an unsupported population claim.
 
-**Corrections implemented:** Reframed hero, work, program, research and partnership copy as available guides plus development plans; removed “most people” claim; aligned search/social description and footer; labeled privacy/terms links as inquiries.
+**Corrections implemented (Phase 4.6):** Held unverified photos and adapted text/identity layout; invited pilot/future workshop inquiries; removed named commercial relationship from shared footer.
 
-**Remaining factual/safety questions:** Owner must confirm actual organizational identity, current capacity, relationship disclosures and image provenance/permissions. Copy no longer claims delivered programs or measured outcomes.
+**Remaining factual/safety questions:** Confirm leadership, operational inbox and policies; unknown photos are no longer served. Retained identity has repository approval evidence; see asset-rights.md.
 
 **Recommendation:** conditional approval — actual approval remains pending.
 
-**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
+**Sources:** Owner Phase 4.6 directions; inspected application/data and README authorization records; phase46-owner-implementation.md. Missing operational/legal facts remain explicitly unresolved.
 
 **Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
@@ -741,7 +743,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist.
 
-**Candidate content hash (not approval):** `5670d8c07afd3031717106f2fb45c7f3ae4b45f1fb7b0efe1f838c911cee7038`
+**Candidate content hash (not approval):** `765e415d67f90a45c79148b1ae2458ea70753d8b8e2b3dce31c8594ff05f8b6c`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -751,7 +753,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/research` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/research` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/research).
+**URL:** `/research` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/research).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -759,13 +761,13 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Full-content finding:** The title and model could imply demonstrated prevention results despite an empty publication registry.
 
-**Corrections implemented:** Changed the title to a research direction and explicitly described future work, not completed studies or measured outcomes.
+**Corrections implemented (Phase 4.6):** Limited no-reports claim to this website; require verified authorship, evidence, methods and editorial approval before listing. Published catalog validation now rejects unreviewed work.
 
-**Remaining factual/safety questions:** Owner/research lead: confirm planned methods, capacity and publication status; no findings may be invented.
+**Remaining factual/safety questions:** No report or outcome claim is added. Future work requires actual qualified review and evidence; assign inquiry owner for current research interest messages.
 
 **Recommendation:** conditional approval — actual approval remains pending.
 
-**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
+**Sources:** Owner Phase 4.6 directions; inspected application/data and README authorization records; phase46-owner-implementation.md. Missing operational/legal facts remain explicitly unresolved.
 
 **Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
@@ -773,7 +775,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Candidate content hash (not approval):** `cf7a8d9a77d4d95a01bbcc726d4bf51c0ac8392321f1c161069a8516eda2cb9b`
+**Candidate content hash (not approval):** `e8529e86a8e237ac99390b746de89e66a10bc1f7a624a8594c72abc5703b55a4`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -783,7 +785,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/about` · **State:** PENDING · **Priority:** P1: review before release
 
-**URL:** `/about` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/about).
+**URL:** `/about` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/about).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -791,13 +793,13 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Full-content finding:** Research/evaluation language could imply demonstrated effects.
 
-**Corrections implemented:** Separated available guides from planned research/program/access work and labeled evaluation as an aim.
+**Corrections implemented (Phase 4.6):** Removed speculative ZoraSafe Inc. relationship; retained mission and invited future collaboration without naming institutions.
 
-**Remaining factual/safety questions:** Owner: confirm Foundation identity, governance, public-interest description and any relationship with ZoraSafe Inc.; no tax or legal status added.
+**Remaining factual/safety questions:** Supply Foundation leadership assignments and legal identity for leadership/policy review; no named relationship requires confirmation in this candidate.
 
 **Recommendation:** conditional approval — actual approval remains pending.
 
-**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
+**Sources:** Owner Phase 4.6 directions; inspected application/data and README authorization records; phase46-owner-implementation.md. Missing operational/legal facts remain explicitly unresolved.
 
 **Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
@@ -805,7 +807,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist.
 
-**Candidate content hash (not approval):** `a10604e3e5a41f7e816d31a911879f16d72f9ec0e6c6a1bec4b954fc3f650c8e`
+**Candidate content hash (not approval):** `ade33206c894041b307c479a7d1ba540864666d417973576aedc50ad39359355`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -815,7 +817,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/leadership` · **State:** PENDING · **Priority:** P1: review before release
 
-**URL:** `/leadership` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/leadership).
+**URL:** `/leadership` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/leadership).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -823,13 +825,13 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Full-content finding:** “Coming soon” implied an unverified publication timetable; no names were available.
 
-**Corrections implemented:** Replaced timing promise with explicit not-yet-published status and authorization requirement.
+**Corrections implemented (Phase 4.6):** Retained truthful not-yet-published status; no inferred commercial/governance assignments or portraits. Shared footer no longer names ZoraSafe Inc.
 
-**Remaining factual/safety questions:** Owner must decide whether launch without public leadership names is acceptable and provide verified roles/biographies if required. This credibility gap cannot be resolved by invented names.
+**Remaining factual/safety questions:** Owner selected publication: supply exact names, Foundation roles, approved short biographies and appointment/authorization evidence. Do not substitute commercial titles.
 
 **Recommendation:** revision — actual approval remains pending.
 
-**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
+**Sources:** Owner Phase 4.6 directions; inspected application/data and README authorization records; phase46-owner-implementation.md. Missing operational/legal facts remain explicitly unresolved.
 
 **Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
@@ -837,7 +839,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist.
 
-**Candidate content hash (not approval):** `42b78d3b4d193af410c1647bcf7f2e308e807f833696c131b706983f3d2e7498`
+**Candidate content hash (not approval):** `1c7da0e824f3cbd4ac8afeb9df27352ba7794c5eb27f75078cf4423a29025b90`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -847,7 +849,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/support` · **State:** PENDING · **Priority:** P1: review before release
 
-**URL:** `/support` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/support).
+**URL:** `/support` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/support).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -855,13 +857,13 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Full-content finding:** “Being set up” implied an unverified active giving implementation.
 
-**Corrections implemented:** Stated the observable absence of online giving and directed prospective support to confirmation; prohibited emailing payment details.
+**Corrections implemented (Phase 4.6):** Implemented authorized support-inquiry invitation, explicit non-transaction/no-payment language and developing-work scope; retained payment-detail warning.
 
-**Remaining factual/safety questions:** Owner must confirm legal/fundraising status, permitted support arrangements and required disclosures before soliciting or receiving funds. No tax-deductibility claim is made.
+**Remaining factual/safety questions:** Operational mailbox and policy approval remain required. No tax-deductibility claim or payment workflow needs factual substantiation in this candidate.
 
-**Recommendation:** revision — actual approval remains pending.
+**Recommendation:** conditional approval — actual approval remains pending.
 
-**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
+**Sources:** Owner Phase 4.6 directions; inspected application/data and README authorization records; phase46-owner-implementation.md. Missing operational/legal facts remain explicitly unresolved.
 
 **Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
@@ -869,7 +871,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Candidate content hash (not approval):** `8502126297deec10e1b654134dcf237e734b127833e3fc1905977d3324383ddc`
+**Candidate content hash (not approval):** `be9a019471bef3e02b9270789da218bdd2f3716edcb0b8a485d876ded3954128`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -879,7 +881,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/editorial-standards` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/editorial-standards` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/editorial-standards).
+**URL:** `/editorial-standards` · [Historical Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/editorial-standards).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -887,13 +889,13 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Full-content finding:** Correction requests needed safer evidence handling and emergency boundaries.
 
-**Corrections implemented:** Excluded intimate images; request wording/public sources instead; emergency help must not wait for an editorial reply.
+**Corrections implemented (Phase 4.6):** Existing safe correction instructions retained, with matching correction category now on Contact; shared footer relationship neutralized.
 
-**Remaining factual/safety questions:** Owner: appoint actual responsibility for corrections and verify inbox process; source checks and agent recommendations do not constitute expert approval.
+**Remaining factual/safety questions:** Appoint authorized editorial responsibility and approve actual mailbox/privacy/escalation process.
 
 **Recommendation:** conditional approval — actual approval remains pending.
 
-**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
+**Sources:** Owner Phase 4.6 directions; inspected application/data and README authorization records; phase46-owner-implementation.md. Missing operational/legal facts remain explicitly unresolved.
 
 **Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
@@ -901,7 +903,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Candidate content hash (not approval):** `9cc01d940a37929659bb20d7c8ce6cabd2d8d7f2e6911838b82e0b9a10a41420`
+**Candidate content hash (not approval):** `386aab2cb96c19300d9815eb9f0fa001512a2357507e14e1b45c6bed5b56b2d1`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
