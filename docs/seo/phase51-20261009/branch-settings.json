@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-10-09T22:08:31.650514+00:00",
+  "customEnvironments": {
+    "accountLimit": {
+      "total": 1
+    },
+    "environments": []
+  },
+  "projectCustomEnvironments": null,
+  "projectAutoAssign": {
+    "autoAssignCustomDomains": true,
+    "autoAssignCustomDomainsUpdatedBy": "system",
+    "productionDeploymentsFastLane": true,
+    "gitProviderOptions": {
+      "createDeployments": "enabled"
+    },
+    "rootDirectory": null,
+    "framework": "nextjs"
+  },
+  "githubDefaultBranch": "main",
+  "githubBranches": [
+    {
+      "name": "hotfix/foundation-held-assets-20261009",
+      "sha": "496174c27024ceae1c195e800d5f7dbb3efc77bb",
+      "protected": false
+    },
+    {
+      "name": "main",
+      "sha": "7010fc6379067b11e267f52ea8eb5701ae81095a",
+      "protected": false
+    },
+    {
+      "name": "seo/foundation-phase1-20261007",
+      "sha": "eb95a504d85e70f0e828d527da7acf47773a6133",
+      "protected": false
+    },
+    {
+      "name": "seo/foundation-phase2-authority-20261007",
+      "sha": "32d3d6e3f0c85c71c179df5bcc63aa4247de9c3a",
+      "protected": false
+    }
+  ],
+  "mainWorkflowFiles": [
+    ".github/workflows/release-qa.yml"
+  ]
+}

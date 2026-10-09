@@ -1,0 +1,32 @@
+{
+  "candidateCommit": "9f63ddb0d6904f56e149d725ac60e80ced5c1431",
+  "candidateDeploymentMatches": [],
+  "latestFeatureDeployments": [
+    {
+      "id": "dpl_24tTyA2yMHxX1ryLdfDMFF1JzDPD",
+      "url": "zora-foundation-l4jizuq26-zora-safe.vercel.app",
+      "state": "READY",
+      "target": null,
+      "commit": "32d3d6e3f0c85c71c179df5bcc63aa4247de9c3a"
+    },
+    {
+      "id": "dpl_GTQR1z5gXKugwJLAFfX5pKiDFzSq",
+      "url": "zora-foundation-bxumnupgu-zora-safe.vercel.app",
+      "state": "READY",
+      "target": "production",
+      "commit": "bf0d45aea4aced34fa6037697051f58b537076a7"
+    },
+    {
+      "id": "dpl_BnztKg1VmJjTTsMUkYr39Ss9oCGX",
+      "url": "zora-foundation-poeofm04v-zora-safe.vercel.app",
+      "state": "READY",
+      "target": null,
+      "commit": "bf0d45aea4aced34fa6037697051f58b537076a7"
+    }
+  ],
+  "pagination": {
+    "count": 21,
+    "next": null,
+    "prev": 1791581528295
+  }
+}

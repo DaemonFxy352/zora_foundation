@@ -1,0 +1,1194 @@
+{
+  "checkedAt": "2026-10-09T22:11:38.847119+00:00",
+  "productionSourceCommit": "7010fc6379067b11e267f52ea8eb5701ae81095a",
+  "candidateSourceBase": "9f63ddb0d6904f56e149d725ac60e80ced5c1431",
+  "method": "Ordinary public GETs. Main text normalized after script/style/tag stripping. Presentation differences include titles/canonical/robots/text; not a complete code or visual diff. Exposure and approval are independent dimensions.",
+  "pages": [
+    {
+      "path": "/",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "306db3b2156f2e3b4dcb383f35b0a3395ac1a9d032e029e01b1676366afb0e1f"
+      },
+      "candidate": {
+        "title": "ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "c6aa4317f40057960bc8508dea47dec356603cc1d1a62f1b2ce1e43287810c5c"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: page:/",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/about",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/about",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "About | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/about"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "75595e53390ed24236dca9c8e5e82044e69b19d897e09531d0ba25cb81524d3a"
+      },
+      "candidate": {
+        "title": "About | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/about"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "c55c6fa1e3c5b8f51e7b87960eea92b90da0d71c2717b57fbf223deedc918294"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: page:/about",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/accessibility",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/accessibility",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Accessibility statement | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/accessibility"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "6628852bf274e31d4416fd77e9899ca807e536851c5a693fedd6b19b97feef6a"
+      },
+      "candidate": {
+        "title": "Accessibility statement | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/accessibility"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "39715437689a46c942b3202763ba86f0872dc1286bdcf64db252811ac6c6b827"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "owner/manual acceptance outside existing 27-entry gate",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/contact",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/contact",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Contact | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/contact"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "129082234ff1aad42e560a03e566790d6bd9983c8ab2fb9266af938ef68f55ae"
+      },
+      "candidate": {
+        "title": "Contact | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/contact"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "d561e99952cdcc94ead2cd9c8ea6513cc28f43948cafd8ebf26a63dc78479fc0"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: page:/contact",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/editorial-standards",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/editorial-standards",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Editorial standards and corrections | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/editorial-standards"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "5f4d054ca1b8c37ffa685920f12553daa3acc7ca9bdd3aad0d6be63d55130318"
+      },
+      "candidate": {
+        "title": "Editorial standards and corrections | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/editorial-standards"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "5f4d054ca1b8c37ffa685920f12553daa3acc7ca9bdd3aad0d6be63d55130318"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": false,
+      "editorialApproval": "pending: page:/editorial-standards",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Education & Resources | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "9492c7e8ee869169ab6ef54d795123eb186997336c0d806c5db55697a8e6b497"
+      },
+      "candidate": {
+        "title": "Education & Resources | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "c6d2b5cd33c89f1c394d79147e51f83400b7631f1c9108b13c9d2ac350dd0fa4"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: page:/education",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/account-safety",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/account-safety",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Make your accounts safer | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/account-safety"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "e719c73bc48c23d8af30c64f10907c71cabeff831ec7fa91846e06c44148b297"
+      },
+      "candidate": {
+        "title": "Make your accounts safer | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/account-safety"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "01e293b18977b7849d117565c82aee54c5e2bc2f64b8803dbd59611bd3861160"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:account-safety",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/after-a-scam",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/after-a-scam",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "What to do after a scam | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/after-a-scam"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "967156d6a10465b9cda0a9e2f156bb551e2f043044dd08b523f7ce3984163007"
+      },
+      "candidate": {
+        "title": "What to do after a scam | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/after-a-scam"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "541e524d129e3e84c1e3ad4a1f42db4272adff7b2e57cb8ec23ceb4319f6dc35"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:after-a-scam",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/ai-impersonation",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/ai-impersonation",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "What is AI impersonation fraud? | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/ai-impersonation"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "ab1e9f7d5a2afcbacf32c2b7cca980a174d1395f792e0e5c099bf25af7e8f7ae"
+      },
+      "candidate": {
+        "title": "What is AI impersonation fraud? | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/ai-impersonation"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "d002c3a5ea816fe33ef6d159bdcccbaf8aee75245bce0272425acf15c0060837"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:ai-impersonation",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/family-emergency-scams",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/family-emergency-scams",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Family emergency scams: pause and check | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/family-emergency-scams"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "325bb5a73e00dbd0e77d974461fbe169a6fa9b35b031f6b3af8395f982808ffe"
+      },
+      "candidate": {
+        "title": "Family emergency scams | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/family-emergency-scams"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "21b63ec8b9622210a3461fc6c05bfb788a6c0daf0ede1c4b1195eacd2eeb3048"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:family-emergency-scams",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/gaming-scams",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/gaming-scams",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Gaming scams: a guide for players and parents | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/gaming-scams"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "cfbd9ea283814cb8b5d8386531c0e94d950f1e3a9a7c3470650efc4bbe8803cd"
+      },
+      "candidate": {
+        "title": "Gaming scams and account safety | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/gaming-scams"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "561fd11db335e167715b5786cb3560d2dc3c1411643855a1a0ff0dc150778ae8"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:gaming-scams",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/government-impersonation",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/government-impersonation",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Government impersonation scams: check before you respond | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/government-impersonation"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "308e8b7572f6470b576cd9511913965188ff3920497485cfa5c799b47479b7ef"
+      },
+      "candidate": {
+        "title": "Government impersonation scams | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/government-impersonation"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "86c4f253fd2c21443db2581b4014efbb26c80c36fe11e782000a1e53c2985444"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:government-impersonation",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/human-targeted-attacks",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/human-targeted-attacks",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "What is a human-targeted attack? | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/human-targeted-attacks"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "6ec5facde6516fcfb7004fca0cd41cf6a257a6d49cc8b8487b2b5b7f5d2269df"
+      },
+      "candidate": {
+        "title": "What is a human-targeted attack? | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/human-targeted-attacks"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "5108b92c349d86a8a5fd26997abe5a3adfc1cca7a279192b99602b460e9553ba"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:human-targeted-attacks",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/internet-safety-parents",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/internet-safety-parents",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Internet safety for parents: a practical family guide | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/internet-safety-parents"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "3c6260126e5fb4f9c7734bd54ab590066df57800fe7138bad166e6f0f275718b"
+      },
+      "candidate": {
+        "title": "Internet safety for parents | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/internet-safety-parents"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "b6bc2f2988901a6f3ee96e461e4c345c02359d30b0c46297b52e890497331029"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:internet-safety-parents",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/online-safety-kids",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/online-safety-kids",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Online safety for kids: practice with a trusted adult | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/online-safety-kids"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "120276528529bf83f3340cea65197b909f6d4227b7c47fa944b620c7405daf36"
+      },
+      "candidate": {
+        "title": "Online safety for children | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/online-safety-kids"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "6fb5920f57943132262fb905040eb79d21bfda258d9b1f30f3ef101cf195003e"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:online-safety-kids",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/online-safety-older-adults",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/online-safety-older-adults",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Online safety for older adults: a practical guide | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/online-safety-older-adults"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "b5852386b5b42e29ddab57c28a7a4daccb09212bebabddca227bdef8af3631c7"
+      },
+      "candidate": {
+        "title": "Online safety for older adults | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/online-safety-older-adults"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "f429361167b8306b852d8498cf6580c23d99ce592c44f2ae50db75b32294ae8f"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:online-safety-older-adults",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/payment-redirection",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/payment-redirection",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Payment redirection scams: verify changed payment details | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/payment-redirection"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "c47f33a2e4873cc71ee3814e8d6670bb8d8507a2ced8ceddf6edfd55466c2160"
+      },
+      "candidate": {
+        "title": "Payment redirection scams | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/payment-redirection"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "21145c7b25551e79092c16439b858c0ec41f9f958530703eadc25d4e07b4e85a"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:payment-redirection",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/phone-impersonation",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/phone-impersonation",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "How to handle a phone impersonation scam | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/phone-impersonation"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "6243930f26b5461f671f26a3b105c56eed1c15828cf9566cd05d2e639d56d90e"
+      },
+      "candidate": {
+        "title": "Phone impersonation scams | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/phone-impersonation"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "a21963e8aa06d3889b8f1fddc304ea6cf4cd4e5a918628bd09e1578c1317b6dc"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:phone-impersonation",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/qr-link-safety",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/qr-link-safety",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "QR code and suspicious link safety | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/qr-link-safety"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "0b0770c3a13e385f87de808a9bd13b668b60a49ca12b7e3d9b2e91dfc82161aa"
+      },
+      "candidate": {
+        "title": "QR code and suspicious link safety | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/qr-link-safety"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "ba28c6da8127341ac150e25a3a5596bbcc2c9c26fadf064a214fb426bbe61c4a"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:qr-link-safety",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/recognize-a-scam",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/recognize-a-scam",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Recognize a scam | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/recognize-a-scam"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "964c70a5477dc4cf7a7f044ce0c26b78a30b5b9dbe63de574521e68f6ee8bb2c"
+      },
+      "candidate": {
+        "title": "Recognize a scam | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/recognize-a-scam"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "28a245b44e9802cf3ed4ac1ff09dde37148512318ba99cd4f507274a5c2846a8"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:recognize-a-scam",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/suspicious-message",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/suspicious-message",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "What to do with a suspicious message | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/suspicious-message"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "3b68a57eb2660a49a0f935ef7519a5a2b499298128932c14cab6158ee1667a43"
+      },
+      "candidate": {
+        "title": "What to do with a suspicious message | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/suspicious-message"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "365bb03d39d022e3d98ca3b2f262e4153f1cec0d0ae7112d7364488612f84ef6"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:suspicious-message",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/teen-online-safety",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/teen-online-safety",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Teen online safety: privacy, scams, and getting help | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/teen-online-safety"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "e5b810f9bcd494f55f94c6283d5568d10d3267fd2c2b3f3129ccff1a1e430e92"
+      },
+      "candidate": {
+        "title": "Teen online safety and privacy | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/teen-online-safety"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "d43a61b585bbb1baa27f19b198240ecd480109eff8c55f0396312fe69ae98dfe"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:teen-online-safety",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/education/verify-before-you-trust",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/education/verify-before-you-trust",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Verify before you trust | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/verify-before-you-trust"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "f941c1d97824d197145e099a4c67287637d5e7ace2ff7d03a767424cfe0e20cd"
+      },
+      "candidate": {
+        "title": "Verify before you trust | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education/verify-before-you-trust"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "9aa204711066cec0ddbf6723ae4a77a36656f6739a36ae6ff12f5accc7f88c04"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: resource:verify-before-you-trust",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/leadership",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/leadership",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Leadership | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/leadership"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "d85c6d6ab6ae70f439740ad934d31a4c395b26634d2a8dfff83c398f1ae1cc90"
+      },
+      "candidate": {
+        "title": "Leadership | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/leadership"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "d85c6d6ab6ae70f439740ad934d31a4c395b26634d2a8dfff83c398f1ae1cc90"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": false,
+      "editorialApproval": "pending: page:/leadership",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/partner",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/partner",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Partner With Us | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/partner"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "e96d0521a38487562e7f1bf70783e4a612fe134485c4b26ede1daa877f5e87b8"
+      },
+      "candidate": {
+        "title": "Partner With Us | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/partner"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "e96d0521a38487562e7f1bf70783e4a612fe134485c4b26ede1daa877f5e87b8"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": false,
+      "editorialApproval": "pending: page:/partner",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/programs",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/programs",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Programs | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/programs"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "acf5a6eeeb87414e347788c29a8a2a3ffbe164b1b58143115e38162a8ed5ce4f"
+      },
+      "candidate": {
+        "title": "Digital safety education programs | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/programs"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "70c287a5c6af363f6824aa70ec41f98edfbba85c0295fb937fe029935f229306"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: page:/programs",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/research",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/research",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Research | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/research"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "3c4c0fa8ac19ff884a4512195711f7821858e1053091d33d76a6201c187cdb8d"
+      },
+      "candidate": {
+        "title": "Research | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/research"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "dac53f2c44c8728c3de6c3d796ad9f6a7ed7e71926333a82b624daa4f95c1c0b"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: page:/research",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    },
+    {
+      "path": "/support",
+      "production": {
+        "status": 200,
+        "finalURL": "https://www.zorasafefoundation.org/support",
+        "redirects": [],
+        "contentType": "text/html; charset=utf-8",
+        "xRobotsTag": null,
+        "title": "Support Our Work | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/support"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "215a087a9c02ce5f7772554c55a2d091fc9df7f04179fb4e6deece126b74825c"
+      },
+      "candidate": {
+        "title": "Support Our Work | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/support"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "28a8fd846d50ec93f4768e3b31abfd55d9a73fbd97fad81ff24b73faf083b2ce"
+      },
+      "exposure": "currently published",
+      "candidatePresentationDiffers": true,
+      "editorialApproval": "pending: page:/support",
+      "performanceAttribution": "Only deployed production content may be associated with current search metrics; candidate revision has no production start date"
+    }
+  ],
+  "internalDrafts": [
+    {
+      "id": "handout:family-verification",
+      "file": "internal/handouts/data.ts",
+      "exposure": "internal draft; excluded from public routes",
+      "editorialApproval": "pending"
+    },
+    {
+      "id": "handout:voice-cloning-response",
+      "file": "internal/handouts/data.ts",
+      "exposure": "internal draft; excluded from public routes",
+      "editorialApproval": "pending"
+    },
+    {
+      "id": "handout:parent-conversation",
+      "file": "internal/handouts/data.ts",
+      "exposure": "internal draft; excluded from public routes",
+      "editorialApproval": "pending"
+    },
+    {
+      "id": "handout:teen-safety",
+      "file": "internal/handouts/data.ts",
+      "exposure": "internal draft; excluded from public routes",
+      "editorialApproval": "pending"
+    },
+    {
+      "id": "handout:older-adult-scam-prevention",
+      "file": "internal/handouts/data.ts",
+      "exposure": "internal draft; excluded from public routes",
+      "editorialApproval": "pending"
+    },
+    {
+      "id": "handout:suspicious-message-worksheet",
+      "file": "internal/handouts/data.ts",
+      "exposure": "internal draft; excluded from public routes",
+      "editorialApproval": "pending"
+    },
+    {
+      "id": "handout:after-scam-immediate-actions",
+      "file": "internal/handouts/data.ts",
+      "exposure": "internal draft; excluded from public routes",
+      "editorialApproval": "pending"
+    },
+    {
+      "id": "workshop:older-adult-scam-prevention",
+      "file": "docs/training/older-adult-scam-prevention.md",
+      "exposure": "internal draft; excluded from public routes",
+      "editorialApproval": "pending"
+    },
+    {
+      "id": "workshop:parent-family-digital-safety",
+      "file": "docs/training/parent-family-digital-safety.md",
+      "exposure": "internal draft; excluded from public routes",
+      "editorialApproval": "pending"
+    },
+    {
+      "id": "workshop:teen-digital-safety",
+      "file": "docs/training/teen-digital-safety.md",
+      "exposure": "internal draft; excluded from public routes",
+      "editorialApproval": "pending"
+    },
+    {
+      "file": "internal/legal/privacy-draft.md",
+      "exposure": "internal draft",
+      "editorialApproval": "owner/counsel pending"
+    },
+    {
+      "file": "internal/legal/terms-draft.md",
+      "exposure": "internal draft",
+      "editorialApproval": "owner/counsel pending"
+    }
+  ],
+  "endpoints": {
+    "/robots.txt": {
+      "status": 200,
+      "finalURL": "https://www.zorasafefoundation.org/robots.txt",
+      "redirects": [],
+      "contentType": "text/plain; charset=utf-8",
+      "xRobotsTag": null,
+      "text": "User-Agent: *\nAllow: /\n\nSitemap: https://www.zorasafefoundation.org/sitemap.xml\n"
+    },
+    "/sitemap.xml": {
+      "status": 200,
+      "finalURL": "https://www.zorasafefoundation.org/sitemap.xml",
+      "redirects": [],
+      "contentType": "application/xml",
+      "xRobotsTag": null,
+      "locations": [
+        "https://www.zorasafefoundation.org/",
+        "https://www.zorasafefoundation.org/education",
+        "https://www.zorasafefoundation.org/programs",
+        "https://www.zorasafefoundation.org/research",
+        "https://www.zorasafefoundation.org/about",
+        "https://www.zorasafefoundation.org/leadership",
+        "https://www.zorasafefoundation.org/partner",
+        "https://www.zorasafefoundation.org/contact",
+        "https://www.zorasafefoundation.org/support",
+        "https://www.zorasafefoundation.org/education/recognize-a-scam",
+        "https://www.zorasafefoundation.org/education/verify-before-you-trust",
+        "https://www.zorasafefoundation.org/education/ai-impersonation",
+        "https://www.zorasafefoundation.org/education/suspicious-message",
+        "https://www.zorasafefoundation.org/education/account-safety",
+        "https://www.zorasafefoundation.org/education/human-targeted-attacks",
+        "https://www.zorasafefoundation.org/education/after-a-scam",
+        "https://www.zorasafefoundation.org/education/qr-link-safety",
+        "https://www.zorasafefoundation.org/education/phone-impersonation",
+        "https://www.zorasafefoundation.org/education/family-emergency-scams",
+        "https://www.zorasafefoundation.org/education/internet-safety-parents",
+        "https://www.zorasafefoundation.org/education/online-safety-kids",
+        "https://www.zorasafefoundation.org/education/teen-online-safety",
+        "https://www.zorasafefoundation.org/education/gaming-scams",
+        "https://www.zorasafefoundation.org/education/online-safety-older-adults",
+        "https://www.zorasafefoundation.org/education/government-impersonation",
+        "https://www.zorasafefoundation.org/education/payment-redirection"
+      ],
+      "sha256": "848a30641f9b9fed4a31a8444584861333fba812b432ae17e6444cdf6363c181",
+      "stableAcrossTwoReads": true
+    },
+    "/llms.txt": {
+      "status": 404,
+      "finalURL": "https://www.zorasafefoundation.org/llms.txt",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null
+    },
+    "/privacy": {
+      "status": 404,
+      "finalURL": "https://www.zorasafefoundation.org/privacy",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null
+    },
+    "/terms": {
+      "status": 404,
+      "finalURL": "https://www.zorasafefoundation.org/terms",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null
+    },
+    "/internal/legal/privacy-draft.md": {
+      "status": 404,
+      "finalURL": "https://www.zorasafefoundation.org/internal/legal/privacy-draft.md",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null
+    },
+    "/education/handouts/family-verification": {
+      "status": 404,
+      "finalURL": "https://www.zorasafefoundation.org/education/handouts/family-verification",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null
+    },
+    "/data/workshop-drafts.json": {
+      "status": 404,
+      "finalURL": "https://www.zorasafefoundation.org/data/workshop-drafts.json",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null
+    },
+    "/research/test-report": {
+      "status": 404,
+      "finalURL": "https://www.zorasafefoundation.org/research/test-report",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null
+    },
+    "/images/hero.webp": {
+      "status": 404,
+      "finalURL": "https://www.zorasafefoundation.org/images/hero.webp",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null
+    },
+    "/images/community-workshop.webp": {
+      "status": 404,
+      "finalURL": "https://www.zorasafefoundation.org/images/community-workshop.webp",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null
+    },
+    "/images/research.webp": {
+      "status": 404,
+      "finalURL": "https://www.zorasafefoundation.org/images/research.webp",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null
+    },
+    "/brand/zorasafe-foundation-social.png": {
+      "status": 404,
+      "finalURL": "https://www.zorasafefoundation.org/brand/zorasafe-foundation-social.png",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null
+    },
+    "/brand/zorasafe-foundation-social.svg": {
+      "status": 404,
+      "finalURL": "https://www.zorasafefoundation.org/brand/zorasafe-foundation-social.svg",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null
+    },
+    "https://zorasafefoundation.org/google36b500dfad230655.html": {
+      "status": 200,
+      "finalURL": "https://www.zorasafefoundation.org/google36b500dfad230655.html",
+      "redirects": [
+        {
+          "status": 308,
+          "from": "https://zorasafefoundation.org/google36b500dfad230655.html",
+          "to": "https://www.zorasafefoundation.org/google36b500dfad230655.html"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "meta": {
+        "title": null,
+        "canonical": [],
+        "robots": [],
+        "mainTextSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "originalBytesMatch": true
+    },
+    "https://zorasafefoundation.org/": {
+      "status": 200,
+      "finalURL": "https://www.zorasafefoundation.org/",
+      "redirects": [
+        {
+          "status": 308,
+          "from": "https://zorasafefoundation.org/",
+          "to": "https://www.zorasafefoundation.org/"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "meta": {
+        "title": "ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "306db3b2156f2e3b4dcb383f35b0a3395ac1a9d032e029e01b1676366afb0e1f"
+      }
+    },
+    "https://www.zorasafefoundation.org/education/": {
+      "status": 200,
+      "finalURL": "https://www.zorasafefoundation.org/education",
+      "redirects": [
+        {
+          "status": 308,
+          "from": "https://www.zorasafefoundation.org/education/",
+          "to": "https://www.zorasafefoundation.org/education"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "meta": {
+        "title": "Education & Resources | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "9492c7e8ee869169ab6ef54d795123eb186997336c0d806c5db55697a8e6b497"
+      }
+    },
+    "https://www.zorasafefoundation.org/education?topic=phishing": {
+      "status": 200,
+      "finalURL": "https://www.zorasafefoundation.org/education?topic=phishing",
+      "redirects": [],
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "meta": {
+        "title": "Education & Resources | ZoraSafe Foundation",
+        "canonical": [
+          "https://www.zorasafefoundation.org/education"
+        ],
+        "robots": [
+          "index, follow"
+        ],
+        "mainTextSHA256": "9492c7e8ee869169ab6ef54d795123eb186997336c0d806c5db55697a8e6b497"
+      }
+    }
+  },
+  "candidateOnlyPublicFiles": [
+    "/llms.txt"
+  ],
+  "researchPublicationCount": 0
+}

@@ -1,0 +1,7 @@
+{
+  "mode": "Local build with VERCEL_ENV=preview; not a hosted deployment",
+  "htmlPagesNoindex": 28,
+  "seoCheck": "PASS --preview",
+  "robots": "User-Agent: *\nAllow: /\n\n",
+  "hostedCandidate": "No deployment created for local Phase 5/5.1 commits; authenticated hosted QA remains a release gate"
+}

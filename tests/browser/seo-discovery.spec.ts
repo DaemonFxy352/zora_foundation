@@ -1,5 +1,16 @@
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
+
+test("Google ownership file survives a feature release unchanged", async ({ request }) => {
+  const original = readFileSync("public/google36b500dfad230655.html");
+  // Hash of Google's original downloaded file, independently matched to production.
+  expect(createHash("sha256").update(original).digest("hex")).toBe("28d66e818535e1f7825b02953456f33d956eea2aea7058cf35ad25f8a45263b5");
+  const response = await request.get("/google36b500dfad230655.html", { maxRedirects: 0 });
+  expect(response.status()).toBe(200);
+  expect(response.headers()["content-type"]).toContain("text/html");
+  expect(await response.body()).toEqual(original);
+});
 
 test("program pathways are usable on desktop and mobile", async ({ page }, info) => {
   await page.goto("/programs");

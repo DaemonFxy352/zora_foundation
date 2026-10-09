@@ -1,0 +1,117 @@
+{
+  "protocolVersion": 2,
+  "createdAt": "2026-10-09",
+  "productionSourceCommit": "7010fc6379067b11e267f52ea8eb5701ae81095a",
+  "status": "Protocol ready; independent AI-product answer baseline not measured",
+  "prompts": [
+    {
+      "id": "Q1",
+      "category": "AI voice cloning",
+      "prompt": "How can I tell whether an AI voice call is a scam?",
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/ai-impersonation"
+    },
+    {
+      "id": "Q2",
+      "category": "Older-adult safety",
+      "prompt": "How can older adults avoid phone scams?",
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/online-safety-older-adults"
+    },
+    {
+      "id": "Q3",
+      "category": "Parent safety",
+      "prompt": "What should parents teach children about online scams?",
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/internet-safety-parents"
+    },
+    {
+      "id": "Q4",
+      "category": "Bank impersonation",
+      "prompt": "How do I verify a bank impersonation call?",
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/phone-impersonation"
+    },
+    {
+      "id": "Q5",
+      "category": "Scam response",
+      "prompt": "What should I do after sending money to a scammer?",
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/after-a-scam"
+    },
+    {
+      "id": "Q6",
+      "category": "Community education / schools",
+      "prompt": "Where can schools find digital safety education resources?",
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/programs#school-education"
+    },
+    {
+      "id": "Q7",
+      "category": "Teen safety",
+      "prompt": "How can teenagers protect their privacy and get help with online threats?",
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/teen-online-safety"
+    },
+    {
+      "id": "Q8",
+      "category": "Community education / libraries and senior centers",
+      "prompt": "Where can libraries and senior centers find community digital safety education?",
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/programs#community-pathways"
+    }
+  ],
+  "observations": [],
+  "availableHistoricalEvidence": {
+    "path": "../phase5-20261009/discovery-baseline.json",
+    "scope": "Six generic web-search result samples, not independent AI-product answers; no Foundation URL observed in returned samples",
+    "newPromptsQ7Q8": "Not yet observed"
+  },
+  "surfaces": [
+    {
+      "product": "ChatGPT Search",
+      "status": "Not measured; authorized search-enabled session or owner-provided original answer evidence required"
+    },
+    {
+      "product": "Google Gemini / AI search",
+      "status": "Not measured; authorized search-enabled session or owner-provided original answer evidence required"
+    },
+    {
+      "product": "Microsoft Copilot",
+      "status": "Not measured; authorized search-enabled session or owner-provided original answer evidence required"
+    },
+    {
+      "product": "Claude with web search",
+      "status": "Not measured; authorized search-enabled session or owner-provided original answer evidence required"
+    },
+    {
+      "product": "Perplexity",
+      "status": "Not measured; authorized search-enabled session or owner-provided original answer evidence required"
+    }
+  ],
+  "definitions": {
+    "indexedPresence": "Engine-specific indexed URL evidence from URL Inspection or webmaster report; an HTTP 200 alone is insufficient.",
+    "searchRanking": "Position for a specified query, engine, time, locale and result surface; selected tool results do not establish absolute rank.",
+    "brandMention": "Foundation named in an answer, with or without a link; record separately from citation.",
+    "sourceCitation": "Answer explicitly links a Foundation URL as support; retain the answer passage and actual resolved citation URL.",
+    "referralTraffic": "Observed inbound visits in authorized analytics/server evidence, including attribution limits; not inferred from mentions or citations."
+  },
+  "procedure": [
+    "Run the exact prompts in fresh independent sessions on each available supported search-enabled surface. Do not seed the Foundation name, feed candidate content, or substitute this implementation chat for observations.",
+    "Record UTC time, provider/product/model label, locale, login/personalization state, search mode, prompt ID and exact prompt. If a surface is unavailable, mark not measured, not zero.",
+    "Keep full answer and screenshot/export in approved private storage. Record evidence reference, mention boolean, cited URLs, excerpt supporting each citation and resolved host. Null means unavailable; false requires an observed answer.",
+    "Associate each cited page with the production commit at observation time. Record the candidate release time only after authorized publication. Preserve mixed-version/crawl-lag uncertainty.",
+    "Repeat weekly on the same surfaces and settings after publication; compare like-for-like observations. Summarize citations as cited observed answers / observed answers per product with sample size. Do not treat this small sample as a visibility score or causal ranking gain.",
+    "Keep Search Console indexing/performance, ordinary search results and referral traffic in separate datasets; do not combine them into a fabricated score."
+  ],
+  "observationRequiredFields": [
+    "observedAtUTC",
+    "product",
+    "modelLabel",
+    "locale",
+    "sessionState",
+    "searchMode",
+    "promptID",
+    "exactPrompt",
+    "productionCommit",
+    "evidenceReference",
+    "brandMention",
+    "sourceCitation",
+    "citedURLs"
+  ],
+  "searchConsoleMetrics": null,
+  "referralTrafficMetrics": null,
+  "unavailableReason": "No authorized Search Console connector/export, independent AI search-product session/report, or referral analytics dataset is available in this workspace."
+}

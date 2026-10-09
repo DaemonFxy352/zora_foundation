@@ -1,0 +1,173 @@
+{
+  "sourceSHA256": "1121e6e3daf2774fc5aaa87b580f04d1c909bb478b632fe06814c613af205159",
+  "rows": 34,
+  "columns": 102,
+  "warningInstances": 15,
+  "items": [
+    {
+      "url": "https://www.zorasafefoundation.org/education/government-impersonation",
+      "originalFinding": "Title element is too long",
+      "assessment": "Concise search title implemented; meaningful readability issue",
+      "localEvidence": {
+        "beforeCharacters": 78,
+        "candidateCharacters": 52
+      },
+      "semrushResolution": "unconfirmed",
+      "freshCrawlRequired": true
+    },
+    {
+      "url": "https://www.zorasafefoundation.org/education/payment-redirection",
+      "originalFinding": "Title element is too long",
+      "assessment": "Concise search title implemented; meaningful readability issue",
+      "localEvidence": {
+        "beforeCharacters": 79,
+        "candidateCharacters": 47
+      },
+      "semrushResolution": "unconfirmed",
+      "freshCrawlRequired": true
+    },
+    {
+      "url": "https://www.zorasafefoundation.org/",
+      "originalFinding": "Low text to HTML ratio",
+      "assessment": "Heuristic/serialization overhead; existing server-rendered content retained",
+      "localEvidence": {
+        "beforeProxyPercent": 9.44,
+        "candidateProxyPercent": 9.44
+      },
+      "semrushResolution": "unconfirmed",
+      "freshCrawlRequired": true
+    },
+    {
+      "url": "https://www.zorasafefoundation.org/about",
+      "originalFinding": "Low text to HTML ratio",
+      "assessment": "Heuristic/serialization overhead; existing server-rendered content retained",
+      "localEvidence": {
+        "beforeProxyPercent": 8.6,
+        "candidateProxyPercent": 8.6
+      },
+      "semrushResolution": "unconfirmed",
+      "freshCrawlRequired": true
+    },
+    {
+      "url": "https://www.zorasafefoundation.org/accessibility",
+      "originalFinding": "Low text to HTML ratio",
+      "assessment": "Useful accessibility usage guidance added; ratio is still a heuristic",
+      "localEvidence": {
+        "beforeProxyPercent": 6.96,
+        "candidateProxyPercent": 8.94
+      },
+      "semrushResolution": "unconfirmed",
+      "freshCrawlRequired": true
+    },
+    {
+      "url": "https://www.zorasafefoundation.org/contact",
+      "originalFinding": "Low text to HTML ratio",
+      "assessment": "Heuristic/serialization overhead; existing server-rendered content retained",
+      "localEvidence": {
+        "beforeProxyPercent": 10.17,
+        "candidateProxyPercent": 10.17
+      },
+      "semrushResolution": "unconfirmed",
+      "freshCrawlRequired": true
+    },
+    {
+      "url": "https://www.zorasafefoundation.org/editorial-standards",
+      "originalFinding": "Low text to HTML ratio",
+      "assessment": "Heuristic/serialization overhead; existing server-rendered content retained",
+      "localEvidence": {
+        "beforeProxyPercent": 9.55,
+        "candidateProxyPercent": 9.55
+      },
+      "semrushResolution": "unconfirmed",
+      "freshCrawlRequired": true
+    },
+    {
+      "url": "https://www.zorasafefoundation.org/leadership",
+      "originalFinding": "Low text to HTML ratio",
+      "assessment": "Heuristic/serialization overhead; existing server-rendered content retained",
+      "localEvidence": {
+        "beforeProxyPercent": 5.89,
+        "candidateProxyPercent": 5.89
+      },
+      "semrushResolution": "unconfirmed",
+      "freshCrawlRequired": true
+    },
+    {
+      "url": "https://www.zorasafefoundation.org/partner",
+      "originalFinding": "Low text to HTML ratio",
+      "assessment": "Heuristic/serialization overhead; existing server-rendered content retained",
+      "localEvidence": {
+        "beforeProxyPercent": 9.24,
+        "candidateProxyPercent": 9.24
+      },
+      "semrushResolution": "unconfirmed",
+      "freshCrawlRequired": true
+    },
+    {
+      "url": "https://www.zorasafefoundation.org/research",
+      "originalFinding": "Low text to HTML ratio",
+      "assessment": "Heuristic/serialization overhead; existing server-rendered content retained",
+      "localEvidence": {
+        "beforeProxyPercent": 10.13,
+        "candidateProxyPercent": 10.13
+      },
+      "semrushResolution": "unconfirmed",
+      "freshCrawlRequired": true
+    },
+    {
+      "url": "https://www.zorasafefoundation.org/support",
+      "originalFinding": "Low text to HTML ratio",
+      "assessment": "Heuristic/serialization overhead; existing server-rendered content retained",
+      "localEvidence": {
+        "beforeProxyPercent": 7.86,
+        "candidateProxyPercent": 7.86
+      },
+      "semrushResolution": "unconfirmed",
+      "freshCrawlRequired": true
+    },
+    {
+      "url": "https://www.zorasafefoundation.org/accessibility",
+      "originalFinding": "Low word count",
+      "assessment": "Useful usage/printing/conformance-limit information added; no vendor threshold claim",
+      "localEvidence": {
+        "beforeMainWords": 123,
+        "candidateMainWords": 220
+      },
+      "semrushResolution": "unconfirmed",
+      "freshCrawlRequired": true
+    },
+    {
+      "url": "https://www.zorasafefoundation.org/leadership",
+      "originalFinding": "Low word count",
+      "assessment": "Owner-confirmed leadership facts still missing; no filler",
+      "localEvidence": {
+        "beforeMainWords": 104,
+        "candidateMainWords": 104
+      },
+      "semrushResolution": "unconfirmed",
+      "freshCrawlRequired": true
+    },
+    {
+      "url": "https://www.zorasafefoundation.org/llms.txt",
+      "originalFinding": "Llms.txt not found",
+      "assessment": "Concise navigation file implemented locally; optional convention, not established ranking signal",
+      "localEvidence": {
+        "productionStatusAtPhase5": 404,
+        "candidateStatusAtPhase5": 200
+      },
+      "semrushResolution": "unconfirmed",
+      "freshCrawlRequired": true
+    },
+    {
+      "url": "https://www.zorasafefoundation.org/programs",
+      "originalFinding": "Content not optimized",
+      "assessment": "Repeated program structure removed; development status, semantic facts, navigation and inquiry steps improved",
+      "localEvidence": {
+        "beforeHTMLBytes": 53220,
+        "candidateHTMLBytes": 47965
+      },
+      "semrushResolution": "unconfirmed",
+      "freshCrawlRequired": true
+    }
+  ]
+}

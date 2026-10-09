@@ -62,6 +62,7 @@ try {
     "/sitemap.xml",
     "/robots.txt",
     "/llms.txt",
+    "/google36b500dfad230655.html",
     "/brand/zorasafe-foundation-social1.png",
   ])
     await request(route, 200);

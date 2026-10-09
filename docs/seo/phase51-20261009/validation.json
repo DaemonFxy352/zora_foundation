@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-09",
+  "candidateParent": "9f63ddb0d6904f56e149d725ac60e80ced5c1431",
+  "runtime": "Node 24; Next.js 16.2",
+  "checks": [
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "command": "npm run verify:content",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "command": "npm run verify:seo",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "command": "npm run verify:build",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "command": "npm run verify:routes",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "command": "npm run verify:accessibility",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "command": "npm run verify:release",
+      "exitCode": 0,
+      "result": "PASS"
+    },
+    {
+      "command": "npm run verify:review",
+      "exitCode": 0,
+      "result": "PASS"
+    }
+  ],
+  "localPreviewBuild": {
+    "command": "VERCEL_ENV=preview npm run build && node scripts/verify-seo.mjs --preview",
+    "exitCode": 0,
+    "noindexHTMLPages": 28,
+    "sitemapAdvertisedInRobots": false,
+    "productionModeRebuiltAfterwards": true
+  },
+  "browser": {
+    "command": "npm run verify:browser",
+    "exitCode": 0,
+    "passed": 61,
+    "skipped": 2,
+    "skipReason": "PDF generation intentionally desktop Chromium only; mobile/Firefox skip",
+    "projects": [
+      "Chromium desktop",
+      "Chromium mobile",
+      "Firefox"
+    ],
+    "duration": "1.2 minutes",
+    "execution": "Authorized local server/browser execution outside sandbox; no remote browser tests",
+    "screenshotsInspected": [
+      "test-results/seo-discovery-program-path-ab540-sable-on-desktop-and-mobile-desktop/programs-1440.png",
+      "test-results/seo-discovery-program-path-ab540-sable-on-desktop-and-mobile-mobile/programs-390.png"
+    ],
+    "visualFinding": "Programs columns/stacking coherent with no observed clipping; artifacts ignored, not public output"
+  },
+  "editorialGate": {
+    "command": "npm run release:editorial",
+    "exitCode": 1,
+    "expected": true,
+    "pendingPublicEntries": 27,
+    "manifestRecords": 37,
+    "result": "NO-GO, approvals unchanged"
+  },
+  "verificationFile": {
+    "bytes": 53,
+    "sha256": "28d66e818535e1f7825b02953456f33d956eea2aea7058cf35ad25f8a45263b5",
+    "matchesDownloadedOriginalAndProductionGitObject": true,
+    "servedExactBytesLocallyInAllThreeBrowserProjects": true
+  },
+  "limits": [
+    "No hosted deployment of this candidate; hosted QA pending",
+    "No fresh Semrush crawl, Search Console metrics, independent AI-product answer observations, field performance or vulnerability audit",
+    "Manual assistive-technology/native zoom/physical print acceptance remains outstanding"
+  ],
+  "remoteMutations": []
+}
