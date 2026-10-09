@@ -1049,3 +1049,9 @@ h4 {
     margin: 12px 0 0;
   }
 }
+
+/* Preserve the homepage layout without the unverified photography. */
+.programs-layout.programs-text { display: block; }
+.research-text { max-width: 900px; }
+.hero-identity { height: clamp(220px, 34vw, 430px); }
+.hero-identity .hero-mark { width: 80%; right: 5%; top: 15%; }

@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-10-09T16:36:51.880748+00:00",
+  "projectId": "prj_lSHh3vDrPHNIMgXYqd2JzOkGsBJ6",
+  "projectName": "zora-foundation",
+  "productionBranch": "main",
+  "projectGitSettings": {
+    "gitForkProtection": true,
+    "commandForIgnoringBuildStep": null,
+    "gitProviderOptions": {
+      "createDeployments": "enabled"
+    },
+    "gitComments": {
+      "onCommit": false,
+      "onPullRequest": true
+    },
+    "ssoProtection": {
+      "deploymentType": "all_except_custom_domains"
+    },
+    "passwordProtection": null
+  },
+  "deployHooksCount": 0,
+  "productionDeployment": "dpl_GTQR1z5gXKugwJLAFfX5pKiDFzSq",
+  "wwwAliasDeployment": "dpl_GTQR1z5gXKugwJLAFfX5pKiDFzSq",
+  "apexAliasDeployment": "dpl_GTQR1z5gXKugwJLAFfX5pKiDFzSq",
+  "domains": [
+    {
+      "name": "zorasafefoundation.org",
+      "gitBranch": null,
+      "customEnvironmentId": null,
+      "redirect": "www.zorasafefoundation.org"
+    },
+    {
+      "name": "www.zorasafefoundation.org",
+      "gitBranch": null,
+      "customEnvironmentId": null,
+      "redirect": null
+    },
+    {
+      "name": "zora-foundation.vercel.app",
+      "gitBranch": null,
+      "customEnvironmentId": null,
+      "redirect": null
+    }
+  ],
+  "deployment": {
+    "id": "dpl_GTQR1z5gXKugwJLAFfX5pKiDFzSq",
+    "url": "zora-foundation-bxumnupgu-zora-safe.vercel.app",
+    "source": "redeploy",
+    "target": "production",
+    "readyState": "READY",
+    "createdAt": 1791525119043
+  },
+  "deploymentMeta": {
+    "githubCommitSha": "bf0d45aea4aced34fa6037697051f58b537076a7",
+    "githubCommitRef": "seo/foundation-phase2-authority-20261007",
+    "action": "promote",
+    "originalDeploymentId": "dpl_BnztKg1VmJjTTsMUkYr39Ss9oCGX"
+  },
+  "vercelWebhookCount": 0,
+  "linkedProjects": [
+    {
+      "id": "prj_lSHh3vDrPHNIMgXYqd2JzOkGsBJ6",
+      "name": "zora-foundation",
+      "productionBranch": "main"
+    }
+  ],
+  "projectsPagination": {
+    "count": 7,
+    "next": null,
+    "prev": 1791562585594
+  },
+  "githubHookCount": 0,
+  "githubWorkflows": [
+    {
+      "name": "Foundation release QA",
+      "path": ".github/workflows/release-qa.yml",
+      "state": "active"
+    }
+  ]
+}

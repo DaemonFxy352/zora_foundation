@@ -1,0 +1,185 @@
+{
+  "checkedAt": "2026-10-09T16:51:43.083659+00:00",
+  "branch": "hotfix/foundation-held-assets-20261009",
+  "productionParent": "bf0d45aea4aced34fa6037697051f58b537076a7",
+  "featureBranchUnchanged": "d5d9704c19e9108eb62e118d4f0b0b3a0d809141",
+  "runtime": "Node 24.21.0; Next.js 16.4.0; local macOS production build; production package-lock unchanged",
+  "checks": [
+    {
+      "command": "npm run build",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:build",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:routes",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:release",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:review",
+      "exitCode": 0
+    },
+    {
+      "command": "node scripts/verify-asset-remediation.mjs",
+      "exitCode": 0,
+      "filesScanned": 773,
+      "originalFilesExcluded": 5,
+      "scan": "public, .next/static and .next/server; SHA-256 bytes, filenames, HTML/RSC/JS/CSS/JSON/SVG/maps and draft markers; Git source scope boundary"
+    }
+  ],
+  "publicPages": 28,
+  "browser": {
+    "initialFullRun": {
+      "command": "npm run verify:browser -- --output=test-results/phase48-candidate",
+      "passed": 48,
+      "failed": 4,
+      "expectedSkipped": 2,
+      "durationSeconds": 56.8,
+      "exitCode": 1
+    },
+    "testCorrections": [
+      "Missing optimizer sources return 404 in the installed Next version; corrected the initial expected 400.",
+      "Firefox can return 304 on repeated navigation; viewport test now loads once then resizes. No runtime changes required."
+    ],
+    "targetedFinalRun": {
+      "command": "npm run verify:browser -- tests/browser/asset-remediation.spec.ts --output=test-results/phase48-asset-rerun",
+      "passed": 6,
+      "failed": 0,
+      "durationSeconds": 8.8,
+      "exitCode": 0
+    },
+    "coverage": "52 applicable tests passed across initial full run and corrected targeted rerun; two expected non-desktop PDF skips. Not a claim of a second full-suite run.",
+    "viewports": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "projects": [
+      "desktop Chromium",
+      "mobile Chromium",
+      "Firefox"
+    ],
+    "homepageTextAndLinkHashesMatchLiveProduction": true,
+    "observedAssetPaths": 35,
+    "responseChecksPerProject": 70,
+    "assetResult": "All five originals, three hashed copies and 27 optimized variants return HTTP 404 for GET and HEAD with no image content; approved social1 returns 200/image PNG.",
+    "expectedServerLogs": "Negative optimizer tests emit internal image response failed ... 404; these are intentional missing-image requests, not homepage requests.",
+    "visualReview": "Actual production 1440/390 before screenshots compared with local candidate after screenshots; hero mark, full program cards and bounded research text are coherent, with no empty image column or broken image.",
+    "artifacts": [
+      {
+        "path": "test-results/phase48-asset-rerun/asset-remediation-asset-ho-15001--and-links-across-viewports-desktop/home-1440.png",
+        "bytes": 856972,
+        "sha256": "4790355b1d2bc0d4c0632c36a472434116d2ef48871ec5ceae3394bcebe89351"
+      },
+      {
+        "path": "test-results/phase48-asset-rerun/asset-remediation-asset-ho-15001--and-links-across-viewports-desktop/home-320.png",
+        "bytes": 706738,
+        "sha256": "2889d76d265d510ff278afc76dbcc6053fa5808d71d11045a7342a96bda5c890"
+      },
+      {
+        "path": "test-results/phase48-asset-rerun/asset-remediation-asset-ho-15001--and-links-across-viewports-desktop/home-390.png",
+        "bytes": 715678,
+        "sha256": "64310cf11936bc67df01583fdae7bd1ab0500a5c63f0ff09bb7ed76089e089ab"
+      },
+      {
+        "path": "test-results/phase48-asset-rerun/asset-remediation-asset-ho-15001--and-links-across-viewports-desktop/home-768.png",
+        "bytes": 743847,
+        "sha256": "4d14ecf87f60b1b6062ed30d9b1dd7c3d27534bb26ece11d3e22585d2d90123c"
+      },
+      {
+        "path": "test-results/phase48-asset-rerun/asset-remediation-asset-ho-15001--and-links-across-viewports-firefox/home-1440.png",
+        "bytes": 848958,
+        "sha256": "88bfedfbae0de6c252a76dce3aa7d5ad4aeea95cfd5889725b4a513b41e3807b"
+      },
+      {
+        "path": "test-results/phase48-asset-rerun/asset-remediation-asset-ho-15001--and-links-across-viewports-firefox/home-320.png",
+        "bytes": 752036,
+        "sha256": "70173933c1c51895c18be850ae3f575abd1ec0feaeb463b3027f052a56ff9809"
+      },
+      {
+        "path": "test-results/phase48-asset-rerun/asset-remediation-asset-ho-15001--and-links-across-viewports-firefox/home-390.png",
+        "bytes": 748436,
+        "sha256": "4794396d697239eb236e73d01c7a489ee8a5f933f6e226ca1a2d067ee0bdc973"
+      },
+      {
+        "path": "test-results/phase48-asset-rerun/asset-remediation-asset-ho-15001--and-links-across-viewports-firefox/home-768.png",
+        "bytes": 743031,
+        "sha256": "4c0953e7e9b8c1ac8464b56e715be074bb858ecaf35cec72b3d38db8787df290"
+      },
+      {
+        "path": "test-results/phase48-asset-rerun/asset-remediation-asset-ho-15001--and-links-across-viewports-mobile/home-1440.png",
+        "bytes": 856972,
+        "sha256": "4790355b1d2bc0d4c0632c36a472434116d2ef48871ec5ceae3394bcebe89351"
+      },
+      {
+        "path": "test-results/phase48-asset-rerun/asset-remediation-asset-ho-15001--and-links-across-viewports-mobile/home-320.png",
+        "bytes": 706738,
+        "sha256": "2889d76d265d510ff278afc76dbcc6053fa5808d71d11045a7342a96bda5c890"
+      },
+      {
+        "path": "test-results/phase48-asset-rerun/asset-remediation-asset-ho-15001--and-links-across-viewports-mobile/home-390.png",
+        "bytes": 715678,
+        "sha256": "64310cf11936bc67df01583fdae7bd1ab0500a5c63f0ff09bb7ed76089e089ab"
+      },
+      {
+        "path": "test-results/phase48-asset-rerun/asset-remediation-asset-ho-15001--and-links-across-viewports-mobile/home-768.png",
+        "bytes": 743847,
+        "sha256": "4d14ecf87f60b1b6062ed30d9b1dd7c3d27534bb26ece11d3e22585d2d90123c"
+      },
+      {
+        "path": "test-results/phase48-asset-rerun/asset-remediation-held-ori-a35ca-ed-variants-are-unavailable-desktop/removed-asset-responses.json",
+        "bytes": 10425,
+        "sha256": "8143d6faf8b610b20fb87f9191c32b5f47c0bc460a45b013fe0ca4ec23436ba3"
+      },
+      {
+        "path": "test-results/phase48-asset-rerun/asset-remediation-held-ori-a35ca-ed-variants-are-unavailable-firefox/removed-asset-responses.json",
+        "bytes": 10425,
+        "sha256": "8143d6faf8b610b20fb87f9191c32b5f47c0bc460a45b013fe0ca4ec23436ba3"
+      },
+      {
+        "path": "test-results/phase48-asset-rerun/asset-remediation-held-ori-a35ca-ed-variants-are-unavailable-mobile/removed-asset-responses.json",
+        "bytes": 10425,
+        "sha256": "8143d6faf8b610b20fb87f9191c32b5f47c0bc460a45b013fe0ca4ec23436ba3"
+      },
+      {
+        "path": "test-results/phase48-before/home-1440.png",
+        "bytes": 2183957,
+        "sha256": "381b542bf7f7ad4d7c562f45fab615813598486e9b26725c6612344171299073"
+      },
+      {
+        "path": "test-results/phase48-before/home-390.png",
+        "bytes": 1252174,
+        "sha256": "89d6b722e45c5329f98c0257f25b8060eeb640f5496b166835fc52275a04c467"
+      }
+    ]
+  },
+  "draftIsolation": "PASS: original handout/workshop/research isolation; policy and internal draft URLs return 404. No policies added.",
+  "scopeEvidence": "All runtime files except the ten explicitly allowed image/component/CSS paths match production; homepage hash only refreshed in editorial manifest; review decisions unchanged.",
+  "environmentRestrictions": "Read-only network checks and browser/local server used approved escalation after sandbox DNS/browser denial. No sandbox restrictions bypassed.",
+  "productionActions": [],
+  "featurePush": false,
+  "deploymentAuthorization": "None; full Foundation release NO-GO. Separate asset-only staging, promotion and cache/version cleanup authorization required.",
+  "finalProductionRecheck": {
+    "checkedAt": "2026-10-09T16:53:50.303115+00:00",
+    "productionDeployment": "dpl_GTQR1z5gXKugwJLAFfX5pKiDFzSq",
+    "wwwAliasDeployment": "dpl_GTQR1z5gXKugwJLAFfX5pKiDFzSq",
+    "apexAliasDeployment": "dpl_GTQR1z5gXKugwJLAFfX5pKiDFzSq",
+    "sourceCommit": "bf0d45aea4aced34fa6037697051f58b537076a7"
+  },
+  "runbookCLIValidation": "Vercel CLI 50.1.4 help confirms --prod --skip-domain --force, promote/rollback deployment IDs, and source-specific cache dangerously-delete --srcimg. Only help was executed."
+}

@@ -1,0 +1,71 @@
+{
+  "productionCommit": "bf0d45aea4aced34fa6037697051f58b537076a7",
+  "files": [
+    {
+      "source": "public/images/hero.webp",
+      "url": "/images/hero.webp",
+      "sha256": "749d10ff7ecb80c1ed1e35873f5f4707ead0d4bb968c9db0f1668c6d87c882d7"
+    },
+    {
+      "source": "public/images/community-workshop.webp",
+      "url": "/images/community-workshop.webp",
+      "sha256": "fc8c415bb03332b37ab37cd8a9ca762975c548e0c7ec092e746f36607934d07b"
+    },
+    {
+      "source": "public/images/research.webp",
+      "url": "/images/research.webp",
+      "sha256": "99dab40b1c923826bb7f2ef4e539129db939b9d84e920ed6fc2ad46f649eb807"
+    },
+    {
+      "source": "public/brand/zorasafe-foundation-social.png",
+      "url": "/brand/zorasafe-foundation-social.png",
+      "sha256": "93387ddb1c517836c2fc08b66cc43bc0285d4e1f60ef3cafae7934e238fa0649"
+    },
+    {
+      "source": "public/brand/zorasafe-foundation-social.svg",
+      "url": "/brand/zorasafe-foundation-social.svg",
+      "sha256": "5f2099c8598e87ba7af3d8d36c6c5a745d70dbcaca700d07c84f166abec6298b"
+    }
+  ],
+  "exposedPaths": [
+    "/images/hero.webp",
+    "/images/community-workshop.webp",
+    "/images/research.webp",
+    "/brand/zorasafe-foundation-social.png",
+    "/brand/zorasafe-foundation-social.svg",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=3840&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=384&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=640&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=750&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=828&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=1080&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=1200&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=1920&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=2048&q=75",
+    "/_next/static/immutable/media/hero.09tkl5hh6fz-_.webp",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=3840&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=384&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=640&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=750&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=828&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=1080&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=1200&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=1920&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=2048&q=75",
+    "/_next/static/immutable/media/community-workshop.21k8h395l05_8.webp",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=3840&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=384&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=640&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=750&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=828&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=1080&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=1200&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=1920&q=75",
+    "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=2048&q=75",
+    "/_next/static/immutable/media/research.0o8-f18ax377t.webp"
+  ],
+  "homepage": {
+    "textSha256": "62691c46ba728454aa67e54e79f159ad4530348c9843b2a99caadf48e46e0788",
+    "linksSha256": "e6c0b3370dbaec51ec859facfacf9f81246e4882ae087a03b52175c79183118e"
+  }
+}

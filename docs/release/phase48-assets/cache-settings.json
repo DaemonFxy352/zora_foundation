@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-09T16:48:22.670971+00:00",
+  "settings": {
+    "gitForkProtection": true,
+    "skewProtectionMaxAge": 43200,
+    "ssoProtection": {
+      "deploymentType": "all_except_custom_domains"
+    }
+  },
+  "anonymousOldDeploymentAssetHEAD": {
+    "status": 302,
+    "redirectHost": "vercel.com",
+    "contentType": "text/plain"
+  },
+  "note": "No bypass credentials used; no cache purge, threshold change or deployment deletion performed."
+}

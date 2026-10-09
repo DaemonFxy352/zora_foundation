@@ -1,5 +1,4 @@
 import { Point } from "./Brand";
-import { HomeImage } from "./HomeImage";
 const programs = [
   [
     "Community Digital Safety Education",
@@ -38,10 +37,7 @@ export function Programs() {
             organizations. Workshops are not currently scheduled or bookable.
           </p>
         </div>
-        <div className="programs-layout">
-          <div className="program-photo photo">
-            <HomeImage name="programs" />
-          </div>
+        <div className="programs-layout programs-text">
           <div>
             <div className="program-grid">
               {programs.map(([name, description], i) => (

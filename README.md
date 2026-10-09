@@ -106,7 +106,7 @@ The final **ZoraSafe Foundation Identity Board, version 1.0 (October 2026)** is 
 - `public/fonts/`: local Inter variable font and SIL Open Font License.
 - `public/images/`: three WebP photos recovered from the supplied design export.
 
-Replace homepage imagery in `public/images/hero.webp`, `community-workshop.webp`, or `research.webp`, then update alt text and object position in `components/HomeImage.tsx`. Next Image handles dimensions, blur placeholders, and responsive optimization. Review the desktop/tablet/mobile crops; the supplied community photo is only 478×640. No new imagery was added for the interior pages.
+The isolated asset-remediation candidate removes three unverified homepage photos and two unused older social exports from public output. It retains the approved Guide Point and `social1` preview; restoration requires verified rights and a separately reviewed change. See [the asset-only release candidate](docs/release/phase48-assets/release-candidate.md). Earlier photo descriptions are historical.
 
 ## Verification and limitations
 

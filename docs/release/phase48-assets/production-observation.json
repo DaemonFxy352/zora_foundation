@@ -1,0 +1,431 @@
+{
+  "checkedAt": "2026-10-09T16:43:48.626Z",
+  "pages": [
+    {
+      "width": 1440,
+      "status": 200,
+      "images": [
+        {
+          "src": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=3840&q=75",
+          "currentSrc": "https://www.zorasafefoundation.org/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=640&q=75",
+          "alt": "An older woman and a younger man exploring a smartphone together at a table.",
+          "complete": true,
+          "naturalWidth": 519
+        },
+        {
+          "src": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=3840&q=75",
+          "currentSrc": "https://www.zorasafefoundation.org/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=640&q=75",
+          "alt": "Adults practicing smartphone skills together during a community classroom workshop.",
+          "complete": true,
+          "naturalWidth": 418
+        },
+        {
+          "src": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=3840&q=75",
+          "currentSrc": "https://www.zorasafefoundation.org/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=640&q=75",
+          "alt": "A group reviewing research findings, charts, and educational materials around a table.",
+          "complete": true,
+          "naturalWidth": 559
+        }
+      ],
+      "social": [
+        "https://www.zorasafefoundation.org/brand/zorasafe-foundation-social1.png",
+        "https://www.zorasafefoundation.org/brand/zorasafe-foundation-social1.png"
+      ],
+      "textSha256": "62691c46ba728454aa67e54e79f159ad4530348c9843b2a99caadf48e46e0788",
+      "linksSha256": "e6c0b3370dbaec51ec859facfacf9f81246e4882ae087a03b52175c79183118e"
+    },
+    {
+      "width": 390,
+      "status": 200,
+      "images": [
+        {
+          "src": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=3840&q=75",
+          "currentSrc": "https://www.zorasafefoundation.org/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=384&q=75",
+          "alt": "An older woman and a younger man exploring a smartphone together at a table.",
+          "complete": true,
+          "naturalWidth": 358
+        },
+        {
+          "src": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=3840&q=75",
+          "currentSrc": "https://www.zorasafefoundation.org/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=384&q=75",
+          "alt": "Adults practicing smartphone skills together during a community classroom workshop.",
+          "complete": true,
+          "naturalWidth": 358
+        },
+        {
+          "src": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=3840&q=75",
+          "currentSrc": "https://www.zorasafefoundation.org/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=384&q=75",
+          "alt": "A group reviewing research findings, charts, and educational materials around a table.",
+          "complete": true,
+          "naturalWidth": 358
+        }
+      ],
+      "social": [
+        "https://www.zorasafefoundation.org/brand/zorasafe-foundation-social1.png",
+        "https://www.zorasafefoundation.org/brand/zorasafe-foundation-social1.png"
+      ],
+      "textSha256": "62691c46ba728454aa67e54e79f159ad4530348c9843b2a99caadf48e46e0788",
+      "linksSha256": "e6c0b3370dbaec51ec859facfacf9f81246e4882ae087a03b52175c79183118e"
+    }
+  ],
+  "assets": [
+    {
+      "path": "/images/hero.webp",
+      "status": 200,
+      "headers": {
+        "content-type": "image/webp",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "age": "802",
+        "x-vercel-cache": "HIT",
+        "etag": "\"1e771ef91ec2e388bbf9b38fdb8f328d\""
+      }
+    },
+    {
+      "path": "/images/community-workshop.webp",
+      "status": 200,
+      "headers": {
+        "content-type": "image/webp",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "age": "802",
+        "x-vercel-cache": "HIT",
+        "etag": "\"25327bcc2e0599785076afe0e7c80556\""
+      }
+    },
+    {
+      "path": "/images/research.webp",
+      "status": 200,
+      "headers": {
+        "content-type": "image/webp",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "age": "802",
+        "x-vercel-cache": "HIT",
+        "etag": "\"5de213e184d7b6e4dcad4f8dbd88a928\""
+      }
+    },
+    {
+      "path": "/brand/zorasafe-foundation-social.png",
+      "status": 200,
+      "headers": {
+        "content-type": "image/png",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "age": "802",
+        "x-vercel-cache": "HIT",
+        "etag": "\"64e168c3266fed871dee87e96b81aaf5\""
+      }
+    },
+    {
+      "path": "/brand/zorasafe-foundation-social.svg",
+      "status": 200,
+      "headers": {
+        "content-type": "image/svg+xml",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "age": "802",
+        "x-vercel-cache": "HIT",
+        "etag": "\"bab459be2f4644d18edbf6a3e78e0a3c\""
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=3840&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=384&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=640&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=750&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=828&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=1080&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=1200&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=1920&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.09tkl5hh6fz-_.webp&w=2048&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/static/immutable/media/hero.09tkl5hh6fz-_.webp",
+      "status": 200,
+      "headers": {
+        "content-type": "image/webp",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS",
+        "etag": "\"_next/static/immutable/media/hero.09tkl5hh6fz-_.webp\""
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=3840&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=384&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=640&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=750&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=828&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=1080&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=1200&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=1920&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommunity-workshop.21k8h395l05_8.webp&w=2048&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/static/immutable/media/community-workshop.21k8h395l05_8.webp",
+      "status": 200,
+      "headers": {
+        "content-type": "image/webp",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS",
+        "etag": "\"_next/static/immutable/media/community-workshop.21k8h395l05_8.webp\""
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=3840&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=384&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=640&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=750&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=828&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=1080&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=1200&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=1920&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fresearch.0o8-f18ax377t.webp&w=2048&q=75",
+      "status": 200,
+      "headers": {
+        "content-type": "image/jpeg",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS"
+      }
+    },
+    {
+      "path": "/_next/static/immutable/media/research.0o8-f18ax377t.webp",
+      "status": 200,
+      "headers": {
+        "content-type": "image/webp",
+        "cache-control": "public,max-age=31536000,immutable",
+        "age": "0",
+        "x-vercel-cache": "MISS",
+        "etag": "\"_next/static/immutable/media/research.0o8-f18ax377t.webp\""
+      }
+    }
+  ]
+}
