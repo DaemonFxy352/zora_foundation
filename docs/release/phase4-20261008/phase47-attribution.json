@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-09T16:20:06.381156+00:00",
+  "promotionAttribution": [
+    {
+      "event": "uev_jnvOmulB0jRafOIOS69cnWgA",
+      "principalType": null,
+      "principalKeys": [
+        "uid",
+        "username",
+        "email",
+        "avatar"
+      ],
+      "principalMatchesUser": true,
+      "requestReferencePresent": false,
+      "tokenReferencePresent": false
+    },
+    {
+      "event": "uev_DrNitpQsYop0rb7dU4wqwD94",
+      "principalType": null,
+      "principalKeys": [
+        "uid",
+        "username",
+        "email",
+        "avatar"
+      ],
+      "principalMatchesUser": true,
+      "requestReferencePresent": true,
+      "tokenReferencePresent": true,
+      "tokenMetadataErrorCode": null,
+      "tokenMetadataHTTPStatus": 200,
+      "tokenMetadataKeys": [
+        "id",
+        "name",
+        "type",
+        "origin",
+        "scopes",
+        "activeAt",
+        "createdAt",
+        "prefix",
+        "suffix"
+      ],
+      "tokenMetadata": {
+        "name": "Website, Login with Google (Chrome on macOS)",
+        "type": "token",
+        "origin": "google",
+        "createdAt": 1771768352245,
+        "activeAt": 1791525061419,
+        "expiresAt": null
+      }
+    }
+  ],
+  "integrationHTTPStatus": 200,
+  "integrations": []
+}

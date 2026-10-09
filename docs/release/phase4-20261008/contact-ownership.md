@@ -1,5 +1,7 @@
 # Inquiry routing and ownership — Phase 4.6
 
+**Phase 4.7 update:** authoritative DNS confirms no MX or apex SPF; DMARC exists, DKIM/provider/delivery remain unverified. The local contact page now displays that delivery and monitoring are unverified. See [operational verification and exact completion test](phase47-operational-verification.md). No test email was sent.
+
 **Implementation:** email links only; no form, submission endpoint, Server Action, database, email SDK or payment backend exists in the inspected application. All seven contact categories use the existing repository address `hello@zorasafefoundation.org` with distinct subjects. This establishes configured routing, **not verified delivery or monitoring**. No test email was sent. Opening a mailto link cannot confirm delivery and has no server-side success/error state. The public page explains this and minimizes requested data.
 
 **Owner confirmation required:** confirm this mailbox receives messages, identify its provider, appoint one accountable inbox role/person and backup, set a review frequency, and identify editorial/safeguarding escalation contacts. One small team may cover multiple roles; none is assigned by this document. Record personal staffing details in an access-controlled operational system, not this repository.

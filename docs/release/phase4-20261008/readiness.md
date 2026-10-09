@@ -1,3 +1,5 @@
+> **Phase 4.7 operational update:** [Verified infrastructure, owner facts and blockers](phase47-operational-verification.md). Contact delivery remains unverified (no authoritative MX/SPF); policies remain unpublished. Promotion is tied to a Google website-login credential, but human authorization remains unresolved. Local held-asset isolation passes; all five held image URLs still return 200 on the older production deployment. No push, merge or deployment authorized or performed.
+
 # Current release decision — Phase 4.6
 
 **NO-GO for production. Validated implementation is local only; no push, merge, deployment or promotion.** The owner’s eight preliminary directions have been applied where evidence permits. [Implementation and exact copy](phase46-owner-implementation.md) records each status, source and remaining confirmation. [Owner decisions](owner-decisions.md) now distinguishes selected direction from formal approval.

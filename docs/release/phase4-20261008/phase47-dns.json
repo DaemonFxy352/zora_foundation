@@ -1,0 +1,174 @@
+{
+  "checkedAt": "2026-10-09T16:25:37.120964+00:00",
+  "queries": [
+    {
+      "server": "ns05.domaincontrol.com",
+      "name": "zorasafefoundation.org",
+      "type": "MX",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns05.domaincontrol.com zorasafefoundation.org MX +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 50643\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns05.domaincontrol.com",
+      "name": "zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns05.domaincontrol.com zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 16479\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns05.domaincontrol.com",
+      "name": "zorasafefoundation.org",
+      "type": "A",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns05.domaincontrol.com zorasafefoundation.org A +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 35097\n;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 2, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n;; ANSWER SECTION:\nzorasafefoundation.org.\t600\tIN\tA\t216.150.1.1\n\n"
+    },
+    {
+      "server": "ns05.domaincontrol.com",
+      "name": "zorasafefoundation.org",
+      "type": "AAAA",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns05.domaincontrol.com zorasafefoundation.org AAAA +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 12205\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns05.domaincontrol.com",
+      "name": "_dmarc.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns05.domaincontrol.com _dmarc.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 30633\n;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 2, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n;; ANSWER SECTION:\n_dmarc.zorasafefoundation.org. 3600 IN\tTXT\t\"v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:dmarc_rua@onsecureserver.net;\"\n\n"
+    },
+    {
+      "server": "ns05.domaincontrol.com",
+      "name": "default._domainkey.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns05.domaincontrol.com default._domainkey.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 61689\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns05.domaincontrol.com",
+      "name": "google._domainkey.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns05.domaincontrol.com google._domainkey.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 27390\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns05.domaincontrol.com",
+      "name": "selector1._domainkey.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns05.domaincontrol.com selector1._domainkey.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 57291\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns05.domaincontrol.com",
+      "name": "selector2._domainkey.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns05.domaincontrol.com selector2._domainkey.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 36784\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns05.domaincontrol.com",
+      "name": "s1._domainkey.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns05.domaincontrol.com s1._domainkey.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 16605\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns05.domaincontrol.com",
+      "name": "s2._domainkey.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns05.domaincontrol.com s2._domainkey.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 703\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns05.domaincontrol.com",
+      "name": "k1._domainkey.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns05.domaincontrol.com k1._domainkey.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 24791\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns06.domaincontrol.com",
+      "name": "zorasafefoundation.org",
+      "type": "MX",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns06.domaincontrol.com zorasafefoundation.org MX +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 12131\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns06.domaincontrol.com",
+      "name": "zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns06.domaincontrol.com zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 63589\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns06.domaincontrol.com",
+      "name": "zorasafefoundation.org",
+      "type": "A",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns06.domaincontrol.com zorasafefoundation.org A +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 55508\n;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 2, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n;; ANSWER SECTION:\nzorasafefoundation.org.\t600\tIN\tA\t216.150.1.1\n\n"
+    },
+    {
+      "server": "ns06.domaincontrol.com",
+      "name": "zorasafefoundation.org",
+      "type": "AAAA",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns06.domaincontrol.com zorasafefoundation.org AAAA +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 6476\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns06.domaincontrol.com",
+      "name": "_dmarc.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns06.domaincontrol.com _dmarc.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 6860\n;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 2, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n;; ANSWER SECTION:\n_dmarc.zorasafefoundation.org. 3600 IN\tTXT\t\"v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:dmarc_rua@onsecureserver.net;\"\n\n"
+    },
+    {
+      "server": "ns06.domaincontrol.com",
+      "name": "default._domainkey.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns06.domaincontrol.com default._domainkey.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 8994\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns06.domaincontrol.com",
+      "name": "google._domainkey.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns06.domaincontrol.com google._domainkey.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 28615\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns06.domaincontrol.com",
+      "name": "selector1._domainkey.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns06.domaincontrol.com selector1._domainkey.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 4231\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns06.domaincontrol.com",
+      "name": "selector2._domainkey.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns06.domaincontrol.com selector2._domainkey.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 47230\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns06.domaincontrol.com",
+      "name": "s1._domainkey.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns06.domaincontrol.com s1._domainkey.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 27164\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns06.domaincontrol.com",
+      "name": "s2._domainkey.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns06.domaincontrol.com s2._domainkey.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 46913\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    },
+    {
+      "server": "ns06.domaincontrol.com",
+      "name": "k1._domainkey.zorasafefoundation.org",
+      "type": "TXT",
+      "exitCode": 0,
+      "response": "\n; <<>> DiG 9.10.6 <<>> @ns06.domaincontrol.com k1._domainkey.zorasafefoundation.org TXT +norecurse +time=3 +tries=1 +noall +answer +comments\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 20030\n;; flags: qr aa; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1472\n"
+    }
+  ],
+  "dkimLimitation": "These common selectors are probes only, not exhaustive. Provider-issued selector and a signed message are required to verify signing; absence at these selectors does not prove all DKIM records absent."
+}

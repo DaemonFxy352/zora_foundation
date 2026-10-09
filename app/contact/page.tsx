@@ -66,6 +66,10 @@ export default function ContactPage() {
         title="Start a conversation."
         intro="Have a question or an idea for making digital safety knowledge more accessible? Choose the inquiry that fits, or email us directly."
       >
+        <p>
+          Email delivery and inbox monitoring have not yet been verified. Please
+          do not rely on this address for time-sensitive requests.
+        </p>
         <a
           className="contact-address"
           href="mailto:hello@zorasafefoundation.org"

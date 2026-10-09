@@ -1,0 +1,113 @@
+{
+  "checkedAt": "2026-10-09T16:28:29.255Z",
+  "scope": "Read-only fresh Chromium production /contact load; no links activated, no messages sent",
+  "status": 200,
+  "requests": [
+    {
+      "method": "GET",
+      "origin": "https://www.zorasafefoundation.org",
+      "path": "/contact",
+      "type": "document"
+    },
+    {
+      "method": "GET",
+      "origin": "https://www.zorasafefoundation.org",
+      "path": "/_next/static/immutable/media/Inter_Variable-s.p.1ci5nhn25kwyu.ttf",
+      "type": "font"
+    },
+    {
+      "method": "GET",
+      "origin": "https://www.zorasafefoundation.org",
+      "path": "/_next/static/immutable/chunks/2_ltgo1_1_qbe.css",
+      "type": "stylesheet"
+    },
+    {
+      "method": "GET",
+      "origin": "https://www.zorasafefoundation.org",
+      "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+      "type": "script"
+    },
+    {
+      "method": "GET",
+      "origin": "https://www.zorasafefoundation.org",
+      "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+      "type": "script"
+    },
+    {
+      "method": "GET",
+      "origin": "https://www.zorasafefoundation.org",
+      "path": "/_next/static/immutable/chunks/3skiaz1a45t01.js",
+      "type": "script"
+    },
+    {
+      "method": "GET",
+      "origin": "https://www.zorasafefoundation.org",
+      "path": "/_next/static/immutable/chunks/2b6kz7m49hf-d.js",
+      "type": "script"
+    },
+    {
+      "method": "GET",
+      "origin": "https://www.zorasafefoundation.org",
+      "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+      "type": "script"
+    },
+    {
+      "method": "GET",
+      "origin": "https://www.zorasafefoundation.org",
+      "path": "/_next/static/immutable/chunks/414fv4rsn34r9.js",
+      "type": "script"
+    },
+    {
+      "method": "GET",
+      "origin": "https://www.zorasafefoundation.org",
+      "path": "/",
+      "type": "fetch"
+    },
+    {
+      "method": "GET",
+      "origin": "https://www.zorasafefoundation.org",
+      "path": "/support",
+      "type": "fetch"
+    },
+    {
+      "method": "GET",
+      "origin": "https://www.zorasafefoundation.org",
+      "path": "/support",
+      "type": "fetch"
+    },
+    {
+      "method": "GET",
+      "origin": "https://www.zorasafefoundation.org",
+      "path": "/support",
+      "type": "fetch"
+    },
+    {
+      "method": "GET",
+      "origin": "https://www.zorasafefoundation.org",
+      "path": "/",
+      "type": "fetch"
+    },
+    {
+      "method": "GET",
+      "origin": "https://www.zorasafefoundation.org",
+      "path": "/_next/static/immutable/chunks/05yg6xluw343t.js",
+      "type": "script"
+    }
+  ],
+  "cookieCount": 0,
+  "setCookieObserved": false,
+  "storage": {
+    "local": 0,
+    "session": 0
+  },
+  "scripts": [
+    "/_next/static/immutable/chunks/0meshd4c712hl.js",
+    "/_next/static/immutable/chunks/3skiaz1a45t01.js",
+    "/_next/static/immutable/chunks/2b6kz7m49hf-d.js",
+    "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+    "/_next/static/immutable/chunks/414fv4rsn34r9.js",
+    "/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+    "/_next/static/immutable/chunks/05yg6xluw343t.js",
+    "/_next/static/immutable/chunks/3douyljdx_-l2.js"
+  ]
+}

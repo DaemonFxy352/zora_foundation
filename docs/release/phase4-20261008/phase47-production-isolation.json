@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-09T16:30:21.097887+00:00",
+  "scope": "Read-only HEAD requests to production; older deployment, not local candidate",
+  "results": [
+    {
+      "path": "/images/hero.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/images/community-workshop.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/images/research.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/brand/zorasafe-foundation-social.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "path": "/brand/zorasafe-foundation-social.svg",
+      "status": 200,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "/internal/legal/privacy-draft.md",
+      "status": 404
+    },
+    {
+      "path": "/internal/legal/terms-draft.md",
+      "status": 404
+    },
+    {
+      "path": "/privacy",
+      "status": 404
+    },
+    {
+      "path": "/terms",
+      "status": 404
+    }
+  ]
+}

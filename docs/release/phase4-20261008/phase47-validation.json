@@ -1,0 +1,132 @@
+{
+  "phase": "4.7",
+  "checkedAt": "2026-10-09T16:33:54.916547+00:00",
+  "baseline": "7e6bd709ac2877fa0e1b27b519a5beb99b965fe1",
+  "branch": "seo/foundation-phase2-authority-20261007",
+  "environment": "local macOS; Node 24.21.0; Next.js 16.4.0; production build",
+  "checks": [
+    {
+      "command": "npm run build",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:content",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:materials",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:build",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:seo",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:routes",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:accessibility",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:release",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:review",
+      "exitCode": 0
+    }
+  ],
+  "pagesVerified": 28,
+  "sitemapEntries": 26,
+  "browser": {
+    "initialFullRun": {
+      "command": "npm run verify:browser",
+      "exitCode": 1,
+      "passed": 48,
+      "failed": 1,
+      "expectedSkipped": 2,
+      "durationSeconds": 57.1,
+      "failure": "New privacy test incorrectly expected Firefox to clear the input on reload. Browser-native form restoration preserved the value despite no application storage or transmission."
+    },
+    "correction": "Test checks a fresh tab in the same context; policy draft describes browser-managed restoration. No search implementation changed.",
+    "targetedRerun": {
+      "command": "npm run verify:browser -- --grep 'resource search stays' --output=test-results/phase47-search-rerun",
+      "exitCode": 0,
+      "passed": 3,
+      "failed": 0,
+      "durationSeconds": 6.3,
+      "projects": [
+        "desktop Chromium",
+        "mobile Chromium",
+        "Firefox"
+      ]
+    },
+    "finalCoverage": "49 applicable tests passed across the full run plus corrected targeted rerun; two non-Chromium-desktop PDF cases intentionally skipped. No claim of a second full-suite run.",
+    "contactTests": "All seven category mailto links, focus, notice, no form, privacy/terms links and support inquiry passed in all three projects; no mail application launched or email sent.",
+    "visualReview": "Desktop and mobile contact screenshots inspected: notice visible, readable layout, no observed clipping. Does not grant assistive-technology/native-zoom/print-pagination acceptance.",
+    "artifacts": [
+      {
+        "path": "test-results/release-readable-and-navigable-contact-desktop/-contact.png",
+        "bytes": 388948,
+        "sha256": "87d3f171d08ce72e841bbddad012329f19736aa254fdb0ec83a71ef890df09d8"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-contact-firefox/-contact.png",
+        "bytes": 425896,
+        "sha256": "448dfed525cdd3f0d46b4bf0f78aa5ac2005d18331567ac1d1e31bcba73cc11f"
+      },
+      {
+        "path": "test-results/release-readable-and-navigable-contact-mobile/-contact.png",
+        "bytes": 1452107,
+        "sha256": "66de1bdf5004108475fb1381719b837d37015bc65d2d92336e2094c42aaac9fb"
+      }
+    ]
+  },
+  "environmentFailuresResolved": [
+    "Default shell Node 20 was below repository requirement; validation used Node 24.21.0.",
+    "Sandbox blocked DNS/network and local browser/server launch; read-only network checks and browser QA succeeded with approved escalation."
+  ],
+  "editorialGate": {
+    "command": "npm run release:editorial",
+    "exitCode": 1,
+    "pendingPublicEntries": 27,
+    "status": "Expected NO-GO; decision records unchanged. Only current contact content hash refreshed."
+  },
+  "mailDeliveryTest": {
+    "status": "not performed",
+    "reason": "No configured sending service or authorized controlled test mailbox access; receiving provider and delivery are unverified."
+  },
+  "isolation": {
+    "candidate": "PASS",
+    "production": "FAIL: five held image URLs still return HTTP 200 on older deployment; draft policy routes 404. See phase47-production-isolation.json."
+  },
+  "productionObservation": "Read-only Chromium /contact load: same-origin GETs, no observed tracking requests/cookies/local or session storage. Not a historical or whole-site processing guarantee.",
+  "ci": "Not run; no push authorized.",
+  "gitDiffCheck": {
+    "command": "git diff --check",
+    "exitCode": 0
+  },
+  "changesNotPerformed": [
+    "push",
+    "merge",
+    "deploy",
+    "DNS/provider configuration",
+    "email sending",
+    "policy publication",
+    "approval bypass"
+  ]
+}

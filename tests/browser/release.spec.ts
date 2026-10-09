@@ -146,6 +146,7 @@ test("pathway inquiry links and local contact flows", async ({ page }, info) => 
     await expect(link).toBeFocused();
   }
   await expect(page.locator("main form")).toHaveCount(0);
+  await expect(page.locator("main")).toContainText("Email delivery and inbox monitoring have not yet been verified.");
   await expect(page.locator("main")).toContainText("opening a link does not send an email");
   for (const kind of ["Privacy", "Terms"]) {
     await expect(page.getByRole("link", { name: `${kind} inquiry`, exact: true })).toHaveAttribute(
@@ -213,6 +214,36 @@ test("draft and internal URLs return real 404s", async ({ request }) => {
     "/internal/held-assets/hero.webp",
     "/internal/legal/privacy-draft.md",
     "/internal/legal/terms-draft.md",
+    "/privacy",
+    "/terms",
+    "/privacy-draft.md",
+    "/terms-draft.md",
+    "/brand/zorasafe-foundation-social.png",
+    "/brand/zorasafe-foundation-social.svg",
   ])
     expect((await request.get(path)).status()).toBe(404);
+});
+
+test("resource search stays in memory without tracking or submission", async ({ page, context }) => {
+  const unexpectedRequests: string[] = [];
+  page.on("request", (request) => {
+    const url = new URL(request.url());
+    if (url.origin !== "http://127.0.0.1:3100" ||
+        request.method() !== "GET" ||
+        /phase47-private-search|analytics|insights/.test(request.url())) {
+      unexpectedRequests.push(`${request.method()} ${url.origin}${url.pathname}`);
+    }
+  });
+  await page.goto("/education");
+  await page.getByRole("searchbox", { name: "Search resources", exact: true }).fill("phase47-private-search");
+  await expect(page.getByRole("heading", { name: "No resources match these filters yet." })).toBeVisible();
+  await expect(page).toHaveURL("http://127.0.0.1:3100/education");
+  expect(await context.cookies()).toEqual([]);
+  expect(await page.evaluate(() => ({ local: localStorage.length, session: sessionStorage.length }))).toEqual({ local: 0, session: 0 });
+  // Firefox may restore form controls on reload independently of application
+  // storage. A fresh tab verifies the application has not persisted the query.
+  const freshPage = await context.newPage();
+  await freshPage.goto("/education");
+  await expect(freshPage.getByRole("searchbox", { name: "Search resources", exact: true })).toHaveValue("");
+  expect(unexpectedRequests).toEqual([]);
 });

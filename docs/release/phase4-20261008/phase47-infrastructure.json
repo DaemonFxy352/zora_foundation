@@ -1,0 +1,212 @@
+{
+  "checkedAt": "2026-10-09T16:16:39.242684+00:00",
+  "project": {
+    "id": "prj_lSHh3vDrPHNIMgXYqd2JzOkGsBJ6",
+    "name": "zora-foundation",
+    "webAnalytics": {
+      "id": "RDrZrOdT0WrpELR8sexyR9LMZ"
+    },
+    "analytics": null,
+    "speedInsights": {
+      "id": "8PJ48doRNqByuRuLM841SO2xUjC",
+      "hasData": false
+    },
+    "enablePreviewFeedback": null,
+    "enableProductionFeedback": null,
+    "dataCache": null,
+    "observability": null,
+    "retention": null
+  },
+  "availableSettingKeys": [
+    "speedInsights",
+    "webAnalytics"
+  ],
+  "productionBranch": "main",
+  "deployHooksCount": 0,
+  "productionDeployment": "dpl_GTQR1z5gXKugwJLAFfX5pKiDFzSq",
+  "productionAliasDeployment": "dpl_GTQR1z5gXKugwJLAFfX5pKiDFzSq",
+  "teamPlan": "pro",
+  "env": [],
+  "envHTTPStatus": 200,
+  "domains": [
+    {
+      "name": "zorasafefoundation.org",
+      "gitBranch": null,
+      "customEnvironmentId": null
+    },
+    {
+      "name": "www.zorasafefoundation.org",
+      "gitBranch": null,
+      "customEnvironmentId": null
+    },
+    {
+      "name": "zora-foundation.vercel.app",
+      "gitBranch": null,
+      "customEnvironmentId": null
+    }
+  ],
+  "deployment": {
+    "id": "dpl_GTQR1z5gXKugwJLAFfX5pKiDFzSq",
+    "source": "redeploy",
+    "target": "production",
+    "createdAt": 1791525119043,
+    "ready": 1791525133195
+  },
+  "deploymentMeta": {
+    "action": "promote",
+    "originalDeploymentId": "dpl_BnztKg1VmJjTTsMUkYr39Ss9oCGX",
+    "githubCommitSha": "bf0d45aea4aced34fa6037697051f58b537076a7",
+    "githubCommitRef": "seo/foundation-phase2-authority-20261007"
+  },
+  "integrations": {
+    "httpStatus": 400
+  },
+  "drains": {
+    "count": 0,
+    "projectApplicableCount": 0
+  },
+  "webhooks": {
+    "count": 0,
+    "projectApplicableCount": 0
+  },
+  "eventsHTTPStatus": 200,
+  "eventsPagination": null,
+  "events": [
+    {
+      "id": "uev_I7qCWlaxnKvME3zvpCU4g8Zk",
+      "type": "aliases-assigned",
+      "created": 1791525162223,
+      "account": "zorasafe",
+      "eventKeys": [
+        "text",
+        "entities",
+        "createdAt",
+        "created",
+        "type",
+        "categories",
+        "user",
+        "principal",
+        "userId",
+        "principalId",
+        "id",
+        "payload"
+      ],
+      "payloadKeys": [
+        "projectId",
+        "aliasCount",
+        "deployment"
+      ],
+      "provenance": {
+        "projectId": "prj_lSHh3vDrPHNIMgXYqd2JzOkGsBJ6"
+      }
+    },
+    {
+      "id": "uev_XEYZQOY0lqSwQcbpocfOhLtS",
+      "type": "deployment",
+      "created": 1791525147644,
+      "account": "zorasafe",
+      "eventKeys": [
+        "text",
+        "entities",
+        "createdAt",
+        "created",
+        "type",
+        "categories",
+        "user",
+        "principal",
+        "userId",
+        "principalId",
+        "requestId",
+        "id",
+        "payload"
+      ],
+      "payloadKeys": [
+        "alias",
+        "deployment",
+        "deploymentId",
+        "name",
+        "plan",
+        "project",
+        "projectId",
+        "regions",
+        "target",
+        "type",
+        "url",
+        "forced"
+      ],
+      "provenance": {
+        "deploymentId": "dpl_24tTyA2yMHxX1ryLdfDMFF1JzDPD",
+        "projectId": "prj_lSHh3vDrPHNIMgXYqd2JzOkGsBJ6"
+      }
+    },
+    {
+      "id": "uev_jnvOmulB0jRafOIOS69cnWgA",
+      "type": "aliases-assigned",
+      "created": 1791525133507,
+      "account": "zorasafe",
+      "eventKeys": [
+        "text",
+        "entities",
+        "createdAt",
+        "created",
+        "type",
+        "categories",
+        "user",
+        "principal",
+        "userId",
+        "principalId",
+        "id",
+        "payload"
+      ],
+      "payloadKeys": [
+        "projectId",
+        "aliasCount",
+        "deployment"
+      ],
+      "provenance": {
+        "projectId": "prj_lSHh3vDrPHNIMgXYqd2JzOkGsBJ6"
+      }
+    },
+    {
+      "id": "uev_DrNitpQsYop0rb7dU4wqwD94",
+      "type": "deployment",
+      "created": 1791525119125,
+      "account": "zorasafe",
+      "eventKeys": [
+        "text",
+        "entities",
+        "createdAt",
+        "created",
+        "type",
+        "categories",
+        "user",
+        "principal",
+        "userId",
+        "principalId",
+        "tokenId",
+        "requestId",
+        "id",
+        "payload"
+      ],
+      "payloadKeys": [
+        "alias",
+        "deployment",
+        "deploymentId",
+        "name",
+        "plan",
+        "project",
+        "projectId",
+        "regions",
+        "target",
+        "type",
+        "url",
+        "forced"
+      ],
+      "provenance": {
+        "target": "production",
+        "deploymentId": "dpl_GTQR1z5gXKugwJLAFfX5pKiDFzSq",
+        "projectId": "prj_lSHh3vDrPHNIMgXYqd2JzOkGsBJ6"
+      }
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readdirSync, readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
+import { createHash } from "node:crypto";
 import { builtRoutes } from "./build-pages.mjs";
 import { load } from "./lib/load-ts.mjs";
 const { handouts } = load("internal/handouts/data.ts");
@@ -59,8 +60,12 @@ console.log(
 
 // Held imagery and unapproved policy drafts must not enter public build output.
 const heldNames = files("internal/held-assets").map((f) => f.split("/").at(-1));
+const heldHashes = new Set(files("internal/held-assets").map((file) =>
+  createHash("sha256").update(readFileSync(file)).digest("hex"),
+));
 for (const file of assets) {
   assert.ok(!heldNames.includes(file.split("/").at(-1)), `${file}: held asset exposed`);
+  assert.ok(!heldHashes.has(createHash("sha256").update(readFileSync(file)).digest("hex")), `${file}: renamed held asset exposed`);
   if (/\.(?:js|json|html|rsc|txt|map|body|md)$/.test(file)) {
     const text = readFileSync(file, "utf8");
     assert.ok(!/PHASE46_UNAPPROVED_POLICY|internal\/held-assets|images\/(?:hero|community-workshop|research)\.webp/.test(text), `${file}: held material exposed`);
