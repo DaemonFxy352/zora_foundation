@@ -1,0 +1,1894 @@
+{
+  "baselineCommit": "5ba89820ddcf57351e467223fda43b9a4d4a0c49",
+  "preparedAt": "2026-10-08",
+  "note": "No human approval is asserted. Verify production deployment matches baseline before interpreting diffs. Regeneration does not overwrite decisions.",
+  "entries": [
+    {
+      "id": "resource:recognize-a-scam",
+      "title": "Recognize a scam",
+      "url": "/education/recognize-a-scam",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Teenagers",
+        "Older adults",
+        "Parents & families",
+        "Caregivers",
+        "Libraries, senior centers & community organizations",
+        "Educators & facilitators",
+        "People building digital confidence"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "743b1b5200ec1339d97d4c9c057d0ca8e21560ade2d4eada5412a3f10035d2e3",
+      "sources": [
+        {
+          "label": "FTC: How to avoid a scam",
+          "url": "https://consumer.ftc.gov/articles/how-avoid-scam"
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "modified",
+        "fields": [
+          "audience",
+          "related"
+        ],
+        "baselineContentSha256": "5788b22b1f429faf12764420a3515c8144d602c1491d29a23e175d6b0c116e1f"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:verify-before-you-trust",
+      "title": "Verify before you trust",
+      "url": "/education/verify-before-you-trust",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Teenagers",
+        "Older adults",
+        "Parents & families",
+        "Caregivers",
+        "Libraries, senior centers & community organizations",
+        "Educators & facilitators",
+        "People building digital confidence"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "19a358d9896dc2dc3ee94b3586f61b409f5423b62be206f172f26ffb896b7b8f",
+      "sources": [
+        {
+          "label": "NIST: Phishing guidance",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+          "note": "Phishing as social engineering and ways organizations can respond."
+        },
+        {
+          "label": "FBI / IC3: Generative AI and financial fraud",
+          "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+          "note": "Synthetic text, images, audio and video; independent verification and family phrases."
+        },
+        {
+          "label": "FTC: Recover a hacked email or social media account",
+          "url": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+          "note": "Account recovery, signing out sessions and checking recovery details."
+        },
+        {
+          "label": "FTC: Scammers use fake emergencies to steal your money",
+          "url": "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money",
+          "note": "Emergency impersonation and checking the story with trusted contacts."
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "modified",
+        "fields": [
+          "summary",
+          "audience",
+          "readingMinutes",
+          "related",
+          "sources",
+          "editorial",
+          "sections"
+        ],
+        "baselineContentSha256": "75b5423c95e1e4ecead600618949bad443b937640275c963500192ae4e91c409"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:ai-impersonation",
+      "title": "What is AI impersonation fraud?",
+      "url": "/education/ai-impersonation",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Older adults",
+        "Parents & families",
+        "Caregivers",
+        "Libraries, senior centers & community organizations",
+        "Educators & facilitators"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "a31fe88607880392fc8c148ad7ed9530ab0ea6c910cb6347885db7476f4193c7",
+      "sources": [
+        {
+          "label": "FBI / IC3: Generative AI and financial fraud",
+          "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+          "note": "Synthetic text, images, audio and video; independent verification and family phrases."
+        },
+        {
+          "label": "FTC: Recover a hacked email or social media account",
+          "url": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+          "note": "Account recovery, signing out sessions and checking recovery details."
+        },
+        {
+          "label": "NIST: Phishing guidance",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+          "note": "Phishing as social engineering and ways organizations can respond."
+        },
+        {
+          "label": "FTC: Scammers use fake emergencies to steal your money",
+          "url": "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money",
+          "note": "Emergency impersonation and checking the story with trusted contacts."
+        },
+        {
+          "label": "NIST: Technical approaches to synthetic-content transparency",
+          "url": "https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content",
+          "note": "Overview of transparency approaches; not an endorsement of a detection product."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "modified",
+        "fields": [
+          "title",
+          "summary",
+          "readingMinutes",
+          "related",
+          "intro",
+          "sources",
+          "editorial",
+          "sections"
+        ],
+        "baselineContentSha256": "d2fb02ada49e6167194d27557288411205b0d9c052f9706273faf95fde14080c"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:suspicious-message",
+      "title": "What to do with a suspicious message",
+      "url": "/education/suspicious-message",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Teenagers",
+        "Older adults",
+        "Parents & families",
+        "Caregivers",
+        "Libraries, senior centers & community organizations",
+        "Educators & facilitators",
+        "People building digital confidence"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "cd9ace634e83d5644b40bf98c16a98de4b7bb9348dcae659ade47cddbb35f4de",
+      "sources": [
+        {
+          "label": "FTC: Recognize and avoid phishing scams",
+          "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+          "note": "Unexpected links, account pretexts, reporting and account protection."
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "modified",
+        "fields": [
+          "audience",
+          "updatedAt",
+          "related",
+          "sources",
+          "sourceCheckedAt",
+          "sections"
+        ],
+        "baselineContentSha256": "ba9fb5a10ef236d1410c96199fdc7fdf20b22d927b0218eda8cb07c3b6a4a6a3"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:account-safety",
+      "title": "Make your accounts safer",
+      "url": "/education/account-safety",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Teenagers",
+        "Older adults",
+        "Parents & families",
+        "Caregivers",
+        "Libraries, senior centers & community organizations",
+        "Educators & facilitators",
+        "People building digital confidence"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "498671874440c094ddddb5d7299ef93f961275b92c6d6c582ed796af9c8ee97c",
+      "sources": [
+        {
+          "label": "FTC: Recover a hacked email or social media account",
+          "url": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+          "note": "Account recovery, signing out sessions and checking recovery details."
+        },
+        {
+          "label": "FTC: Recognize and avoid phishing scams",
+          "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+          "note": "Unexpected links, account pretexts, reporting and account protection."
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "modified",
+        "fields": [
+          "audience",
+          "updatedAt",
+          "related",
+          "sources",
+          "sourceCheckedAt",
+          "sections"
+        ],
+        "baselineContentSha256": "e34ba635b7fcdd724e0cf43cf802973c8295caba8da384beceba9f5684fb5d42"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:human-targeted-attacks",
+      "title": "What is a human-targeted attack?",
+      "url": "/education/human-targeted-attacks",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Older adults",
+        "Parents & families",
+        "Caregivers",
+        "Libraries, senior centers & community organizations",
+        "Educators & facilitators",
+        "People building digital confidence"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "28785b1613ec1f8b82a27c0bb131b68da8c5be3f726a5c6e0feb7d581f605858",
+      "sources": [
+        {
+          "label": "NIST: Phishing guidance",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+          "note": "Phishing as social engineering and ways organizations can respond."
+        },
+        {
+          "label": "FBI / IC3: Generative AI and financial fraud",
+          "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+          "note": "Synthetic text, images, audio and video; independent verification and family phrases."
+        },
+        {
+          "label": "FTC: How to avoid a scam",
+          "url": "https://consumer.ftc.gov/articles/how-avoid-scam",
+          "note": "Impersonation, pressure, unusual payments and independent checking."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:after-a-scam",
+      "title": "What to do after a scam",
+      "url": "/education/after-a-scam",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Older adults",
+        "Parents & families",
+        "Caregivers",
+        "Libraries, senior centers & community organizations",
+        "Educators & facilitators",
+        "People building digital confidence"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "9855818ce86bf8ae4f1b732543f84bec7df46d1cb8501c3ac1e76cb61664203f",
+      "sources": [
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        },
+        {
+          "label": "FTC: Recover a hacked email or social media account",
+          "url": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+          "note": "Account recovery, signing out sessions and checking recovery details."
+        },
+        {
+          "label": "FTC: Refund and recovery scams",
+          "url": "https://consumer.ftc.gov/articles/refund-and-recovery-scams",
+          "note": "Upfront-fee recovery offers can cause further loss."
+        },
+        {
+          "label": "NIST: Phishing guidance",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+          "note": "Phishing as social engineering and ways organizations can respond."
+        },
+        {
+          "label": "FBI / IC3: Report internet crime",
+          "url": "https://www.ic3.gov/",
+          "note": "Official reporting destination; not a promise of individual recovery."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:qr-link-safety",
+      "title": "QR code and suspicious link safety",
+      "url": "/education/qr-link-safety",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Older adults",
+        "Parents & families",
+        "Caregivers",
+        "Libraries, senior centers & community organizations",
+        "Educators & facilitators",
+        "People building digital confidence"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "065365537b38e0e640b0f920db8169a7c744d867fae37bc01e50671072cc974d",
+      "sources": [
+        {
+          "label": "FTC: Harmful links hidden in QR codes",
+          "url": "https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information",
+          "note": "Tampered payment codes, delivery pretexts and checking a destination."
+        },
+        {
+          "label": "FTC: Recognize and avoid phishing scams",
+          "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+          "note": "Unexpected links, account pretexts, reporting and account protection."
+        },
+        {
+          "label": "FTC: Recover a hacked email or social media account",
+          "url": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+          "note": "Account recovery, signing out sessions and checking recovery details."
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:phone-impersonation",
+      "title": "How to handle a phone impersonation scam",
+      "url": "/education/phone-impersonation",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Older adults",
+        "Parents & families",
+        "Caregivers",
+        "Libraries, senior centers & community organizations",
+        "Educators & facilitators",
+        "People building digital confidence"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "35df0af7a79643fb9c4a2fcd45ce735b8126fee500f1a100d683ff92d8d46350",
+      "sources": [
+        {
+          "label": "FTC: Phone scams",
+          "url": "https://consumer.ftc.gov/articles/phone-scams",
+          "note": "Caller ID spoofing, impersonation and ending unwanted calls."
+        },
+        {
+          "label": "FTC: How to avoid a scam",
+          "url": "https://consumer.ftc.gov/articles/how-avoid-scam",
+          "note": "Impersonation, pressure, unusual payments and independent checking."
+        },
+        {
+          "label": "FBI / IC3: Generative AI and financial fraud",
+          "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+          "note": "Synthetic text, images, audio and video; independent verification and family phrases."
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:family-emergency-scams",
+      "title": "Family emergency scams: pause and check",
+      "url": "/education/family-emergency-scams",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Older adults",
+        "Parents & families",
+        "Caregivers",
+        "Libraries, senior centers & community organizations",
+        "Educators & facilitators",
+        "People building digital confidence"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "8c9330e8dd0ee1e63312e8dac835399bf3e9c85854b7c7ba0c095ed3fb22c0a0",
+      "sources": [
+        {
+          "label": "FTC: Scammers use fake emergencies to steal your money",
+          "url": "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money",
+          "note": "Emergency impersonation and checking the story with trusted contacts."
+        },
+        {
+          "label": "FBI / IC3: Generative AI and financial fraud",
+          "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+          "note": "Synthetic text, images, audio and video; independent verification and family phrases."
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:internet-safety-parents",
+      "title": "Internet safety for parents: a practical family guide",
+      "url": "/education/internet-safety-parents",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Parents & families",
+        "Caregivers",
+        "Educators & facilitators"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "5b670a3eace19438f45ee5910fc76014d601ba16b8d0056e8228cf0f87981fb7",
+      "sources": [
+        {
+          "label": "FTC: Kids and video games",
+          "url": "https://consumer.ftc.gov/articles/kids-video-games"
+        },
+        {
+          "label": "FTC: Protecting your child’s privacy online",
+          "url": "https://consumer.ftc.gov/articles/protecting-your-childs-privacy-online"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "NCMEC: Take It Down",
+          "url": "https://takeitdown.ncmec.org/",
+          "note": "For intimate images taken before age 18; participating platforms only. Never download or forward an image to use this service."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "NCMEC: Take It Down",
+          "url": "https://takeitdown.ncmec.org/",
+          "note": "For intimate images taken before age 18; participating platforms only. Never download or forward an image to use this service."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "exploitation-and-safe-reporting",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:online-safety-kids",
+      "title": "Online safety for kids: practice with a trusted adult",
+      "url": "/education/online-safety-kids",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Children with a trusted adult",
+        "Parents & families",
+        "Educators & facilitators"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "0fcbb482e004ce1007ad23718abaa0c728f91b8fd922c696ee0997fb92ce8610",
+      "sources": [
+        {
+          "label": "NCMEC: Tips for tweens",
+          "url": "https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips"
+        },
+        {
+          "label": "NCMEC: Gaming safety",
+          "url": "https://www.missingkids.org/netsmartz/topics/gaming"
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "NCMEC: Take It Down",
+          "url": "https://takeitdown.ncmec.org/",
+          "note": "For intimate images taken before age 18; participating platforms only. Never download or forward an image to use this service."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "exploitation-and-safe-reporting",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:teen-online-safety",
+      "title": "Teen online safety: privacy, scams, and getting help",
+      "url": "/education/teen-online-safety",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Teenagers",
+        "Parents & families",
+        "Educators & facilitators"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "b6af1c3221e192f86b2c1fe77bf96cf79ef53239e76fb124cf0c8dc627b0ef1b",
+      "sources": [
+        {
+          "label": "NCMEC: Tips for tweens",
+          "url": "https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips"
+        },
+        {
+          "label": "FTC: Recognize and avoid phishing scams",
+          "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "NCMEC: Take It Down",
+          "url": "https://takeitdown.ncmec.org/",
+          "note": "For intimate images taken before age 18; participating platforms only. Never download or forward an image to use this service."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "NCMEC: Take It Down",
+          "url": "https://takeitdown.ncmec.org/",
+          "note": "For intimate images taken before age 18; participating platforms only. Never download or forward an image to use this service."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "exploitation-and-safe-reporting",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:gaming-scams",
+      "title": "Gaming scams: a guide for players and parents",
+      "url": "/education/gaming-scams",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Teenagers",
+        "Parents & families",
+        "Educators & facilitators"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "7c43dae0bdb9d6e2e0b6d688a5b5b25f545bcb6a3c2e3ef6271871c54535b637",
+      "sources": [
+        {
+          "label": "FTC: Kids and video games",
+          "url": "https://consumer.ftc.gov/articles/kids-video-games"
+        },
+        {
+          "label": "NCMEC: Gaming safety",
+          "url": "https://www.missingkids.org/netsmartz/topics/gaming"
+        },
+        {
+          "label": "FTC: Recognize and avoid phishing scams",
+          "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams"
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "NCMEC: Take It Down",
+          "url": "https://takeitdown.ncmec.org/",
+          "note": "For intimate images taken before age 18; participating platforms only. Never download or forward an image to use this service."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "exploitation-and-safe-reporting",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:online-safety-older-adults",
+      "title": "Online safety for older adults: a practical guide",
+      "url": "/education/online-safety-older-adults",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Older adults",
+        "Caregivers",
+        "People building digital confidence",
+        "Libraries, senior centers & community organizations"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "2b14f44c32747d7c45b22bf2f91b9573a007576705cad175f6f69fe36c8af2de",
+      "sources": [
+        {
+          "label": "FTC: Recognize and avoid phishing scams",
+          "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams"
+        },
+        {
+          "label": "FTC: Spot, avoid, and report tech support scams",
+          "url": "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams"
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:government-impersonation",
+      "title": "Government impersonation scams: check before you respond",
+      "url": "/education/government-impersonation",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Older adults",
+        "Caregivers",
+        "Libraries, senior centers & community organizations",
+        "People building digital confidence"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "37a7afc9b4ae6192220240a0663a7c4541fb7f4fac7ac3aa774650cfac91d29f",
+      "sources": [
+        {
+          "label": "FTC: Avoid government impersonation scams",
+          "url": "https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam"
+        },
+        {
+          "label": "USAGov: Official agency directory",
+          "url": "https://www.usa.gov/agency-index"
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "resource:payment-redirection",
+      "title": "Payment redirection scams: verify changed payment details",
+      "url": "/education/payment-redirection",
+      "file": "data/resources.ts (composed catalog)",
+      "intendedAudience": [
+        "Libraries, senior centers & community organizations",
+        "Educators & facilitators",
+        "Caregivers",
+        "Older adults"
+      ],
+      "contentType": "educational resource",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "6e82ee6eb568f48988103d9fbb8286ced79c2ad4020673f0d01435611f15a04d",
+      "sources": [
+        {
+          "label": "FBI: Business email compromise and payment verification",
+          "url": "https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise"
+        },
+        {
+          "label": "FTC: Recover a hacked email or social media account",
+          "url": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+          "note": "Account recovery, signing out sessions and checking recovery details."
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new"
+      },
+      "exposure": "Public route in candidate; release requires review",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "handout:family-verification",
+      "title": "Family scam verification checklist",
+      "url": null,
+      "file": "internal/handouts/data.ts",
+      "intendedAudience": [
+        "teenagers",
+        "older-adults",
+        "youth-families",
+        "caregivers",
+        "community-organizations",
+        "educators-facilitators",
+        "digital-confidence"
+      ],
+      "contentType": "internal draft handout",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "c67e7375a776135621748276d08cf315ff25923e8bcb721e13854dffc6ecc0f7",
+      "sources": [
+        {
+          "label": "NIST: Phishing guidance",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+          "note": "Phishing as social engineering and ways organizations can respond."
+        },
+        {
+          "label": "FBI / IC3: Generative AI and financial fraud",
+          "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+          "note": "Synthetic text, images, audio and video; independent verification and family phrases."
+        },
+        {
+          "label": "FTC: Recover a hacked email or social media account",
+          "url": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+          "note": "Account recovery, signing out sessions and checking recovery details."
+        },
+        {
+          "label": "FTC: Scammers use fake emergencies to steal your money",
+          "url": "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money",
+          "note": "Emergency impersonation and checking the story with trusted contacts."
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "financial-fraud"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new; previous candidate route removed"
+      },
+      "exposure": "Internal only; previous /education/handouts URL now 404",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "handout:voice-cloning-response",
+      "title": "AI voice cloning scam response guide",
+      "url": null,
+      "file": "internal/handouts/data.ts",
+      "intendedAudience": [
+        "older-adults",
+        "youth-families",
+        "caregivers",
+        "community-organizations",
+        "educators-facilitators"
+      ],
+      "contentType": "internal draft handout",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "68b9b1db3b214ad993d52ce7f207014ceab36c2b194c831892a2ddb64e30c5de",
+      "sources": [
+        {
+          "label": "FBI / IC3: Generative AI and financial fraud",
+          "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+          "note": "Synthetic text, images, audio and video; independent verification and family phrases."
+        },
+        {
+          "label": "FTC: Recover a hacked email or social media account",
+          "url": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+          "note": "Account recovery, signing out sessions and checking recovery details."
+        },
+        {
+          "label": "NIST: Phishing guidance",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+          "note": "Phishing as social engineering and ways organizations can respond."
+        },
+        {
+          "label": "FTC: Scammers use fake emergencies to steal your money",
+          "url": "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money",
+          "note": "Emergency impersonation and checking the story with trusted contacts."
+        },
+        {
+          "label": "NIST: Technical approaches to synthetic-content transparency",
+          "url": "https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content",
+          "note": "Overview of transparency approaches; not an endorsement of a detection product."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "financial-fraud"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new; previous candidate route removed"
+      },
+      "exposure": "Internal only; previous /education/handouts URL now 404",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "handout:parent-conversation",
+      "title": "Parent internet safety conversation guide",
+      "url": null,
+      "file": "internal/handouts/data.ts",
+      "intendedAudience": [
+        "youth-families",
+        "caregivers",
+        "educators-facilitators"
+      ],
+      "contentType": "internal draft handout",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "62594c3c347e30505207cfaf39d82ad82c138f4360d5ead1822f5d45457ef855",
+      "sources": [
+        {
+          "label": "FTC: Kids and video games",
+          "url": "https://consumer.ftc.gov/articles/kids-video-games"
+        },
+        {
+          "label": "FTC: Protecting your child’s privacy online",
+          "url": "https://consumer.ftc.gov/articles/protecting-your-childs-privacy-online"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "NCMEC: Take It Down",
+          "url": "https://takeitdown.ncmec.org/",
+          "note": "For intimate images taken before age 18; participating platforms only. Never download or forward an image to use this service."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "NCMEC: Take It Down",
+          "url": "https://takeitdown.ncmec.org/",
+          "note": "For intimate images taken before age 18; participating platforms only. Never download or forward an image to use this service."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "exploitation-and-safe-reporting",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new; previous candidate route removed"
+      },
+      "exposure": "Internal only; previous /education/handouts URL now 404",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "handout:teen-safety",
+      "title": "Teen online safety checklist",
+      "url": null,
+      "file": "internal/handouts/data.ts",
+      "intendedAudience": [
+        "teenagers",
+        "youth-families",
+        "educators-facilitators"
+      ],
+      "contentType": "internal draft handout",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "37179711d3d82685eeb038d85e443e2e63372b48f39a258619e72d1dbbaee363",
+      "sources": [
+        {
+          "label": "NCMEC: Tips for tweens",
+          "url": "https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips"
+        },
+        {
+          "label": "FTC: Recognize and avoid phishing scams",
+          "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "NCMEC: Take It Down",
+          "url": "https://takeitdown.ncmec.org/",
+          "note": "For intimate images taken before age 18; participating platforms only. Never download or forward an image to use this service."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "NCMEC: Take It Down",
+          "url": "https://takeitdown.ncmec.org/",
+          "note": "For intimate images taken before age 18; participating platforms only. Never download or forward an image to use this service."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "exploitation-and-safe-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new; previous candidate route removed"
+      },
+      "exposure": "Internal only; previous /education/handouts URL now 404",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "handout:older-adult-scam-prevention",
+      "title": "Older adult scam prevention checklist",
+      "url": null,
+      "file": "internal/handouts/data.ts",
+      "intendedAudience": [
+        "older-adults",
+        "caregivers",
+        "digital-confidence",
+        "community-organizations"
+      ],
+      "contentType": "internal draft handout",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "3078727b26458f6f5518087a55df9de43b1198d2a99508349620dcf6d71ebbbe",
+      "sources": [
+        {
+          "label": "FTC: Recognize and avoid phishing scams",
+          "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams"
+        },
+        {
+          "label": "FTC: Spot, avoid, and report tech support scams",
+          "url": "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams"
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new; previous candidate route removed"
+      },
+      "exposure": "Internal only; previous /education/handouts URL now 404",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "handout:suspicious-message-worksheet",
+      "title": "Suspicious message verification worksheet",
+      "url": null,
+      "file": "internal/handouts/data.ts",
+      "intendedAudience": [
+        "teenagers",
+        "older-adults",
+        "youth-families",
+        "caregivers",
+        "community-organizations",
+        "educators-facilitators",
+        "digital-confidence"
+      ],
+      "contentType": "internal draft handout",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "bca1b9ff5fa3372409a5e71fcf46cdf2a62c196c83a4c2ed996e5a3f2747e0f5",
+      "sources": [
+        {
+          "label": "FTC: Recognize and avoid phishing scams",
+          "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+          "note": "Unexpected links, account pretexts, reporting and account protection."
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "financial-fraud"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new; previous candidate route removed"
+      },
+      "exposure": "Internal only; previous /education/handouts URL now 404",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "handout:after-scam-immediate-actions",
+      "title": "After a scam: immediate action guide",
+      "url": null,
+      "file": "internal/handouts/data.ts",
+      "intendedAudience": [
+        "older-adults",
+        "youth-families",
+        "caregivers",
+        "community-organizations",
+        "educators-facilitators",
+        "digital-confidence"
+      ],
+      "contentType": "internal draft handout",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "7ab31adc04a94e9dad92ec95bfccedb8c7424738f9e64b655b849f742dd1e5bf",
+      "sources": [
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        },
+        {
+          "label": "FTC: Recover a hacked email or social media account",
+          "url": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+          "note": "Account recovery, signing out sessions and checking recovery details."
+        },
+        {
+          "label": "FTC: Refund and recovery scams",
+          "url": "https://consumer.ftc.gov/articles/refund-and-recovery-scams",
+          "note": "Upfront-fee recovery offers can cause further loss."
+        },
+        {
+          "label": "NIST: Phishing guidance",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+          "note": "Phishing as social engineering and ways organizations can respond."
+        },
+        {
+          "label": "FBI / IC3: Report internet crime",
+          "url": "https://www.ic3.gov/",
+          "note": "Official reporting destination; not a promise of individual recovery."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new; previous candidate route removed"
+      },
+      "exposure": "Internal only; previous /education/handouts URL now 404",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "workshop:older-adult-scam-prevention",
+      "title": "Older adult scam prevention",
+      "url": null,
+      "file": "docs/training/older-adult-scam-prevention.md",
+      "intendedAudience": [
+        "Older adults and trusted community supporters"
+      ],
+      "contentType": "internal draft curriculum",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "2935ee6d77092ea6e79db61182f6b3aa1fd7b6bb0004ae4b3df6eed8e4021c7c",
+      "sources": [
+        {
+          "label": "FTC: Recognize and avoid phishing scams",
+          "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams"
+        },
+        {
+          "label": "FTC: Spot, avoid, and report tech support scams",
+          "url": "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams"
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+        },
+        {
+          "label": "FTC: Phone scams",
+          "url": "https://consumer.ftc.gov/articles/phone-scams",
+          "note": "Caller ID spoofing, impersonation and ending unwanted calls."
+        },
+        {
+          "label": "FTC: How to avoid a scam",
+          "url": "https://consumer.ftc.gov/articles/how-avoid-scam",
+          "note": "Impersonation, pressure, unusual payments and independent checking."
+        },
+        {
+          "label": "FBI / IC3: Generative AI and financial fraud",
+          "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+          "note": "Synthetic text, images, audio and video; independent verification and family phrases."
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        },
+        {
+          "label": "FBI / IC3: Generative AI and financial fraud",
+          "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+          "note": "Synthetic text, images, audio and video; independent verification and family phrases."
+        },
+        {
+          "label": "FTC: Recover a hacked email or social media account",
+          "url": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+          "note": "Account recovery, signing out sessions and checking recovery details."
+        },
+        {
+          "label": "NIST: Phishing guidance",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+          "note": "Phishing as social engineering and ways organizations can respond."
+        },
+        {
+          "label": "FTC: Scammers use fake emergencies to steal your money",
+          "url": "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money",
+          "note": "Emergency impersonation and checking the story with trusted contacts."
+        },
+        {
+          "label": "NIST: Technical approaches to synthetic-content transparency",
+          "url": "https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content",
+          "note": "Overview of transparency approaches; not an endorsement of a detection product."
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        },
+        {
+          "label": "FTC: Recover a hacked email or social media account",
+          "url": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+          "note": "Account recovery, signing out sessions and checking recovery details."
+        },
+        {
+          "label": "FTC: Refund and recovery scams",
+          "url": "https://consumer.ftc.gov/articles/refund-and-recovery-scams",
+          "note": "Upfront-fee recovery offers can cause further loss."
+        },
+        {
+          "label": "NIST: Phishing guidance",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+          "note": "Phishing as social engineering and ways organizations can respond."
+        },
+        {
+          "label": "FBI / IC3: Report internet crime",
+          "url": "https://www.ic3.gov/",
+          "note": "Official reporting destination; not a promise of individual recovery."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "exploitation-and-safe-reporting",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new"
+      },
+      "exposure": "Internal only; no public route",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "workshop:parent-family-digital-safety",
+      "title": "Parent and family digital safety",
+      "url": null,
+      "file": "docs/training/parent-family-digital-safety.md",
+      "intendedAudience": [
+        "Parents, guardians, caregivers, and family-serving organizations"
+      ],
+      "contentType": "internal draft curriculum",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "04879e7b098f7857b9464f9a5faabb1d1f81866654d0da9b88fb02a9125e910b",
+      "sources": [
+        {
+          "label": "FTC: Kids and video games",
+          "url": "https://consumer.ftc.gov/articles/kids-video-games"
+        },
+        {
+          "label": "FTC: Protecting your child’s privacy online",
+          "url": "https://consumer.ftc.gov/articles/protecting-your-childs-privacy-online"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "NCMEC: Take It Down",
+          "url": "https://takeitdown.ncmec.org/",
+          "note": "For intimate images taken before age 18; participating platforms only. Never download or forward an image to use this service."
+        },
+        {
+          "label": "NCMEC: Tips for tweens",
+          "url": "https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips"
+        },
+        {
+          "label": "NCMEC: Gaming safety",
+          "url": "https://www.missingkids.org/netsmartz/topics/gaming"
+        },
+        {
+          "label": "FTC: Kids and video games",
+          "url": "https://consumer.ftc.gov/articles/kids-video-games"
+        },
+        {
+          "label": "NCMEC: Gaming safety",
+          "url": "https://www.missingkids.org/netsmartz/topics/gaming"
+        },
+        {
+          "label": "FTC: Recognize and avoid phishing scams",
+          "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams"
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "NIST: Phishing guidance",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+          "note": "Phishing as social engineering and ways organizations can respond."
+        },
+        {
+          "label": "FBI / IC3: Generative AI and financial fraud",
+          "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+          "note": "Synthetic text, images, audio and video; independent verification and family phrases."
+        },
+        {
+          "label": "FTC: Recover a hacked email or social media account",
+          "url": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+          "note": "Account recovery, signing out sessions and checking recovery details."
+        },
+        {
+          "label": "FTC: Scammers use fake emergencies to steal your money",
+          "url": "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money",
+          "note": "Emergency impersonation and checking the story with trusted contacts."
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        },
+        {
+          "label": "NCMEC: Tips for tweens",
+          "url": "https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips"
+        },
+        {
+          "label": "FTC: Recognize and avoid phishing scams",
+          "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "NCMEC: Take It Down",
+          "url": "https://takeitdown.ncmec.org/",
+          "note": "For intimate images taken before age 18; participating platforms only. Never download or forward an image to use this service."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "exploitation-and-safe-reporting",
+        "financial-fraud"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new"
+      },
+      "exposure": "Internal only; no public route",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "workshop:teen-digital-safety",
+      "title": "Teen digital safety",
+      "url": null,
+      "file": "docs/training/teen-digital-safety.md",
+      "intendedAudience": [
+        "Teenagers, with a prepared adult facilitator and host safeguarding contact"
+      ],
+      "contentType": "internal draft curriculum",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "5905ef7448d90817e7d788d8afa30bc7916b9e921d381b806ec47359b5354e3f",
+      "sources": [
+        {
+          "label": "NCMEC: Tips for tweens",
+          "url": "https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips"
+        },
+        {
+          "label": "FTC: Recognize and avoid phishing scams",
+          "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "NCMEC: Take It Down",
+          "url": "https://takeitdown.ncmec.org/",
+          "note": "For intimate images taken before age 18; participating platforms only. Never download or forward an image to use this service."
+        },
+        {
+          "label": "FTC: Kids and video games",
+          "url": "https://consumer.ftc.gov/articles/kids-video-games"
+        },
+        {
+          "label": "NCMEC: Gaming safety",
+          "url": "https://www.missingkids.org/netsmartz/topics/gaming"
+        },
+        {
+          "label": "FTC: Recognize and avoid phishing scams",
+          "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams"
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+        },
+        {
+          "label": "NCMEC: Sextortion warning signs and support",
+          "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
+        },
+        {
+          "label": "FBI / IC3: Generative AI and financial fraud",
+          "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+          "note": "Synthetic text, images, audio and video; independent verification and family phrases."
+        },
+        {
+          "label": "FTC: Recover a hacked email or social media account",
+          "url": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+          "note": "Account recovery, signing out sessions and checking recovery details."
+        },
+        {
+          "label": "NIST: Phishing guidance",
+          "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+          "note": "Phishing as social engineering and ways organizations can respond."
+        },
+        {
+          "label": "FTC: Scammers use fake emergencies to steal your money",
+          "url": "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money",
+          "note": "Emergency impersonation and checking the story with trusted contacts."
+        },
+        {
+          "label": "NIST: Technical approaches to synthetic-content transparency",
+          "url": "https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content",
+          "note": "Overview of transparency approaches; not an endorsement of a detection product."
+        },
+        {
+          "label": "FTC: Recover a hacked email or social media account",
+          "url": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+          "note": "Account recovery, signing out sessions and checking recovery details."
+        },
+        {
+          "label": "FTC: Recognize and avoid phishing scams",
+          "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+          "note": "Unexpected links, account pretexts, reporting and account protection."
+        },
+        {
+          "label": "FTC: What to do if you were scammed",
+          "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+          "note": "Actions depend on payment method, information shared and device access."
+        }
+      ],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "exploitation-and-safe-reporting",
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "new"
+      },
+      "exposure": "Internal only; no public route",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "page:/",
+      "title": "Homepage",
+      "url": "/",
+      "file": "app/page.tsx",
+      "intendedAudience": [
+        "General public / institutional partners"
+      ],
+      "contentType": "organizational page",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "e00730ee207459a1b965da6d27fb17853620c7f4cda9d13069ead0dc5324314f",
+      "sources": [],
+      "sensitiveTopicFlags": [],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority"
+      ],
+      "changesSinceBaseline": {
+        "kind": "shared metadata/navigation/template changes; page source unchanged"
+      },
+      "exposure": "Public; verify institutional status and shared navigation",
+      "priorityBeforeRelease": "P1: review before release"
+    },
+    {
+      "id": "page:/education",
+      "title": "Education hub",
+      "url": "/education",
+      "file": "app/education/page.tsx",
+      "intendedAudience": [
+        "General public / institutional partners"
+      ],
+      "contentType": "organizational page",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "d138dd410d853da571c0103bdb330a4957041186163518e555e4691960ed3457",
+      "sources": [],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "financial-fraud"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "page source modified/new"
+      },
+      "exposure": "Public; verify institutional status and shared navigation",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "page:/programs",
+      "title": "Program pathways",
+      "url": "/programs",
+      "file": "app/programs/page.tsx",
+      "intendedAudience": [
+        "General public / institutional partners"
+      ],
+      "contentType": "organizational page",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "b433748f0beeed91864b6bad3efff4da0628a6f7db60e14a75e195dba83eafc5",
+      "sources": [],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "page source modified/new"
+      },
+      "exposure": "Public; verify institutional status and shared navigation",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "page:/research",
+      "title": "Research overview",
+      "url": "/research",
+      "file": "app/research/page.tsx",
+      "intendedAudience": [
+        "General public / institutional partners"
+      ],
+      "contentType": "organizational page",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "0d39ddfee51db1e9eb7ead89d231e565cfd840503044392232d6942b5e6ca0bd",
+      "sources": [],
+      "sensitiveTopicFlags": [
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "page source modified/new"
+      },
+      "exposure": "Public; verify institutional status and shared navigation",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "page:/about",
+      "title": "About",
+      "url": "/about",
+      "file": "app/about/page.tsx",
+      "intendedAudience": [
+        "General public / institutional partners"
+      ],
+      "contentType": "organizational page",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "4fa95babe0466bed55eb88291dc3aabaa7eeaa73cf924db557ffa01fcafc67c9",
+      "sources": [],
+      "sensitiveTopicFlags": [],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority"
+      ],
+      "changesSinceBaseline": {
+        "kind": "page source modified/new"
+      },
+      "exposure": "Public; verify institutional status and shared navigation",
+      "priorityBeforeRelease": "P1: review before release"
+    },
+    {
+      "id": "page:/leadership",
+      "title": "Leadership",
+      "url": "/leadership",
+      "file": "app/leadership/page.tsx",
+      "intendedAudience": [
+        "General public / institutional partners"
+      ],
+      "contentType": "organizational page",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "fc4514f822bcb5add28b02aab668843f381471015b961a295da794004d6c7b41",
+      "sources": [],
+      "sensitiveTopicFlags": [],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority"
+      ],
+      "changesSinceBaseline": {
+        "kind": "page source modified/new"
+      },
+      "exposure": "Public; verify institutional status and shared navigation",
+      "priorityBeforeRelease": "P1: review before release"
+    },
+    {
+      "id": "page:/partner",
+      "title": "Partnerships",
+      "url": "/partner",
+      "file": "app/partner/page.tsx",
+      "intendedAudience": [
+        "General public / institutional partners"
+      ],
+      "contentType": "organizational page",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "c18e774c9671931bb7827eba89c8a2f22bb4b8b25ac57250281ec33c5bbffa60",
+      "sources": [],
+      "sensitiveTopicFlags": [],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority"
+      ],
+      "changesSinceBaseline": {
+        "kind": "page source modified/new"
+      },
+      "exposure": "Public; verify institutional status and shared navigation",
+      "priorityBeforeRelease": "P1: review before release"
+    },
+    {
+      "id": "page:/contact",
+      "title": "Contact",
+      "url": "/contact",
+      "file": "app/contact/page.tsx",
+      "intendedAudience": [
+        "General public / institutional partners"
+      ],
+      "contentType": "organizational page",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "113e4878112aa937b02040e2e9bf3c29e251720eb6a484e590dcf0ed611c70e5",
+      "sources": [],
+      "sensitiveTopicFlags": [
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "page source modified/new"
+      },
+      "exposure": "Public; verify institutional status and shared navigation",
+      "priorityBeforeRelease": "P0: review before release"
+    },
+    {
+      "id": "page:/support",
+      "title": "Support",
+      "url": "/support",
+      "file": "app/support/page.tsx",
+      "intendedAudience": [
+        "General public / institutional partners"
+      ],
+      "contentType": "organizational page",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "d72627ad069c4f5e04941f5c4087a7bbd3b33d1f1ea81baf09677b0824ef54bc",
+      "sources": [],
+      "sensitiveTopicFlags": [],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority"
+      ],
+      "changesSinceBaseline": {
+        "kind": "page source modified/new"
+      },
+      "exposure": "Public; verify institutional status and shared navigation",
+      "priorityBeforeRelease": "P1: review before release"
+    },
+    {
+      "id": "page:/editorial-standards",
+      "title": "Editorial standards",
+      "url": "/editorial-standards",
+      "file": "app/editorial-standards/page.tsx",
+      "intendedAudience": [
+        "General public / institutional partners"
+      ],
+      "contentType": "organizational page",
+      "reviewStatus": "REQUIRES HUMAN REVIEW",
+      "contentSha256": "7539ef7ef3e17c47ac56d9ed2eb7512a62d075a0e6a11a77e33aeae7724c8615",
+      "sources": [],
+      "sensitiveTopicFlags": [
+        "financial-fraud",
+        "recovery-and-reporting"
+      ],
+      "requiredReviewerExpertise": [
+        "Foundation editorial/organizational authority",
+        "fraud prevention and reporting specialist"
+      ],
+      "changesSinceBaseline": {
+        "kind": "page source modified/new"
+      },
+      "exposure": "Public; verify institutional status and shared navigation",
+      "priorityBeforeRelease": "P0: review before release"
+    }
+  ]
+}

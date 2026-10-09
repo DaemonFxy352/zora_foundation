@@ -82,8 +82,8 @@ These working-branch paths are not a claim of production availability. Review th
 
 ## Draft handouts
 
-- /education/handouts/parent-conversation
-- /education/handouts/family-verification
+- internal/handouts/data.ts — draft ID: parent-conversation
+- internal/handouts/data.ts — draft ID: family-verification
 
 ## Required release gates
 

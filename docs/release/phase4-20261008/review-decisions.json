@@ -1,0 +1,298 @@
+[
+  {
+    "id": "resource:recognize-a-scam",
+    "contentSha256": "743b1b5200ec1339d97d4c9c057d0ca8e21560ade2d4eada5412a3f10035d2e3",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:verify-before-you-trust",
+    "contentSha256": "19a358d9896dc2dc3ee94b3586f61b409f5423b62be206f172f26ffb896b7b8f",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:ai-impersonation",
+    "contentSha256": "a31fe88607880392fc8c148ad7ed9530ab0ea6c910cb6347885db7476f4193c7",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:suspicious-message",
+    "contentSha256": "cd9ace634e83d5644b40bf98c16a98de4b7bb9348dcae659ade47cddbb35f4de",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:account-safety",
+    "contentSha256": "498671874440c094ddddb5d7299ef93f961275b92c6d6c582ed796af9c8ee97c",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:human-targeted-attacks",
+    "contentSha256": "28785b1613ec1f8b82a27c0bb131b68da8c5be3f726a5c6e0feb7d581f605858",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:after-a-scam",
+    "contentSha256": "9855818ce86bf8ae4f1b732543f84bec7df46d1cb8501c3ac1e76cb61664203f",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:qr-link-safety",
+    "contentSha256": "065365537b38e0e640b0f920db8169a7c744d867fae37bc01e50671072cc974d",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:phone-impersonation",
+    "contentSha256": "35df0af7a79643fb9c4a2fcd45ce735b8126fee500f1a100d683ff92d8d46350",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:family-emergency-scams",
+    "contentSha256": "8c9330e8dd0ee1e63312e8dac835399bf3e9c85854b7c7ba0c095ed3fb22c0a0",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:internet-safety-parents",
+    "contentSha256": "5b670a3eace19438f45ee5910fc76014d601ba16b8d0056e8228cf0f87981fb7",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:online-safety-kids",
+    "contentSha256": "0fcbb482e004ce1007ad23718abaa0c728f91b8fd922c696ee0997fb92ce8610",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:teen-online-safety",
+    "contentSha256": "b6af1c3221e192f86b2c1fe77bf96cf79ef53239e76fb124cf0c8dc627b0ef1b",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:gaming-scams",
+    "contentSha256": "7c43dae0bdb9d6e2e0b6d688a5b5b25f545bcb6a3c2e3ef6271871c54535b637",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:online-safety-older-adults",
+    "contentSha256": "2b14f44c32747d7c45b22bf2f91b9573a007576705cad175f6f69fe36c8af2de",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:government-impersonation",
+    "contentSha256": "37a7afc9b4ae6192220240a0663a7c4541fb7f4fac7ac3aa774650cfac91d29f",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "resource:payment-redirection",
+    "contentSha256": "6e82ee6eb568f48988103d9fbb8286ced79c2ad4020673f0d01435611f15a04d",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "handout:family-verification",
+    "contentSha256": "c67e7375a776135621748276d08cf315ff25923e8bcb721e13854dffc6ecc0f7",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "handout:voice-cloning-response",
+    "contentSha256": "68b9b1db3b214ad993d52ce7f207014ceab36c2b194c831892a2ddb64e30c5de",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "handout:parent-conversation",
+    "contentSha256": "62594c3c347e30505207cfaf39d82ad82c138f4360d5ead1822f5d45457ef855",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "handout:teen-safety",
+    "contentSha256": "37179711d3d82685eeb038d85e443e2e63372b48f39a258619e72d1dbbaee363",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "handout:older-adult-scam-prevention",
+    "contentSha256": "3078727b26458f6f5518087a55df9de43b1198d2a99508349620dcf6d71ebbbe",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "handout:suspicious-message-worksheet",
+    "contentSha256": "bca1b9ff5fa3372409a5e71fcf46cdf2a62c196c83a4c2ed996e5a3f2747e0f5",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "handout:after-scam-immediate-actions",
+    "contentSha256": "7ab31adc04a94e9dad92ec95bfccedb8c7424738f9e64b655b849f742dd1e5bf",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "workshop:older-adult-scam-prevention",
+    "contentSha256": "2935ee6d77092ea6e79db61182f6b3aa1fd7b6bb0004ae4b3df6eed8e4021c7c",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "workshop:parent-family-digital-safety",
+    "contentSha256": "04879e7b098f7857b9464f9a5faabb1d1f81866654d0da9b88fb02a9125e910b",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "workshop:teen-digital-safety",
+    "contentSha256": "5905ef7448d90817e7d788d8afa30bc7916b9e921d381b806ec47359b5354e3f",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "page:/",
+    "contentSha256": "e00730ee207459a1b965da6d27fb17853620c7f4cda9d13069ead0dc5324314f",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "page:/education",
+    "contentSha256": "d138dd410d853da571c0103bdb330a4957041186163518e555e4691960ed3457",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "page:/programs",
+    "contentSha256": "b433748f0beeed91864b6bad3efff4da0628a6f7db60e14a75e195dba83eafc5",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "page:/research",
+    "contentSha256": "0d39ddfee51db1e9eb7ead89d231e565cfd840503044392232d6942b5e6ca0bd",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "page:/about",
+    "contentSha256": "4fa95babe0466bed55eb88291dc3aabaa7eeaa73cf924db557ffa01fcafc67c9",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "page:/leadership",
+    "contentSha256": "fc4514f822bcb5add28b02aab668843f381471015b961a295da794004d6c7b41",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "page:/partner",
+    "contentSha256": "c18e774c9671931bb7827eba89c8a2f22bb4b8b25ac57250281ec33c5bbffa60",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "page:/contact",
+    "contentSha256": "113e4878112aa937b02040e2e9bf3c29e251720eb6a484e590dcf0ed611c70e5",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "page:/support",
+    "contentSha256": "d72627ad069c4f5e04941f5c4087a7bbd3b33d1f1ea81baf09677b0824ef54bc",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  },
+  {
+    "id": "page:/editorial-standards",
+    "contentSha256": "7539ef7ef3e17c47ac56d9ed2eb7512a62d075a0e6a11a77e33aeae7724c8615",
+    "decision": "pending",
+    "reviewers": [],
+    "reviewedAt": null,
+    "notes": ""
+  }
+]

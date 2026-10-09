@@ -1,0 +1,31 @@
+name: Foundation release QA
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium firefox
+      - run: npm run build
+      - run: npm run lint && npm run typecheck && npm run verify:content && npm run verify:materials
+      - run: npm run verify:build && npm run verify:seo && npm run verify:routes && npm run verify:accessibility && npm run verify:release && npm run verify:review
+      - run: npm run verify:browser
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: foundation-release-browser-evidence
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 7

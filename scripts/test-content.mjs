@@ -1,46 +1,9 @@
 import assert from "node:assert/strict";
 import { readFileSync, existsSync } from "node:fs";
-import { resolve, dirname } from "node:path";
-import { createRequire } from "node:module";
-import vm from "node:vm";
-import ts from "typescript";
 import { renderToStaticMarkup } from "react-dom/server";
 import { createElement } from "react";
 
-// Transpile the real TS/TSX modules in memory, without a new runtime dependency
-// or emitted files in the repository. Resolve the app's existing @ alias.
-const require = createRequire(import.meta.url);
-const cache = new Map();
-function load(filename) {
-  const file = resolve(filename);
-  if (cache.has(file)) return cache.get(file).exports;
-  const loadedModule = { exports: {} };
-  cache.set(file, loadedModule);
-  const code = ts.transpileModule(readFileSync(file, "utf8"), {
-    compilerOptions: {
-      module: ts.ModuleKind.CommonJS,
-      target: ts.ScriptTarget.ES2022,
-      jsx: ts.JsxEmit.ReactJSX,
-      esModuleInterop: true,
-    },
-    fileName: file,
-  }).outputText;
-  const localRequire = (id) => {
-    if (!id.startsWith(".") && !id.startsWith("@/")) return require(id);
-    const base = id.startsWith("@/")
-      ? resolve(id.slice(2))
-      : resolve(dirname(file), id);
-    const target = [base, `${base}.ts`, `${base}.tsx`].find((p) =>
-      existsSync(p),
-    );
-    assert.ok(target, `Unresolved test import ${id}`);
-    return load(target);
-  };
-  vm.runInThisContext(`(function(require,module,exports){${code}\n})`, {
-    filename: file,
-  })(localRequire, loadedModule, loadedModule.exports);
-  return loadedModule.exports;
-}
+import { load } from "./lib/load-ts.mjs";
 const { resources, audiences, topics, formats } = load("data/resources.ts");
 const { contributors, resolveContributors } = load("data/contributors.ts");
 const {
@@ -164,7 +127,7 @@ const { resourceSummaries } = load("data/resources.ts");
 const { filterResources, emptyResourceFilters } = load(
   "lib/resource-search.ts",
 );
-const { handouts } = load("data/handouts.ts");
+const { handouts } = load("internal/handouts/data.ts");
 const summaries = resourceSummaries();
 const search = (query, filters = {}) =>
   filterResources(summaries, { ...emptyResourceFilters, query, ...filters });
@@ -189,7 +152,7 @@ assert.ok(
     (r) => r.topics.includes("privacy") && r.audience.includes("teenagers"),
   ),
 );
-assert.equal(search("", { format: "handout" }).length, 7);
+assert.equal(search("", { format: "handout" }).length, 0);
 assert.equal(search("", { format: "video" }).length, 0);
 assert.equal(
   filterResources(summaries, emptyResourceFilters).length,
@@ -202,7 +165,7 @@ for (const h of handouts) {
   assert.ok(resources.some((r) => r.slug === h.resource));
   assert.ok(h.steps.length >= 4 && h.help && h.response && h.practice);
   assert.equal(h.reviewedAt, undefined, "Do not invent review dates");
-  assert.ok(summaries.some((r) => r.handoutSlug === h.slug));
+  assert.ok(!summaries.some((r) => r.handoutSlug === h.slug));
 }
 const workshopDrafts = JSON.parse(
   readFileSync("data/workshop-drafts.json", "utf8"),

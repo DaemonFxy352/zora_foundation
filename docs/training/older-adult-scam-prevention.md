@@ -81,9 +81,9 @@ These working-branch paths are not a claim of production availability. Review th
 
 ## Draft handouts
 
-- /education/handouts/older-adult-scam-prevention
-- /education/handouts/family-verification
-- /education/handouts/after-scam-immediate-actions
+- internal/handouts/data.ts — draft ID: older-adult-scam-prevention
+- internal/handouts/data.ts — draft ID: family-verification
+- internal/handouts/data.ts — draft ID: after-scam-immediate-actions
 
 ## Required release gates
 

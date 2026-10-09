@@ -5,31 +5,11 @@ import { PrintButton } from "@/components/interior/PrintButton";
 import { DateLabel } from "@/components/content/EditorialResponsibility";
 import { StructuredData } from "@/components/StructuredData";
 import { breadcrumbSchema } from "@/lib/structured-data";
-import { pageMetadata, siteUrl } from "@/lib/metadata";
-import { handouts, getHandout } from "@/data/handouts";
+import { getHandout } from "./data";
 import { getResource } from "@/data/resources";
-export const dynamicParams = false;
-export function generateStaticParams() {
-  return handouts.map(({ slug }) => ({ slug }));
-}
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const h = getHandout((await params).slug);
-  if (!h) notFound();
-  return {
-    ...pageMetadata(h.title, h.summary, `/education/handouts/${h.slug}`),
-    robots: { index: false, follow: true },
-  };
-}
-export default async function HandoutPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const h = getHandout((await params).slug);
+// Internal review component only: never import this into app/ or a client entry.
+export function HandoutPreview({ slug }: { slug: string }) {
+  const h = getHandout(slug);
   if (!h) notFound();
   const r = getResource(h.resource)!;
   const sources = [
@@ -130,9 +110,7 @@ export default async function HandoutPage({
               <a href={`/education/${h.resource}`}>{r.title}</a>
             </p>
           </section>
-          <p className="print-source">
-            {siteUrl}/education/handouts/{h.slug}
-          </p>
+          <p className="print-source">Internal review draft · {h.slug}</p>
         </article>
       </div>
     </main>

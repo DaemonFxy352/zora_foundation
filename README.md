@@ -259,14 +259,14 @@ interaction and Letter/A4 print-preview QA remain required before release.
 
 ### Phase 3: handouts, search, and workshop drafts
 
-- `data/handouts.ts` supplies seven HTML print companions at
-  `/education/handouts/[slug]`. Each is explicitly **draft**, carries preparation
-  and pending-review status, and is `noindex` and excluded from the sitemap.
-  They are public preview URLs if deployed, not access-controlled documents.
-  Users can print or save as PDF; no pre-generated/tagged PDF is promised.
-- Add a handout with a unique slug, existing parent resource, practical steps,
-  exercise, response/help limits, and honest status/date. Parent source references
-  are reused. `resourceSummaries()` adds its discovery link automatically.
+- `internal/handouts/data.ts` preserves seven draft print companions. Phase 4
+  removed their public routes and discovery links: `noindex` was insufficient
+  protection. `internal/handouts/Preview.tsx` preserves the review template but
+  must not be imported into the application. These are repository review
+  materials, not downloads or publicly served previews.
+- Publication of a handout requires organizational and specialist approval,
+  an explicit route/discovery implementation, and browser/print validation.
+  Existing educational guides retain their browser print action.
 - `lib/resource-search.ts` applies local all-word search across summaries and
   audience/topic labels, then combines filters. It receives no full article bodies,
   creates no query URLs, and sends no search data to a remote service.
@@ -283,3 +283,21 @@ interaction and Letter/A4 print-preview QA remain required before release.
   markup and selected text color contrast; it is not browser or assistive-tech QA.
 - Complete `docs/seo/phase3-20261008/manual-release-qa.md` before release,
   especially named child-safety review and Letter print/PDF preview checks.
+
+### Phase 4: release hardening
+
+See [release readiness](docs/release/phase4-20261008/readiness.md),
+[browser QA](docs/release/phase4-20261008/browser-qa.md), and the
+[editorial review checklist](docs/release/phase4-20261008/editorial-review.md).
+Earlier implementation reports describe historical states; Phase 4 supersedes
+instructions exposing draft handout URLs.
+
+Use Node 24 for the release workflow. After building, also run
+`npm run verify:release` and `npm run verify:review`. `npm run release:editorial`
+intentionally fails until authorized humans record current approvals; automated
+validation does not grant editorial approval. Do not regenerate review decisions.
+
+`npm run verify:browser` runs local production-browser tests. Install the managed
+browsers with `npx playwright install chromium firefox` on a supported host.
+The optional GitHub Actions release QA workflow is manual-only and has no
+publishing/deployment step. It does not authorize a push or deployment.

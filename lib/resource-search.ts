@@ -30,10 +30,9 @@ export function filterResources(
     if (filters.topic && !r.topics.some((t) => t === filters.topic))
       return false;
     if (filters.format === "printable" && !r.printView) return false;
-    if (filters.format === "handout" && !r.handoutSlug) return false;
     if (
       filters.format &&
-      !["printable", "handout"].includes(filters.format) &&
+      filters.format !== "printable" &&
       r.format !== filters.format
     )
       return false;

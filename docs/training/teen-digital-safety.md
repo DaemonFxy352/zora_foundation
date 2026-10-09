@@ -77,8 +77,8 @@ These working-branch paths are not a claim of production availability. Review th
 
 ## Draft handouts
 
-- /education/handouts/teen-safety
-- /education/handouts/suspicious-message-worksheet
+- internal/handouts/data.ts — draft ID: teen-safety
+- internal/handouts/data.ts — draft ID: suspicious-message-worksheet
 
 ## Required release gates
 

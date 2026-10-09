@@ -14,7 +14,12 @@
     "verify:routes": "node scripts/verify-routes.mjs",
     "materials:write": "node scripts/workshop-materials.mjs --write",
     "verify:materials": "node scripts/workshop-materials.mjs",
-    "verify:accessibility": "node scripts/verify-accessibility.mjs"
+    "verify:accessibility": "node scripts/verify-accessibility.mjs",
+    "verify:release": "node scripts/verify-release.mjs",
+    "verify:browser": "playwright test",
+    "review:manifest": "node scripts/review-manifest.mjs",
+    "verify:review": "node scripts/review-manifest.mjs --check",
+    "release:editorial": "npm run verify:review && node scripts/editorial-gate.mjs"
   },
   "dependencies": {
     "next": "^16.2.0",
@@ -22,6 +27,7 @@
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
+    "@playwright/test": "1.62.1",
     "@types/node": "^24.0.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",

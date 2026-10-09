@@ -1,4 +1,3 @@
-import { handoutForResource } from "./handouts";
 import type { EditorialResponsibility } from "./contributors";
 import type { Source } from "./sources";
 import type { ContentSection } from "../components/content/ContentSections";
@@ -369,7 +368,7 @@ export type ResourceSummary = Pick<
   | "format"
   | "readingMinutes"
   | "printView"
-> & { handoutSlug?: string };
+>;
 export function resourceSummaries(): ResourceSummary[] {
   return resources.map(
     ({
@@ -390,7 +389,6 @@ export function resourceSummaries(): ResourceSummary[] {
       format,
       readingMinutes,
       printView,
-      handoutSlug: handoutForResource(slug)?.slug,
     }),
   );
 }

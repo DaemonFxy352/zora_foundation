@@ -91,7 +91,6 @@ export function ResourceBrowser({ items }: { items: ResourceSummary[] }) {
                 onChange={(e) => setFormat(e.target.value)}
               >
                 <option value="">All formats</option>
-                <option value="handout">Draft handouts</option>
                 {formats
                   .filter(
                     (f) =>

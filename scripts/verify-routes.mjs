@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import next from "next";
 import { IncomingMessage, ServerResponse } from "node:http";
 import { Duplex } from "node:stream";
+import { load } from "./lib/load-ts.mjs";
 import { builtRoutes } from "./build-pages.mjs";
 
 // Exercise Next's real production request handler without opening a network port.
@@ -64,6 +65,12 @@ try {
   ])
     await request(route, 200);
   for (const route of [
+    ...load("internal/handouts/data.ts").handouts.map(
+      (h) => `/education/handouts/${h.slug}`,
+    ),
+    "/internal/handouts/data.ts",
+    "/data/workshop-drafts.json",
+    "/docs/training/teen-digital-safety.md",
     "/research/test-report",
     "/research/unpublished-example",
     "/education/not-a-resource",

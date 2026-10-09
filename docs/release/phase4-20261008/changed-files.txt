@@ -1,0 +1,84 @@
+Tracked differences against main baseline (includes prior phases):
+M	README.md
+M	app/about/page.tsx
+M	app/accessibility/page.tsx
+M	app/contact/page.tsx
+A	app/editorial-standards/page.tsx
+M	app/education/[slug]/page.tsx
+M	app/education/page.tsx
+M	app/interior.css
+M	app/layout.tsx
+M	app/leadership/page.tsx
+M	app/partner/page.tsx
+M	app/programs/page.tsx
+A	app/research/[slug]/page.tsx
+M	app/research/page.tsx
+A	app/robots.ts
+A	app/sitemap.ts
+M	app/support/page.tsx
+A	components/StructuredData.tsx
+A	components/content/ContentSections.tsx
+A	components/content/EditorialResponsibility.tsx
+M	components/interior/Page.tsx
+M	components/interior/ResourceBrowser.tsx
+M	components/interior/ResourceList.tsx
+A	components/research/PublicationArticle.tsx
+A	data/authority-resources.ts
+A	data/contributors.ts
+A	data/family-resources.ts
+A	data/fraud-resources.ts
+A	data/program-pathways.ts
+A	data/publications.ts
+A	data/resource-enhancements.ts
+A	data/resource-taxonomy.ts
+M	data/resources.ts
+A	data/sources.ts
+A	data/workshop-drafts.json
+A	docs/seo/content-expansion-20261008/implementation.md
+A	docs/seo/content-expansion-20261008/intent-map.json
+A	docs/seo/phase1-20261007/audit.md
+A	docs/seo/phase1-20261007/http-checks.csv
+A	docs/seo/phase1-20261007/internal-links-live.json
+A	docs/seo/phase1-20261007/internal-links-working.json
+A	docs/seo/phase1-20261007/publication-architecture.md
+A	docs/seo/phase1-20261007/route-inventory-live.csv
+A	docs/seo/phase1-20261007/route-inventory-working.csv
+A	docs/seo/phase2-20261007/implementation.md
+A	docs/seo/phase2-20261007/sources.md
+A	docs/seo/phase3-20261008/implementation.md
+A	docs/seo/phase3-20261008/manual-release-qa.md
+A	docs/seo/phase3-20261008/publication-template.md
+A	docs/training/older-adult-scam-prevention.md
+A	docs/training/parent-family-digital-safety.md
+A	docs/training/teen-digital-safety.md
+A	lib/contributor-schema.ts
+A	lib/publication-schema.ts
+A	lib/resource-search.ts
+A	lib/structured-data.ts
+M	package-lock.json
+M	package.json
+A	scripts/build-pages.mjs
+A	scripts/test-content.mjs
+A	scripts/verify-accessibility.mjs
+M	scripts/verify-build.mjs
+A	scripts/verify-routes.mjs
+A	scripts/verify-seo.mjs
+A	scripts/workshop-materials.mjs
+
+New Phase 4 files at inventory preparation:
+.github/workflows/release-qa.yml
+docs/release/phase4-20261008/browser-qa.md
+docs/release/phase4-20261008/changed-files.txt
+docs/release/phase4-20261008/editorial-manifest.json
+docs/release/phase4-20261008/editorial-review.md
+docs/release/phase4-20261008/inventory.md
+docs/release/phase4-20261008/readiness.md
+docs/release/phase4-20261008/review-decisions.json
+internal/handouts/Preview.tsx
+internal/handouts/data.ts
+playwright.config.ts
+scripts/editorial-gate.mjs
+scripts/lib/load-ts.mjs
+scripts/review-manifest.mjs
+scripts/verify-release.mjs
+tests/browser/release.spec.ts
