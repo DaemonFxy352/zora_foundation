@@ -63,6 +63,12 @@ export function PublicationArticle({
               · Version {p.version}
             </p>
             <EditorialResponsibility value={p.editorial} />
+            <p>
+              Review status:{" "}
+              {p.reviewStatus === "editorial-review"
+                ? "Editorial review recorded; this does not imply peer review."
+                : "No review recorded."}
+            </p>
             <div className="actions no-print">
               <PrintButton />
               {p.pdf && (
@@ -112,6 +118,23 @@ export function PublicationArticle({
           <section className="guide-section" id="citation">
             <h2>Suggested citation</h2>
             <p>{suggestedCitation(p)}</p>
+          </section>
+          <section className="guide-section" id="version-history">
+            <h2>Version history and corrections</h2>
+            <ol>
+              {p.history.map((entry) => (
+                <li key={entry.version}>
+                  <strong>
+                    Version {entry.version} — {entry.kind}
+                  </strong>{" "}
+                  · <DateLabel date={entry.date} />
+                  <p>{entry.summary}</p>
+                </li>
+              ))}
+            </ol>
+            <p>
+              <Link href="/editorial-standards">Request a correction</Link>.
+            </p>
           </section>
           {p.relatedResearch.length > 0 && (
             <section className="guide-section" id="related-research">

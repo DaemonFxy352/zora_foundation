@@ -159,6 +159,70 @@ for (const r of resources) {
   if (r.editorial)
     assert.equal(schema.mainEntityOfPage.lastReviewed, r.editorial.reviewedAt);
 }
+// Exercise the exact search helper used by the client, with real summary data.
+const { resourceSummaries } = load("data/resources.ts");
+const { filterResources, emptyResourceFilters } = load(
+  "lib/resource-search.ts",
+);
+const { handouts } = load("data/handouts.ts");
+const summaries = resourceSummaries();
+const search = (query, filters = {}) =>
+  filterResources(summaries, { ...emptyResourceFilters, query, ...filters });
+assert.equal(search(" ").length, resources.length);
+assert.ok(
+  search("  FAMILY   VERIFICATION ").some(
+    (r) => r.slug === "verify-before-you-trust",
+  ),
+);
+assert.ok(search("TEENAGERS").some((r) => r.slug === "teen-online-safety"));
+assert.ok(
+  search("financial fraud").some((r) => r.slug === "payment-redirection"),
+);
+assert.equal(search("zzzz-no-result").length, 0);
+assert.ok(
+  search("", { audience: "children" }).every((r) =>
+    r.audience.includes("children"),
+  ),
+);
+assert.ok(
+  search("", { topic: "privacy", audience: "teenagers" }).every(
+    (r) => r.topics.includes("privacy") && r.audience.includes("teenagers"),
+  ),
+);
+assert.equal(search("", { format: "handout" }).length, 7);
+assert.equal(search("", { format: "video" }).length, 0);
+assert.equal(
+  filterResources(summaries, emptyResourceFilters).length,
+  resources.length,
+);
+assert.equal(new Set(handouts.map((h) => h.slug)).size, 7);
+assert.equal(new Set(handouts.map((h) => h.resource)).size, 7);
+for (const h of handouts) {
+  assert.equal(h.status, "draft");
+  assert.ok(resources.some((r) => r.slug === h.resource));
+  assert.ok(h.steps.length >= 4 && h.help && h.response && h.practice);
+  assert.equal(h.reviewedAt, undefined, "Do not invent review dates");
+  assert.ok(summaries.some((r) => r.handoutSlug === h.slug));
+}
+const workshopDrafts = JSON.parse(
+  readFileSync("data/workshop-drafts.json", "utf8"),
+);
+assert.equal(workshopDrafts.length, 3);
+for (const w of workshopDrafts) {
+  assert.equal(w.status, "draft");
+  assert.ok(w.reviewStatus.includes("pending"));
+  w.resources.forEach((slug) =>
+    assert.ok(resources.some((r) => r.slug === slug)),
+  );
+  w.handouts.forEach((slug) =>
+    assert.ok(handouts.some((h) => h.slug === slug)),
+  );
+  assert.equal(
+    w.outline.reduce((sum, part) => sum + part.minutes, 0),
+    w.durationMinutes,
+  );
+  assert.ok(!existsSync(`app/workshops/${w.slug}/page.tsx`));
+}
 // Synthetic records exist only in this test process, never in app data/public/.
 const person = {
   id: "test-author",
@@ -205,10 +269,56 @@ const sample = {
     { label: "Synthetic reference", url: "https://example.org/reference" },
   ],
   version: "1",
+  reviewStatus: "editorial-review",
+  history: [
+    {
+      version: "1",
+      date: "2026-10-07",
+      kind: "initial",
+      summary: "Synthetic initial release.",
+    },
+  ],
   relatedResearch: [],
   relatedResources: ["recognize-a-scam"],
 };
 validatePublication(sample);
+assert.throws(
+  () => validatePublication({ ...sample, history: [] }),
+  /version history/,
+);
+assert.throws(
+  () => validatePublication({ ...sample, reviewStatus: "not-recorded" }),
+  /conflicts/,
+);
+assert.throws(
+  () =>
+    validatePublication({
+      ...sample,
+      history: [{ ...sample.history[0], kind: "correction" }],
+    }),
+  /chronology/,
+);
+const corrected = {
+  ...sample,
+  version: "2",
+  updatedAt: "2026-10-08",
+  history: [
+    ...sample.history,
+    {
+      version: "2",
+      date: "2026-10-08",
+      kind: "correction",
+      summary: "Synthetic correction explanation.",
+    },
+  ],
+};
+validatePublication(corrected);
+assert.equal(publicationSchema(corrected).dateModified, "2026-10-08");
+assert.ok(
+  renderToStaticMarkup(
+    createElement(PublicationArticle, { publication: corrected }),
+  ).includes("Synthetic correction explanation."),
+);
 for (const type of ["Report", "ScholarlyArticle", "Article", "CreativeWork"]) {
   const p = {
     ...sample,

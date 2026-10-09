@@ -86,7 +86,10 @@ for (const [route, html] of pages) {
         `${route}: broken link ${href}`,
       );
   }
-  if (route.startsWith("/education/")) {
+  if (
+    route.startsWith("/education/") &&
+    !route.startsWith("/education/handouts/")
+  ) {
     for (const text of [
       "Key warning signs",
       "What to do",
@@ -103,12 +106,26 @@ for (const [route, html] of pages) {
       `${route}: printable branding`,
     );
   }
+  if (route.startsWith("/education/handouts/")) {
+    for (const text of [
+      "Printable draft handout",
+      "review pending",
+      "Steps to use",
+      "Put it into practice",
+      "If it already happened",
+      "Help and limits",
+      "Sources and full guidance",
+      "Print or save as PDF",
+    ])
+      assert.ok(html.includes(text), `${route}: handout missing ${text}`);
+    assert.ok(html.includes('class="print-brand"'));
+  }
   assert.ok(
     !/Lorem ipsum|TODO|\uFFFD/.test(html),
     `${route}: placeholder/encoding artifact`,
   );
   console.log(
-    `PASS ${route}: metadata, landmarks, image alt text, links, ARIA targets${route.startsWith("/education/") ? ", guide sections" : ""}`,
+    `PASS ${route}: metadata, landmarks, image alt text, links, ARIA targets${route.startsWith("/education/handouts/") ? ", draft handout sections" : route.startsWith("/education/") ? ", guide sections" : ""}`,
   );
 }
 console.log(`Verified ${pages.size} production pages.`);

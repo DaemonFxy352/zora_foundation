@@ -26,6 +26,13 @@ export type Publication = {
   references: Source[];
   pdf?: { url: string; label: string; version: string; bytes: number };
   version: string;
+  reviewStatus: "not-recorded" | "editorial-review";
+  history: {
+    version: string;
+    date: string;
+    kind: "initial" | "update" | "correction";
+    summary: string;
+  }[];
   relatedResearch: string[];
   relatedResources: string[];
 };
@@ -59,6 +66,45 @@ export function validatePublication(p: Publication): void {
     (p.updatedAt && (!validDate(p.updatedAt) || p.updatedAt < p.publishedAt!))
   )
     throw new Error("Invalid publication dates");
+  if (!["not-recorded", "editorial-review"].includes(p.reviewStatus))
+    throw new Error("Missing publication review status");
+  if (
+    p.reviewStatus === "editorial-review" &&
+    (!p.editorial.reviewers?.length || !p.editorial.reviewedAt)
+  )
+    throw new Error("Editorial review needs verified reviewers and date");
+  if (
+    p.reviewStatus === "not-recorded" &&
+    (p.editorial.reviewers?.length || p.editorial.reviewedAt)
+  )
+    throw new Error("Review status conflicts with attribution");
+  if (!p.history?.length) throw new Error("Publication needs version history");
+  const versions = new Set<string>();
+  for (const [i, entry] of p.history.entries()) {
+    if (
+      !entry.version.trim() ||
+      versions.has(entry.version) ||
+      !validDate(entry.date) ||
+      !entry.summary.trim() ||
+      !["initial", "update", "correction"].includes(entry.kind)
+    )
+      throw new Error("Invalid version history");
+    if (
+      i === 0
+        ? entry.kind !== "initial" || entry.date !== p.publishedAt
+        : entry.kind === "initial" || entry.date < p.history[i - 1].date
+    )
+      throw new Error("Invalid version chronology");
+    versions.add(entry.version);
+  }
+  const latest = p.history.at(-1)!;
+  if (
+    latest.version !== p.version ||
+    latest.date !== (p.updatedAt ?? p.publishedAt)
+  )
+    throw new Error("Current version/date must match history");
+  if (p.pdf && p.pdf.version !== p.version)
+    throw new Error("PDF version must match HTML");
   if (p.editorial.reviewedAt && !validDate(p.editorial.reviewedAt))
     throw new Error("Invalid review date");
   if (p.editorial.reviewers?.length && !p.editorial.reviewedAt)
@@ -84,6 +130,7 @@ export function validatePublication(p: Publication): void {
     "limitations",
     "references",
     "citation",
+    "version-history",
     "related-research",
     "related-education",
   ]);

@@ -11,7 +11,10 @@
     "verify:build": "node scripts/verify-build.mjs",
     "verify:seo": "node scripts/verify-seo.mjs",
     "verify:content": "node scripts/test-content.mjs",
-    "verify:routes": "node scripts/verify-routes.mjs"
+    "verify:routes": "node scripts/verify-routes.mjs",
+    "materials:write": "node scripts/workshop-materials.mjs --write",
+    "verify:materials": "node scripts/workshop-materials.mjs",
+    "verify:accessibility": "node scripts/verify-accessibility.mjs"
   },
   "dependencies": {
     "next": "^16.2.0",

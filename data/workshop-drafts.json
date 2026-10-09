@@ -1,0 +1,249 @@
+[
+  {
+    "status": "draft",
+    "reviewStatus": "Organizational and subject-matter review pending; not approved for delivery",
+    "preparedAt": "2026-10-08",
+    "preparation": [
+      "Review all linked guidance and reporting destinations before use; confirm a named facilitator and host contact.",
+      "Agree on safeguarding, escalation, accessibility, and privacy responsibilities with the host. Do not collect account details or personal incident evidence.",
+      "Print the linked draft handouts only for review until approved. Explain that examples are fictional and participants may pass on any activity."
+    ],
+    "accessibility": [
+      "Offer large print, read-aloud or text alternatives, clear audio, seated participation, and breaks.",
+      "Allow spoken, written, or pointing responses. No personal device, login, payment, or public disclosure is required.",
+      "Ask about language and access needs in advance; arrange interpretation or adaptation with the host rather than improvising sensitive guidance."
+    ],
+    "releaseGates": [
+      "Named organizational approval and subject-matter review",
+      "Child-safety/safeguarding review when minors or family exploitation topics are involved",
+      "Verify sources, reporting links, age suitability, and accessible print/browser output",
+      "Confirm host responsibilities, facilitator preparation, and actual delivery capacity"
+    ],
+    "slug": "older-adult-scam-prevention",
+    "title": "Older adult scam prevention",
+    "durationMinutes": 60,
+    "audience": "Older adults and trusted community supporters",
+    "objectives": [
+      "Identify pressure and impersonation without relying on caller ID or a familiar voice.",
+      "Demonstrate an independent callback using a fictional request.",
+      "Choose the affected bank or service as an immediate response destination after a suspected scam."
+    ],
+    "outline": [
+      {
+        "minutes": 5,
+        "title": "Welcome and choice",
+        "activity": "Explain scope, privacy, and the option to pass. Ask participants to name a task they want more confidence doing without describing past losses.",
+        "prompt": "What would make this session comfortable for you?"
+      },
+      {
+        "minutes": 10,
+        "title": "Recognize pressure",
+        "activity": "Read a fictional message claiming a bank needs a transfer. Identify the requested decision rather than judging the participant.",
+        "prompt": "What is being requested, and what could wait?"
+      },
+      {
+        "minutes": 10,
+        "title": "Phone, message, and AI impersonation",
+        "activity": "Discuss why an official-looking number or familiar-sounding voice does not establish identity. Do not play cloned voices or stage a surprise call.",
+        "prompt": "What can you check independently of what you hear?"
+      },
+      {
+        "minutes": 15,
+        "title": "Practice verification",
+        "activity": "On paper, work through a fictional family money request. Choose a known callback route and a second contact; no actual numbers or transfers.",
+        "prompt": "If the first trusted person cannot answer, what is your next safe step?"
+      },
+      {
+        "minutes": 10,
+        "title": "Respond without further loss",
+        "activity": "Use the immediate-action handout to choose bank, account, or device help for three fictional situations.",
+        "prompt": "Which service can act on the affected payment or account?"
+      },
+      {
+        "minutes": 10,
+        "title": "Takeaway and feedback",
+        "activity": "Invite each participant to explain one step in their own words. Collect optional feedback about clarity, not personal incidents.",
+        "prompt": "What will you practice next, and what support would help?"
+      }
+    ],
+    "takeaways": [
+      "An independent callback is a normal safety step, not an accusation.",
+      "No one needs to share passwords with a helper.",
+      "Act promptly after suspected fraud without promises of recovery."
+    ],
+    "resources": [
+      "online-safety-older-adults",
+      "phone-impersonation",
+      "ai-impersonation",
+      "after-a-scam"
+    ],
+    "handouts": [
+      "older-adult-scam-prevention",
+      "family-verification",
+      "after-scam-immediate-actions"
+    ]
+  },
+  {
+    "status": "draft",
+    "reviewStatus": "Organizational and subject-matter review pending; not approved for delivery",
+    "preparedAt": "2026-10-08",
+    "preparation": [
+      "Review all linked guidance and reporting destinations before use; confirm a named facilitator and host contact.",
+      "Agree on safeguarding, escalation, accessibility, and privacy responsibilities with the host. Do not collect account details or personal incident evidence.",
+      "Print the linked draft handouts only for review until approved. Explain that examples are fictional and participants may pass on any activity."
+    ],
+    "accessibility": [
+      "Offer large print, read-aloud or text alternatives, clear audio, seated participation, and breaks.",
+      "Allow spoken, written, or pointing responses. No personal device, login, payment, or public disclosure is required.",
+      "Ask about language and access needs in advance; arrange interpretation or adaptation with the host rather than improvising sensitive guidance."
+    ],
+    "releaseGates": [
+      "Named organizational approval and subject-matter review",
+      "Child-safety/safeguarding review when minors or family exploitation topics are involved",
+      "Verify sources, reporting links, age suitability, and accessible print/browser output",
+      "Confirm host responsibilities, facilitator preparation, and actual delivery capacity"
+    ],
+    "slug": "parent-family-digital-safety",
+    "title": "Parent and family digital safety",
+    "durationMinutes": 60,
+    "audience": "Parents, guardians, caregivers, and family-serving organizations",
+    "objectives": [
+      "Create an age-adapted help-seeking conversation.",
+      "Identify privacy, contact, and purchase settings to review together.",
+      "Explain an independent family verification step and appropriate reporting route."
+    ],
+    "outline": [
+      {
+        "minutes": 5,
+        "title": "Set a supportive tone",
+        "activity": "Explain that families have different needs and may pass. Avoid comparing parenting decisions.",
+        "prompt": "What would help a child feel able to ask for help?"
+      },
+      {
+        "minutes": 10,
+        "title": "Age-appropriate privacy",
+        "activity": "Compare a fictional young child profile with a fictional teen profile. Choose which details should remain private without viewing real accounts.",
+        "prompt": "How would your explanation change with the child\u2019s understanding?"
+      },
+      {
+        "minutes": 10,
+        "title": "Gaming and messaging",
+        "activity": "Discuss an invented prize message in plain text. Do not create a functioning link or ask participants to simulate coercion.",
+        "prompt": "What access or information does the request ask for?"
+      },
+      {
+        "minutes": 10,
+        "title": "AI and family verification",
+        "activity": "Explain that synthetic media cannot prove identity. Choose a known callback route for an imagined family request.",
+        "prompt": "How can adults model pausing rather than demanding instant decisions?"
+      },
+      {
+        "minutes": 15,
+        "title": "Practice a supportive response",
+        "activity": "In pairs or individually, complete the parent conversation guide. Practice the adult\u2019s calm response to a child asking for help, with no exploitation role-play.",
+        "prompt": "What could you say before asking detailed questions?"
+      },
+      {
+        "minutes": 10,
+        "title": "Reporting and next steps",
+        "activity": "Review platform reporting, trusted adults, and NCMEC resources. Each participant chooses one household setting or conversation to revisit.",
+        "prompt": "Who can help when an issue is beyond a household rule?"
+      }
+    ],
+    "takeaways": [
+      "Settings support ongoing conversations; they do not replace them.",
+      "Help comes before blame or a discussion of broken rules.",
+      "Never forward intimate images to seek advice."
+    ],
+    "resources": [
+      "internet-safety-parents",
+      "online-safety-kids",
+      "gaming-scams",
+      "verify-before-you-trust",
+      "teen-online-safety"
+    ],
+    "handouts": [
+      "parent-conversation",
+      "family-verification"
+    ]
+  },
+  {
+    "status": "draft",
+    "reviewStatus": "Organizational and subject-matter review pending; not approved for delivery",
+    "preparedAt": "2026-10-08",
+    "preparation": [
+      "Review all linked guidance and reporting destinations before use; confirm a named facilitator and host contact.",
+      "Agree on safeguarding, escalation, accessibility, and privacy responsibilities with the host. Do not collect account details or personal incident evidence.",
+      "Print the linked draft handouts only for review until approved. Explain that examples are fictional and participants may pass on any activity."
+    ],
+    "accessibility": [
+      "Offer large print, read-aloud or text alternatives, clear audio, seated participation, and breaks.",
+      "Allow spoken, written, or pointing responses. No personal device, login, payment, or public disclosure is required.",
+      "Ask about language and access needs in advance; arrange interpretation or adaptation with the host rather than improvising sensitive guidance."
+    ],
+    "releaseGates": [
+      "Named organizational approval and subject-matter review",
+      "Child-safety/safeguarding review when minors or family exploitation topics are involved",
+      "Verify sources, reporting links, age suitability, and accessible print/browser output",
+      "Confirm host responsibilities, facilitator preparation, and actual delivery capacity"
+    ],
+    "slug": "teen-digital-safety",
+    "title": "Teen digital safety",
+    "durationMinutes": 45,
+    "extensionMinutes": 15,
+    "audience": "Teenagers, with a prepared adult facilitator and host safeguarding contact",
+    "objectives": [
+      "Identify an account or social pressure request that deserves a pause.",
+      "Explain why images, voices, and account names do not by themselves prove identity.",
+      "Find a trusted adult and appropriate reporting support without needing to disclose personal harm."
+    ],
+    "outline": [
+      {
+        "minutes": 5,
+        "title": "Choice and boundaries",
+        "activity": "Explain privacy, the right to pass, and where to seek private help. Do not promise confidentiality that conflicts with safeguarding responsibilities.",
+        "prompt": "What makes asking for help easier?"
+      },
+      {
+        "minutes": 10,
+        "title": "Identity and privacy",
+        "activity": "Use a fictional profile and ask what strangers could learn. Never open students\u2019 accounts or ask for identifying information.",
+        "prompt": "Which details would you choose not to share publicly?"
+      },
+      {
+        "minutes": 10,
+        "title": "Scams and AI-generated content",
+        "activity": "Use a benign text example asking for a game-account code. Discuss social pressure and independent checking; no deepfake generation or exploitation scenarios.",
+        "prompt": "What action matters more than whether a message looks convincing?"
+      },
+      {
+        "minutes": 10,
+        "title": "Boundaries and safe help-seeking",
+        "activity": "Give a short non-graphic explanation of sextortion as threats involving intimate images. State that it is not the person\u2019s fault, that payment/more images are not a safe solution, and point to trusted adults and NCMEC. No role-play, images, or disclosure prompts.",
+        "prompt": "Which adult or support route could someone approach without explaining it to the group?"
+      },
+      {
+        "minutes": 10,
+        "title": "Practice and takeaways",
+        "activity": "Use the teen checklist with fictional account settings. Invite a voluntary explanation of one safety choice. Offer private written questions without names.",
+        "prompt": "What would you tell a friend who needs help?"
+      }
+    ],
+    "extension": "Optional 15 minutes: repeat the benign account-code exercise using a different fictional request, allow a break, and answer general questions. Do not extend the sensitive-content discussion through personal examples.",
+    "takeaways": [
+      "You can leave a conversation even if someone pressures you.",
+      "A trusted adult can help with reporting and account recovery.",
+      "Do not pay blackmail demands or forward intimate images; seek support."
+    ],
+    "resources": [
+      "teen-online-safety",
+      "gaming-scams",
+      "ai-impersonation",
+      "account-safety"
+    ],
+    "handouts": [
+      "teen-safety",
+      "suspicious-message-worksheet"
+    ]
+  }
+]

@@ -87,6 +87,8 @@ export const authorityResources: Resource[] = [
   {
     ...common,
     slug: "after-a-scam",
+    sourceCheckedAt: "2026-10-08",
+    updatedAt: "2026-10-08",
     title: "What to do after a scam",
     format: "checklist",
     readingMinutes: 5,
@@ -94,7 +96,7 @@ export const authorityResources: Resource[] = [
       "Stop the interaction, contact the payment provider, and secure affected accounts. Preserve evidence and report what happened. Acting promptly matters, but getting money back is not guaranteed.",
     topics: ["recovery", "financial-fraud", "account-safety", "scams-fraud"],
     intro:
-      "You do not need a complete account of events before asking for help. Start with the action that could prevent further loss. A trusted person can help make calls or keep notes while you retain control of passwords and private information. This checklist is general guidance; the reporting links below are for the United States.",
+      "In the first hour, prioritize the affected payment, account, or device; do not wait to finish a report before contacting the provider. If more time has passed, still seek help. You do not need a complete account of events before asking for help. Start with the action that could prevent further loss. A trusted person can help make calls or keep notes while you retain control of passwords and private information. This checklist is general guidance; the reporting links below are for the United States.",
     sections: [
       {
         id: "choose-a-start",

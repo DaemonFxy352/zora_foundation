@@ -67,6 +67,9 @@ try {
     "/research/test-report",
     "/research/unpublished-example",
     "/education/not-a-resource",
+    "/education/handouts/not-a-handout",
+    "/programs/teen-digital-safety",
+    "/workshops/older-adult-scam-prevention",
     "/not-a-real-page",
   ])
     await request(route, 404);

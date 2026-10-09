@@ -215,5 +215,19 @@
     "primaryIntent": "Facilitate an age-appropriate safety lesson",
     "primaryPhrase": "educator discussion guide",
     "secondaryPhrases": []
+  },
+  {
+    "path": "/education/government-impersonation",
+    "status": "implemented",
+    "primaryIntent": "Independently check a claimed government payment or information demand",
+    "primaryPhrase": "government impersonation scams",
+    "secondaryPhrases": ["fake agency calls", "benefit impersonation"]
+  },
+  {
+    "path": "/education/payment-redirection",
+    "status": "implemented",
+    "primaryIntent": "Verify changed invoice or payment destination instructions",
+    "primaryPhrase": "payment redirection scams",
+    "secondaryPhrases": ["business email compromise", "changed bank details"]
   }
 ]

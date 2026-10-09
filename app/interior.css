@@ -669,3 +669,70 @@
     font-size: 9pt;
   }
 }
+
+/* Local search and paper-first companion sheets. */
+.resource-search {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  grid-column: 1 / -1;
+}
+.resource-search input {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 12px;
+  border: 1px solid var(--teal-deep);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--navy);
+  font: inherit;
+}
+.resource-search span {
+  font-weight: 400;
+  line-height: 1.5;
+}
+.handout-status {
+  border-left: 3px solid var(--teal-deep);
+  padding-left: 16px;
+}
+.handout-sheet li {
+  margin-bottom: 12px;
+}
+.worksheet-space {
+  height: 24mm;
+  border-bottom: 1px solid var(--navy);
+}
+@media print {
+  @page handout {
+    size: letter;
+    margin: 0.65in;
+  }
+  .handout-page {
+    page: handout;
+  }
+  .handout-sheet {
+    max-width: none;
+    font-size: 12pt;
+    line-height: 1.45;
+  }
+  .handout-page h1 {
+    font-size: 24pt;
+  }
+  .handout-page h2 {
+    font-size: 16pt;
+  }
+  .handout-page .guide-section {
+    margin-top: 5mm;
+  }
+  .handout-page .handout-status {
+    border: 1px solid #000;
+    padding: 3mm;
+  }
+  .handout-page .resource-sources a::after {
+    font-size: 10pt;
+  }
+  .handout-page .resource-sources {
+    break-before: page;
+  }
+}

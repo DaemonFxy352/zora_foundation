@@ -256,3 +256,30 @@ content framework or runtime dependency was added.
 Use the Node version supported by `package.json` (Node 22+). Node 20 can build
 but does not reliably complete the in-process static-asset route test. Browser
 interaction and Letter/A4 print-preview QA remain required before release.
+
+### Phase 3: handouts, search, and workshop drafts
+
+- `data/handouts.ts` supplies seven HTML print companions at
+  `/education/handouts/[slug]`. Each is explicitly **draft**, carries preparation
+  and pending-review status, and is `noindex` and excluded from the sitemap.
+  They are public preview URLs if deployed, not access-controlled documents.
+  Users can print or save as PDF; no pre-generated/tagged PDF is promised.
+- Add a handout with a unique slug, existing parent resource, practical steps,
+  exercise, response/help limits, and honest status/date. Parent source references
+  are reused. `resourceSummaries()` adds its discovery link automatically.
+- `lib/resource-search.ts` applies local all-word search across summaries and
+  audience/topic labels, then combines filters. It receives no full article bodies,
+  creates no query URLs, and sends no search data to a remote service.
+- `data/workshop-drafts.json` is the source for three **internal** curricula.
+  Run `npm run materials:write` after editing; generated review copies are in
+  `docs/training/`. `npm run verify:materials` rejects stale copies and invalid
+  timing. Workshop drafts are not imported by application routes.
+- `data/fraud-resources.ts` adds government impersonation and payment-redirection
+  guidance; overlapping AI, bank-call, family-emergency, and recovery content stays
+  at its established URLs.
+- Publications now require explicit `reviewStatus` and chronological `history`.
+  See `docs/seo/phase3-20261008/publication-template.md` before adding a real report.
+- Also run `npm run verify:accessibility` after building. It checks static search
+  markup and selected text color contrast; it is not browser or assistive-tech QA.
+- Complete `docs/seo/phase3-20261008/manual-release-qa.md` before release,
+  especially named child-safety review and Letter print/PDF preview checks.

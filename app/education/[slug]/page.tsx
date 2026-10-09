@@ -1,3 +1,4 @@
+import { handoutForResource } from "@/data/handouts";
 import { ContentSections } from "@/components/content/ContentSections";
 import {
   DateLabel,
@@ -43,6 +44,7 @@ export default async function ResourcePage({
   const { slug } = await params;
   const r = getResource(slug);
   if (!r) notFound();
+  const handout = handoutForResource(r.slug);
   const related = r.related
     .map(getResource)
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
@@ -104,6 +106,14 @@ export default async function ResourcePage({
             </p>
             <div className="actions">
               {r.printView && <PrintButton />}
+              {handout && (
+                <Link
+                  className="button button-outline"
+                  href={`/education/handouts/${handout.slug}`}
+                >
+                  Open draft handout
+                </Link>
+              )}
               {r.download && (
                 <a className="button" href={r.download.url} download>
                   {r.download.label} ({r.download.fileType})

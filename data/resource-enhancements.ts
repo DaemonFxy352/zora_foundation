@@ -27,6 +27,7 @@ export const resourceEnhancements: Record<string, Partial<Resource>> = {
       "verify-before-you-trust",
       "human-targeted-attacks",
       "after-a-scam",
+      "government-impersonation",
     ],
   },
   "suspicious-message": {
@@ -49,6 +50,7 @@ export const resourceEnhancements: Record<string, Partial<Resource>> = {
       "account-safety",
       "after-a-scam",
       "gaming-scams",
+      "payment-redirection",
     ],
   },
   "verify-before-you-trust": {

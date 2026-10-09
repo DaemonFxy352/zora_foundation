@@ -18,7 +18,10 @@ const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
   (m) => m[1],
 );
 assert.equal(new Set(locations).size, locations.length);
-assert.equal(locations.length, pages.length - 2);
+assert.equal(
+  locations.length,
+  pages.filter((p) => !p.startsWith("education/handouts/")).length - 2,
+);
 const intents = JSON.parse(
   readFileSync("docs/seo/content-expansion-20261008/intent-map.json", "utf8"),
 );
@@ -35,6 +38,7 @@ for (const item of intents) {
 const titles = new Set();
 const descriptions = new Set();
 for (const page of pages) {
+  const handout = page.startsWith("education/handouts/");
   const path = page === "index" ? "/" : `/${page}`;
   const html = read(`${page}.html`);
   const title = html.match(/<title>(.*?)<\/title>/)?.[1];
@@ -86,7 +90,7 @@ for (const page of pages) {
     assert.equal(orgs[0][unsupported], undefined);
   assert.ok(
     html.includes(
-      `name="robots" content="${preview ? "noindex" : "index"}, follow"`,
+      `name="robots" content="${preview || handout ? "noindex" : "index"}, follow"`,
     ),
   );
   const canonical = [...html.matchAll(/<link\b[^>]*rel="canonical"[^>]*>/g)];
@@ -97,7 +101,7 @@ for (const page of pages) {
   );
   assert.equal(
     locations.includes(`${origin}${path}`),
-    !["accessibility", "editorial-standards"].includes(page),
+    !handout && !["accessibility", "editorial-standards"].includes(page),
   );
   if (page !== "index" && page !== "accessibility") {
     const crumbs = json.filter((item) => item["@type"] === "BreadcrumbList");
@@ -109,7 +113,16 @@ for (const page of pages) {
       assert.ok(visible.includes(item.name));
     });
   }
-  if (page.startsWith("education/")) {
+  if (handout) {
+    assert.ok(html.includes("review pending"));
+    assert.ok(html.includes("Print or save as PDF"));
+    assert.ok(
+      !json.some((item) =>
+        ["LearningResource", "Article", "Report"].includes(item["@type"]),
+      ),
+    );
+  }
+  if (page.startsWith("education/") && !handout) {
     const guides = json.filter((item) => item["@type"] === "LearningResource");
     assert.equal(guides.length, 1);
     const guide = guides[0];
@@ -142,8 +155,11 @@ for (const page of pages) {
 }
 assert.equal(
   (sitemap.match(/<lastmod>/g) || []).length,
-  pages.filter((p) => p.startsWith("education/") || p.startsWith("research/"))
-    .length,
+  pages.filter(
+    (p) =>
+      (p.startsWith("education/") && !p.startsWith("education/handouts/")) ||
+      p.startsWith("research/"),
+  ).length,
   "Only resources and published reports have maintained dates",
 );
 const robots = read("robots.txt.body");

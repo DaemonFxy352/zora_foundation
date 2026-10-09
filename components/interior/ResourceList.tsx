@@ -19,6 +19,14 @@ export function ResourceList({ items }: { items: ResourceSummary[] }) {
               </Link>
             </h3>
             <p>{resource.summary}</p>
+            {resource.handoutSlug && (
+              <Link
+                className="text-link"
+                href={`/education/handouts/${resource.handoutSlug}`}
+              >
+                Draft handout: {resource.title}
+              </Link>
+            )}
           </div>
           {resource.printView && (
             <span className="resource-print-label">Print-friendly</span>

@@ -1,6 +1,8 @@
+import { handoutForResource } from "./handouts";
 import type { EditorialResponsibility } from "./contributors";
 import type { Source } from "./sources";
 import type { ContentSection } from "../components/content/ContentSections";
+import { fraudResources } from "./fraud-resources";
 import { familyResources } from "./family-resources";
 import { authorityResources } from "./authority-resources";
 import { resourceEnhancements } from "./resource-enhancements";
@@ -351,6 +353,7 @@ export const resources: Resource[] = [
   ...launchResources.map((r) => ({ ...r, ...resourceEnhancements[r.slug] })),
   ...authorityResources,
   ...familyResources,
+  ...fraudResources,
 ];
 
 export function getResource(slug: string) {
@@ -366,7 +369,7 @@ export type ResourceSummary = Pick<
   | "format"
   | "readingMinutes"
   | "printView"
->;
+> & { handoutSlug?: string };
 export function resourceSummaries(): ResourceSummary[] {
   return resources.map(
     ({
@@ -387,6 +390,7 @@ export function resourceSummaries(): ResourceSummary[] {
       format,
       readingMinutes,
       printView,
+      handoutSlug: handoutForResource(slug)?.slug,
     }),
   );
 }

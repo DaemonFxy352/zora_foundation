@@ -1,4 +1,5 @@
 "use client";
+import { filterResources } from "@/lib/resource-search";
 import { useRef, useState } from "react";
 import { audiences, topics, formats } from "@/data/resource-taxonomy";
 import type { ResourceSummary } from "@/data/resources";
@@ -6,20 +7,17 @@ import { ResourceList } from "./ResourceList";
 import { Point, Arrow } from "@/components/Brand";
 
 export function ResourceBrowser({ items }: { items: ResourceSummary[] }) {
+  const [query, setQuery] = useState("");
   const [audience, setAudience] = useState("");
   const [topic, setTopic] = useState("");
   const [format, setFormat] = useState("");
   const resultsHeading = useRef<HTMLHeadingElement>(null);
-  const visible = items.filter(
-    (r) =>
-      (!audience || r.audience.some((a) => a === audience)) &&
-      (!topic || r.topics.some((t) => t === topic)) &&
-      (!format || (format === "printable" ? r.printView : r.format === format)),
-  );
+  const visible = filterResources(items, { query, audience, topic, format });
   function browse(kind: "audience" | "topic", id: string) {
     setAudience(kind === "audience" ? id : "");
     setTopic(kind === "topic" ? id : "");
     setFormat("");
+    setQuery("");
     resultsHeading.current?.focus();
     resultsHeading.current?.scrollIntoView({ block: "start" });
   }
@@ -44,6 +42,23 @@ export function ResourceBrowser({ items }: { items: ResourceSummary[] }) {
           </div>
           <fieldset className="resource-filters">
             <legend>Find a resource</legend>
+            <div className="resource-search">
+              <label htmlFor="resource-search">Search resources</label>
+              <input
+                id="resource-search"
+                type="search"
+                value={query}
+                maxLength={160}
+                onChange={(e) => setQuery(e.target.value)}
+                aria-describedby="search-help"
+                aria-controls="resource-results"
+                placeholder="Try family, privacy, or phone"
+              />
+              <span id="search-help">
+                Search titles, summaries, topics, and audiences. All words must
+                match; filters narrow the results.
+              </span>
+            </div>
             <label>
               Audience
               <select
@@ -76,6 +91,7 @@ export function ResourceBrowser({ items }: { items: ResourceSummary[] }) {
                 onChange={(e) => setFormat(e.target.value)}
               >
                 <option value="">All formats</option>
+                <option value="handout">Draft handouts</option>
                 {formats
                   .filter(
                     (f) =>
@@ -96,6 +112,7 @@ export function ResourceBrowser({ items }: { items: ResourceSummary[] }) {
                 setAudience("");
                 setTopic("");
                 setFormat("");
+                setQuery("");
               }}
             >
               Reset filters
@@ -108,7 +125,7 @@ export function ResourceBrowser({ items }: { items: ResourceSummary[] }) {
             aria-atomic="true"
           >
             {visible.length} {visible.length === 1 ? "resource" : "resources"}
-            {audience || topic || format
+            {query || audience || topic || format
               ? " matching your filters"
               : " available"}
           </p>
@@ -119,9 +136,10 @@ export function ResourceBrowser({ items }: { items: ResourceSummary[] }) {
               <div className="empty-results">
                 <h3>No resources match these filters yet.</h3>
                 <p>
-                  Try a different audience, topic, or format, or reset the
-                  filters to see all current guides. Videos, lessons, and
-                  teaching toolkits will be added as they are ready.
+                  Try fewer search words or a different audience, topic, or
+                  format, or reset the filters to see all current guides.
+                  Videos, lessons, and teaching toolkits will be added as they
+                  are ready.
                 </p>
               </div>
             )}
