@@ -1,0 +1,26 @@
+{
+  "runUrl": "https://github.com/DaemonFxy352/zora_foundation/actions/runs/37889846863",
+  "testedCommit": "bf0d45aea4aced34fa6037697051f58b537076a7",
+  "conclusion": "success",
+  "browserResults": {
+    "passed": 46,
+    "expectedSkips": 2,
+    "failures": 0,
+    "duration": "1.2 minutes"
+  },
+  "artifact": {
+    "id": 11598315624,
+    "name": "foundation-release-browser-evidence",
+    "size_in_bytes": 46489911,
+    "digest": "sha256:b2b89d7e71f550484f28bfcb3810e93dbff795a608e22e74c23c4704b8f480f1",
+    "expires_at": "2026-11-08T05:44:47Z"
+  },
+  "archiveDigestVerified": true,
+  "screenshots": 36,
+  "letterPDFs": 1,
+  "failureTraces": 0,
+  "previewUrl": "https://zora-foundation-poeofm04v-zora-safe.vercel.app",
+  "previewDeployment": "dpl_BnztKg1VmJjTTsMUkYr39Ss9oCGX",
+  "previewTarget": null,
+  "humanAcceptance": "pending"
+}

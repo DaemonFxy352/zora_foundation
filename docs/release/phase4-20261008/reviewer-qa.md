@@ -1,15 +1,13 @@
-> **Phase 4.4:** Content has changed. The run/artifact below is historical Phase 4.2 evidence and must not be used to approve the revised wording or pagination. Current local results: 46 passed, two expected skips; use `playwright-report/index.html` and `test-results/`. See [readiness.md](readiness.md) for the latest CI/candidate. All human acceptance stays pending.
-
 # Browser evidence and human acceptance worksheet
 
 **Automated: passed. Human acceptance: pending.** Review the candidate, not current production. Record actual device/browser/assistive technology versions and reviewer/date below. Screenshots are evidence to inspect, not proof of human approval.
 
 ## Open the evidence
 
-1. Open [successful GitHub run 37879843490](https://github.com/DaemonFxy352/zora_foundation/actions/runs/37879843490). It checked out `0ed94b1dcf3e4669622bd29ac9b8844c0a432a90`: **46 passed, two expected PDF skips, zero failures/retries**. Node 24, desktop Chromium, mobile-emulated Chromium and desktop Firefox ran successfully.
-2. Download [foundation-release-browser-evidence](https://github.com/DaemonFxy352/zora_foundation/actions/runs/37879843490/artifacts/11594142270) before **2026-11-08 03:37:08 UTC** and retain it in the Foundation's approved evidence storage. Owner archive location: __________. The local `/private/tmp/foundation-ci-37879843490/evidence/` extraction is temporary.
-3. Extract the archive. Open `playwright-report/index.html` (or run `npx playwright show-report <extraction>/playwright-report`). Open PNGs and PDF under `test-results/`. Archive SHA-256: `5e628b10d3841f4f62779bd36cf02d19e1e4803f667483277dc21bdf86064cec`.
-4. For interaction, use the [same application's pinned preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app). If protected, request owner-granted preview access. It is not a production release.
+1. Open [successful GitHub run 37889846863](https://github.com/DaemonFxy352/zora_foundation/actions/runs/37889846863). It checked out `bf0d45aea4aced34fa6037697051f58b537076a7`: **46 passed, two expected PDF skips, zero failures/retries**. Node 24, desktop Chromium, mobile-emulated Chromium and desktop Firefox ran successfully.
+2. Download [foundation-release-browser-evidence](https://github.com/DaemonFxy352/zora_foundation/actions/runs/37889846863/artifacts/11598315624) before **2026-11-08 05:44:47 UTC** and retain it in the Foundation's approved evidence storage. Owner archive location: __________. The local `/private/tmp/foundation-ci-37889846863/evidence/` extraction is temporary.
+3. Extract the archive. Open `playwright-report/index.html` (or run `npx playwright show-report <extraction>/playwright-report`). Open PNGs and PDF under `test-results/`. Archive SHA-256: `b2b89d7e71f550484f28bfcb3810e93dbff795a608e22e74c23c4704b8f480f1`.
+4. For interaction, use the [same application's pinned preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app). If protected, request owner-granted preview access. It is not a production release.
 
 ## Find representative captures
 

@@ -35,7 +35,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:recognize-a-scam` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/recognize-a-scam` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/recognize-a-scam` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/recognize-a-scam).
 
 **Audience:** Teenagers, Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -67,7 +67,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:verify-before-you-trust` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/verify-before-you-trust` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/verify-before-you-trust` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/verify-before-you-trust).
 
 **Audience:** Teenagers, Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -99,7 +99,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:ai-impersonation` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/ai-impersonation` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/ai-impersonation` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/ai-impersonation).
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators. **Type:** educational resource.
 
@@ -131,7 +131,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:suspicious-message` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/suspicious-message` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/suspicious-message` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/suspicious-message).
 
 **Audience:** Teenagers, Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -163,7 +163,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:account-safety` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/account-safety` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/account-safety` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/account-safety).
 
 **Audience:** Teenagers, Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -195,7 +195,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:human-targeted-attacks` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/human-targeted-attacks` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/human-targeted-attacks` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/human-targeted-attacks).
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -227,7 +227,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:after-a-scam` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/after-a-scam` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/after-a-scam` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/after-a-scam).
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -259,7 +259,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:qr-link-safety` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/qr-link-safety` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/qr-link-safety` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/qr-link-safety).
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -291,7 +291,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:phone-impersonation` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/phone-impersonation` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/phone-impersonation` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/phone-impersonation).
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -323,7 +323,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:government-impersonation` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/government-impersonation` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/government-impersonation` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/government-impersonation).
 
 **Audience:** Older adults, Caregivers, Libraries, senior centers & community organizations, People building digital confidence. **Type:** educational resource.
 
@@ -355,7 +355,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:payment-redirection` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/payment-redirection` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/payment-redirection` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/payment-redirection).
 
 **Audience:** Libraries, senior centers & community organizations, Educators & facilitators, Caregivers, Older adults. **Type:** educational resource.
 
@@ -389,7 +389,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:online-safety-older-adults` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/online-safety-older-adults` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/online-safety-older-adults` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/online-safety-older-adults).
 
 **Audience:** Older adults, Caregivers, People building digital confidence, Libraries, senior centers & community organizations. **Type:** educational resource.
 
@@ -423,7 +423,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:family-emergency-scams` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/family-emergency-scams` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/family-emergency-scams` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/family-emergency-scams).
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
@@ -455,7 +455,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:internet-safety-parents` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/internet-safety-parents` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/internet-safety-parents` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/internet-safety-parents).
 
 **Audience:** Parents & families, Caregivers, Educators & facilitators. **Type:** educational resource.
 
@@ -489,7 +489,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:online-safety-kids` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/online-safety-kids` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/online-safety-kids` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/online-safety-kids).
 
 **Audience:** Children with a trusted adult, Parents & families, Educators & facilitators. **Type:** educational resource.
 
@@ -521,7 +521,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:teen-online-safety` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/teen-online-safety` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/teen-online-safety` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/teen-online-safety).
 
 **Audience:** Teenagers, Parents & families, Educators & facilitators. **Type:** educational resource.
 
@@ -553,7 +553,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `resource:gaming-scams` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/gaming-scams` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education/gaming-scams` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education/gaming-scams).
 
 **Audience:** Teenagers, Parents & families, Educators & facilitators. **Type:** educational resource.
 
@@ -587,7 +587,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/education` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/education` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/education).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -619,7 +619,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/programs` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/programs` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/programs` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/programs).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -651,7 +651,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/partner` · **State:** PENDING · **Priority:** P1: review before release
 
-**URL:** `/partner` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/partner` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/partner).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -683,7 +683,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/contact` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/contact` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/contact` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/contact).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -717,7 +717,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/` · **State:** PENDING · **Priority:** P1: review before release
 
-**URL:** `/` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -749,7 +749,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/research` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/research` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/research` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/research).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -781,7 +781,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/about` · **State:** PENDING · **Priority:** P1: review before release
 
-**URL:** `/about` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/about` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/about).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -813,7 +813,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/leadership` · **State:** PENDING · **Priority:** P1: review before release
 
-**URL:** `/leadership` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/leadership` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/leadership).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -845,7 +845,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/support` · **State:** PENDING · **Priority:** P1: review before release
 
-**URL:** `/support` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/support` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/support).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
@@ -877,7 +877,7 @@ Homepage manifest hashes now include its imported copy components; organizationa
 
 **ID:** `page:/editorial-standards` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/editorial-standards` · Candidate: see current Phase 4.4 link in readiness.md.
+**URL:** `/editorial-standards` · [Current Phase 4.4 preview](https://zora-foundation-poeofm04v-zora-safe.vercel.app/editorial-standards).
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
