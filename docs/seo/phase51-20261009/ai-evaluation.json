@@ -1,5 +1,5 @@
 {
-  "protocolVersion": 2,
+  "protocolVersion": 3,
   "createdAt": "2026-10-09",
   "productionSourceCommit": "7010fc6379067b11e267f52ea8eb5701ae81095a",
   "status": "Protocol ready; independent AI-product answer baseline not measured",
@@ -8,49 +8,73 @@
       "id": "Q1",
       "category": "AI voice cloning",
       "prompt": "How can I tell whether an AI voice call is a scam?",
-      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/ai-impersonation"
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/ai-impersonation",
+      "searchIntent": "Recognize an AI-cloned familiar voice and verify the caller independently.",
+      "measurableObservation": "In an observed answer, record Foundation mention separately from a linked Foundation source citation; retain the actual cited URL and answer evidence. If no answer was observed, leave outcome fields null.",
+      "pagePublicationStatus": "Existing public URL; local candidate revision not yet deployed."
     },
     {
       "id": "Q2",
       "category": "Older-adult safety",
       "prompt": "How can older adults avoid phone scams?",
-      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/online-safety-older-adults"
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/online-safety-older-adults",
+      "searchIntent": "Find practical phone-scam prevention steps suitable for older adults.",
+      "measurableObservation": "In an observed answer, record Foundation mention separately from a linked Foundation source citation; retain the actual cited URL and answer evidence. If no answer was observed, leave outcome fields null.",
+      "pagePublicationStatus": "Existing public URL; local candidate revision not yet deployed."
     },
     {
       "id": "Q3",
       "category": "Parent safety",
       "prompt": "What should parents teach children about online scams?",
-      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/internet-safety-parents"
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/internet-safety-parents",
+      "searchIntent": "Teach children practical scam recognition through parent-guided conversations.",
+      "measurableObservation": "In an observed answer, record Foundation mention separately from a linked Foundation source citation; retain the actual cited URL and answer evidence. If no answer was observed, leave outcome fields null.",
+      "pagePublicationStatus": "Existing public URL; local candidate revision not yet deployed."
     },
     {
       "id": "Q4",
       "category": "Bank impersonation",
       "prompt": "How do I verify a bank impersonation call?",
-      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/phone-impersonation"
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/phone-impersonation",
+      "searchIntent": "Verify a claimed bank caller before sharing information or moving money.",
+      "measurableObservation": "In an observed answer, record Foundation mention separately from a linked Foundation source citation; retain the actual cited URL and answer evidence. If no answer was observed, leave outcome fields null.",
+      "pagePublicationStatus": "Existing public URL; local candidate revision not yet deployed."
     },
     {
       "id": "Q5",
       "category": "Scam response",
       "prompt": "What should I do after sending money to a scammer?",
-      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/after-a-scam"
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/after-a-scam",
+      "searchIntent": "Find ordered immediate actions after a scam payment, without recovery guarantees.",
+      "measurableObservation": "In an observed answer, record Foundation mention separately from a linked Foundation source citation; retain the actual cited URL and answer evidence. If no answer was observed, leave outcome fields null.",
+      "pagePublicationStatus": "Existing public URL; local candidate revision not yet deployed."
     },
     {
       "id": "Q6",
       "category": "Community education / schools",
       "prompt": "Where can schools find digital safety education resources?",
-      "intendedCanonicalURL": "https://www.zorasafefoundation.org/programs#school-education"
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/programs#school-education",
+      "searchIntent": "Find existing school-appropriate guides and understand planned workshop availability.",
+      "measurableObservation": "In an observed answer, record Foundation mention separately from a linked Foundation source citation; retain the actual cited URL and answer evidence. If no answer was observed, leave outcome fields null.",
+      "pagePublicationStatus": "Existing public URL; local candidate revision not yet deployed. Program sections describe planned delivery, not bookable workshops."
     },
     {
       "id": "Q7",
       "category": "Teen safety",
       "prompt": "How can teenagers protect their privacy and get help with online threats?",
-      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/teen-online-safety"
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/education/teen-online-safety",
+      "searchIntent": "Protect teen accounts/privacy and identify trusted help for online threats.",
+      "measurableObservation": "In an observed answer, record Foundation mention separately from a linked Foundation source citation; retain the actual cited URL and answer evidence. If no answer was observed, leave outcome fields null.",
+      "pagePublicationStatus": "Existing public URL; local candidate revision not yet deployed."
     },
     {
       "id": "Q8",
       "category": "Community education / libraries and senior centers",
       "prompt": "Where can libraries and senior centers find community digital safety education?",
-      "intendedCanonicalURL": "https://www.zorasafefoundation.org/programs#community-pathways"
+      "intendedCanonicalURL": "https://www.zorasafefoundation.org/programs#community-pathways",
+      "searchIntent": "Find public guides and planned community learning pathways for libraries and senior centers.",
+      "measurableObservation": "In an observed answer, record Foundation mention separately from a linked Foundation source citation; retain the actual cited URL and answer evidence. If no answer was observed, leave outcome fields null.",
+      "pagePublicationStatus": "Existing public URL; local candidate revision not yet deployed. Program sections describe planned delivery, not bookable workshops."
     }
   ],
   "observations": [],

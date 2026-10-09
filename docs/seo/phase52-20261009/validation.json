@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-09",
+  "candidateSource": "41ae38b2b92735240251b295deacf960f87fd74d",
+  "changes": "Documentation and AI evaluation protocol only; no application code changes",
+  "runtime": "Node 24; installed Next.js 16.4.0",
+  "checks": [
+    {
+      "command": "npm run build",
+      "result": "PASS",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "result": "PASS",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run lint",
+      "result": "PASS",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:seo",
+      "result": "PASS",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:build",
+      "result": "PASS",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:routes",
+      "result": "PASS",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:accessibility",
+      "result": "PASS",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:release",
+      "result": "PASS",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:content",
+      "result": "PASS",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:review",
+      "result": "PASS",
+      "exitCode": 0
+    }
+  ],
+  "initialExecutionIssue": {
+    "command": "npm run verify:routes",
+    "exitCode": 13,
+    "cause": "Initial command chain scoped Node 24 only to earlier commands; routes ran with unsupported default Node 20",
+    "resolution": "Reran routes and remaining checks with exported Node 24 PATH; all passed"
+  },
+  "previewMode": {
+    "command": "VERCEL_ENV=preview npm run build && node scripts/verify-seo.mjs --preview",
+    "exitCode": 0,
+    "result": "PASS preview noindex and 404 noindex, local only",
+    "productionModeRestoredAndSEORechecked": true
+  },
+  "browser": {
+    "command": "npm run verify:browser",
+    "exitCode": 0,
+    "passed": 61,
+    "skipped": 2,
+    "skipReason": "PDF test intentionally skips mobile/Firefox",
+    "duration": "1.0 minute",
+    "scope": "Local production server; Chromium desktop/mobile and Firefox; hosted preview blocked"
+  },
+  "editorialGate": {
+    "command": "npm run release:editorial",
+    "exitCode": 1,
+    "expected": true,
+    "pendingPublicApprovals": 27
+  },
+  "audit": {
+    "fullHigh": 5,
+    "productionFindings": 0,
+    "evidence": "verification.json#/security",
+    "decision": "S1 remains pending; no automatic incompatible downgrade"
+  },
+  "additionalAssertions": [
+    "28 local HTML pages reachable from homepage",
+    "Eight AI target URLs and anchors valid, with explicit intents and observation rules",
+    "26 live sitemap pages 200, canonical match and index/follow",
+    "Google original file byte match",
+    "Ten hosted requests identified as authentication redirects, not runtime passes"
+  ],
+  "remoteMutations": []
+}
