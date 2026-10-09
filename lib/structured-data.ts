@@ -74,3 +74,14 @@ export function resourceSchema(resource: Resource) {
     },
   };
 }
+
+// No SearchAction: the library has local filters, not a public search endpoint.
+export const website = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${siteUrl}/#website`,
+  url: `${siteUrl}/`,
+  name: "ZoraSafe Foundation",
+  inLanguage: "en-US",
+  publisher: { "@id": organizationId },
+};

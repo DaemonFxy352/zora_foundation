@@ -1,5 +1,17 @@
 export const audiences = [
   {
+    id: "children",
+    label: "Children with a trusted adult",
+    description:
+      "Simple practice activities to read together, with adult help for settings and reporting.",
+  },
+  {
+    id: "teenagers",
+    label: "Teenagers",
+    description:
+      "Practical choices about privacy, messages, relationships, and asking for support.",
+  },
+  {
     id: "older-adults",
     label: "Older adults",
     description:
@@ -7,7 +19,7 @@ export const audiences = [
   },
   {
     id: "youth-families",
-    label: "Youth & families",
+    label: "Parents & families",
     description:
       "Conversation starters and shared habits for messages, accounts, and online relationships.",
   },
@@ -19,7 +31,7 @@ export const audiences = [
   },
   {
     id: "community-organizations",
-    label: "Community organizations",
+    label: "Libraries, senior centers & community organizations",
     description:
       "Plain-language guidance to share at a front desk, in a group, or during a conversation.",
   },

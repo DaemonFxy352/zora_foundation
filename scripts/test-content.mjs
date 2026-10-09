@@ -59,7 +59,59 @@ const { PublicationArticle } = load(
 const { EditorialResponsibility } = load(
   "components/content/EditorialResponsibility.tsx",
 );
-assert.equal(resources.length, 10);
+const familySlugs = [
+  "internet-safety-parents",
+  "online-safety-kids",
+  "teen-online-safety",
+  "gaming-scams",
+  "online-safety-older-adults",
+];
+for (const slug of familySlugs) {
+  const resource = resources.find((r) => r.slug === slug);
+  assert.ok(resource, `Missing family resource: ${slug}`);
+  assert.equal(
+    resource.publishedAt,
+    undefined,
+    "Assign first publication dates at release",
+  );
+  assert.ok(resource.sourceCheckedAt);
+  assert.equal(resource.editorial?.reviewers, undefined);
+  assert.ok(resource.sections.length && resource.actions.length >= 3);
+  assert.ok(resource.sources.length >= 2);
+}
+const { programPathways } = load("data/program-pathways.ts");
+for (const pathway of programPathways) {
+  assert.ok(resources.some((r) => r.slug === pathway.resource));
+  assert.ok(pathway.objective && pathway.access && pathway.format);
+}
+const intents = JSON.parse(
+  readFileSync("docs/seo/content-expansion-20261008/intent-map.json", "utf8"),
+);
+assert.equal(new Set(intents.map((i) => i.path)).size, intents.length);
+assert.equal(new Set(intents.map((i) => i.primaryIntent)).size, intents.length);
+for (const r of resources) {
+  assert.ok(
+    intents.some(
+      (i) => i.path === `/education/${r.slug}` && i.status === "implemented",
+    ),
+  );
+  assert.ok(r.summary.trim() && r.intro.trim() && r.sources.length);
+  assert.ok(r.readingMinutes > 0);
+  for (const link of r.helpLinks ?? []) {
+    assert.ok(link.label.trim());
+    assert.equal(new URL(link.url).protocol, "https:");
+  }
+  if (r.sourceCheckedAt)
+    assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(r.sourceCheckedAt));
+}
+const childResource = resources.find((r) => r.slug === "online-safety-kids");
+assert.ok(childResource.audience.includes("children"));
+assert.ok(childResource.helpLinks.some((s) => s.url.includes("cybertipline")));
+assert.ok(
+  !resources
+    .find((r) => r.slug === "recognize-a-scam")
+    .audience.includes("children"),
+);
 assert.equal(new Set(resources.map((r) => r.slug)).size, resources.length);
 assert.equal(new Set(resources.map((r) => r.title)).size, resources.length);
 assert.equal(contributors.length, 0, "No identities supplied for this release");
@@ -256,5 +308,5 @@ assert.ok(!bare.includes("Written by") && !bare.includes("Reviewed by"));
 contributors.pop();
 assert.equal(contributors.length, 0);
 console.log(
-  "PASS content: 10 resources, taxonomies, sources, related links, dates, empty contributor/report registries, publication schema variants, draft exclusion, release validation, citation/PDF and template rendering.",
+  "PASS content: resource expansion, taxonomies, sources, related links, dates, empty contributor/report registries, publication schema variants, draft exclusion, release validation, citation/PDF and template rendering.",
 );

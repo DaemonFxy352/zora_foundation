@@ -88,6 +88,12 @@ export default async function ResourcePage({
               )}
             </p>
             <EditorialResponsibility value={r.editorial} />
+            {r.sourceCheckedAt && (
+              <p className="resource-meta">
+                Sources checked <DateLabel date={r.sourceCheckedAt} />. This is
+                a source check, not independent expert review.
+              </p>
+            )}
             <p className="resource-meta">
               For:{" "}
               {audiences
@@ -140,15 +146,26 @@ export default async function ResourcePage({
           <section className="guide-section help-note">
             <h2>What to do if it already happened</h2>
             <p>{r.help}</p>
-            <p>
-              For U.S. scam reporting, visit{" "}
-              <a href="https://reportfraud.ftc.gov/">ReportFraud.ftc.gov</a>.
-              For a personal identity-theft recovery plan, use{" "}
-              <a href="https://www.identitytheft.gov/">IdentityTheft.gov</a>.
-              Internet-enabled crime can also be reported to{" "}
-              <a href="https://www.ic3.gov/">FBI / IC3</a>. Outside the U.S.,
-              contact your local consumer-protection agency.
-            </p>
+            {r.helpLinks ? (
+              <ul>
+                {r.helpLinks.map((link) => (
+                  <li key={link.url}>
+                    <a href={link.url}>{link.label}</a>
+                    {link.note && <p>{link.note}</p>}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p>
+                For U.S. scam reporting, visit{" "}
+                <a href="https://reportfraud.ftc.gov/">ReportFraud.ftc.gov</a>.
+                For a personal identity-theft recovery plan, use{" "}
+                <a href="https://www.identitytheft.gov/">IdentityTheft.gov</a>.
+                Internet-enabled crime can also be reported to{" "}
+                <a href="https://www.ic3.gov/">FBI / IC3</a>. Outside the U.S.,
+                contact your local consumer-protection agency.
+              </p>
+            )}
           </section>
           <section className="guide-section">
             <h2>When to get help</h2>

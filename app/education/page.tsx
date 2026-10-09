@@ -53,6 +53,42 @@ export default function Education() {
           </Link>
         </div>
       </PageHero>
+      <section className="interior-section">
+        <div className="container section-intro">
+          <h2>Find your starting point.</h2>
+          <p>
+            Families can begin with the{" "}
+            <Link href="/education/internet-safety-parents">
+              practical parent guide
+            </Link>
+            , then try{" "}
+            <Link href="/education/online-safety-kids">
+              activities for children
+            </Link>{" "}
+            or{" "}
+            <Link href="/education/teen-online-safety">
+              teen privacy and safety guidance
+            </Link>
+            . For everyday device and banking confidence, start with{" "}
+            <Link href="/education/online-safety-older-adults">
+              online safety for older adults
+            </Link>
+            .
+          </p>
+          <p>
+            Educators and local organizations can explore{" "}
+            <Link href="/programs#community-pathways">
+              workshop development pathways
+            </Link>
+            . Researchers can find our{" "}
+            <Link href="/research">
+              research priorities and publication status
+            </Link>
+            . Use the library below to narrow resources by audience, topic, and
+            available format.
+          </p>
+        </div>
+      </section>
       <ResourceBrowser items={resourceSummaries()} />
       <section
         className="interior-section format-section"

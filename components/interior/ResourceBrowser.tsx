@@ -76,11 +76,17 @@ export function ResourceBrowser({ items }: { items: ResourceSummary[] }) {
                 onChange={(e) => setFormat(e.target.value)}
               >
                 <option value="">All formats</option>
-                {formats.map((f) => (
-                  <option key={f.id} value={f.id}>
-                    {f.label}
-                  </option>
-                ))}
+                {formats
+                  .filter(
+                    (f) =>
+                      f.id === "printable" ||
+                      items.some((item) => item.format === f.id),
+                  )
+                  .map((f) => (
+                    <option key={f.id} value={f.id}>
+                      {f.label}
+                    </option>
+                  ))}
               </select>
             </label>
             <button

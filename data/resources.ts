@@ -1,6 +1,7 @@
 import type { EditorialResponsibility } from "./contributors";
 import type { Source } from "./sources";
 import type { ContentSection } from "../components/content/ContentSections";
+import { familyResources } from "./family-resources";
 import { authorityResources } from "./authority-resources";
 import { resourceEnhancements } from "./resource-enhancements";
 import {
@@ -33,8 +34,12 @@ export type Resource = {
   help: string;
   practice: { prompt: string; response: string };
   sources: Source[];
+  sourceCheckedAt?: string;
+  helpLinks?: Source[];
 };
-const allAudiences: AudienceId[] = audiences.map((a) => a.id);
+const allAudiences: AudienceId[] = audiences
+  .filter((a) => a.id !== "children")
+  .map((a) => a.id);
 const publication = {
   publishedAt: "2026-10-07",
   updatedAt: "2026-10-07",
@@ -345,6 +350,7 @@ const launchResources: Resource[] = [
 export const resources: Resource[] = [
   ...launchResources.map((r) => ({ ...r, ...resourceEnhancements[r.slug] })),
   ...authorityResources,
+  ...familyResources,
 ];
 
 export function getResource(slug: string) {

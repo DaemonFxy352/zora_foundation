@@ -19,6 +19,19 @@ const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
 );
 assert.equal(new Set(locations).size, locations.length);
 assert.equal(locations.length, pages.length - 2);
+const intents = JSON.parse(
+  readFileSync("docs/seo/content-expansion-20261008/intent-map.json", "utf8"),
+);
+for (const item of intents) {
+  const page = item.path === "/" ? "index" : item.path.slice(1);
+  assert.equal(
+    pages.includes(page),
+    item.status === "implemented",
+    `${item.path}: intent/release status mismatch`,
+  );
+  if (item.status === "proposed")
+    assert.ok(!locations.includes(`${origin}${item.path}`));
+}
 const titles = new Set();
 const descriptions = new Set();
 for (const page of pages) {
@@ -51,6 +64,15 @@ for (const page of pages) {
   );
   const orgs = json.filter((item) => item["@type"] === "Organization");
   assert.equal(orgs.length, 1);
+  const sites = json.filter((item) => item["@type"] === "WebSite");
+  assert.equal(sites.length, 1);
+  assert.equal(sites[0].url, `${origin}/`);
+  assert.equal(sites[0].publisher["@id"], orgs[0]["@id"]);
+  assert.equal(
+    sites[0].potentialAction,
+    undefined,
+    "Do not invent public search",
+  );
   assert.equal(orgs[0].name, "ZoraSafe Foundation");
   assert.equal(orgs[0].url, `${origin}/`);
   assert.equal(orgs[0].logo, `${origin}/icon-512.png`);

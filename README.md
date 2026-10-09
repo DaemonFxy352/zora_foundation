@@ -228,3 +228,31 @@ Browser QA must still check mobile/desktop keyboard navigation, filtering and
 Letter/A4 print previews. Static checks are not a substitute for rendered QA.
 
 `verify:routes` runs the actual Next production request handler in-process with Node HTTP request/response objects, without opening a listening socket. It verifies public routes, draft/unknown 404s, query canonicals and trailing-slash redirects. It does not substitute for browser hydration or visual QA.
+
+### Family and community education expansion
+
+The resource library now includes parent, child-with-adult, teen, gaming, and
+older-adult guides in `data/family-resources.ts`. They use the existing dynamic
+resource route, metadata, schema, related-content, and print template. No new
+content framework or runtime dependency was added.
+
+- Extend `data/resource-taxonomy.ts` only when an existing audience/topic does
+  not fit. Keep the stable `youth-families` ID (displayed as Parents & families).
+  General adult guides are not automatically labeled for children.
+- `sourceCheckedAt` records a source check, not independent expert review or
+  editorial approval. Set `publishedAt` only when the resource is first released.
+- `helpLinks` replaces generic fraud-reporting links where specialist support is
+  more appropriate. Check reporting destinations and child-safety wording during
+  review; never ask users to send sensitive evidence to the Foundation.
+- `data/program-pathways.ts` holds objectives, possible formats, accessibility
+  considerations, and related guides for **program development**. It does not
+  represent scheduled offerings, certification, or guaranteed availability.
+- `docs/seo/content-expansion-20261008/intent-map.json` maps implemented and
+  proposed URLs to distinct intent and phrases. It is planning/QA data, not a
+  route source. Proposed entries must not appear in navigation or the sitemap.
+- Format filters show only formats with actual resources; the separate format
+  overview still explains planned materials. Resource text remains prerendered.
+
+Use the Node version supported by `package.json` (Node 22+). Node 20 can build
+but does not reliably complete the in-process static-asset route test. Browser
+interaction and Letter/A4 print-preview QA remain required before release.

@@ -1,6 +1,27 @@
 import type { Resource } from "./resources";
 import { sources as s } from "./sources";
 export const resourceEnhancements: Record<string, Partial<Resource>> = {
+  "account-safety": {
+    updatedAt: "2026-10-08",
+    sourceCheckedAt: "2026-10-08",
+    sections: [
+      {
+        id: "recovery-plan",
+        title: "Plan how you would regain access",
+        paragraphs: [
+          "Check which recovery email or phone number belongs to the account. If you no longer control it, update it through the genuine service. Keep recovery codes somewhere private and accessible to you, separate from a shared workshop worksheet.",
+          "If you lose access, use the provider’s official recovery process. After regaining control, review recovery settings and other signed-in sessions. Warn contacts if your account sent messages in your name. A stranger promising instant recovery is not the provider’s support team.",
+        ],
+        sourceUrls: [s.accounts.url],
+      },
+    ],
+    sources: [s.accounts, s.phishing, s.recovery],
+    related: [
+      "after-a-scam",
+      "teen-online-safety",
+      "online-safety-older-adults",
+    ],
+  },
   "recognize-a-scam": {
     related: [
       "verify-before-you-trust",
@@ -9,7 +30,26 @@ export const resourceEnhancements: Record<string, Partial<Resource>> = {
     ],
   },
   "suspicious-message": {
-    related: ["qr-link-safety", "account-safety", "after-a-scam"],
+    updatedAt: "2026-10-08",
+    sourceCheckedAt: "2026-10-08",
+    sections: [
+      {
+        id: "message-context",
+        title: "A text message is not a safer channel",
+        paragraphs: [
+          "Smishing is phishing sent by text message. A delivery fee, bank alert, or school notice can use the same pressure as a deceptive email. Check the request in the service you already use, rather than deciding from the sender name or a familiar logo.",
+          "For families, practice with a made-up message. Ask what it wants you to do and where you could check separately. Do not ask a child to open a suspicious link as an exercise.",
+        ],
+        sourceUrls: [s.phishing.url],
+      },
+    ],
+    sources: [s.phishing, s.recovery],
+    related: [
+      "qr-link-safety",
+      "account-safety",
+      "after-a-scam",
+      "gaming-scams",
+    ],
   },
   "verify-before-you-trust": {
     summary:

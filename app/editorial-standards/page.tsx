@@ -26,6 +26,8 @@ export default function EditorialStandards() {
           </p>
           <h2>Dates and attribution</h2>
           <p>
+            A source-check date records when linked guidance was checked; it
+            does not identify a human reviewer or imply editorial approval.
             Publication dates are shown when established. Update dates reflect
             content changes. A content-review date records a check of the text
             and sources; it does not imply independent expert review or formal

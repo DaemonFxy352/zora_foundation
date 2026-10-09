@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { programPathways } from "@/data/program-pathways";
 import { InteriorPage, PageHero, CTASection } from "@/components/interior/Page";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata(
@@ -100,6 +101,63 @@ export default function ProgramsPage() {
               </div>
             </section>
           ))}
+        </div>
+      </section>
+      <section
+        id="community-pathways"
+        className="interior-section"
+        aria-labelledby="pathways-heading"
+      >
+        <div className="container">
+          <div className="section-intro">
+            <p className="eyebrow">Program development</p>
+            <h2 id="pathways-heading">Shape learning around your community.</h2>
+            <p>
+              These are planning pathways, not scheduled or bookable workshops.
+              The objectives describe skills we would aim to teach, not measured
+              outcomes. Scope, staffing, accessibility, and availability must be
+              agreed with a prospective host.
+            </p>
+          </div>
+          <div className="program-details">
+            {programPathways.map((pathway) => (
+              <section
+                className="program-detail"
+                key={pathway.id}
+                aria-labelledby={pathway.id}
+              >
+                <div>
+                  <h3 id={pathway.id}>{pathway.title}</h3>
+                  <p>{pathway.audience}</p>
+                  <p>
+                    <Link href={`/education/${pathway.resource}`}>
+                      {pathway.label}
+                    </Link>{" "}
+                    is available to read and print now.
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    <strong>Learning objective:</strong> {pathway.objective}
+                  </p>
+                  <p>
+                    <strong>Possible format:</strong> {pathway.format}
+                  </p>
+                  <p>
+                    <strong>Accessibility:</strong> {pathway.access}
+                  </p>
+                  <Link className="text-link" href="/contact#training">
+                    Discuss {pathway.title.toLowerCase()}
+                  </Link>
+                </div>
+              </section>
+            ))}
+          </div>
+          <p>
+            In your inquiry, describe the audience, learning goals, preferred
+            language, accessibility needs, and possible host setting. Please do
+            not include participants’ private account or incident information.
+          </p>
         </div>
       </section>
       <section className="topic-surface">

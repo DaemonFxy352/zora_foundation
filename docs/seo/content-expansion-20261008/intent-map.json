@@ -1,0 +1,219 @@
+[
+  {
+    "path": "/",
+    "status": "implemented",
+    "primaryIntent": "Understand the Foundation mission and find education",
+    "primaryPhrase": "ZoraSafe Foundation",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/education",
+    "status": "implemented",
+    "primaryIntent": "Browse practical digital safety resources",
+    "primaryPhrase": "education",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/programs",
+    "status": "implemented",
+    "primaryIntent": "Explore digital safety program development and hosting",
+    "primaryPhrase": "community digital safety education",
+    "secondaryPhrases": [
+      "library scam workshops",
+      "senior center education",
+      "parent workshops",
+      "train the trainer"
+    ]
+  },
+  {
+    "path": "/research",
+    "status": "implemented",
+    "primaryIntent": "Find Foundation research priorities and publication status",
+    "primaryPhrase": "digital safety research",
+    "secondaryPhrases": ["fraud prevention research", "research to practice"]
+  },
+  {
+    "path": "/about",
+    "status": "implemented",
+    "primaryIntent": "Understand the Foundation identity and public-interest purpose",
+    "primaryPhrase": "about",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/leadership",
+    "status": "implemented",
+    "primaryIntent": "Check available leadership information",
+    "primaryPhrase": "leadership",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/partner",
+    "status": "implemented",
+    "primaryIntent": "Explore an institutional partnership",
+    "primaryPhrase": "partner",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/contact",
+    "status": "implemented",
+    "primaryIntent": "Contact the Foundation about a specific inquiry",
+    "primaryPhrase": "contact",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/support",
+    "status": "implemented",
+    "primaryIntent": "Discuss supporting Foundation work",
+    "primaryPhrase": "support",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/accessibility",
+    "status": "implemented",
+    "primaryIntent": "Read accessibility commitments and request access support",
+    "primaryPhrase": "accessibility",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/editorial-standards",
+    "status": "implemented",
+    "primaryIntent": "Understand sourcing and request an editorial correction",
+    "primaryPhrase": "editorial standards",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/education/recognize-a-scam",
+    "status": "implemented",
+    "primaryIntent": "Recognize common scam warning signs",
+    "primaryPhrase": "recognize a scam",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/education/verify-before-you-trust",
+    "status": "implemented",
+    "primaryIntent": "Independently verify a consequential request",
+    "primaryPhrase": "verify before you trust",
+    "secondaryPhrases": [
+      "family verification plan",
+      "independent identity verification"
+    ]
+  },
+  {
+    "path": "/education/ai-impersonation",
+    "status": "implemented",
+    "primaryIntent": "Understand AI impersonation and identity verification",
+    "primaryPhrase": "AI impersonation fraud",
+    "secondaryPhrases": [
+      "AI voice cloning scams",
+      "deepfake identity verification"
+    ]
+  },
+  {
+    "path": "/education/suspicious-message",
+    "status": "implemented",
+    "primaryIntent": "Check a suspicious text or email",
+    "primaryPhrase": "suspicious message",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/education/account-safety",
+    "status": "implemented",
+    "primaryIntent": "Protect and recover everyday accounts",
+    "primaryPhrase": "account safety",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/education/human-targeted-attacks",
+    "status": "implemented",
+    "primaryIntent": "Understand manipulation aimed at human decisions",
+    "primaryPhrase": "human targeted attacks",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/education/after-a-scam",
+    "status": "implemented",
+    "primaryIntent": "Respond immediately after a scam",
+    "primaryPhrase": "what to do after a scam",
+    "secondaryPhrases": ["shared information with scammer", "recovery scams"]
+  },
+  {
+    "path": "/education/qr-link-safety",
+    "status": "implemented",
+    "primaryIntent": "Check QR codes and suspicious links",
+    "primaryPhrase": "qr link safety",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/education/phone-impersonation",
+    "status": "implemented",
+    "primaryIntent": "Verify a caller claiming a trusted identity",
+    "primaryPhrase": "phone impersonation scams",
+    "secondaryPhrases": ["bank impersonation", "caller ID spoofing"]
+  },
+  {
+    "path": "/education/family-emergency-scams",
+    "status": "implemented",
+    "primaryIntent": "Check an urgent family emergency claim",
+    "primaryPhrase": "family emergency scams",
+    "secondaryPhrases": ["grandparent scams", "relative in trouble message"]
+  },
+  {
+    "path": "/education/internet-safety-parents",
+    "status": "implemented",
+    "primaryIntent": "Build a practical family internet safety routine",
+    "primaryPhrase": "internet safety for parents",
+    "secondaryPhrases": ["family internet safety", "digital parenting"]
+  },
+  {
+    "path": "/education/online-safety-kids",
+    "status": "implemented",
+    "primaryIntent": "Practice online safety with a child and trusted adult",
+    "primaryPhrase": "online safety for kids",
+    "secondaryPhrases": [
+      "trusted adult online safety",
+      "children internet safety activities"
+    ]
+  },
+  {
+    "path": "/education/teen-online-safety",
+    "status": "implemented",
+    "primaryIntent": "Make safer teen privacy and online relationship choices",
+    "primaryPhrase": "teen online safety",
+    "secondaryPhrases": ["teen privacy", "online threats help"]
+  },
+  {
+    "path": "/education/gaming-scams",
+    "status": "implemented",
+    "primaryIntent": "Avoid gaming account and reward scams",
+    "primaryPhrase": "gaming scams",
+    "secondaryPhrases": ["free game currency scams", "gaming account safety"]
+  },
+  {
+    "path": "/education/online-safety-older-adults",
+    "status": "implemented",
+    "primaryIntent": "Build everyday digital confidence as an older adult",
+    "primaryPhrase": "online safety for older adults",
+    "secondaryPhrases": ["senior digital confidence", "safe online banking"]
+  },
+  {
+    "path": "/education/sextortion-support",
+    "status": "proposed",
+    "primaryIntent": "Respond to sextortion with immediate specialist support",
+    "primaryPhrase": "sextortion support",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/education/romance-investment-scams",
+    "status": "proposed",
+    "primaryIntent": "Recognize trust-building investment and romance fraud",
+    "primaryPhrase": "romance investment scams",
+    "secondaryPhrases": []
+  },
+  {
+    "path": "/education/educator-discussion-guide",
+    "status": "proposed",
+    "primaryIntent": "Facilitate an age-appropriate safety lesson",
+    "primaryPhrase": "educator discussion guide",
+    "secondaryPhrases": []
+  }
+]

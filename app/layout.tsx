@@ -3,7 +3,8 @@ import localFont from "next/font/local";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { StructuredData } from "@/components/StructuredData";
-import { organization } from "@/lib/structured-data";
+import { organization, website } from "@/lib/structured-data";
+import { siteUrl as canonicalOrigin, socialImage } from "@/lib/metadata";
 import "./globals.css";
 import "./interior.css";
 const inter = localFont({
@@ -12,16 +13,9 @@ const inter = localFont({
   variable: "--font-inter",
   weight: "100 900",
 });
-const siteUrl = "https://www.zorasafefoundation.org/";
+const siteUrl = `${canonicalOrigin}/`;
 const description =
   "Safety through knowledge. Research that leads to real-world prevention.";
-const socialImage = {
-  url: `${siteUrl}brand/zorasafe-foundation-social1.png`,
-  width: 1200,
-  height: 630,
-  alt: "ZoraSafe Foundation — Safety through knowledge.",
-  type: "image/png",
-};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -75,6 +69,7 @@ export default function RootLayout({
         <a className="skip-link" href="#main-content">
           Skip to main content
         </a>
+        <StructuredData data={website} />
         <StructuredData
           data={{ "@context": "https://schema.org", ...organization }}
         />
