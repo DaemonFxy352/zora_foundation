@@ -1,6 +1,9 @@
 name: Foundation release QA
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - seo/foundation-phase2-authority-20261007
 permissions:
   contents: read
 jobs:
@@ -28,4 +31,4 @@ jobs:
           path: |
             playwright-report/
             test-results/
-          retention-days: 7
+          retention-days: 30
