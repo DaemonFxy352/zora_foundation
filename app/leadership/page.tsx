@@ -19,12 +19,13 @@ export default function LeadershipPage() {
         <div className="container reports-section">
           <div>
             <p className="eyebrow">Leadership & governance</p>
-            <h2>Leadership information coming soon.</h2>
+            <h2>Leadership information is not yet published.</h2>
           </div>
           <div className="reading-copy">
             <p>
-              We will publish confirmed leadership names, roles, and biographies
-              here when those details are ready for public release.
+              This page does not yet list leadership names, roles or biographies.
+              Confirmed details must be authorized before publication; no
+              publication date has been announced.
             </p>
             <p>
               If you need organizational or governance information for a

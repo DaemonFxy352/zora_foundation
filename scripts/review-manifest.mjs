@@ -152,7 +152,11 @@ for (const [path, title] of [
   ["/editorial-standards", "Editorial standards"],
 ]) {
   const file = path === "/" ? "app/page.tsx" : `app${path}/page.tsx`;
-  const text = readFileSync(file, "utf8");
+  const contentFiles = path === "/"
+    ? [file, ...["Hero", "WhyItMatters", "WhatWeDo", "Programs", "ResearchImpact", "Partnerships", "SupportCTA"].map((name) => `components/${name}.tsx`)]
+    : path === "/programs" ? [file, "data/program-pathways.ts"] : [file];
+  contentFiles.push("components/Footer.tsx", "app/layout.tsx");
+  const text = contentFiles.map((source) => ({ source, text: readFileSync(source, "utf8") }));
   const diff = execFileSync("git", ["diff", baseline, "--", file], {
     encoding: "utf8",
   });
@@ -161,7 +165,7 @@ for (const [path, title] of [
       `page:${path}`,
       title,
       path,
-      file,
+      contentFiles.join("; "),
       ["General public / institutional partners"],
       "organizational page",
       text,

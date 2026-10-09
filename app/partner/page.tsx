@@ -44,7 +44,8 @@ export default function PartnerPage() {
             <p>
               A useful partnership starts with a community need and a clear role
               for everyone involved. These are ways we can explore working
-              together.
+              together. The examples below are invitations to discuss future work,
+              not a list of existing institutional partnerships.
             </p>
           </div>
           <EditorialRows items={collaborations} />
@@ -60,7 +61,9 @@ export default function PartnerPage() {
             <p>
               Share who you serve, the digital safety questions people ask, and
               what you hope to change. Let us know about accessibility or
-              language needs, your location, and any timing constraints.
+              language needs, your location, and any timing constraints. Use
+              general examples; please do not send participant records or
+              personal incident evidence.
             </p>
             <p>
               We can then discuss scope, capacity, and next steps. An inquiry

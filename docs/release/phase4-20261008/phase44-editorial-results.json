@@ -1,0 +1,404 @@
+{
+  "reviewedAt": "2026-10-09",
+  "reviewType": "AI-assisted substantive editorial review; not authorized human approval",
+  "itemsReviewed": 27,
+  "itemsImproved": 27,
+  "entries": [
+    {
+      "id": "resource:recognize-a-scam",
+      "contentSha256": "ef6c8d229c8ea80f00e96132e1a1d10986da9fd133c58e6199d0ff6b5a6e0e5b",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Generic separate-contact advice needed a concrete route for each channel.",
+      "corrections": "Added bank-card callback and independently opened app instructions; readers verify the exact request.",
+      "remainingQuestions": "Fraud reviewer: confirm examples and payment-response wording remain understandable across the listed audiences.",
+      "authoritativeReferences": [
+        "https://consumer.ftc.gov/articles/how-avoid-scam",
+        "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+      ],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:verify-before-you-trust",
+      "contentSha256": "645591dc25cb68545894fae6fff86c34c3e70636a4b8d1d2e30af29cce030556",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Waiting for a callback could be read as delaying immediate safety help; jargon crowded the summary.",
+      "corrections": "Made waiting apply to payment/disclosure only; explicitly separated emergency help; replaced credentials/out-of-band heading with concrete language.",
+      "remainingQuestions": "Safeguarding/fraud reviewers: confirm family-phrase and emergency distinctions.",
+      "authoritativeReferences": [
+        "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+        "https://www.ic3.gov/PSA/2024/PSA241203",
+        "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+        "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money",
+        "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+      ],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:ai-impersonation",
+      "contentSha256": "2817825b96861af596f8b425f54aeeed1d8ecd9f7cd1496d0508429ab02502cf",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Voice/payment coverage omitted fabricated sexual-image threats. Detection limits were appropriately cautious.",
+      "corrections": "Added altered-photo exploitation, no-blame help-seeking and direct CyberTipline referral; no downloading/circulation or assumed removal coverage. Added FBI/NCMEC citations and adjusted reading estimate.",
+      "remainingQuestions": "Specialist: confirm age-appropriate reporting and handling of images already present. Tool eligibility for fully synthetic imagery is not asserted; readers are referred to NCMEC.",
+      "authoritativeReferences": [
+        "https://www.ic3.gov/PSA/2023/PSA230605",
+        "https://www.missingkids.org/gethelpnow/cybertipline",
+        "https://takeitdown.ncmec.org/faq/",
+        "https://www.ic3.gov/PSA/2024/PSA241203",
+        "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+        "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+        "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money",
+        "https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content",
+        "https://www.ic3.gov/"
+      ],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:suspicious-message",
+      "contentSha256": "9f382c048ceb78fee248afb9b8fefe92e4b096061babd986a1e94d123f97be3c",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Generic save/screenshot guidance lacked a child-image exception.",
+      "corrections": "Replaced generic evidence copying with sender/time/payment references and an explicit no-download/screenshot/forward exception for sexual images of children. Added NCMEC help links while retaining ordinary FTC reporting.",
+      "remainingQuestions": "Specialist: reconcile safe reporting with evidence handling on a child\u2019s existing device; no legal retention advice is asserted.",
+      "authoritativeReferences": [
+        "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+        "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+        "https://www.missingkids.org/gethelpnow/cybertipline",
+        "https://takeitdown.ncmec.org/faq/",
+        "https://reportfraud.ftc.gov/"
+      ],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:account-safety",
+      "contentSha256": "011cb83a925ced8be04a4fdb363f43e104ff21ca5c2c1128d6a709e985a82083",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "MFA comparison lacked a sufficiently specific composed-page source; post-takeover checks omitted email forwarding.",
+      "corrections": "Cited verified FTC two-factor guidance; added security-settings setup steps, SMS-only fallback and unexpected-prompt caution; added removal of attacker-created forwarding rules.",
+      "remainingQuestions": "No unsupported MFA comparison remains identified. Reviewer should check terminology and provider-specific recovery limitations. CISA fetch was denied; FTC provides independent primary support.",
+      "authoritativeReferences": [
+        "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+        "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+        "https://consumer.ftc.gov/articles/use-two-factor-authentication-protect-your-accounts",
+        "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+      ],
+      "recommendation": "approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:human-targeted-attacks",
+      "contentSha256": "3b024ad039902c2ada76969ef432dcf70782678ba0712e2d85dcffe097805967",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Meta-commentary about inventing categories distracted from the practical definition; emergency language was overly broad.",
+      "corrections": "Simplified the umbrella-term explanation, spelled out passwords/codes and distinguished payment checks from emergency help.",
+      "remainingQuestions": "Confirm the umbrella term is useful for this audience and does not imply a formal diagnosis or measured threat category.",
+      "authoritativeReferences": [
+        "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+        "https://www.ic3.gov/PSA/2024/PSA241203",
+        "https://consumer.ftc.gov/articles/how-avoid-scam"
+      ],
+      "recommendation": "approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:after-a-scam",
+      "contentSha256": "4ad53cf4f24ffce0a262f7c5e087a54771259b6b81e12374ced44a93688d6974",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "A first-hour framing could sound like a deadline; payment methods were not differentiated; generic original-file retention was unsafe in child-exploitation contexts.",
+      "corrections": "Removed the hour threshold; added card/bank/app/wire/gift-card/crypto/delivery response routes and factual transaction descriptions; replaced blanket evidence retention with non-image details and specialist handling instructions.",
+      "remainingQuestions": "Fraud and safeguarding specialists must review payment sequencing, reporting jurisdiction and existing-device evidence handling. Recovery and legal rights vary; no guarantee or eligibility determination is made.",
+      "authoritativeReferences": [
+        "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+        "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+        "https://consumer.ftc.gov/articles/refund-and-recovery-scams",
+        "https://www.missingkids.org/gethelpnow/cybertipline",
+        "https://takeitdown.ncmec.org/faq/",
+        "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+        "https://www.ic3.gov/"
+      ],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:qr-link-safety",
+      "contentSha256": "f229312d5b039e0433019aa298a6f5907afdd355c23147db8ca1f18dd424c02d",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Credentials and MFA were unexplained; readers could feel obliged to interpret an unfamiliar URL.",
+      "corrections": "Added a known-bookmark/app alternative, expanded MFA, replaced credentials with password/code and clarified account response.",
+      "remainingQuestions": "Check whether the fictional domain example is understandable; do not ask learners to visit suspicious links.",
+      "authoritativeReferences": [
+        "https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information",
+        "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+        "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+        "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+      ],
+      "recommendation": "approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:phone-impersonation",
+      "contentSha256": "2c7d7401b017f99706f465cf804d204904ac3dbfd5268def65d6caf457b0f403",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Callback steps could be more specific about bank impersonation.",
+      "corrections": "Require confirmation of the exact transfer/account change and no transfer to a caller-supplied account while checking.",
+      "remainingQuestions": "Fraud reviewer: confirm callback examples and response to already-shared access.",
+      "authoritativeReferences": [
+        "https://consumer.ftc.gov/articles/phone-scams",
+        "https://consumer.ftc.gov/articles/how-avoid-scam",
+        "https://www.ic3.gov/PSA/2024/PSA241203",
+        "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+      ],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:family-emergency-scams",
+      "contentSha256": "0492882d4821d1c75fb60da0d1cc0e89f429f6fdf00fd44492104b93024726b2",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Private phrase advice did not explicitly exclude shared teaching worksheets.",
+      "corrections": "Added that exclusion while retaining independent verification, changing exposed phrases and emergency-service guidance.",
+      "remainingQuestions": "Review phrase accessibility and trusted-contact alternatives; a phrase is not proof of identity.",
+      "authoritativeReferences": [
+        "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money",
+        "https://www.ic3.gov/PSA/2024/PSA241203",
+        "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+      ],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:internet-safety-parents",
+      "contentSha256": "2d8e793b1d781d856015efc5b5f1c7e1b32321ea75eeaf7f802b403ab96bcc92",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Controls guidance needed actionable settings; exploitation referral was indirect.",
+      "corrections": "Added message permissions, public-location settings and purchase approval; named CyberTipline directly and prohibited copying/downloading child sexual images for help.",
+      "remainingQuestions": "Safeguarding specialist: assess developmental fit, alternate adults and family communication. Owner/qualified reviewer should confirm any future legal privacy statements.",
+      "authoritativeReferences": [
+        "https://consumer.ftc.gov/articles/kids-video-games",
+        "https://consumer.ftc.gov/articles/protecting-your-childs-privacy-online",
+        "https://www.missingkids.org/netsmartz/topics/sextortion",
+        "https://takeitdown.ncmec.org/",
+        "https://www.missingkids.org/gethelpnow/cybertipline"
+      ],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:online-safety-kids",
+      "contentSha256": "c9f2b9aff01b3774ad71a924d36f119af6b75cd109b7c21a3a62efebc4273d74",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Adult involvement could imply a meeting is automatically safe; support route assumed the first adult was safe.",
+      "corrections": "Replaced meeting language with no secret/solo arrangements; added another-adult option if the first is involved or unhelpful; gave adults explicit reporting and immediate-danger steps.",
+      "remainingQuestions": "Specialist must assess read-aloud wording, disability/communication access, trusted-adult alternatives and the older NetSmartz source\u2019s applicability.",
+      "authoritativeReferences": [
+        "https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips",
+        "https://www.missingkids.org/netsmartz/topics/gaming",
+        "https://www.missingkids.org/gethelpnow/cybertipline",
+        "https://www.missingkids.org/netsmartz/topics/sextortion",
+        "https://takeitdown.ncmec.org/"
+      ],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:teen-online-safety",
+      "contentSha256": "9754054865abe71787e08afeaec9936133a87ec84dc138ac2ebaac283be81411",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Threat guidance omitted fake images and self-reporting; removal-service scope and evidence boundaries needed precision.",
+      "corrections": "Added fake/altered threats, independent CyberTipline reporting, grooming pressure from known contacts, no-copy evidence boundaries, before-18 eligibility even for adults now, public/unencrypted platform limits and original-device fallback. Added section-level FBI/NCMEC citations.",
+      "remainingQuestions": "Safeguarding specialist: evaluate trauma-informed wording and what a teen should do with material already present. Do not infer Take It Down eligibility for every AI-generated image.",
+      "authoritativeReferences": [
+        "https://www.missingkids.org/gethelpnow/cybertipline",
+        "https://takeitdown.ncmec.org/faq/",
+        "https://www.ic3.gov/PSA/2023/PSA230605",
+        "https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips",
+        "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+        "https://www.missingkids.org/netsmartz/topics/sextortion",
+        "https://takeitdown.ncmec.org/"
+      ],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:gaming-scams",
+      "contentSha256": "b8fb8641c8083b3f4a698645cdac02c8802ffe585c539711fa0664a29ab1306e",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "MFA was unexplained and exploitation help was vague.",
+      "corrections": "Defined the extra sign-in step; named CyberTipline and trusted-adult involvement; added no-download/forward and immediate-danger guidance.",
+      "remainingQuestions": "Specialist: check age suitability, contact migration/grooming and the distinction between disputed purchases and exploitative contact.",
+      "authoritativeReferences": [
+        "https://consumer.ftc.gov/articles/kids-video-games",
+        "https://www.missingkids.org/netsmartz/topics/gaming",
+        "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+        "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+        "https://www.missingkids.org/netsmartz/topics/sextortion",
+        "https://www.missingkids.org/gethelpnow/cybertipline",
+        "https://takeitdown.ncmec.org/"
+      ],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:online-safety-older-adults",
+      "contentSha256": "5efd0a45f6e1408baeeda80072233407294f286b81c1ce6f62ef76c11c63e8d2",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Recovery assumed access to a second trusted device.",
+      "corrections": "Added known-number phone or branch support while a compromised device is checked; preserved autonomy and private credentials.",
+      "remainingQuestions": "Confirm accessible options for readers without branch access or a helper; support availability differs by provider.",
+      "authoritativeReferences": [
+        "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+        "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams",
+        "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+      ],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:government-impersonation",
+      "contentSha256": "d0227618dd06ec349f34b202f092fc41bd5e9d3b3b9477e9799bdbac9b31a356",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Attempted-impersonation reporting lacked a named destination in the advice.",
+      "corrections": "Named ReportFraud.ftc.gov and distinguished reporting from resolving an agency case or contacting a payment provider.",
+      "remainingQuestions": "Fraud reviewer: verify U.S. scope and preservation of genuine notice/deadline obligations; no individual legal interpretation.",
+      "authoritativeReferences": [
+        "https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam",
+        "https://www.usa.gov/agency-index",
+        "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+      ],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "resource:payment-redirection",
+      "contentSha256": "ceb85a4d7568828460b21ee9ca2e10fa332cbd281e22d5ff974c04f779db7465",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Bank contact needed a specific request and clearer sequencing relative to reporting.",
+      "corrections": "Added immediate stopping/recall request via the sending institution and receiving institution; do not wait for a crime report; expanded IC3 name and qualified investigation/recovery expectations.",
+      "remainingQuestions": "Fraud reviewer: verify transfer-recall wording and applicability to community organizations.",
+      "authoritativeReferences": [
+        "https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise",
+        "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+        "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+      ],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "page:/",
+      "contentSha256": "5670d8c07afd3031717106f2fb45c7f3ae4b45f1fb7b0efe1f838c911cee7038",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Homepage implied delivered programs, active partnerships, evaluated outcomes and an unsupported population claim.",
+      "corrections": "Reframed hero, work, program, research and partnership copy as available guides plus development plans; removed \u201cmost people\u201d claim; aligned search/social description and footer; labeled privacy/terms links as inquiries.",
+      "remainingQuestions": "Owner must confirm actual organizational identity, current capacity, relationship disclosures and image provenance/permissions. Copy no longer claims delivered programs or measured outcomes.",
+      "authoritativeReferences": [],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "page:/education",
+      "contentSha256": "66d10a799bd45261916e46110e195b576c39211622d5e10e283f7c066c096aa0",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Training CTAs and descriptions implied delivery and existing partners.",
+      "corrections": "Changed CTA to discussion and described prospective hosts/planned sessions; retained 17 discoverable guides and honest format availability.",
+      "remainingQuestions": "Owner: confirm planning capacity and inquiry handling. Human reviewers must accept filter/search usability and reading level.",
+      "authoritativeReferences": [],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "page:/programs",
+      "contentSha256": "2287871735463b0335bee22ec100b08602fc86f50ab9c0e1ce84f948fd0f9306",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Some present-tense claims conflicted with development status.",
+      "corrections": "Changed \u201coffered\u201d/partner delivery language to planned work; clarified no public schedule and that public guides do not establish a staffed training program.",
+      "remainingQuestions": "Owner: confirm available staffing, host responsibilities and actual planning status before making commitments.",
+      "authoritativeReferences": [],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "page:/research",
+      "contentSha256": "cf7a8d9a77d4d95a01bbcc726d4bf51c0ac8392321f1c161069a8516eda2cb9b",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "The title and model could imply demonstrated prevention results despite an empty publication registry.",
+      "corrections": "Changed the title to a research direction and explicitly described future work, not completed studies or measured outcomes.",
+      "remainingQuestions": "Owner/research lead: confirm planned methods, capacity and publication status; no findings may be invented.",
+      "authoritativeReferences": [],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "page:/about",
+      "contentSha256": "a10604e3e5a41f7e816d31a911879f16d72f9ec0e6c6a1bec4b954fc3f650c8e",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Research/evaluation language could imply demonstrated effects.",
+      "corrections": "Separated available guides from planned research/program/access work and labeled evaluation as an aim.",
+      "remainingQuestions": "Owner: confirm Foundation identity, governance, public-interest description and any relationship with ZoraSafe Inc.; no tax or legal status added.",
+      "authoritativeReferences": [],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "page:/leadership",
+      "contentSha256": "42b78d3b4d193af410c1647bcf7f2e308e807f833696c131b706983f3d2e7498",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "\u201cComing soon\u201d implied an unverified publication timetable; no names were available.",
+      "corrections": "Replaced timing promise with explicit not-yet-published status and authorization requirement.",
+      "remainingQuestions": "Owner must decide whether launch without public leadership names is acceptable and provide verified roles/biographies if required. This credibility gap cannot be resolved by invented names.",
+      "authoritativeReferences": [],
+      "recommendation": "revision",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "page:/partner",
+      "contentSha256": "f2830398aef41f3fe964122273362d0dc9cb5efd64bd847c15ff4213f7d0c38a",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Collaboration categories could be mistaken for existing relationships; inquiry lacked a privacy boundary.",
+      "corrections": "Explicitly described future collaboration invitations and excluded participant records/personal incident evidence.",
+      "remainingQuestions": "Owner: confirm capacity, prospective-partner handling and any institutional relationships before naming them.",
+      "authoritativeReferences": [],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "page:/contact",
+      "contentSha256": "8569600f7e1d0f74dbeec53b4ff0d548132d61b69db9c05169e9f6c62297dd4c",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Inbox exclusions did not explicitly cover intimate images and offered no immediate alternative routes.",
+      "corrections": "Excluded intimate images and exploitation reporting; added bank/payment response, after-scam guide, CyberTipline and emergency directions without waiting for email; training CTA now requests discussion.",
+      "remainingQuestions": "Owner/safeguarding reviewer: confirm monitoring, escalation and privacy practices. This is not an emergency or exploitation-report intake service.",
+      "authoritativeReferences": [
+        "https://www.missingkids.org/gethelpnow/cybertipline",
+        "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+      ],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "page:/support",
+      "contentSha256": "8502126297deec10e1b654134dcf237e734b127833e3fc1905977d3324383ddc",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "\u201cBeing set up\u201d implied an unverified active giving implementation.",
+      "corrections": "Stated the observable absence of online giving and directed prospective support to confirmation; prohibited emailing payment details.",
+      "remainingQuestions": "Owner must confirm legal/fundraising status, permitted support arrangements and required disclosures before soliciting or receiving funds. No tax-deductibility claim is made.",
+      "authoritativeReferences": [],
+      "recommendation": "revision",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "page:/editorial-standards",
+      "contentSha256": "9cc01d940a37929659bb20d7c8ce6cabd2d8d7f2e6911838b82e0b9a10a41420",
+      "reviewScope": "Complete composed resource or complete page and imported content, including shared footer; not metadata-only",
+      "findings": "Correction requests needed safer evidence handling and emergency boundaries.",
+      "corrections": "Excluded intimate images; request wording/public sources instead; emergency help must not wait for an editorial reply.",
+      "remainingQuestions": "Owner: appoint actual responsibility for corrections and verify inbox process; source checks and agent recommendations do not constitute expert approval.",
+      "authoritativeReferences": [],
+      "recommendation": "conditional approval",
+      "approvalStatus": "pending"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { InteriorPage, PageHero } from "@/components/interior/Page";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata(
@@ -25,7 +26,7 @@ const inquiries = [
     title: "Training & community program inquiries",
     text: "Share your location, audience, learning goals, accessibility needs, and potential timing. We are developing training pathways and can discuss what may be possible.",
     subject: "Community training inquiry",
-    label: "Bring Training to Your Community",
+    label: "Discuss Community Training",
   },
   {
     id: "research",
@@ -79,9 +80,21 @@ export default function ContactPage() {
             </p>
             <p>
               Please do not send passwords, one-time codes, account numbers, or
-              copies of identity documents. The Foundation’s inbox is for
+              copies of identity documents or intimate images. The Foundation’s
+              inbox is for
               education and organizational inquiries, not emergency response or
-              account recovery.
+              account recovery or reporting suspected child sexual exploitation.
+            </p>
+            <p>
+              For money already sent, contact your bank or payment provider
+              immediately; our{" "}
+              <Link href="/education/after-a-scam">after-a-scam guide</Link>{" "}
+              explains next steps. Report suspected child sexual exploitation to{" "}
+              <a href="https://www.missingkids.org/gethelpnow/cybertipline">
+                NCMEC’s CyberTipline
+              </a>.
+              For immediate physical danger, contact local emergency services.
+              Do not wait for an email reply from the Foundation.
             </p>
           </div>
         </div>

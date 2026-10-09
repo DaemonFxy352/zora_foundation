@@ -1,3 +1,5 @@
+> **Phase 4.4:** Content has changed. The run/artifact below is historical Phase 4.2 evidence and must not be used to approve the revised wording or pagination. Current local results: 46 passed, two expected skips; use `playwright-report/index.html` and `test-results/`. See [readiness.md](readiness.md) for the latest CI/candidate. All human acceptance stays pending.
+
 # Browser evidence and human acceptance worksheet
 
 **Automated: passed. Human acceptance: pending.** Review the candidate, not current production. Record actual device/browser/assistive technology versions and reviewer/date below. Screenshots are evidence to inspect, not proof of human approval.

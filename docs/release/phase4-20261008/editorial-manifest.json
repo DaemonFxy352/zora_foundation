@@ -19,7 +19,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "743b1b5200ec1339d97d4c9c057d0ca8e21560ade2d4eada5412a3f10035d2e3",
+      "contentSha256": "ef6c8d229c8ea80f00e96132e1a1d10986da9fd133c58e6199d0ff6b5a6e0e5b",
       "sources": [
         {
           "label": "FTC: How to avoid a scam",
@@ -44,7 +44,9 @@
         "kind": "modified",
         "fields": [
           "audience",
-          "related"
+          "updatedAt",
+          "related",
+          "actions"
         ],
         "baselineContentSha256": "5788b22b1f429faf12764420a3515c8144d602c1491d29a23e175d6b0c116e1f"
       },
@@ -67,7 +69,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "19a358d9896dc2dc3ee94b3586f61b409f5423b62be206f172f26ffb896b7b8f",
+      "contentSha256": "645591dc25cb68545894fae6fff86c34c3e70636a4b8d1d2e30af29cce030556",
       "sources": [
         {
           "label": "NIST: Phishing guidance",
@@ -111,7 +113,9 @@
           "summary",
           "audience",
           "readingMinutes",
+          "updatedAt",
           "related",
+          "actions",
           "sources",
           "editorial",
           "sections"
@@ -135,8 +139,22 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "a31fe88607880392fc8c148ad7ed9530ab0ea6c910cb6347885db7476f4193c7",
+      "contentSha256": "2817825b96861af596f8b425f54aeeed1d8ecd9f7cd1496d0508429ab02502cf",
       "sources": [
+        {
+          "label": "FBI / IC3: Manipulated images and sextortion",
+          "url": "https://www.ic3.gov/PSA/2023/PSA230605",
+          "note": "Altered ordinary photos can be used for threats; seek help without circulating explicit material."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
+        },
         {
           "label": "FBI / IC3: Generative AI and financial fraud",
           "url": "https://www.ic3.gov/PSA/2024/PSA241203",
@@ -161,10 +179,24 @@
           "label": "NIST: Technical approaches to synthetic-content transparency",
           "url": "https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content",
           "note": "Overview of transparency approaches; not an endorsement of a detection product."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
+        },
+        {
+          "label": "FBI / IC3: Report internet-enabled fraud",
+          "url": "https://www.ic3.gov/"
         }
       ],
       "sensitiveTopicFlags": [
         "child-safety",
+        "exploitation-and-safe-reporting",
         "financial-fraud",
         "recovery-and-reporting"
       ],
@@ -179,11 +211,13 @@
           "title",
           "summary",
           "readingMinutes",
+          "updatedAt",
           "related",
           "intro",
           "sources",
           "editorial",
-          "sections"
+          "sections",
+          "helpLinks"
         ],
         "baselineContentSha256": "d2fb02ada49e6167194d27557288411205b0d9c052f9706273faf95fde14080c"
       },
@@ -206,7 +240,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "cd9ace634e83d5644b40bf98c16a98de4b7bb9348dcae659ade47cddbb35f4de",
+      "contentSha256": "9f382c048ceb78fee248afb9b8fefe92e4b096061babd986a1e94d123f97be3c",
       "sources": [
         {
           "label": "FTC: Recognize and avoid phishing scams",
@@ -217,10 +251,33 @@
           "label": "FTC: What to do if you were scammed",
           "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
           "note": "Actions depend on payment method, information shared and device access."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
+        },
+        {
+          "label": "FTC: Report an ordinary scam or phishing attempt",
+          "url": "https://reportfraud.ftc.gov/"
         }
       ],
       "sensitiveTopicFlags": [
         "child-safety",
+        "exploitation-and-safe-reporting",
         "financial-fraud",
         "recovery-and-reporting"
       ],
@@ -235,9 +292,12 @@
           "audience",
           "updatedAt",
           "related",
+          "actions",
+          "avoid",
           "sources",
           "sourceCheckedAt",
-          "sections"
+          "sections",
+          "helpLinks"
         ],
         "baselineContentSha256": "ba9fb5a10ef236d1410c96199fdc7fdf20b22d927b0218eda8cb07c3b6a4a6a3"
       },
@@ -260,7 +320,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "498671874440c094ddddb5d7299ef93f961275b92c6d6c582ed796af9c8ee97c",
+      "contentSha256": "011cb83a925ced8be04a4fdb363f43e104ff21ca5c2c1128d6a709e985a82083",
       "sources": [
         {
           "label": "FTC: Recover a hacked email or social media account",
@@ -271,6 +331,11 @@
           "label": "FTC: Recognize and avoid phishing scams",
           "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
           "note": "Unexpected links, account pretexts, reporting and account protection."
+        },
+        {
+          "label": "FTC: Use two-factor authentication to protect your accounts",
+          "url": "https://consumer.ftc.gov/articles/use-two-factor-authentication-protect-your-accounts",
+          "note": "Comparison of text codes, authenticator apps and security keys; follow your provider’s setup instructions."
         },
         {
           "label": "FTC: What to do if you were scammed",
@@ -294,6 +359,7 @@
           "audience",
           "updatedAt",
           "related",
+          "actions",
           "sources",
           "sourceCheckedAt",
           "sections"
@@ -318,7 +384,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "28785b1613ec1f8b82a27c0bb131b68da8c5be3f726a5c6e0feb7d581f605858",
+      "contentSha256": "3b024ad039902c2ada76969ef432dcf70782678ba0712e2d85dcffe097805967",
       "sources": [
         {
           "label": "NIST: Phishing guidance",
@@ -367,7 +433,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "9855818ce86bf8ae4f1b732543f84bec7df46d1cb8501c3ac1e76cb61664203f",
+      "contentSha256": "4ad53cf4f24ffce0a262f7c5e087a54771259b6b81e12374ced44a93688d6974",
       "sources": [
         {
           "label": "FTC: What to do if you were scammed",
@@ -385,6 +451,15 @@
           "note": "Upfront-fee recovery offers can cause further loss."
         },
         {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
+        },
+        {
           "label": "NIST: Phishing guidance",
           "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
           "note": "Phishing as social engineering and ways organizations can respond."
@@ -397,6 +472,7 @@
       ],
       "sensitiveTopicFlags": [
         "child-safety",
+        "exploitation-and-safe-reporting",
         "financial-fraud",
         "recovery-and-reporting"
       ],
@@ -426,7 +502,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "065365537b38e0e640b0f920db8169a7c744d867fae37bc01e50671072cc974d",
+      "contentSha256": "f229312d5b039e0433019aa298a6f5907afdd355c23147db8ca1f18dd424c02d",
       "sources": [
         {
           "label": "FTC: Harmful links hidden in QR codes",
@@ -480,7 +556,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "35df0af7a79643fb9c4a2fcd45ce735b8126fee500f1a100d683ff92d8d46350",
+      "contentSha256": "2c7d7401b017f99706f465cf804d204904ac3dbfd5268def65d6caf457b0f403",
       "sources": [
         {
           "label": "FTC: Phone scams",
@@ -534,7 +610,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "8c9330e8dd0ee1e63312e8dac835399bf3e9c85854b7c7ba0c095ed3fb22c0a0",
+      "contentSha256": "0492882d4821d1c75fb60da0d1cc0e89f429f6fdf00fd44492104b93024726b2",
       "sources": [
         {
           "label": "FTC: Scammers use fake emergencies to steal your money",
@@ -580,7 +656,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "5b670a3eace19438f45ee5910fc76014d601ba16b8d0056e8228cf0f87981fb7",
+      "contentSha256": "2d8e793b1d781d856015efc5b5f1c7e1b32321ea75eeaf7f802b403ab96bcc92",
       "sources": [
         {
           "label": "FTC: Kids and video games",
@@ -642,7 +718,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "0fcbb482e004ce1007ad23718abaa0c728f91b8fd922c696ee0997fb92ce8610",
+      "contentSha256": "c9f2b9aff01b3774ad71a924d36f119af6b75cd109b7c21a3a62efebc4273d74",
       "sources": [
         {
           "label": "NCMEC: Tips for tweens",
@@ -694,8 +770,22 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "b6af1c3221e192f86b2c1fe77bf96cf79ef53239e76fb124cf0c8dc627b0ef1b",
+      "contentSha256": "9754054865abe71787e08afeaec9936133a87ec84dc138ac2ebaac283be81411",
       "sources": [
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
+        },
+        {
+          "label": "FBI / IC3: Manipulated images and sextortion",
+          "url": "https://www.ic3.gov/PSA/2023/PSA230605",
+          "note": "Altered ordinary photos can be used for threats; seek help without circulating explicit material."
+        },
         {
           "label": "NCMEC: Tips for tweens",
           "url": "https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips"
@@ -730,7 +820,6 @@
       "sensitiveTopicFlags": [
         "child-safety",
         "exploitation-and-safe-reporting",
-        "financial-fraud",
         "recovery-and-reporting"
       ],
       "requiredReviewerExpertise": [
@@ -756,7 +845,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "7c43dae0bdb9d6e2e0b6d688a5b5b25f545bcb6a3c2e3ef6271871c54535b637",
+      "contentSha256": "b8fb8641c8083b3f4a698645cdac02c8802ffe585c539711fa0664a29ab1306e",
       "sources": [
         {
           "label": "FTC: Kids and video games",
@@ -822,7 +911,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "2b14f44c32747d7c45b22bf2f91b9573a007576705cad175f6f69fe36c8af2de",
+      "contentSha256": "5efd0a45f6e1408baeeda80072233407294f286b81c1ce6f62ef76c11c63e8d2",
       "sources": [
         {
           "label": "FTC: Recognize and avoid phishing scams",
@@ -864,7 +953,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "37a7afc9b4ae6192220240a0663a7c4541fb7f4fac7ac3aa774650cfac91d29f",
+      "contentSha256": "d0227618dd06ec349f34b202f092fc41bd5e9d3b3b9477e9799bdbac9b31a356",
       "sources": [
         {
           "label": "FTC: Avoid government impersonation scams",
@@ -907,7 +996,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "6e82ee6eb568f48988103d9fbb8286ced79c2ad4020673f0d01435611f15a04d",
+      "contentSha256": "ceb85a4d7568828460b21ee9ca2e10fa332cbd281e22d5ff974c04f779db7465",
       "sources": [
         {
           "label": "FBI: Business email compromise and payment verification",
@@ -1014,6 +1103,20 @@
       "contentSha256": "68b9b1db3b214ad993d52ce7f207014ceab36c2b194c831892a2ddb64e30c5de",
       "sources": [
         {
+          "label": "FBI / IC3: Manipulated images and sextortion",
+          "url": "https://www.ic3.gov/PSA/2023/PSA230605",
+          "note": "Altered ordinary photos can be used for threats; seek help without circulating explicit material."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
+        },
+        {
           "label": "FBI / IC3: Generative AI and financial fraud",
           "url": "https://www.ic3.gov/PSA/2024/PSA241203",
           "note": "Synthetic text, images, audio and video; independent verification and family phrases."
@@ -1037,6 +1140,19 @@
           "label": "NIST: Technical approaches to synthetic-content transparency",
           "url": "https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content",
           "note": "Overview of transparency approaches; not an endorsement of a detection product."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
+        },
+        {
+          "label": "FBI / IC3: Report internet-enabled fraud",
+          "url": "https://www.ic3.gov/"
         }
       ],
       "sensitiveTopicFlags": [
@@ -1129,6 +1245,20 @@
       "reviewStatus": "REQUIRES HUMAN REVIEW",
       "contentSha256": "37179711d3d82685eeb038d85e443e2e63372b48f39a258619e72d1dbbaee363",
       "sources": [
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
+        },
+        {
+          "label": "FBI / IC3: Manipulated images and sextortion",
+          "url": "https://www.ic3.gov/PSA/2023/PSA230605",
+          "note": "Altered ordinary photos can be used for threats; seek help without circulating explicit material."
+        },
         {
           "label": "NCMEC: Tips for tweens",
           "url": "https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips"
@@ -1243,6 +1373,28 @@
           "label": "FTC: What to do if you were scammed",
           "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
           "note": "Actions depend on payment method, information shared and device access."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
+        },
+        {
+          "label": "FTC: Report an ordinary scam or phishing attempt",
+          "url": "https://reportfraud.ftc.gov/"
         }
       ],
       "sensitiveTopicFlags": [
@@ -1289,6 +1441,15 @@
           "label": "FTC: Refund and recovery scams",
           "url": "https://consumer.ftc.gov/articles/refund-and-recovery-scams",
           "note": "Upfront-fee recovery offers can cause further loss."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
         },
         {
           "label": "NIST: Phishing guidance",
@@ -1360,6 +1521,20 @@
           "note": "Actions depend on payment method, information shared and device access."
         },
         {
+          "label": "FBI / IC3: Manipulated images and sextortion",
+          "url": "https://www.ic3.gov/PSA/2023/PSA230605",
+          "note": "Altered ordinary photos can be used for threats; seek help without circulating explicit material."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
+        },
+        {
           "label": "FBI / IC3: Generative AI and financial fraud",
           "url": "https://www.ic3.gov/PSA/2024/PSA241203",
           "note": "Synthetic text, images, audio and video; independent verification and family phrases."
@@ -1398,6 +1573,15 @@
           "label": "FTC: Refund and recovery scams",
           "url": "https://consumer.ftc.gov/articles/refund-and-recovery-scams",
           "note": "Upfront-fee recovery offers can cause further loss."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
         },
         {
           "label": "NIST: Phishing guidance",
@@ -1510,6 +1694,20 @@
           "note": "Actions depend on payment method, information shared and device access."
         },
         {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
+        },
+        {
+          "label": "FBI / IC3: Manipulated images and sextortion",
+          "url": "https://www.ic3.gov/PSA/2023/PSA230605",
+          "note": "Altered ordinary photos can be used for threats; seek help without circulating explicit material."
+        },
+        {
           "label": "NCMEC: Tips for tweens",
           "url": "https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips"
         },
@@ -1556,6 +1754,20 @@
       "contentSha256": "5905ef7448d90817e7d788d8afa30bc7916b9e921d381b806ec47359b5354e3f",
       "sources": [
         {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
+        },
+        {
+          "label": "FBI / IC3: Manipulated images and sextortion",
+          "url": "https://www.ic3.gov/PSA/2023/PSA230605",
+          "note": "Altered ordinary photos can be used for threats; seek help without circulating explicit material."
+        },
+        {
           "label": "NCMEC: Tips for tweens",
           "url": "https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips"
         },
@@ -1593,6 +1805,20 @@
           "url": "https://www.missingkids.org/netsmartz/topics/sextortion"
         },
         {
+          "label": "FBI / IC3: Manipulated images and sextortion",
+          "url": "https://www.ic3.gov/PSA/2023/PSA230605",
+          "note": "Altered ordinary photos can be used for threats; seek help without circulating explicit material."
+        },
+        {
+          "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
+          "url": "https://www.missingkids.org/gethelpnow/cybertipline"
+        },
+        {
+          "label": "NCMEC: Take It Down eligibility and safe use",
+          "url": "https://takeitdown.ncmec.org/faq/",
+          "note": "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device."
+        },
+        {
           "label": "FBI / IC3: Generative AI and financial fraud",
           "url": "https://www.ic3.gov/PSA/2024/PSA241203",
           "note": "Synthetic text, images, audio and video; independent verification and family phrases."
@@ -1628,6 +1854,11 @@
           "note": "Unexpected links, account pretexts, reporting and account protection."
         },
         {
+          "label": "FTC: Use two-factor authentication to protect your accounts",
+          "url": "https://consumer.ftc.gov/articles/use-two-factor-authentication-protect-your-accounts",
+          "note": "Comparison of text codes, authenticator apps and security keys; follow your provider’s setup instructions."
+        },
+        {
           "label": "FTC: What to do if you were scammed",
           "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
           "note": "Actions depend on payment method, information shared and device access."
@@ -1654,35 +1885,38 @@
       "id": "page:/",
       "title": "Homepage",
       "url": "/",
-      "file": "app/page.tsx",
+      "file": "app/page.tsx; components/Hero.tsx; components/WhyItMatters.tsx; components/WhatWeDo.tsx; components/Programs.tsx; components/ResearchImpact.tsx; components/Partnerships.tsx; components/SupportCTA.tsx; components/Footer.tsx; app/layout.tsx",
       "intendedAudience": [
         "General public / institutional partners"
       ],
       "contentType": "organizational page",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "e00730ee207459a1b965da6d27fb17853620c7f4cda9d13069ead0dc5324314f",
+      "contentSha256": "5670d8c07afd3031717106f2fb45c7f3ae4b45f1fb7b0efe1f838c911cee7038",
       "sources": [],
-      "sensitiveTopicFlags": [],
+      "sensitiveTopicFlags": [
+        "child-safety"
+      ],
       "requiredReviewerExpertise": [
-        "Foundation editorial/organizational authority"
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist"
       ],
       "changesSinceBaseline": {
         "kind": "shared metadata/navigation/template changes; page source unchanged"
       },
       "exposure": "Public; verify institutional status and shared navigation",
-      "priorityBeforeRelease": "P1: review before release"
+      "priorityBeforeRelease": "P0: review before release"
     },
     {
       "id": "page:/education",
       "title": "Education hub",
       "url": "/education",
-      "file": "app/education/page.tsx",
+      "file": "app/education/page.tsx; components/Footer.tsx; app/layout.tsx",
       "intendedAudience": [
         "General public / institutional partners"
       ],
       "contentType": "organizational page",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "d138dd410d853da571c0103bdb330a4957041186163518e555e4691960ed3457",
+      "contentSha256": "66d10a799bd45261916e46110e195b576c39211622d5e10e283f7c066c096aa0",
       "sources": [],
       "sensitiveTopicFlags": [
         "child-safety",
@@ -1703,16 +1937,18 @@
       "id": "page:/programs",
       "title": "Program pathways",
       "url": "/programs",
-      "file": "app/programs/page.tsx",
+      "file": "app/programs/page.tsx; data/program-pathways.ts; components/Footer.tsx; app/layout.tsx",
       "intendedAudience": [
         "General public / institutional partners"
       ],
       "contentType": "organizational page",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "b433748f0beeed91864b6bad3efff4da0628a6f7db60e14a75e195dba83eafc5",
+      "contentSha256": "2287871735463b0335bee22ec100b08602fc86f50ab9c0e1ce84f948fd0f9306",
       "sources": [],
       "sensitiveTopicFlags": [
         "child-safety",
+        "exploitation-and-safe-reporting",
+        "financial-fraud",
         "recovery-and-reporting"
       ],
       "requiredReviewerExpertise": [
@@ -1730,19 +1966,21 @@
       "id": "page:/research",
       "title": "Research overview",
       "url": "/research",
-      "file": "app/research/page.tsx",
+      "file": "app/research/page.tsx; components/Footer.tsx; app/layout.tsx",
       "intendedAudience": [
         "General public / institutional partners"
       ],
       "contentType": "organizational page",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "0d39ddfee51db1e9eb7ead89d231e565cfd840503044392232d6942b5e6ca0bd",
+      "contentSha256": "cf7a8d9a77d4d95a01bbcc726d4bf51c0ac8392321f1c161069a8516eda2cb9b",
       "sources": [],
       "sensitiveTopicFlags": [
+        "child-safety",
         "recovery-and-reporting"
       ],
       "requiredReviewerExpertise": [
         "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
         "fraud prevention and reporting specialist"
       ],
       "changesSinceBaseline": {
@@ -1755,85 +1993,98 @@
       "id": "page:/about",
       "title": "About",
       "url": "/about",
-      "file": "app/about/page.tsx",
+      "file": "app/about/page.tsx; components/Footer.tsx; app/layout.tsx",
       "intendedAudience": [
         "General public / institutional partners"
       ],
       "contentType": "organizational page",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "4fa95babe0466bed55eb88291dc3aabaa7eeaa73cf924db557ffa01fcafc67c9",
+      "contentSha256": "a10604e3e5a41f7e816d31a911879f16d72f9ec0e6c6a1bec4b954fc3f650c8e",
       "sources": [],
-      "sensitiveTopicFlags": [],
+      "sensitiveTopicFlags": [
+        "child-safety"
+      ],
       "requiredReviewerExpertise": [
-        "Foundation editorial/organizational authority"
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist"
       ],
       "changesSinceBaseline": {
         "kind": "page source modified/new"
       },
       "exposure": "Public; verify institutional status and shared navigation",
-      "priorityBeforeRelease": "P1: review before release"
+      "priorityBeforeRelease": "P0: review before release"
     },
     {
       "id": "page:/leadership",
       "title": "Leadership",
       "url": "/leadership",
-      "file": "app/leadership/page.tsx",
+      "file": "app/leadership/page.tsx; components/Footer.tsx; app/layout.tsx",
       "intendedAudience": [
         "General public / institutional partners"
       ],
       "contentType": "organizational page",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "fc4514f822bcb5add28b02aab668843f381471015b961a295da794004d6c7b41",
+      "contentSha256": "42b78d3b4d193af410c1647bcf7f2e308e807f833696c131b706983f3d2e7498",
       "sources": [],
-      "sensitiveTopicFlags": [],
+      "sensitiveTopicFlags": [
+        "child-safety"
+      ],
       "requiredReviewerExpertise": [
-        "Foundation editorial/organizational authority"
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist"
       ],
       "changesSinceBaseline": {
         "kind": "page source modified/new"
       },
       "exposure": "Public; verify institutional status and shared navigation",
-      "priorityBeforeRelease": "P1: review before release"
+      "priorityBeforeRelease": "P0: review before release"
     },
     {
       "id": "page:/partner",
       "title": "Partnerships",
       "url": "/partner",
-      "file": "app/partner/page.tsx",
+      "file": "app/partner/page.tsx; components/Footer.tsx; app/layout.tsx",
       "intendedAudience": [
         "General public / institutional partners"
       ],
       "contentType": "organizational page",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "c18e774c9671931bb7827eba89c8a2f22bb4b8b25ac57250281ec33c5bbffa60",
+      "contentSha256": "f2830398aef41f3fe964122273362d0dc9cb5efd64bd847c15ff4213f7d0c38a",
       "sources": [],
-      "sensitiveTopicFlags": [],
+      "sensitiveTopicFlags": [
+        "child-safety"
+      ],
       "requiredReviewerExpertise": [
-        "Foundation editorial/organizational authority"
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist"
       ],
       "changesSinceBaseline": {
         "kind": "page source modified/new"
       },
       "exposure": "Public; verify institutional status and shared navigation",
-      "priorityBeforeRelease": "P1: review before release"
+      "priorityBeforeRelease": "P0: review before release"
     },
     {
       "id": "page:/contact",
       "title": "Contact",
       "url": "/contact",
-      "file": "app/contact/page.tsx",
+      "file": "app/contact/page.tsx; components/Footer.tsx; app/layout.tsx",
       "intendedAudience": [
         "General public / institutional partners"
       ],
       "contentType": "organizational page",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "113e4878112aa937b02040e2e9bf3c29e251720eb6a484e590dcf0ed611c70e5",
+      "contentSha256": "8569600f7e1d0f74dbeec53b4ff0d548132d61b69db9c05169e9f6c62297dd4c",
       "sources": [],
       "sensitiveTopicFlags": [
+        "child-safety",
+        "exploitation-and-safe-reporting",
+        "financial-fraud",
         "recovery-and-reporting"
       ],
       "requiredReviewerExpertise": [
         "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
         "fraud prevention and reporting specialist"
       ],
       "changesSinceBaseline": {
@@ -1846,42 +2097,50 @@
       "id": "page:/support",
       "title": "Support",
       "url": "/support",
-      "file": "app/support/page.tsx",
+      "file": "app/support/page.tsx; components/Footer.tsx; app/layout.tsx",
       "intendedAudience": [
         "General public / institutional partners"
       ],
       "contentType": "organizational page",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "d72627ad069c4f5e04941f5c4087a7bbd3b33d1f1ea81baf09677b0824ef54bc",
+      "contentSha256": "8502126297deec10e1b654134dcf237e734b127833e3fc1905977d3324383ddc",
       "sources": [],
-      "sensitiveTopicFlags": [],
+      "sensitiveTopicFlags": [
+        "child-safety",
+        "financial-fraud"
+      ],
       "requiredReviewerExpertise": [
-        "Foundation editorial/organizational authority"
+        "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
+        "fraud prevention and reporting specialist"
       ],
       "changesSinceBaseline": {
         "kind": "page source modified/new"
       },
       "exposure": "Public; verify institutional status and shared navigation",
-      "priorityBeforeRelease": "P1: review before release"
+      "priorityBeforeRelease": "P0: review before release"
     },
     {
       "id": "page:/editorial-standards",
       "title": "Editorial standards",
       "url": "/editorial-standards",
-      "file": "app/editorial-standards/page.tsx",
+      "file": "app/editorial-standards/page.tsx; components/Footer.tsx; app/layout.tsx",
       "intendedAudience": [
         "General public / institutional partners"
       ],
       "contentType": "organizational page",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "7539ef7ef3e17c47ac56d9ed2eb7512a62d075a0e6a11a77e33aeae7724c8615",
+      "contentSha256": "9cc01d940a37929659bb20d7c8ce6cabd2d8d7f2e6911838b82e0b9a10a41420",
       "sources": [],
       "sensitiveTopicFlags": [
+        "child-safety",
+        "exploitation-and-safe-reporting",
         "financial-fraud",
         "recovery-and-reporting"
       ],
       "requiredReviewerExpertise": [
         "Foundation editorial/organizational authority",
+        "child-safety and safeguarding specialist",
         "fraud prevention and reporting specialist"
       ],
       "changesSinceBaseline": {

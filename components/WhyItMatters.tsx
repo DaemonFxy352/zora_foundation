@@ -32,9 +32,9 @@ export function WhyItMatters() {
           <div className="prose">
             <p>
               More of everyday life now happens online, while scams, fraud,
-              impersonation, and AI-enabled deception change quickly. Most
-              people have never received meaningful digital safety education,
-              and access to training and tools is uneven.
+              impersonation, and AI-enabled deception can make ordinary decisions
+              harder. People need clear ways to check a request, protect an
+              account, and find help after a scam.
             </p>
             <p>
               The ZoraSafe Foundation exists to close that gap, so people can
@@ -43,7 +43,7 @@ export function WhyItMatters() {
           </div>
         </div>
         <div className="audiences">
-          <h3 className="eyebrow">Who we serve</h3>
+          <h3 className="eyebrow">Who our resources are for</h3>
           <ul className="audience-grid">
             {audiences.map(([title, description]) => (
               <li key={title}>

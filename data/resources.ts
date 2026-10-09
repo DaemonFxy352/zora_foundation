@@ -83,7 +83,7 @@ const launchResources: Resource[] = [
       },
       {
         title: "Check a separate way",
-        text: "Use a number from a statement, card, or contact you already trust. Ask whether the organization actually made the request.",
+        text: "For a bank call, hang up and use the number on your card. For a text or email about an account, open your usual app yourself. Ask about the exact request before paying or sharing information.",
       },
       {
         title: "Bring in another perspective",
@@ -145,7 +145,7 @@ const launchResources: Resource[] = [
       },
       {
         title: "Ask about the specific request",
-        text: "Tell the person or organization what was requested. If you cannot reach them, wait. A demand for speed does not make the request more trustworthy.",
+        text: "Tell the person or organization what was requested. If you cannot reach them, pause the payment or disclosure. If someone may be in immediate physical danger, contact local emergency services directly; do not wait for a callback.",
       },
       {
         title: "Decide after checking",
@@ -261,13 +261,13 @@ const launchResources: Resource[] = [
       },
       {
         title: "Report, then remove",
-        text: "Use your email or messaging app’s report-spam or report-phishing option. Save relevant evidence first if you lost money or need to report an incident, then delete the message.",
+        text: "Use your email or messaging app’s report-spam or report-phishing option. For an ordinary scam, note the sender, time and payment references before deleting if you need them for a report. If a message involves sexual images of a child, do not download, screenshot or forward those images; use the NCMEC reporting link below for guidance.",
       },
     ],
     avoid: [
       "Do not reply to prove the sender is real, and do not use an unsubscribe link in a suspicious message.",
       "Do not assume a padlock symbol or professional writing proves a site belongs to the organization.",
-      "Do not forward an active suspicious link to friends as a warning; describe it or share a screenshot with personal details hidden.",
+      "Warn friends by describing the suspicious request without sharing an active link or intimate images.",
     ],
     help: "If you entered a password, change it through the genuine service and change any other accounts using that password. If you shared payment details, contact the provider. If you opened a file and suspect harmful software, update your security software, run a scan, and seek trusted technical help if needed.",
     practice: {
@@ -313,7 +313,7 @@ const launchResources: Resource[] = [
       },
       {
         title: "Add a second sign-in step",
-        text: "Turn on multifactor authentication, sometimes called two-step verification. It adds a check beyond your password. Follow the service’s instructions; an authenticator app or security key can provide stronger protection than a text-message code.",
+        text: "Turn on multifactor authentication, sometimes called two-step verification. It adds a check beyond your password. Open the service’s security settings and follow its setup instructions. If offered, choose an authenticator app or security key; text codes are still useful when that is the only option. Never give another person a sign-in code or approve a login you did not start.",
       },
       {
         title: "Keep a way back in",

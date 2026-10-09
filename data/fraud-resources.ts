@@ -13,7 +13,7 @@ const payments = {
   url: "https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise",
 };
 const common = {
-  updatedAt: "2026-10-08",
+  updatedAt: "2026-10-09",
   sourceCheckedAt: "2026-10-08",
   printView: true,
   format: "quick-guide" as const,
@@ -83,7 +83,7 @@ export const fraudResources: Resource[] = [
       "Do not use a badge number, email logo, or knowledge of your address as proof.",
       "Do not send identity documents to a contact supplied by the suspicious message.",
     ],
-    help: "If you paid, contact the payment provider through its genuine support route promptly. If identifiers were shared, use IdentityTheft.gov for tailored next steps. Keep messages and transaction details privately and report the attempted impersonation. Recovery is not guaranteed.",
+    help: "If you paid, contact the payment provider through its genuine support route promptly. If identifiers were shared, use IdentityTheft.gov for tailored next steps. Keep messages and transaction details privately. Report the attempted impersonation at ReportFraud.ftc.gov; this does not resolve an agency case or replace contacting your payment provider. Recovery is not guaranteed.",
     practice: {
       prompt:
         "A caller gives you an employee number and says you must pay today. What can you verify without continuing the call?",
@@ -156,7 +156,7 @@ export const fraudResources: Resource[] = [
       "Do not use a newly supplied phone number to approve its own payment change.",
       "Do not assume a small test payment proves who controls the destination.",
     ],
-    help: "If a transfer was sent, contact your financial institution immediately and ask it to contact the receiving institution. Notify the relevant organizational support team, preserve the instructions and transaction identifiers privately, and report internet-enabled fraud to IC3. Do not promise or assume recovery.",
+    help: "If a transfer was sent, contact your financial institution immediately, identify the transfer and ask it to contact the receiving institution about stopping or recalling it. Do not wait to complete a crime report. Notify the relevant organizational support team, preserve the instructions and transaction identifiers privately, and report internet-enabled fraud to the FBI’s Internet Crime Complaint Center (IC3), linked below. Reporting does not guarantee an investigation or return of funds.",
     practice: {
       prompt:
         "An invoice arrives from a familiar account, but its bank details have changed. What exactly needs confirmation?",

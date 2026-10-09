@@ -15,7 +15,7 @@ const inter = localFont({
 });
 const siteUrl = `${canonicalOrigin}/`;
 const description =
-  "Safety through knowledge. Research that leads to real-world prevention.";
+  "Practical scam-prevention and digital safety guides for families and communities. Training and research pathways in development.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

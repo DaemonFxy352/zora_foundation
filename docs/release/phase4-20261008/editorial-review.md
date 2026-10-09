@@ -15,40 +15,19 @@
 5. For requested corrections or rejection, do not release the affected content. Correct and re-review, or prepare a separately tested exclusion patch. Do not silently change statuses or dates to bypass review.
 6. Run `npm run release:editorial`. An approval must match the current content hash, valid date and required named reviewer roles. A passing machine check verifies recorded fields only; the owner remains responsible for authorization, qualifications and the truth of decisions.
 
-Source hashes cover composed resource records, handout/curriculum records, and organizational page source. They do not replace review of shared templates, linked guidance, site-wide copy, generated screenshots, accessibility, or future source changes. Browser and deployment gates remain separate.
+Source hashes cover composed resource records, handout/curriculum records, and organizational page source plus listed shared content files. They do not replace review of shared templates, linked guidance, site-wide copy, generated screenshots, accessibility, or future source changes. Browser and deployment gates remain separate.
 
-## Phase 4.3 review desk
+## Phase 4.4 substantive review results
 
-This is the consolidated reading workbook for **27 pending public items**. It renders the existing manifest; it is not a second approval registry. `review-decisions.json` remains authoritative. The ten internal drafts remain unpublished and outside this public approval batch. All public items are release blockers regardless of review order.
+**27 complete public items read; 27 improved. All approvals remain pending.** This workbook now records implemented corrections, not proposed work alone. [Machine-readable findings](phase44-editorial-results.json) associate recommendations with the current manifest hashes. Recommendations are AI-assisted editorial judgments, not authorization or verified specialist review. The ten internal drafts remain unpublished.
 
-Candidate preview: [tested application, commit 0ed94b1](https://zora-foundation-2noyw3200-zora-safe.vercel.app). HEAD 8751daa only added release documentation. Vercel sign-in may be required; request access from the owner if needed. Do not use current production as the candidate. Each card links directly to its preview route.
+The full-text pass covered intros, sections, warning signs, actions, response guidance, examples, sources and related links for all 17 composed guides, plus all ten organizational pages and imported homepage/program copy. Across these items, titles and summaries retain their search intent; fictional examples remain labeled; jargon was reduced; prevention, warning signs and response remain distinct. Source checks support the corrections, while readability, assistive-technology acceptance and specialist judgments remain human gates. No efficacy statistics, new program, new public resource or reviewer identity was added.
 
-**Start here:** owner resolves institutional claims on the homepage/programs/research pages; safeguarding reviewers take the children/teen/family cards and evidence-handling questions; fraud reviewers take recovery, payment and impersonation cards. Then complete all remaining cards. Manifest roles remain mandatory, even when keyword triage assigns more roles than this suggested reading order.
+**Candidate warning:** earlier Phase 4.3 preview and screenshot links show the previous content. Use the Phase 4.4 candidate/run identified in [readiness.md](readiness.md), or the current local production build, for these cards. The last recorded human decisions remain pending; old hashes in the untouched decision registry must not be reused to approve revised text.
 
-[Browser evidence and human QA worksheet](reviewer-qa.md) · [Single release checklist](release-checklist.md) · [Security disposition](phase41-security.md#phase-43-owner-disposition-worksheet)
+**Source verification:** primary FTC, FBI/IC3, NCMEC, NIST and USAGov pages were retrieved over the network. The specific MFA comparison is now cited to FTC two-factor guidance. CISA pages returned access errors/403, so their contents were not treated as verified or invalid. The older NetSmartz article failed once, then was retrieved; it remains a source-age/suitability question. Earlier direct FTC/FBI HTTP discrepancies are documented; web retrieval now provides content but does not certify every browser or reporting form. [Source evidence and limitations](phase44-source-checks.md).
 
-### Editorial preflight findings and limits
-
-| Check | Result / required action |
-| --- | --- |
-| Terminology and reading level | MFA, hostname, credentials and out-of-band need audience review; no readability score substitutes for comprehension. Cards identify affected guides. |
-| Citation reachability | 25 unique cited/named destinations checked. Direct HTTP checks returned 12 FTC 404 responses and one FBI 403; alternate web retrieval returned their content. These are unresolved transport discrepancies, **not confirmed broken citations**. Open all flagged links in a normal browser before sign-off. |
-| Source support | FTC/FBI/NCMEC primary guidance supports the broad prevention/reporting approach. Specific MFA comparisons, synthetic-media limitations and the older NetSmartz blog need targeted verification. Reachability is not factual approval. |
-| Reporting currency | Current FTC guidance still directs payment-provider contact and FTC/identity-theft reporting; FBI BEC guidance supports bank contact and IC3. Verify the final linked flows in-browser. No recovery promise is supported. |
-| Protection promises | No new protection guarantee added. Review implied effectiveness in homepage research/program claims and control/settings language. |
-| Program availability | Program detail pages identify development status; current-tense homepage/shared component claims need owner substantiation or approved revision. |
-| Immediate response | “First hour” wording needs review for a false deadline implication; emergency response must not be delayed by verification routines. |
-| Child safety | Specialist review required for coercion, trusted-adult alternatives, immediate danger and evidence preservation without downloading/forwarding intimate images. |
-| Internal cross-references | Existing content validation checks catalog links; human reviewers must check that destination advice fits the originating audience. Public draft isolation remains a separate technical gate. |
-| Organizational disclosures | Verify governance, relationship, fundraising, inbox scope and footer policy-inquiry wording. Organizational assertions have no external citations in the manifest. |
-
-No public advice was changed in this documentation phase: the unresolved questions require specialist or owner judgment. Suggested changes below are proposals, not approved corrections. No source was invented or replaced solely because an automated HTTP request failed.
-
-Source evidence: [direct HTTP results](phase43-citation-checks.json). Alternate retrieval verified the same URLs for the FTC and FBI discrepancies. Relevant primary guidance: [FTC recovery](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed), [FBI payment redirection](https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise), [NCMEC sextortion](https://www.missingkids.org/netsmartz/topics/sextortion), and [Take It Down scope and precautions](https://takeitdown.ncmec.org/). These checks are source review assistance, not professional approval.
-
-### Recording decisions
-
-Read each complete page and original sources; the summaries below are not replacement content. Write decisions/notes in the blanks, then have the authorized reviewer enter the actual decision, date, reviewed hash and named required roles in `review-decisions.json`. Do not convert an unchecked worksheet to approval. Run `npm run verify:review` before using this snapshot: content changes invalidate the associated card/hash and require refreshed review. Shared components are not fully covered by organizational page hashes and must be included in human acceptance.
+Homepage manifest hashes now include its imported copy components; organizational page hashes also include the footer and root layout, and programs includes its pathway data. Source hashes still cannot certify rendered accessibility, source currency or human approval.
 
 ## 1. General scam and fraud prevention
 
@@ -56,27 +35,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:recognize-a-scam` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/recognize-a-scam` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/recognize-a-scam)
+**URL:** `/education/recognize-a-scam` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Teenagers, Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
 **Purpose / summary:** Recognize pressure, secrecy and unusual payment requests; pause and verify independently.
 
-**Claims to verify:** Common warning signs and the priority of contacting the payment provider after loss.
+**Full-content finding:** Generic separate-contact advice needed a concrete route for each channel.
 
-**High-risk statements / boundaries:** Avoid implying that a checklist detects every scam or guarantees recovery.
+**Corrections implemented:** Added bank-card callback and independently opened app instructions; readers verify the exact request.
 
-**Editorial judgment / unresolved question / proposed correction:** Confirm the examples work for readers with limited digital experience; distinguish suspicion from proof.
+**Remaining factual/safety questions:** Fraud reviewer: confirm examples and payment-response wording remain understandable across the listed audiences.
+
+**Recommendation:** conditional approval — actual approval remains pending.
 
 **Sources:** [FTC: How to avoid a scam](https://consumer.ftc.gov/articles/how-avoid-scam); [FTC: What to do if you were scammed](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed)
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
 **Sensitive-topic flags:** child-safety, financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `743b1b5200ec1339d97d4c9c057d0ca8e21560ade2d4eada5412a3f10035d2e3`
+**Candidate content hash (not approval):** `ef6c8d229c8ea80f00e96132e1a1d10986da9fd133c58e6199d0ff6b5a6e0e5b`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -86,27 +67,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:verify-before-you-trust` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/verify-before-you-trust` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/verify-before-you-trust)
+**URL:** `/education/verify-before-you-trust` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Teenagers, Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
 **Purpose / summary:** Use a separately obtained contact route to check a request.
 
-**Claims to verify:** A familiar voice, account or family phrase alone does not authenticate a payment request.
+**Full-content finding:** Waiting for a callback could be read as delaying immediate safety help; jargon crowded the summary.
 
-**High-risk statements / boundaries:** Waiting for verification must not delay emergency help.
+**Corrections implemented:** Made waiting apply to payment/disclosure only; explicitly separated emergency help; replaced credentials/out-of-band heading with concrete language.
 
-**Editorial judgment / unresolved question / proposed correction:** Check that “out-of-band” is understandable and that the family phrase is described as only one layer.
+**Remaining factual/safety questions:** Safeguarding/fraud reviewers: confirm family-phrase and emergency distinctions.
+
+**Recommendation:** conditional approval — actual approval remains pending.
 
 **Sources:** [NIST: Phishing guidance](https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing); [FBI / IC3: Generative AI and financial fraud](https://www.ic3.gov/PSA/2024/PSA241203); [FTC: Recover a hacked email or social media account](https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account); [FTC: Scammers use fake emergencies to steal your money](https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money); [FTC: What to do if you were scammed](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed)
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
 **Sensitive-topic flags:** child-safety, financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `19a358d9896dc2dc3ee94b3586f61b409f5423b62be206f172f26ffb896b7b8f`
+**Candidate content hash (not approval):** `645591dc25cb68545894fae6fff86c34c3e70636a4b8d1d2e30af29cce030556`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -116,27 +99,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:ai-impersonation` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/ai-impersonation` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/ai-impersonation)
+**URL:** `/education/ai-impersonation` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators. **Type:** educational resource.
 
 **Purpose / summary:** Explain synthetic voices and images without requiring readers to detect technical flaws.
 
-**Claims to verify:** AI can imitate voices and media; account compromise can also explain apparently familiar messages.
+**Full-content finding:** Voice/payment coverage omitted fabricated sexual-image threats. Detection limits were appropriately cautious.
 
-**High-risk statements / boundaries:** No visual glitch, detector or familiar voice should be presented as conclusive evidence.
+**Corrections implemented:** Added altered-photo exploitation, no-blame help-seeking and direct CyberTipline referral; no downloading/circulation or assumed removal coverage. Added FBI/NCMEC citations and adjusted reading estimate.
 
-**Editorial judgment / unresolved question / proposed correction:** Check that the technical NIST source supports the specific claims, not a promise of reliable detection.
+**Remaining factual/safety questions:** Specialist: confirm age-appropriate reporting and handling of images already present. Tool eligibility for fully synthetic imagery is not asserted; readers are referred to NCMEC.
 
-**Sources:** [FBI / IC3: Generative AI and financial fraud](https://www.ic3.gov/PSA/2024/PSA241203); [FTC: Recover a hacked email or social media account](https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account); [NIST: Phishing guidance](https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing); [FTC: Scammers use fake emergencies to steal your money](https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money); [NIST: Technical approaches to synthetic-content transparency](https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content)
+**Recommendation:** conditional approval — actual approval remains pending.
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Sources:** [FBI / IC3: Manipulated images and sextortion](https://www.ic3.gov/PSA/2023/PSA230605); [NCMEC CyberTipline: report suspected child sexual exploitation](https://www.missingkids.org/gethelpnow/cybertipline); [NCMEC: Take It Down eligibility and safe use](https://takeitdown.ncmec.org/faq/); [FBI / IC3: Generative AI and financial fraud](https://www.ic3.gov/PSA/2024/PSA241203); [FTC: Recover a hacked email or social media account](https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account); [NIST: Phishing guidance](https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing); [FTC: Scammers use fake emergencies to steal your money](https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money); [NIST: Technical approaches to synthetic-content transparency](https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content); [NCMEC CyberTipline: report suspected child sexual exploitation](https://www.missingkids.org/gethelpnow/cybertipline); [NCMEC: Take It Down eligibility and safe use](https://takeitdown.ncmec.org/faq/); [FBI / IC3: Report internet-enabled fraud](https://www.ic3.gov/)
 
-**Sensitive-topic flags:** child-safety, financial-fraud, recovery-and-reporting
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
+
+**Sensitive-topic flags:** child-safety, exploitation-and-safe-reporting, financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `a31fe88607880392fc8c148ad7ed9530ab0ea6c910cb6347885db7476f4193c7`
+**Candidate content hash (not approval):** `2817825b96861af596f8b425f54aeeed1d8ecd9f7cd1496d0508429ab02502cf`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -146,27 +131,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:suspicious-message` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/suspicious-message` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/suspicious-message)
+**URL:** `/education/suspicious-message` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Teenagers, Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
 **Purpose / summary:** Stop engagement, verify through a known channel, and respond to account or payment exposure.
 
-**Claims to verify:** Phishing/smishing definitions; reporting and evidence preservation before removal.
+**Full-content finding:** Generic save/screenshot guidance lacked a child-image exception.
 
-**High-risk statements / boundaries:** Generic screenshot or forwarding advice must not be applied to sexual images of children.
+**Corrections implemented:** Replaced generic evidence copying with sender/time/payment references and an explicit no-download/screenshot/forward exception for sexual images of children. Added NCMEC help links while retaining ordinary FTC reporting.
 
-**Editorial judgment / unresolved question / proposed correction:** Resolve the boundary between deleting a suspicious message and preserving safe evidence after loss; expand unfamiliar terms.
+**Remaining factual/safety questions:** Specialist: reconcile safe reporting with evidence handling on a child’s existing device; no legal retention advice is asserted.
 
-**Sources:** [FTC: Recognize and avoid phishing scams](https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams); [FTC: What to do if you were scammed](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed)
+**Recommendation:** conditional approval — actual approval remains pending.
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Sources:** [FTC: Recognize and avoid phishing scams](https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams); [FTC: What to do if you were scammed](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed); [NCMEC CyberTipline: report suspected child sexual exploitation](https://www.missingkids.org/gethelpnow/cybertipline); [NCMEC: Take It Down eligibility and safe use](https://takeitdown.ncmec.org/faq/); [NCMEC CyberTipline: report suspected child sexual exploitation](https://www.missingkids.org/gethelpnow/cybertipline); [NCMEC: Take It Down eligibility and safe use](https://takeitdown.ncmec.org/faq/); [FTC: Report an ordinary scam or phishing attempt](https://reportfraud.ftc.gov/)
 
-**Sensitive-topic flags:** child-safety, financial-fraud, recovery-and-reporting
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
+
+**Sensitive-topic flags:** child-safety, exploitation-and-safe-reporting, financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `cd9ace634e83d5644b40bf98c16a98de4b7bb9348dcae659ade47cddbb35f4de`
+**Candidate content hash (not approval):** `9f382c048ceb78fee248afb9b8fefe92e4b096061babd986a1e94d123f97be3c`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -176,27 +163,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:account-safety` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/account-safety` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/account-safety)
+**URL:** `/education/account-safety` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Teenagers, Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
 **Purpose / summary:** Improve passwords, multi-factor authentication and account recovery.
 
-**Claims to verify:** Unique passwords, recovery access and the relative protection offered by authenticator apps/security keys versus SMS.
+**Full-content finding:** MFA comparison lacked a sufficiently specific composed-page source; post-takeover checks omitted email forwarding.
 
-**High-risk statements / boundaries:** Account protection reduces risk; it cannot guarantee protection or recovery.
+**Corrections implemented:** Cited verified FTC two-factor guidance; added security-settings setup steps, SMS-only fallback and unexpected-prompt caution; added removal of attacker-created forwarding rules.
 
-**Editorial judgment / unresolved question / proposed correction:** Verify the stronger-than-SMS comparison against an appropriately specific primary source; current broad FTC links may not support every detail.
+**Remaining factual/safety questions:** No unsupported MFA comparison remains identified. Reviewer should check terminology and provider-specific recovery limitations. CISA fetch was denied; FTC provides independent primary support.
 
-**Sources:** [FTC: Recover a hacked email or social media account](https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account); [FTC: Recognize and avoid phishing scams](https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams); [FTC: What to do if you were scammed](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed)
+**Recommendation:** approval — actual approval remains pending.
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Sources:** [FTC: Recover a hacked email or social media account](https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account); [FTC: Recognize and avoid phishing scams](https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams); [FTC: Use two-factor authentication to protect your accounts](https://consumer.ftc.gov/articles/use-two-factor-authentication-protect-your-accounts); [FTC: What to do if you were scammed](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed)
+
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
 **Sensitive-topic flags:** child-safety, financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `498671874440c094ddddb5d7299ef93f961275b92c6d6c582ed796af9c8ee97c`
+**Candidate content hash (not approval):** `011cb83a925ced8be04a4fdb363f43e104ff21ca5c2c1128d6a709e985a82083`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -206,27 +195,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:human-targeted-attacks` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/human-targeted-attacks` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/human-targeted-attacks)
+**URL:** `/education/human-targeted-attacks` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
 **Purpose / summary:** Explain manipulation of people alongside technical compromise.
 
-**Claims to verify:** The term is used as a practical umbrella, not a newly established Foundation scientific classification.
+**Full-content finding:** Meta-commentary about inventing categories distracted from the practical definition; emergency language was overly broad.
 
-**High-risk statements / boundaries:** Human vigilance must not be presented as a replacement for organizational security controls.
+**Corrections implemented:** Simplified the umbrella-term explanation, spelled out passwords/codes and distinguished payment checks from emergency help.
 
-**Editorial judgment / unresolved question / proposed correction:** Keep the distinction among phishing, fraud and account compromise clear; check workplace incident escalation language.
+**Remaining factual/safety questions:** Confirm the umbrella term is useful for this audience and does not imply a formal diagnosis or measured threat category.
+
+**Recommendation:** approval — actual approval remains pending.
 
 **Sources:** [NIST: Phishing guidance](https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing); [FBI / IC3: Generative AI and financial fraud](https://www.ic3.gov/PSA/2024/PSA241203); [FTC: How to avoid a scam](https://consumer.ftc.gov/articles/how-avoid-scam)
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
 **Sensitive-topic flags:** child-safety, financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `28785b1613ec1f8b82a27c0bb131b68da8c5be3f726a5c6e0feb7d581f605858`
+**Candidate content hash (not approval):** `3b024ad039902c2ada76969ef432dcf70782678ba0712e2d85dcffe097805967`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -236,27 +227,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:after-a-scam` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/after-a-scam` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/after-a-scam)
+**URL:** `/education/after-a-scam` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
 **Purpose / summary:** Prioritize provider contact, account containment, safe evidence and reporting.
 
-**Claims to verify:** Payment-provider contact first; U.S. FTC, IdentityTheft.gov and IC3 reporting roles.
+**Full-content finding:** A first-hour framing could sound like a deadline; payment methods were not differentiated; generic original-file retention was unsafe in child-exploitation contexts.
 
-**High-risk statements / boundaries:** “In the first hour” must not imply a recovery guarantee or that help is unavailable later. Generic evidence advice needs a child-image exception.
+**Corrections implemented:** Removed the hour threshold; added card/bank/app/wire/gift-card/crypto/delivery response routes and factual transaction descriptions; replaced blanket evidence retention with non-image details and specialist handling instructions.
 
-**Editorial judgment / unresolved question / proposed correction:** Fraud specialist: confirm ordering across payment types and whether a clearer “act as soon as possible, even if time has passed” clarification is needed.
+**Remaining factual/safety questions:** Fraud and safeguarding specialists must review payment sequencing, reporting jurisdiction and existing-device evidence handling. Recovery and legal rights vary; no guarantee or eligibility determination is made.
 
-**Sources:** [FTC: What to do if you were scammed](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed); [FTC: Recover a hacked email or social media account](https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account); [FTC: Refund and recovery scams](https://consumer.ftc.gov/articles/refund-and-recovery-scams); [NIST: Phishing guidance](https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing); [FBI / IC3: Report internet crime](https://www.ic3.gov/)
+**Recommendation:** conditional approval — actual approval remains pending.
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Sources:** [FTC: What to do if you were scammed](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed); [FTC: Recover a hacked email or social media account](https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account); [FTC: Refund and recovery scams](https://consumer.ftc.gov/articles/refund-and-recovery-scams); [NCMEC CyberTipline: report suspected child sexual exploitation](https://www.missingkids.org/gethelpnow/cybertipline); [NCMEC: Take It Down eligibility and safe use](https://takeitdown.ncmec.org/faq/); [NIST: Phishing guidance](https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing); [FBI / IC3: Report internet crime](https://www.ic3.gov/)
 
-**Sensitive-topic flags:** child-safety, financial-fraud, recovery-and-reporting
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
+
+**Sensitive-topic flags:** child-safety, exploitation-and-safe-reporting, financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `9855818ce86bf8ae4f1b732543f84bec7df46d1cb8501c3ac1e76cb61664203f`
+**Candidate content hash (not approval):** `4ad53cf4f24ffce0a262f7c5e087a54771259b6b81e12374ced44a93688d6974`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -266,27 +259,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:qr-link-safety` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/qr-link-safety` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/qr-link-safety)
+**URL:** `/education/qr-link-safety` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
 **Purpose / summary:** Explain QR/link destinations and independent navigation.
 
-**Claims to verify:** HTTPS is not proof of trust; bank.example.attacker.test belongs under attacker.test.
+**Full-content finding:** Credentials and MFA were unexplained; readers could feel obliged to interpret an unfamiliar URL.
 
-**High-risk statements / boundaries:** Do not encourage opening a suspicious destination to inspect it.
+**Corrections implemented:** Added a known-bookmark/app alternative, expanded MFA, replaced credentials with password/code and clarified account response.
 
-**Editorial judgment / unresolved question / proposed correction:** Expand MFA and explain hostname/credentials in everyday language; test whether the example teaches the intended distinction.
+**Remaining factual/safety questions:** Check whether the fictional domain example is understandable; do not ask learners to visit suspicious links.
+
+**Recommendation:** approval — actual approval remains pending.
 
 **Sources:** [FTC: Harmful links hidden in QR codes](https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information); [FTC: Recognize and avoid phishing scams](https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams); [FTC: Recover a hacked email or social media account](https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account); [FTC: What to do if you were scammed](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed)
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
 **Sensitive-topic flags:** child-safety, financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `065365537b38e0e640b0f920db8169a7c744d867fae37bc01e50671072cc974d`
+**Candidate content hash (not approval):** `f229312d5b039e0433019aa298a6f5907afdd355c23147db8ca1f18dd424c02d`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -296,27 +291,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:phone-impersonation` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/phone-impersonation` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/phone-impersonation)
+**URL:** `/education/phone-impersonation` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
 **Purpose / summary:** End suspicious calls and use an independently known callback route.
 
-**Claims to verify:** Caller ID can be spoofed; unsolicited remote-access and code requests are warning signs.
+**Full-content finding:** Callback steps could be more specific about bank impersonation.
 
-**High-risk statements / boundaries:** Do not suggest that a displayed number or successful callback through a supplied number proves identity.
+**Corrections implemented:** Require confirmation of the exact transfer/account change and no transfer to a caller-supplied account while checking.
 
-**Editorial judgment / unresolved question / proposed correction:** Check robocall-button advice and immediate account/payment response steps against FTC phone guidance.
+**Remaining factual/safety questions:** Fraud reviewer: confirm callback examples and response to already-shared access.
+
+**Recommendation:** conditional approval — actual approval remains pending.
 
 **Sources:** [FTC: Phone scams](https://consumer.ftc.gov/articles/phone-scams); [FTC: How to avoid a scam](https://consumer.ftc.gov/articles/how-avoid-scam); [FBI / IC3: Generative AI and financial fraud](https://www.ic3.gov/PSA/2024/PSA241203); [FTC: What to do if you were scammed](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed)
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
 **Sensitive-topic flags:** child-safety, financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `35df0af7a79643fb9c4a2fcd45ce735b8126fee500f1a100d683ff92d8d46350`
+**Candidate content hash (not approval):** `2c7d7401b017f99706f465cf804d204904ac3dbfd5268def65d6caf457b0f403`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -326,27 +323,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:government-impersonation` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/government-impersonation` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/government-impersonation)
+**URL:** `/education/government-impersonation` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Older adults, Caregivers, Libraries, senior centers & community organizations, People building digital confidence. **Type:** educational resource.
 
 **Purpose / summary:** Verify a purported U.S. agency through an official directory.
 
-**Claims to verify:** Threats and unusual payment requests are warning signs; genuine obligations still need independent verification.
+**Full-content finding:** Attempted-impersonation reporting lacked a named destination in the advice.
 
-**High-risk statements / boundaries:** Avoid blanket claims that government never calls or advice to ignore real deadlines.
+**Corrections implemented:** Named ReportFraud.ftc.gov and distinguished reporting from resolving an agency case or contacting a payment provider.
 
-**Editorial judgment / unresolved question / proposed correction:** Confirm U.S. jurisdiction is explicit and reporting routes fit the type of loss; determine whether IdentityTheft.gov needs a direct contextual link.
+**Remaining factual/safety questions:** Fraud reviewer: verify U.S. scope and preservation of genuine notice/deadline obligations; no individual legal interpretation.
+
+**Recommendation:** conditional approval — actual approval remains pending.
 
 **Sources:** [FTC: Avoid government impersonation scams](https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam); [USAGov: Official agency directory](https://www.usa.gov/agency-index); [FTC: What to do if you were scammed](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed)
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
 **Sensitive-topic flags:** financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `37a7afc9b4ae6192220240a0663a7c4541fb7f4fac7ac3aa774650cfac91d29f`
+**Candidate content hash (not approval):** `d0227618dd06ec349f34b202f092fc41bd5e9d3b3b9477e9799bdbac9b31a356`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -356,27 +355,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:payment-redirection` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/payment-redirection` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/payment-redirection)
+**URL:** `/education/payment-redirection` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Libraries, senior centers & community organizations, Educators & facilitators, Caregivers, Older adults. **Type:** educational resource.
 
 **Purpose / summary:** Verify changed invoice or bank details through an established contact.
 
-**Claims to verify:** Business email compromise can redirect payments; bank contact and IC3 reporting are appropriate after loss.
+**Full-content finding:** Bank contact needed a specific request and clearer sequencing relative to reporting.
 
-**High-risk statements / boundaries:** A small test transfer is not proof of legitimacy; rapid reporting does not guarantee recovery.
+**Corrections implemented:** Added immediate stopping/recall request via the sending institution and receiving institution; do not wait for a crime report; expanded IC3 name and qualified investigation/recovery expectations.
 
-**Editorial judgment / unresolved question / proposed correction:** Fraud specialist: check established-contact verification and receiving-bank recall wording against FBI guidance.
+**Remaining factual/safety questions:** Fraud reviewer: verify transfer-recall wording and applicability to community organizations.
+
+**Recommendation:** conditional approval — actual approval remains pending.
 
 **Sources:** [FBI: Business email compromise and payment verification](https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise); [FTC: Recover a hacked email or social media account](https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account); [FTC: What to do if you were scammed](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed)
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
 **Sensitive-topic flags:** child-safety, financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `6e82ee6eb568f48988103d9fbb8286ced79c2ad4020673f0d01435611f15a04d`
+**Candidate content hash (not approval):** `ceb85a4d7568828460b21ee9ca2e10fa332cbd281e22d5ff974c04f779db7465`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -388,27 +389,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:online-safety-older-adults` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/online-safety-older-adults` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/online-safety-older-adults)
+**URL:** `/education/online-safety-older-adults` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Older adults, Caregivers, People building digital confidence, Libraries, senior centers & community organizations. **Type:** educational resource.
 
 **Purpose / summary:** Support independent decisions, accessible routines and trusted help.
 
-**Claims to verify:** Unsolicited remote support is risky; recovery may require a different trusted device.
+**Full-content finding:** Recovery assumed access to a second trusted device.
 
-**High-risk statements / boundaries:** Helpers must not take passwords or control away from the reader.
+**Corrections implemented:** Added known-number phone or branch support while a compromised device is checked; preserved autonomy and private credentials.
 
-**Editorial judgment / unresolved question / proposed correction:** Review for stereotypes, readable pacing and practical alternatives for people without another device or available helper.
+**Remaining factual/safety questions:** Confirm accessible options for readers without branch access or a helper; support availability differs by provider.
+
+**Recommendation:** conditional approval — actual approval remains pending.
 
 **Sources:** [FTC: Recognize and avoid phishing scams](https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams); [FTC: Spot, avoid, and report tech support scams](https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams); [FTC: What to do if you were scammed](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed)
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
 **Sensitive-topic flags:** financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `2b14f44c32747d7c45b22bf2f91b9573a007576705cad175f6f69fe36c8af2de`
+**Candidate content hash (not approval):** `5efd0a45f6e1408baeeda80072233407294f286b81c1ce6f62ef76c11c63e8d2`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -420,27 +423,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:family-emergency-scams` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/family-emergency-scams` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/family-emergency-scams)
+**URL:** `/education/family-emergency-scams` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Older adults, Parents & families, Caregivers, Libraries, senior centers & community organizations, Educators & facilitators, People building digital confidence. **Type:** educational resource.
 
 **Purpose / summary:** Plan a non-blaming family verification routine for urgent requests.
 
-**Claims to verify:** Voice similarity and a private phrase are insufficient alone; independently contact family.
+**Full-content finding:** Private phrase advice did not explicitly exclude shared teaching worksheets.
 
-**High-risk statements / boundaries:** Verification routines must not delay emergency services when someone is in immediate danger.
+**Corrections implemented:** Added that exclusion while retaining independent verification, changing exposed phrases and emergency-service guidance.
 
-**Editorial judgment / unresolved question / proposed correction:** Confirm that phrases are not placed on publicly shared worksheets; check caregiver and family accessibility.
+**Remaining factual/safety questions:** Review phrase accessibility and trusted-contact alternatives; a phrase is not proof of identity.
+
+**Recommendation:** conditional approval — actual approval remains pending.
 
 **Sources:** [FTC: Scammers use fake emergencies to steal your money](https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money); [FBI / IC3: Generative AI and financial fraud](https://www.ic3.gov/PSA/2024/PSA241203); [FTC: What to do if you were scammed](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed)
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
 **Sensitive-topic flags:** child-safety, financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `8c9330e8dd0ee1e63312e8dac835399bf3e9c85854b7c7ba0c095ed3fb22c0a0`
+**Candidate content hash (not approval):** `0492882d4821d1c75fb60da0d1cc0e89f429f6fdf00fd44492104b93024726b2`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -450,27 +455,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:internet-safety-parents` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/internet-safety-parents` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/internet-safety-parents)
+**URL:** `/education/internet-safety-parents` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Parents & families, Caregivers, Educators & facilitators. **Type:** educational resource.
 
 **Purpose / summary:** Develop family agreements, privacy habits and trusted-adult support.
 
-**Claims to verify:** Readiness varies; settings and parental controls are useful but cannot ensure safety.
+**Full-content finding:** Controls guidance needed actionable settings; exploitation referral was indirect.
 
-**High-risk statements / boundaries:** Suspected exploitation needs appropriate specialist reporting, not forwarding explicit images or relying on the Foundation inbox.
+**Corrections implemented:** Added message permissions, public-location settings and purchase approval; named CyberTipline directly and prohibited copying/downloading child sexual images for help.
 
-**Editorial judgment / unresolved question / proposed correction:** Safeguarding specialist: review alternative trusted adults, no-blame language, age appropriateness and immediate-danger guidance; distinguish general privacy education from legal advice.
+**Remaining factual/safety questions:** Safeguarding specialist: assess developmental fit, alternate adults and family communication. Owner/qualified reviewer should confirm any future legal privacy statements.
+
+**Recommendation:** conditional approval — actual approval remains pending.
 
 **Sources:** [FTC: Kids and video games](https://consumer.ftc.gov/articles/kids-video-games); [FTC: Protecting your child’s privacy online](https://consumer.ftc.gov/articles/protecting-your-childs-privacy-online); [NCMEC: Sextortion warning signs and support](https://www.missingkids.org/netsmartz/topics/sextortion); [NCMEC: Take It Down](https://takeitdown.ncmec.org/); [NCMEC CyberTipline: report suspected child sexual exploitation](https://www.missingkids.org/gethelpnow/cybertipline); [NCMEC: Sextortion warning signs and support](https://www.missingkids.org/netsmartz/topics/sextortion); [NCMEC: Take It Down](https://takeitdown.ncmec.org/)
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
 **Sensitive-topic flags:** child-safety, exploitation-and-safe-reporting, financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `5b670a3eace19438f45ee5910fc76014d601ba16b8d0056e8228cf0f87981fb7`
+**Candidate content hash (not approval):** `2d8e793b1d781d856015efc5b5f1c7e1b32321ea75eeaf7f802b403ab96bcc92`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -482,27 +489,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:online-safety-kids` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/online-safety-kids` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/online-safety-kids)
+**URL:** `/education/online-safety-kids` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Children with a trusted adult, Parents & families, Educators & facilitators. **Type:** educational resource.
 
 **Purpose / summary:** Use fictional practice activities with a trusted adult.
 
-**Claims to verify:** Activities reflect different readiness levels rather than universal age cutoffs.
+**Full-content finding:** Adult involvement could imply a meeting is automatically safe; support route assumed the first adult was safe.
 
-**High-risk statements / boundaries:** Never use real personal details, submit practice reports or teach that adult involvement automatically makes meeting an online contact safe.
+**Corrections implemented:** Replaced meeting language with no secret/solo arrangements; added another-adult option if the first is involved or unhelpful; gave adults explicit reporting and immediate-danger steps.
 
-**Editorial judgment / unresolved question / proposed correction:** Safeguarding specialist: check trusted-adult alternatives and escalation for immediate danger. The 2019 NetSmartz blog needs a currency and relevance check.
+**Remaining factual/safety questions:** Specialist must assess read-aloud wording, disability/communication access, trusted-adult alternatives and the older NetSmartz source’s applicability.
+
+**Recommendation:** conditional approval — actual approval remains pending.
 
 **Sources:** [NCMEC: Tips for tweens](https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips); [NCMEC: Gaming safety](https://www.missingkids.org/netsmartz/topics/gaming); [NCMEC CyberTipline: report suspected child sexual exploitation](https://www.missingkids.org/gethelpnow/cybertipline); [NCMEC: Sextortion warning signs and support](https://www.missingkids.org/netsmartz/topics/sextortion); [NCMEC: Take It Down](https://takeitdown.ncmec.org/)
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
 **Sensitive-topic flags:** child-safety, exploitation-and-safe-reporting, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `0fcbb482e004ce1007ad23718abaa0c728f91b8fd922c696ee0997fb92ce8610`
+**Candidate content hash (not approval):** `c9f2b9aff01b3774ad71a924d36f119af6b75cd109b7c21a3a62efebc4273d74`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -512,27 +521,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:teen-online-safety` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/teen-online-safety` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/teen-online-safety)
+**URL:** `/education/teen-online-safety` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Teenagers, Parents & families, Educators & facilitators. **Type:** educational resource.
 
 **Purpose / summary:** Teach privacy, scam recognition and help-seeking around coercion.
 
-**Claims to verify:** Take It Down applies to images taken before age 18, uses images already on the device, and has platform/coverage limits.
+**Full-content finding:** Threat guidance omitted fake images and self-reporting; removal-service scope and evidence boundaries needed precision.
 
-**High-risk statements / boundaries:** Do not pay, send more material, download or forward intimate images. Preserve safe identifying information without creating copies of explicit material.
+**Corrections implemented:** Added fake/altered threats, independent CyberTipline reporting, grooming pressure from known contacts, no-copy evidence boundaries, before-18 eligibility even for adults now, public/unencrypted platform limits and original-device fallback. Added section-level FBI/NCMEC citations.
 
-**Editorial judgment / unresolved question / proposed correction:** Safeguarding specialist: verify exact reporting/evidence wording, trusted-adult alternatives and non-blaming language. Check that the relevant section directly connects to Take It Down guidance.
+**Remaining factual/safety questions:** Safeguarding specialist: evaluate trauma-informed wording and what a teen should do with material already present. Do not infer Take It Down eligibility for every AI-generated image.
 
-**Sources:** [NCMEC: Tips for tweens](https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips); [FTC: Recognize and avoid phishing scams](https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams); [NCMEC: Sextortion warning signs and support](https://www.missingkids.org/netsmartz/topics/sextortion); [NCMEC: Take It Down](https://takeitdown.ncmec.org/); [NCMEC CyberTipline: report suspected child sexual exploitation](https://www.missingkids.org/gethelpnow/cybertipline); [NCMEC: Sextortion warning signs and support](https://www.missingkids.org/netsmartz/topics/sextortion); [NCMEC: Take It Down](https://takeitdown.ncmec.org/)
+**Recommendation:** conditional approval — actual approval remains pending.
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Sources:** [NCMEC CyberTipline: report suspected child sexual exploitation](https://www.missingkids.org/gethelpnow/cybertipline); [NCMEC: Take It Down eligibility and safe use](https://takeitdown.ncmec.org/faq/); [FBI / IC3: Manipulated images and sextortion](https://www.ic3.gov/PSA/2023/PSA230605); [NCMEC: Tips for tweens](https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips); [FTC: Recognize and avoid phishing scams](https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams); [NCMEC: Sextortion warning signs and support](https://www.missingkids.org/netsmartz/topics/sextortion); [NCMEC: Take It Down](https://takeitdown.ncmec.org/); [NCMEC CyberTipline: report suspected child sexual exploitation](https://www.missingkids.org/gethelpnow/cybertipline); [NCMEC: Sextortion warning signs and support](https://www.missingkids.org/netsmartz/topics/sextortion); [NCMEC: Take It Down](https://takeitdown.ncmec.org/)
 
-**Sensitive-topic flags:** child-safety, exploitation-and-safe-reporting, financial-fraud, recovery-and-reporting
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
+
+**Sensitive-topic flags:** child-safety, exploitation-and-safe-reporting, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `b6af1c3221e192f86b2c1fe77bf96cf79ef53239e76fb124cf0c8dc627b0ef1b`
+**Candidate content hash (not approval):** `9754054865abe71787e08afeaec9936133a87ec84dc138ac2ebaac283be81411`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -542,27 +553,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `resource:gaming-scams` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education/gaming-scams` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education/gaming-scams)
+**URL:** `/education/gaming-scams` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** Teenagers, Parents & families, Educators & facilitators. **Type:** educational resource.
 
 **Purpose / summary:** Recognize fake currency, account theft and unsafe gaming contact.
 
-**Claims to verify:** Age ratings and controls do not cover every interaction or guarantee safety.
+**Full-content finding:** MFA was unexplained and exploitation help was vague.
 
-**High-risk statements / boundaries:** Sexual pressure and coercion require trusted support and specialist reporting; never forward explicit evidence.
+**Corrections implemented:** Defined the extra sign-in step; named CyberTipline and trusted-adult involvement; added no-download/forward and immediate-danger guidance.
 
-**Editorial judgment / unresolved question / proposed correction:** Safeguarding specialist: check contact/purchase settings, age-appropriate examples, receipt privacy and official recovery routes.
+**Remaining factual/safety questions:** Specialist: check age suitability, contact migration/grooming and the distinction between disputed purchases and exploitative contact.
+
+**Recommendation:** conditional approval — actual approval remains pending.
 
 **Sources:** [FTC: Kids and video games](https://consumer.ftc.gov/articles/kids-video-games); [NCMEC: Gaming safety](https://www.missingkids.org/netsmartz/topics/gaming); [FTC: Recognize and avoid phishing scams](https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams); [FTC: What to do if you were scammed](https://consumer.ftc.gov/articles/what-do-if-you-were-scammed); [NCMEC: Sextortion warning signs and support](https://www.missingkids.org/netsmartz/topics/sextortion); [NCMEC CyberTipline: report suspected child sexual exploitation](https://www.missingkids.org/gethelpnow/cybertipline); [NCMEC: Sextortion warning signs and support](https://www.missingkids.org/netsmartz/topics/sextortion); [NCMEC: Take It Down](https://takeitdown.ncmec.org/)
 
-**Source quality concerns:** Check applicability, currency and claim-level support. FTC/FBI retrieval discrepancies require browser verification.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
 **Sensitive-topic flags:** child-safety, exploitation-and-safe-reporting, financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `7c43dae0bdb9d6e2e0b6d688a5b5b25f545bcb6a3c2e3ef6271871c54535b637`
+**Candidate content hash (not approval):** `b8fb8641c8083b3f4a698645cdac02c8802ffe585c539711fa0664a29ab1306e`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -574,27 +587,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `page:/education` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/education` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/education)
+**URL:** `/education` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
 **Purpose / summary:** Help readers discover the 17 public guides by audience, topic and format.
 
-**Claims to verify:** Resource count, search/filter behavior and which formats are currently public.
+**Full-content finding:** Training CTAs and descriptions implied delivery and existing partners.
 
-**High-risk statements / boundaries:** Training and partnership wording must not imply confirmed delivery or downloadable draft handouts.
+**Corrections implemented:** Changed CTA to discussion and described prospective hosts/planned sessions; retained 17 discoverable guides and honest format availability.
 
-**Editorial judgment / unresolved question / proposed correction:** Owner: substantiate “developing with community partners”; confirm cards and format labels do not imply unpublished materials are available.
+**Remaining factual/safety questions:** Owner: confirm planning capacity and inquiry handling. Human reviewers must accept filter/search usability and reading level.
 
-**Sources:** None in the manifest; owner must substantiate organizational claims.
+**Recommendation:** conditional approval — actual approval remains pending.
 
-**Source quality concerns:** No cited evidence of organizational capacity, relationships or completed work; obtain owner confirmation rather than inventing external support.
+**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
+
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
 **Sensitive-topic flags:** child-safety, financial-fraud
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `d138dd410d853da571c0103bdb330a4957041186163518e555e4691960ed3457`
+**Candidate content hash (not approval):** `66d10a799bd45261916e46110e195b576c39211622d5e10e283f7c066c096aa0`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -604,27 +619,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `page:/programs` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/programs` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/programs)
+**URL:** `/programs` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
 **Purpose / summary:** Describe developing training pathways and host inquiry requirements.
 
-**Claims to verify:** Availability, delivery capacity and host safeguarding responsibilities.
+**Full-content finding:** Some present-tense claims conflicted with development status.
 
-**High-risk statements / boundaries:** Present-tense “We equip librarians…” may imply an operating program beyond available guides.
+**Corrections implemented:** Changed “offered”/partner delivery language to planned work; clarified no public schedule and that public guides do not establish a staffed training program.
 
-**Editorial judgment / unresolved question / proposed correction:** Owner: verify actual capacity and partnerships; if not yet operating, approve future-tense wording. No booking, certification or delivery promise without evidence.
+**Remaining factual/safety questions:** Owner: confirm available staffing, host responsibilities and actual planning status before making commitments.
 
-**Sources:** None in the manifest; owner must substantiate organizational claims.
+**Recommendation:** conditional approval — actual approval remains pending.
 
-**Source quality concerns:** No cited evidence of organizational capacity, relationships or completed work; obtain owner confirmation rather than inventing external support.
+**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
 
-**Sensitive-topic flags:** child-safety, recovery-and-reporting
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
+
+**Sensitive-topic flags:** child-safety, exploitation-and-safe-reporting, financial-fraud, recovery-and-reporting
 
 **Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
 
-**Reviewed content hash:** `b433748f0beeed91864b6bad3efff4da0628a6f7db60e14a75e195dba83eafc5`
+**Candidate content hash (not approval):** `2287871735463b0335bee22ec100b08602fc86f50ab9c0e1ce84f948fd0f9306`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -634,27 +651,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `page:/partner` · **State:** PENDING · **Priority:** P1: review before release
 
-**URL:** `/partner` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/partner)
+**URL:** `/partner` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
 **Purpose / summary:** Invite institutions to explore collaboration.
 
-**Claims to verify:** An inquiry does not establish a partnership or delivery commitment.
+**Full-content finding:** Collaboration categories could be mistaken for existing relationships; inquiry lacked a privacy boundary.
 
-**High-risk statements / boundaries:** Institutional relationships and implied endorsement require authorization.
+**Corrections implemented:** Explicitly described future collaboration invitations and excluded participant records/personal incident evidence.
 
-**Editorial judgment / unresolved question / proposed correction:** Owner: confirm inquiry handling, capacity and that planning/resource conditions are clear.
+**Remaining factual/safety questions:** Owner: confirm capacity, prospective-partner handling and any institutional relationships before naming them.
 
-**Sources:** None in the manifest; owner must substantiate organizational claims.
+**Recommendation:** conditional approval — actual approval remains pending.
 
-**Source quality concerns:** No cited evidence of organizational capacity, relationships or completed work; obtain owner confirmation rather than inventing external support.
+**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
 
-**Sensitive-topic flags:** None automatically flagged; review context manually.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
-**Required expertise:** Foundation editorial/organizational authority.
+**Sensitive-topic flags:** child-safety
 
-**Reviewed content hash:** `c18e774c9671931bb7827eba89c8a2f22bb4b8b25ac57250281ec33c5bbffa60`
+**Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist.
+
+**Candidate content hash (not approval):** `f2830398aef41f3fe964122273362d0dc9cb5efd64bd847c15ff4213f7d0c38a`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -664,27 +683,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `page:/contact` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/contact` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/contact)
+**URL:** `/contact` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
 **Purpose / summary:** Provide an organizational email and training inquiry route.
 
-**Claims to verify:** Inbox scope, monitoring and absence of emergency/account-recovery services.
+**Full-content finding:** Inbox exclusions did not explicitly cover intimate images and offered no immediate alternative routes.
 
-**High-risk statements / boundaries:** Do not invite passwords, account numbers, identity documents or intimate images.
+**Corrections implemented:** Excluded intimate images and exploitation reporting; added bank/payment response, after-scam guide, CyberTipline and emergency directions without waiting for email; training CTA now requests discussion.
 
-**Editorial judgment / unresolved question / proposed correction:** Owner and safeguarding reviewer: decide whether to explicitly exclude intimate images as well as existing sensitive-data exclusions; confirm routing and response expectations.
+**Remaining factual/safety questions:** Owner/safeguarding reviewer: confirm monitoring, escalation and privacy practices. This is not an emergency or exploitation-report intake service.
 
-**Sources:** None in the manifest; owner must substantiate organizational claims.
+**Recommendation:** conditional approval — actual approval remains pending.
 
-**Source quality concerns:** No cited evidence of organizational capacity, relationships or completed work; obtain owner confirmation rather than inventing external support.
+**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
 
-**Sensitive-topic flags:** recovery-and-reporting
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
-**Required expertise:** Foundation editorial/organizational authority; fraud prevention and reporting specialist.
+**Sensitive-topic flags:** child-safety, exploitation-and-safe-reporting, financial-fraud, recovery-and-reporting
 
-**Reviewed content hash:** `113e4878112aa937b02040e2e9bf3c29e251720eb6a484e590dcf0ed611c70e5`
+**Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
+
+**Candidate content hash (not approval):** `8569600f7e1d0f74dbeec53b4ff0d548132d61b69db9c05169e9f6c62297dd4c`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -696,27 +717,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `page:/` · **State:** PENDING · **Priority:** P1: review before release
 
-**URL:** `/` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/)
+**URL:** `/` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
 **Purpose / summary:** Introduce the Foundation mission, research and educational programs.
 
-**Claims to verify:** “Research shows what works”, “programs put it into practice” and “We evaluate programs” describe current activity.
+**Full-content finding:** Homepage implied delivered programs, active partnerships, evaluated outcomes and an unsupported population claim.
 
-**High-risk statements / boundaries:** These claims may overstate completed evaluation or operational programs compared with the research/program pages.
+**Corrections implemented:** Reframed hero, work, program, research and partnership copy as available guides plus development plans; removed “most people” claim; aligned search/social description and footer; labeled privacy/terms links as inquiries.
 
-**Editorial judgment / unresolved question / proposed correction:** P0 owner decision: supply evidence for current operations/evaluation, or authorize wording such as “We aim to translate research into practical prevention” and “We plan to evaluate programs.” Review shared homepage components, not only page.tsx.
+**Remaining factual/safety questions:** Owner must confirm actual organizational identity, current capacity, relationship disclosures and image provenance/permissions. Copy no longer claims delivered programs or measured outcomes.
 
-**Sources:** None in the manifest; owner must substantiate organizational claims.
+**Recommendation:** conditional approval — actual approval remains pending.
 
-**Source quality concerns:** No cited evidence of organizational capacity, relationships or completed work; obtain owner confirmation rather than inventing external support.
+**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
 
-**Sensitive-topic flags:** None automatically flagged; review context manually.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
-**Required expertise:** Foundation editorial/organizational authority.
+**Sensitive-topic flags:** child-safety
 
-**Reviewed content hash:** `e00730ee207459a1b965da6d27fb17853620c7f4cda9d13069ead0dc5324314f`
+**Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist.
+
+**Candidate content hash (not approval):** `5670d8c07afd3031717106f2fb45c7f3ae4b45f1fb7b0efe1f838c911cee7038`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -726,27 +749,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `page:/research` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/research` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/research)
+**URL:** `/research` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
 **Purpose / summary:** Explain research priorities and intended publication practices.
 
-**Claims to verify:** Which work is planned, underway or published, and whether findings actually exist.
+**Full-content finding:** The title and model could imply demonstrated prevention results despite an empty publication registry.
 
-**High-risk statements / boundaries:** Do not imply completed studies, results or evaluated effectiveness without published evidence.
+**Corrections implemented:** Changed the title to a research direction and explicitly described future work, not completed studies or measured outcomes.
 
-**Editorial judgment / unresolved question / proposed correction:** Owner: verify status against homepage language; distinguish priorities and publication plans from completed research.
+**Remaining factual/safety questions:** Owner/research lead: confirm planned methods, capacity and publication status; no findings may be invented.
 
-**Sources:** None in the manifest; owner must substantiate organizational claims.
+**Recommendation:** conditional approval — actual approval remains pending.
 
-**Source quality concerns:** No cited evidence of organizational capacity, relationships or completed work; obtain owner confirmation rather than inventing external support.
+**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
 
-**Sensitive-topic flags:** recovery-and-reporting
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
-**Required expertise:** Foundation editorial/organizational authority; fraud prevention and reporting specialist.
+**Sensitive-topic flags:** child-safety, recovery-and-reporting
 
-**Reviewed content hash:** `0d39ddfee51db1e9eb7ead89d231e565cfd840503044392232d6942b5e6ca0bd`
+**Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
+
+**Candidate content hash (not approval):** `cf7a8d9a77d4d95a01bbcc726d4bf51c0ac8392321f1c161069a8516eda2cb9b`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -756,27 +781,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `page:/about` · **State:** PENDING · **Priority:** P1: review before release
 
-**URL:** `/about` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/about)
+**URL:** `/about` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
 **Purpose / summary:** Explain public-interest mission and organizational relationships.
 
-**Claims to verify:** Foundation identity, mission and relationship to ZoraSafe Inc.
+**Full-content finding:** Research/evaluation language could imply demonstrated effects.
 
-**High-risk statements / boundaries:** A described relationship must not imply unsupported endorsement, independence or existing partnership.
+**Corrections implemented:** Separated available guides from planned research/program/access work and labeled evaluation as an aim.
 
-**Editorial judgment / unresolved question / proposed correction:** Owner: verify organizational facts and broad claims about education access; no invented credentials or statistics.
+**Remaining factual/safety questions:** Owner: confirm Foundation identity, governance, public-interest description and any relationship with ZoraSafe Inc.; no tax or legal status added.
 
-**Sources:** None in the manifest; owner must substantiate organizational claims.
+**Recommendation:** conditional approval — actual approval remains pending.
 
-**Source quality concerns:** No cited evidence of organizational capacity, relationships or completed work; obtain owner confirmation rather than inventing external support.
+**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
 
-**Sensitive-topic flags:** None automatically flagged; review context manually.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
-**Required expertise:** Foundation editorial/organizational authority.
+**Sensitive-topic flags:** child-safety
 
-**Reviewed content hash:** `4fa95babe0466bed55eb88291dc3aabaa7eeaa73cf924db557ffa01fcafc67c9`
+**Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist.
+
+**Candidate content hash (not approval):** `a10604e3e5a41f7e816d31a911879f16d72f9ec0e6c6a1bec4b954fc3f650c8e`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -786,27 +813,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `page:/leadership` · **State:** PENDING · **Priority:** P1: review before release
 
-**URL:** `/leadership` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/leadership)
+**URL:** `/leadership` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
 **Purpose / summary:** Explain that confirmed leadership information is forthcoming.
 
-**Claims to verify:** Whether the placeholder accurately reflects current governance disclosure plans.
+**Full-content finding:** “Coming soon” implied an unverified publication timetable; no names were available.
 
-**High-risk statements / boundaries:** No implied credentials or named appointments without authorization.
+**Corrections implemented:** Replaced timing promise with explicit not-yet-published status and authorization requirement.
 
-**Editorial judgment / unresolved question / proposed correction:** Owner: decide whether current disclosure is adequate for launch and who will maintain confirmed biographies.
+**Remaining factual/safety questions:** Owner must decide whether launch without public leadership names is acceptable and provide verified roles/biographies if required. This credibility gap cannot be resolved by invented names.
 
-**Sources:** None in the manifest; owner must substantiate organizational claims.
+**Recommendation:** revision — actual approval remains pending.
 
-**Source quality concerns:** No cited evidence of organizational capacity, relationships or completed work; obtain owner confirmation rather than inventing external support.
+**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
 
-**Sensitive-topic flags:** None automatically flagged; review context manually.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
-**Required expertise:** Foundation editorial/organizational authority.
+**Sensitive-topic flags:** child-safety
 
-**Reviewed content hash:** `fc4514f822bcb5add28b02aab668843f381471015b961a295da794004d6c7b41`
+**Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist.
+
+**Candidate content hash (not approval):** `42b78d3b4d193af410c1647bcf7f2e308e807f833696c131b706983f3d2e7498`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -816,27 +845,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `page:/support` · **State:** PENDING · **Priority:** P1: review before release
 
-**URL:** `/support` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/support)
+**URL:** `/support` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
 **Purpose / summary:** Describe intended support and future giving arrangements.
 
-**Claims to verify:** Online giving is being set up; current fundraising capability and contact route.
+**Full-content finding:** “Being set up” implied an unverified active giving implementation.
 
-**High-risk statements / boundaries:** Do not imply tax deductibility, charity status, payment processing or use-of-funds commitments without verification.
+**Corrections implemented:** Stated the observable absence of online giving and directed prospective support to confirmation; prohibited emailing payment details.
 
-**Editorial judgment / unresolved question / proposed correction:** Owner: verify fundraising statements and obtain qualified review before adding legal/tax claims; no donation workflow is authorized here.
+**Remaining factual/safety questions:** Owner must confirm legal/fundraising status, permitted support arrangements and required disclosures before soliciting or receiving funds. No tax-deductibility claim is made.
 
-**Sources:** None in the manifest; owner must substantiate organizational claims.
+**Recommendation:** revision — actual approval remains pending.
 
-**Source quality concerns:** No cited evidence of organizational capacity, relationships or completed work; obtain owner confirmation rather than inventing external support.
+**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
 
-**Sensitive-topic flags:** None automatically flagged; review context manually.
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
-**Required expertise:** Foundation editorial/organizational authority.
+**Sensitive-topic flags:** child-safety, financial-fraud
 
-**Reviewed content hash:** `d72627ad069c4f5e04941f5c4087a7bbd3b33d1f1ea81baf09677b0824ef54bc`
+**Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
+
+**Candidate content hash (not approval):** `8502126297deec10e1b654134dcf237e734b127833e3fc1905977d3324383ddc`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 
@@ -846,27 +877,29 @@ Read each complete page and original sources; the summaries below are not replac
 
 **ID:** `page:/editorial-standards` · **State:** PENDING · **Priority:** P0: review before release
 
-**URL:** `/editorial-standards` · [Open candidate preview](https://zora-foundation-2noyw3200-zora-safe.vercel.app/editorial-standards)
+**URL:** `/editorial-standards` · Candidate: see current Phase 4.4 link in readiness.md.
 
 **Audience:** General public / institutional partners. **Type:** organizational page.
 
 **Purpose / summary:** Describe sources, review expectations and correction practices.
 
-**Claims to verify:** Whether the organization can operate the stated review/correction process and monitor its inbox.
+**Full-content finding:** Correction requests needed safer evidence handling and emergency boundaries.
 
-**High-risk statements / boundaries:** Source-check dates cannot imply completed expert approval. Shared footer mailto links are inquiries, not published privacy/terms policies.
+**Corrections implemented:** Excluded intimate images; request wording/public sources instead; emergency help must not wait for an editorial reply.
 
-**Editorial judgment / unresolved question / proposed correction:** Owner: confirm operational responsibility and decide whether privacy/terms disclosure is sufficient before release; approve no unperformed review claims.
+**Remaining factual/safety questions:** Owner: appoint actual responsibility for corrections and verify inbox process; source checks and agent recommendations do not constitute expert approval.
 
-**Sources:** None in the manifest; owner must substantiate organizational claims.
+**Recommendation:** conditional approval — actual approval remains pending.
 
-**Source quality concerns:** No cited evidence of organizational capacity, relationships or completed work; obtain owner confirmation rather than inventing external support.
+**Sources:** Owner-held organizational records required; no public evidence supplied for institutional claims.
 
-**Sensitive-topic flags:** financial-fraud, recovery-and-reporting
+**Source quality concerns:** See item-specific questions above and phase44-source-checks.md; retrieval is not expert approval.
 
-**Required expertise:** Foundation editorial/organizational authority; fraud prevention and reporting specialist.
+**Sensitive-topic flags:** child-safety, exploitation-and-safe-reporting, financial-fraud, recovery-and-reporting
 
-**Reviewed content hash:** `7539ef7ef3e17c47ac56d9ed2eb7512a62d075a0e6a11a77e33aeae7724c8615`
+**Required expertise:** Foundation editorial/organizational authority; child-safety and safeguarding specialist; fraud prevention and reporting specialist.
+
+**Candidate content hash (not approval):** `9cc01d940a37929659bb20d7c8ce6cabd2d8d7f2e6911838b82e0b9a10a41420`
 
 **Human decision:** __________  **Reviewer(s), expertise and date:** __________
 

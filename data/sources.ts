@@ -1,6 +1,25 @@
 export type Source = { label: string; url: string; note?: string };
 // Primary guidance read during this content pass. Notes identify the supported scope.
 export const sources = {
+  mfa: {
+    label: "FTC: Use two-factor authentication to protect your accounts",
+    url: "https://consumer.ftc.gov/articles/use-two-factor-authentication-protect-your-accounts",
+    note: "Comparison of text codes, authenticator apps and security keys; follow your provider’s setup instructions.",
+  },
+  cybertip: {
+    label: "NCMEC CyberTipline: report suspected child sexual exploitation",
+    url: "https://www.missingkids.org/gethelpnow/cybertipline",
+  },
+  takeItDown: {
+    label: "NCMEC: Take It Down eligibility and safe use",
+    url: "https://takeitdown.ncmec.org/faq/",
+    note: "Do not download or ask someone to send intimate images to use the service. Ask NCMEC for help if you do not have the original device.",
+  },
+  aiExploitation: {
+    label: "FBI / IC3: Manipulated images and sextortion",
+    url: "https://www.ic3.gov/PSA/2023/PSA230605",
+    note: "Altered ordinary photos can be used for threats; seek help without circulating explicit material.",
+  },
   scam: {
     label: "FTC: How to avoid a scam",
     url: "https://consumer.ftc.gov/articles/how-avoid-scam",

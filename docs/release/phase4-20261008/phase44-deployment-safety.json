@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-09T05:35:55.066418+00:00",
+  "productionBranch": "main",
+  "deployHooks": [],
+  "productionDeployment": "dpl_BfVnysyySx24LGgptYcwyqUktrxq",
+  "productionAliasDeployment": "dpl_BfVnysyySx24LGgptYcwyqUktrxq",
+  "domains": [
+    {
+      "name": "zorasafefoundation.org",
+      "gitBranch": null,
+      "customEnvironmentId": null
+    },
+    {
+      "name": "www.zorasafefoundation.org",
+      "gitBranch": null,
+      "customEnvironmentId": null
+    },
+    {
+      "name": "zora-foundation.vercel.app",
+      "gitBranch": null,
+      "customEnvironmentId": null
+    }
+  ],
+  "linkedProjects": [
+    {
+      "id": "prj_lSHh3vDrPHNIMgXYqd2JzOkGsBJ6",
+      "name": "zora-foundation"
+    }
+  ],
+  "projectPagination": {
+    "count": 7,
+    "next": null,
+    "prev": 1791519473611
+  },
+  "vercelWebhookCount": 0,
+  "githubHookCount": 0,
+  "workflows": [
+    {
+      "name": "Foundation release QA",
+      "path": ".github/workflows/release-qa.yml",
+      "state": "active"
+    }
+  ]
+}

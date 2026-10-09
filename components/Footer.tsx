@@ -34,8 +34,8 @@ export function Footer() {
           <div className="footer-intro">
             <Brand reversed />
             <p>
-              Bringing digital safety knowledge, training, research, and
-              practical resources to the people and communities that need them.
+              Practical digital safety guides for the public, with training and
+              research pathways in development.
             </p>
             <p className="relationship">
               The Foundation may work with ZoraSafe, Inc. and other technology
@@ -60,10 +60,10 @@ export function Footer() {
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} ZoraSafe Foundation</span>
           <a href="mailto:hello@zorasafefoundation.org?subject=Privacy%20inquiry">
-            Privacy
+            Privacy inquiry
           </a>
           <a href="mailto:hello@zorasafefoundation.org?subject=Terms%20inquiry">
-            Terms
+            Terms inquiry
           </a>
           <Link href="/accessibility">Accessibility statement</Link>
         </div>

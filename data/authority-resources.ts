@@ -10,7 +10,7 @@ const common = {
     "digital-confidence",
   ] as Resource["audience"],
   format: "quick-guide" as const,
-  updatedAt: "2026-10-07",
+  updatedAt: "2026-10-09",
   editorial: { reviewedAt: "2026-10-07" },
   printView: true,
 };
@@ -25,7 +25,7 @@ export const authorityResources: Resource[] = [
       "A human-targeted attack uses deception to influence a person into giving money, information, or access. The immediate target is a decision, not necessarily a software weakness.",
     topics: ["social-engineering", "impersonation", "phishing", "scams-fraud"],
     intro:
-      "Trust makes ordinary life possible. An attacker can misuse that trust by borrowing an identity, creating urgency, or exploiting concern for someone else. Here, ‘human-targeted attack’ is a practical umbrella term for these situations, not a claim that the Foundation invented a new category or has measured its prevalence.",
+      "Trust makes ordinary life possible. An attacker can misuse that trust by borrowing an identity, creating urgency, or exploiting concern for someone else. Here, ‘human-targeted attack’ is a practical umbrella term for these situations, not a formal diagnosis or a separate type of software vulnerability.",
     sections: [
       {
         id: "how-it-works",
@@ -54,7 +54,7 @@ export const authorityResources: Resource[] = [
     actions: [
       {
         title: "Name the decision",
-        text: "Identify what is being requested: money, credentials, a download, or access. Pause that action.",
+        text: "Identify what is being requested: money, passwords or sign-in codes, a download, or access. Pause that action.",
       },
       {
         title: "Separate the story from the evidence",
@@ -67,7 +67,7 @@ export const authorityResources: Resource[] = [
     ],
     avoid: [
       "Do not assume only inexperienced people can be manipulated.",
-      "Do not let a supposed emergency waive a payment or security check.",
+      "Pause an unverified payment or account request. For immediate physical danger, contact emergency services directly rather than waiting for the caller’s instructions.",
     ],
     help: "If you acted, focus on the affected account or payment rather than proving the attacker’s identity. Use our after-a-scam checklist and involve your organization’s support team if workplace access was involved.",
     practice: {
@@ -88,21 +88,30 @@ export const authorityResources: Resource[] = [
     ...common,
     slug: "after-a-scam",
     sourceCheckedAt: "2026-10-08",
-    updatedAt: "2026-10-08",
+    updatedAt: "2026-10-09",
     title: "What to do after a scam",
     format: "checklist",
-    readingMinutes: 5,
+    readingMinutes: 7,
     summary:
       "Stop the interaction, contact the payment provider, and secure affected accounts. Preserve evidence and report what happened. Acting promptly matters, but getting money back is not guaranteed.",
     topics: ["recovery", "financial-fraud", "account-safety", "scams-fraud"],
     intro:
-      "In the first hour, prioritize the affected payment, account, or device; do not wait to finish a report before contacting the provider. If more time has passed, still seek help. You do not need a complete account of events before asking for help. Start with the action that could prevent further loss. A trusted person can help make calls or keep notes while you retain control of passwords and private information. This checklist is general guidance; the reporting links below are for the United States.",
+      "Act as soon as you can: prioritize the affected payment, account, or device; do not wait to finish a report before contacting the provider. If more time has passed, still seek help. You do not need a complete account of events before asking for help. Start with the action that could prevent further loss. A trusted person can help make calls or keep notes while you retain control of passwords and private information. This checklist is general guidance; the reporting links below are for the United States.",
     sections: [
+      {
+        id: "payment-method",
+        title: "Contact the provider that handled your payment",
+        paragraphs: [
+          "Card or bank transfer: call your card issuer, bank or credit union. Payment app: report through the app’s genuine support. Wire-transfer service: contact that service. Say you were deceived, identify the transaction and ask whether it can be stopped, reversed or refunded. Explain whether you made the payment after being deceived or someone else made it; ask which dispute process applies.",
+          "Gift card: contact its issuer and keep the card and receipt. Cryptocurrency: contact the exchange or ATM operator used; recovery may be difficult. Cash sent by delivery: contact the carrier promptly to ask whether an undelivered package can be intercepted. Options depend on the method and circumstances; no refund is assured.",
+        ],
+        sourceUrls: [s.recovery.url],
+      },
       {
         id: "choose-a-start",
         title: "Choose the most urgent starting point",
         paragraphs: [
-          "Money sent: contact the bank, card issuer or payment service through its genuine app or a known number. Credentials shared: go directly to the affected service. Device access granted: seek trusted technical help and use another trusted device for sensitive account changes.",
+          "Money sent: contact the bank, card issuer or payment service through its genuine app or a known number. Password or sign-in code shared: go directly to the affected service. Device access granted: seek trusted technical help and use another trusted device for sensitive account changes.",
           "Keep a simple incident record: what happened, which accounts were involved, when you contacted support, and the case numbers provided. Avoid posting account numbers or identity documents in a public forum.",
         ],
         sourceUrls: [s.recovery.url, s.accounts.url],
@@ -136,7 +145,7 @@ export const authorityResources: Resource[] = [
       },
       {
         title: "Preserve evidence",
-        text: "Save messages, receipts, transaction identifiers and a timeline. Keep original files if possible; do not send sensitive evidence to an unsolicited helper.",
+        text: "Keep transaction references, receipts and a timeline privately. For suspected child sexual exploitation, record non-image details such as usernames and where contact occurred. Do not download, copy or forward sexual images of children as evidence. Ask NCMEC or law enforcement how to handle material already present; do not keep it simply to complete this checklist.",
       },
       {
         title: "Report through official channels",
@@ -157,7 +166,7 @@ export const authorityResources: Resource[] = [
     ],
     avoid: [
       "Do not send another payment to unlock a refund.",
-      "Do not delete the only copy of evidence before saving it.",
+      "Do not apply ordinary receipt-saving advice to sexual images of children. Seek specialist reporting guidance without making copies.",
       "Do not share passwords or one-time codes with anyone offering recovery help.",
     ],
     help: "If you already paid a recovery service that now seems suspicious, contact the payment provider again and include that transaction in your report. For an immediate threat to physical safety, contact local emergency services directly.",
@@ -171,6 +180,8 @@ export const authorityResources: Resource[] = [
       s.recovery,
       s.accounts,
       s.recoveryScams,
+      s.cybertip,
+      s.takeItDown,
       s.nist,
       {
         label: "FBI / IC3: Report internet crime",
@@ -200,7 +211,7 @@ export const authorityResources: Resource[] = [
         title: "Inspect the destination without opening it",
         paragraphs: [
           "Use your camera’s preview if it shows the address before opening. On a computer, hovering over a link can reveal its destination. On a phone, a link menu may show it; if your device does not offer a safe preview, leave it alone.",
-          "Look at the actual hostname, not a familiar word anywhere in the address. In the illustrative address bank.example.attacker.test, the word ‘bank’ does not make it your bank. A shortened link conceals the eventual destination. HTTPS or a padlock indicates an encrypted connection, not that the operator is honest.",
+          "Check the site’s address, not just a familiar word in it. You do not need to decode an unfamiliar address to proceed safely: open the service through a bookmark or app you already use. In the illustrative address bank.example.attacker.test, the word ‘bank’ does not make it your bank. A shortened link conceals the eventual destination. HTTPS or a padlock indicates an encrypted connection, not that the operator is honest.",
         ],
         sourceUrls: [s.qr.url, s.phishing.url],
       },
@@ -236,9 +247,9 @@ export const authorityResources: Resource[] = [
     avoid: [
       "Do not treat a branded QR design as proof of ownership.",
       "Do not install an app or a security update offered by an unexpected page.",
-      "Do not type credentials just to see whether a login page works.",
+      "Do not enter a password or sign-in code just to test a login page.",
     ],
-    help: "If you entered credentials, change the password through the real service, review sessions and enable MFA. If you entered card details, contact the issuer. If you downloaded or ran something suspicious, update security software, scan the device and seek trusted technical help. A click alone does not establish what happened; describe exactly which actions you took.",
+    help: "If you entered a password or sign-in code, open the real service to change the password and sign out other sessions. Enable multifactor authentication (MFA), an extra sign-in check. If you entered card details, contact the issuer. If you downloaded or ran something suspicious, update security software, scan the device and seek trusted technical help. A click alone does not establish what happened; describe exactly which actions you took.",
     practice: {
       prompt:
         "A parking-payment code leads to a site you do not recognize. What can you do instead?",
@@ -290,7 +301,7 @@ export const authorityResources: Resource[] = [
       },
       {
         title: "Verify independently",
-        text: "Call the genuine organization or person using a known number. Check the specific story, not just whether your account exists.",
+        text: "Call the genuine organization or person using a known number. Ask whether the bank requested that transfer or account change. Do not move savings to an account supplied by the caller while checking.",
       },
       {
         title: "Bring in support",
@@ -347,7 +358,7 @@ export const authorityResources: Resource[] = [
         title: "Agree on a family plan before an emergency",
         paragraphs: [
           "Choose trusted contacts together and keep their numbers easy to find. Agree that anyone may hang up and call back when money or sensitive information is requested. Practice the words you would use, without putting anyone on the spot.",
-          "A private family phrase can be an additional check. Keep it out of public posts and change it if exposed. Treat it as one layer, not a guarantee: knowing a phrase does not replace confirming the situation through a contact you trust.",
+          "A private family phrase can be an additional check. Keep it out of public posts and shared practice worksheets, and change it if exposed. Treat it as one layer, not a guarantee: knowing a phrase does not replace confirming the situation through a contact you trust.",
         ],
         sourceUrls: [s.ai.url],
       },

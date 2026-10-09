@@ -44,7 +44,8 @@ export default function EditorialStandards() {
             </a>{" "}
             with the page URL, the wording in question and a supporting source
             if available. Please do not send passwords, account numbers or
-            sensitive evidence.
+            sensitive evidence, including intimate images. Describe the wording
+            and link to public guidance instead.
           </p>
           <h2>Educational guidance</h2>
           <p>
@@ -52,7 +53,8 @@ export default function EditorialStandards() {
             enforcement, financial, legal or other professional advice. Contact
             the affected service or an appropriate professional about your
             situation. The Foundation does not promise loss prevention or
-            recovery.
+            recovery. For immediate physical danger, contact local emergency
+            services; do not wait for a reply to a correction request.
           </p>
           <p>
             <Link href="/education">Explore education resources</Link> or{" "}

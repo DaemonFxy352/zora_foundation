@@ -15,7 +15,7 @@ const programs = [
   ],
   [
     "Pilots & Technology Access",
-    "Community pilots that put safety tools, devices, and training materials within reach of those who would otherwise go without.",
+    "Proposed pilots to explore access to safety tools, devices, and training materials. No device-distribution or grant application is open.",
   ],
 ];
 export function Programs() {
@@ -34,8 +34,8 @@ export function Programs() {
             </h2>
           </div>
           <p>
-            Four program areas, delivered in person and close to home through
-            organizations people already trust.
+            Four program areas in development for learning through trusted local
+            organizations. Workshops are not currently scheduled or bookable.
           </p>
         </div>
         <div className="programs-layout">
@@ -56,9 +56,9 @@ export function Programs() {
               ))}
             </div>
             <p className="program-note">
-              We also equip librarians, educators, senior-center staff,
-              nonprofit teams, and other trusted local leaders with resources
-              they can use in their own communities.
+              Librarians, educators, senior-center staff and community groups can
+              read and print our public guides now. Structured training and
+              facilitator materials are still in development.
             </p>
           </div>
         </div>

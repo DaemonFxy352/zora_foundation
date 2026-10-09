@@ -29,8 +29,8 @@ export default function AboutPage() {
             </p>
             <p>
               The Foundation exists to help close that gap. Our public-interest
-              focus brings together education, research, prevention, technology
-              access, and community partnerships.
+              focus starts with public educational guides, alongside plans for
+              research, prevention programs, technology access and collaboration.
             </p>
             <p>
               We aim to make useful knowledge available in the places people
@@ -59,8 +59,8 @@ export default function AboutPage() {
             <article>
               <h3>Research with a purpose</h3>
               <p>
-                Questions and evaluation that improve what we teach and help us
-                understand what prevention can change.
+                Research questions and planned evaluation to test what people
+                understand and can use. These are aims, not measured results.
               </p>
               <Link href="/research" className="text-link">
                 Our Research Approach

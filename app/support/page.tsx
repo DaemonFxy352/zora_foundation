@@ -53,13 +53,14 @@ export default function SupportPage() {
           </div>
           <div className="reading-copy">
             <p>
-              Online giving is being set up. To discuss supporting the
-              Foundation, contact us.
+              Online giving is not available on this site. To discuss possible
+              support and confirm current arrangements, contact the Foundation.
             </p>
             <p>
               Tell us which area of work interests you and whether you are
               considering individual, foundation, or organizational support. We
-              can discuss current needs and next steps.
+              can discuss current needs and next steps. Please do not email payment-card
+              details or bank account information.
             </p>
             <a
               className="button"

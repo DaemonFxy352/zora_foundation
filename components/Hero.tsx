@@ -10,8 +10,8 @@ export function Hero() {
           <p className="eyebrow">Closing the digital safety knowledge gap.</p>
           <h1 id="hero-heading">Safety through knowledge.</h1>
           <p className="hero-intro">
-            Research that leads to real-world prevention, and programs that
-            bring it to communities, families, and the people who serve them.
+            Practical digital safety guides for communities and families, with
+            research and training pathways in development.
           </p>
           <div className="actions">
             <Link className="button" href="/programs">

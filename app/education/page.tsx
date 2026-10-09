@@ -16,7 +16,7 @@ export const metadata = pageMetadata(
 const training = [
   {
     title: "Community Workshops",
-    text: "We are developing in-person and virtual sessions with trusted local organizations. A workshop can make space to discuss examples, ask questions, and practice checking an unexpected request.",
+    text: "We are developing plans for in-person and virtual sessions in trusted local settings. A workshop can make space to discuss examples, ask questions, and practice checking an unexpected request.",
   },
   {
     title: "Digital Confidence Training",
@@ -49,7 +49,7 @@ export default function Education() {
             Explore Resources
           </a>
           <Link className="button button-outline" href="/contact#training">
-            Bring Training to Your Community
+            Discuss Community Training
           </Link>
         </div>
       </PageHero>
@@ -133,7 +133,7 @@ export default function Education() {
               Training that meets people where they are.
             </h2>
             <p>
-              We are developing these learning pathways with community partners.
+              We are developing these learning pathways and welcome input from prospective hosts.
               There is no public workshop schedule or registration system yet.
               Tell us what your community needs so we can explore the right
               starting point.
@@ -145,7 +145,7 @@ export default function Education() {
       <CTASection
         title="Help shape learning in your community."
         href="/contact#training"
-        label="Bring Training to Your Community"
+        label="Discuss Community Training"
       >
         <p>
           Share who you serve, the questions you hear, and the support that

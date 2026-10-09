@@ -11,7 +11,7 @@ const programs = [
   {
     name: "Community Digital Safety Education",
     intro:
-      "Plain-language learning about scams, fraud, privacy, and everyday digital decisions, offered through places people already know and trust.",
+      "Plain-language learning about scams, fraud, privacy, and everyday digital decisions, planned for places people already know and trust.",
     audience:
       "Older adults, families, caregivers, and communities with fewer digital safety resources.",
     activities: [
@@ -72,7 +72,7 @@ export default function ProgramsPage() {
         path="/programs"
         eyebrow="Programs & Initiatives"
         title="Bringing digital safety into communities."
-        intro="Four program areas connect knowledge with practice. We are developing programs with community partners, beginning with the needs people encounter in daily life."
+        intro="Four program areas connect knowledge with practice. These programs are in development, beginning with the needs people encounter in daily life. We welcome prospective hosts; there is no public delivery schedule."
       />
       <section className="interior-section">
         <div className="container program-details">
@@ -165,9 +165,10 @@ export default function ProgramsPage() {
           <p className="eyebrow">The trusted-messenger model</p>
           <h2>Knowledge travels through people we trust.</h2>
           <p>
-            We equip librarians, educators, senior-center staff, nonprofit
-            teams, caregivers, volunteers, and other trusted local leaders with
-            materials they can use in their own communities.
+            Librarians, educators, senior-center staff, nonprofit teams,
+            caregivers and volunteers can use our public guides as a starting
+            point for learning. A host-led training program would require
+            additional planning and qualified facilitation.
           </p>
           <p>
             Our{" "}

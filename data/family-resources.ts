@@ -1,4 +1,5 @@
 import type { Resource } from "./resources";
+import { sources as s } from "./sources";
 
 // Source checks are not a claim of named expert review or publication approval.
 // Assign original publication dates when these guides are first released.
@@ -12,7 +13,7 @@ export const familyResources: Resource[] = [
     topics: ["privacy", "account-safety", "everyday-technology"],
     format: "quick-guide",
     readingMinutes: 4,
-    updatedAt: "2026-10-08",
+    updatedAt: "2026-10-09",
     sourceCheckedAt: "2026-10-08",
     printView: true,
     intro:
@@ -51,7 +52,7 @@ export const familyResources: Resource[] = [
       },
       {
         title: "Set boundaries before use",
-        text: "Review contact and purchase controls. Use separate age-appropriate accounts instead of an unrestricted adult profile.",
+        text: "Use a child’s age-appropriate account. Review who can message them, turn off public location sharing where available, and require adult approval for purchases. Check the service’s official instructions together.",
       },
       {
         title: "Revisit after changes",
@@ -65,9 +66,9 @@ export const familyResources: Resource[] = [
     avoid: [
       "Do not promise that parental controls catch every risk.",
       "Do not demand a public retelling of a child’s distressing experience.",
-      "Do not forward intimate images while asking others for advice.",
+      "Do not download, copy or forward sexual images of children while asking for help; use the reporting guidance below.",
     ],
-    help: "Listen without blaming. Help the child stop unwanted contact and use the platform’s reporting tools. For suspected sexual exploitation, use NCMEC’s guidance below; an immediate physical threat calls for local emergency help. Account or payment problems should also go to the affected service through its genuine support channel.",
+    help: "Listen without blaming. Help the child stop unwanted contact and use the platform’s reporting tools. For suspected child sexual exploitation, report to NCMEC’s CyberTipline below; an immediate physical threat calls for local emergency help. Account or payment problems should also go to the affected service through its genuine support channel.",
     practice: {
       prompt:
         "Your child says they clicked a link after breaking a device rule. What do you say first?",
@@ -124,7 +125,7 @@ export const familyResources: Resource[] = [
     topics: ["privacy", "everyday-technology"],
     format: "quick-guide",
     readingMinutes: 4,
-    updatedAt: "2026-10-08",
+    updatedAt: "2026-10-09",
     sourceCheckedAt: "2026-10-08",
     printView: true,
     intro:
@@ -155,7 +156,7 @@ export const familyResources: Resource[] = [
       },
       {
         title: "Ask an adult you trust",
-        text: "Choose someone who listens and helps you feel safe. If the first person cannot help, try another trusted adult.",
+        text: "Choose someone who listens and helps you feel safe, such as a caregiver or teacher. If that person is part of the problem or does not help, tell another trusted adult.",
       },
       {
         title: "Let an adult handle reports",
@@ -168,10 +169,10 @@ export const familyResources: Resource[] = [
     ],
     avoid: [
       "Do not give out a password to earn a prize.",
-      "Do not meet someone from an online game without a trusted adult’s involvement.",
+      "Do not arrange to meet an online contact on your own or keep a proposed meeting secret. Tell a trusted adult about the invitation.",
       "Do not send a message back just because someone says you have to.",
     ],
-    help: "If you already answered, clicked, or shared something, you can still get help. Tell a trusted adult what you remember. Adults: handle account changes and reporting, reassure the child, and seek appropriate specialist support for threats or exploitation.",
+    help: "If you already answered, clicked, or shared something, you can still get help. Tell a trusted adult what you remember. Adults: handle account changes and reporting. For suspected sexual exploitation, use the CyberTipline link below without downloading or forwarding intimate images. For immediate danger, contact local emergency services.",
     practice: {
       prompt:
         "A player offers a reward if you share your home address. What could you do?",
@@ -213,8 +214,8 @@ export const familyResources: Resource[] = [
     audience: ["teenagers", "youth-families", "educators-facilitators"],
     topics: ["privacy", "account-safety", "social-engineering"],
     format: "quick-guide",
-    readingMinutes: 4,
-    updatedAt: "2026-10-08",
+    readingMinutes: 5,
+    updatedAt: "2026-10-09",
     sourceCheckedAt: "2026-10-08",
     printView: true,
     intro:
@@ -235,14 +236,14 @@ export const familyResources: Resource[] = [
         id: "threats-and-support",
         title: "If someone threatens to share intimate images",
         paragraphs: [
-          "This is not your fault, and you do not have to manage it alone. Do not pay or send more images. Reach a trusted adult and follow NCMEC’s reporting guidance. A threat is a reason to seek help, not a reason to remain in the conversation.",
-          "NCMEC’s Take It Down can help limit sharing of intimate images taken before age 18 on participating platforms. Use only files already on your device; do not download, send, or forward images to use it. It cannot guarantee removal everywhere.",
+          "This is not your fault, and you do not have to manage it alone. Do not pay or send more images. Tell a trusted adult and report to NCMEC’s CyberTipline, even if the image is fake or altered. You can also make a report yourself if adult help is not available. A threat is a reason to seek help, not a reason to remain in the conversation.",
+          "Take It Down can help with intimate images taken of you before age 18, even if you are older now. It shares a digital fingerprint, not the image itself, with participating platforms for their public or unencrypted services. Do not download images or ask anyone to send them. If the original device or image is unavailable, ask NCMEC for help instead. It cannot remove every copy or stop all sharing.",
         ],
-        sourceUrls: ["https://www.missingkids.org/netsmartz/topics/sextortion"],
+        sourceUrls: ["https://www.missingkids.org/netsmartz/topics/sextortion", s.cybertip.url, s.takeItDown.url, s.aiExploitation.url],
       },
     ],
     warningSigns: [
-      "A new friend wants passwords, private images, money, or secrecy as proof of trust.",
+      "Someone offers attention or gifts, then asks for sexual images or secrecy as proof of trust. This pressure can come from someone you know, not only a new contact.",
       "A supposed account warning asks you to sign in through a message link.",
       "Someone pressures you to act before talking to another person.",
     ],
@@ -267,7 +268,7 @@ export const familyResources: Resource[] = [
     avoid: [
       "Do not share sign-in codes with someone offering to recover an account.",
       "Do not retaliate by posting someone else’s private information.",
-      "Do not circulate intimate images as evidence or entertainment.",
+      "Do not download, screenshot or circulate intimate images as evidence. You can report the account name, platform and what happened without copying the image; ask NCMEC how to handle anything already on your device.",
     ],
     help: "For account access, go to the service’s official recovery page and ask a trusted adult for help if needed. For threats or exploitation, use NCMEC’s support below. If you are in immediate danger, seek emergency help and stay with someone you trust.",
     practice: {
@@ -277,6 +278,9 @@ export const familyResources: Resource[] = [
         "Contact your friend another way. The account may be compromised; a code can give someone access to your account.",
     },
     sources: [
+      s.cybertip,
+      s.takeItDown,
+      s.aiExploitation,
       {
         label: "NCMEC: Tips for tweens",
         url: "https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips",
@@ -326,7 +330,7 @@ export const familyResources: Resource[] = [
     topics: ["scams-fraud", "account-safety", "privacy"],
     format: "quick-guide",
     readingMinutes: 4,
-    updatedAt: "2026-10-08",
+    updatedAt: "2026-10-09",
     sourceCheckedAt: "2026-10-08",
     printView: true,
     intro:
@@ -365,7 +369,7 @@ export const familyResources: Resource[] = [
       },
       {
         title: "Protect access",
-        text: "Use a unique password and available multifactor authentication. Never lend an account to a player promising rewards.",
+        text: "Use a unique password and an extra sign-in check (multifactor authentication) if offered. Never lend an account to a player promising rewards.",
       },
       {
         title: "Find the reporting tools",
@@ -381,7 +385,7 @@ export const familyResources: Resource[] = [
       "Do not share passwords, codes, or payment-card details in chat.",
       "Do not blame a child for reporting a mistake.",
     ],
-    help: "If a password was shared, use the platform’s genuine recovery process and change it anywhere it was reused. Ask the payment provider about an unauthorized payment. If someone pressures a child for sexual content or threatens them, seek NCMEC support; do not forward intimate images.",
+    help: "If a password was shared, use the platform’s genuine recovery process and change it anywhere it was reused. Ask the payment provider about an unauthorized payment. If someone pressures a child for sexual content or threatens them, involve a trusted adult and report suspected exploitation to NCMEC’s CyberTipline. Do not download or forward intimate images. Contact emergency services for immediate physical danger.",
     practice: {
       prompt:
         "A teammate says a free-item link expires in two minutes. What can you do?",
@@ -446,7 +450,7 @@ export const familyResources: Resource[] = [
     topics: ["everyday-technology", "financial-fraud", "account-safety"],
     format: "quick-guide",
     readingMinutes: 4,
-    updatedAt: "2026-10-08",
+    updatedAt: "2026-10-09",
     sourceCheckedAt: "2026-10-08",
     printView: true,
     intro:
@@ -503,7 +507,7 @@ export const familyResources: Resource[] = [
       "Do not let a helper keep your sign-in codes or passwords.",
       "Do not assume that being deceived means losing the right to make your own decisions.",
     ],
-    help: "End the interaction and contact the affected bank or service directly. If remote access was granted, seek trusted technical help and use another trusted device for sensitive account changes. Keep transaction details and ask the payment provider about recovery options; repayment is not guaranteed.",
+    help: "End the interaction and contact the affected bank or service directly. If remote access was granted, use another trusted device for sensitive account changes and seek help from a support provider you chose. If you cannot use another device, call your bank through a known number or visit a branch to ask about protecting the account while the device is checked. Keep transaction details and ask the payment provider about recovery options; repayment is not guaranteed.",
     practice: {
       prompt:
         "A pop-up says the device is infected and displays a repair number. What would you do?",

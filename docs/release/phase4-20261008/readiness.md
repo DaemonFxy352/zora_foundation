@@ -1,4 +1,22 @@
-# Phase 4.3 current release decision — 2026-10-09
+# Phase 4.4 current status — substantive corrections
+
+**27 complete public items reviewed and improved. Production remains NO-GO.** Actual content changes are in the guides and organizational pages, not only release documents. The [updated workbook](editorial-review.md) and [per-item results](phase44-editorial-results.json) record findings, implemented corrections, primary references, remaining questions and recommendations. All 27 human approvals remain pending; the decision registry is unchanged.
+
+Corrections include channel-specific bank/message verification; payment-method response and bank-recall sequencing without recovery guarantees; email-forwarding checks after account takeover; precise MFA sourcing; safe evidence boundaries around child sexual images; fake-image threats and CyberTipline self-reporting; Take It Down eligibility and coverage limits; alternate trusted adults and no secret/solo meetings; concrete parental controls; and support options without a second device. Homepage/program/research claims now distinguish public guides from planned work. Unsupported population, delivery, partnership, outcome and timetable implications were removed. Contact and correction pages exclude intimate-image intake and direct urgent cases to appropriate help. Footer privacy/terms mail links are labeled as inquiries.
+
+[Source verification](phase44-source-checks.md) records primary-source retrieval and limitations. CISA access failed; verified FTC guidance supports the MFA comparison. ReportFraud/IdentityTheft returned no extractable application text, so form flows remain a browser-review task. Specialist judgment remains necessary for child/teen wording, existing-device evidence handling, image-removal eligibility and financial response. Owner confirmation is still needed for governance, legal/fundraising status, actual capacity, relationships and inbox processes. Leadership and Support receive a revision recommendation pending those decisions; recommendations are not approvals.
+
+**Local validation passed:** production build, TypeScript, ESLint, content/schema, curricula, built HTML, SEO, HTTP routes, static accessibility, release isolation and 37-item review-manifest checks. Browser suite: **46 passed, two expected PDF skips, zero failures (54.7 seconds)**. Sandbox initially prevented the local server from binding; the authorized run outside that restriction completed successfully with browser sandboxing unchanged. Local HTML report: `playwright-report/index.html`; screenshots and Letter PDF: `test-results/`. These are current local results, not new GitHub CI evidence. The previous CI run 37879843490 covers the older application; fresh CI for these content edits is pending at this commit.
+
+Review hashes now include homepage component copy, the organizational footer/root layout and program pathway data. All 27 result hashes match the current manifest. Human reviewers must record new current hashes when they actually approve; historical pending decision hashes were not converted into fresh approvals.
+
+[Deployment recheck](phase44-deployment-safety.json) confirms main production branch, no deploy hooks or branch-domain overrides, no repository/team webhooks, one linked team project and unchanged production target/alias `dpl_BfVnysyySx24LGgptYcwyqUktrxq`. The sole QA workflow has no deployment/promotion steps. This supports a feature-only push; no production setting or alias mutation is authorized.
+
+**Next human decisions:** safeguarding and fraud specialists review their assigned corrected pages; the owner resolves institutional/fundraising/governance questions and records all required public approvals; authorized reviewers complete visual, assistive-technology and print acceptance for the revised content; security owner resolves the five HIGH development entries recorded in Phase 4.3. No dependency changes or risk acceptance occurred. Separate production authorization and rollback readiness remain required.
+
+---
+
+# Historical Phase 4.3 release decision — 2026-10-09
 
 **NO-GO for production; review preparation complete.** The actionable [27-item editorial workbook](editorial-review.md), [browser evidence and human acceptance worksheet](reviewer-qa.md), [security disposition form](phase41-security.md#phase-43-owner-disposition-worksheet), and [single release checklist](release-checklist.md) are ready for assigned reviewers. The existing 37-item manifest and decision registry remain authoritative; no human decision was changed or approval invented.
 

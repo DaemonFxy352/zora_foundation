@@ -51,7 +51,7 @@ export default function ResearchPage() {
       <PageHero
         path="/research"
         eyebrow="Research & Impact"
-        title="Research that leads to real-world prevention."
+        title="A research direction grounded in prevention."
         intro="Our research direction connects what communities experience with what educators can teach. The goal is practical prevention, informed by evidence and improved through feedback."
       />
       <section className="interior-section">
@@ -59,8 +59,8 @@ export default function ResearchPage() {
           <div className="section-intro">
             <h2>From a question to a safer decision.</h2>
             <p>
-              This is the model guiding our developing research and evaluation
-              work.
+              This is our intended research and evaluation model. The steps below
+              describe future work, not completed studies or measured outcomes.
             </p>
           </div>
           <EditorialRows items={model} />

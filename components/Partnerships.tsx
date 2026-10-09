@@ -16,9 +16,9 @@ export function Partnerships() {
         </div>
         <div className="prose">
           <p>
-            We work with community organizations, nonprofits, universities,
-            government, foundations, and responsible industry partners to expand
-            digital safety education, research, and access.
+            We welcome proposals from community organizations, nonprofits,
+            universities, government, foundations and responsible industry
+            partners to help develop digital safety education, research and access.
           </p>
           <Link className="button" href="/partner">
             Partner With the Foundation <Arrow />

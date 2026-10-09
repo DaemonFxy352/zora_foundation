@@ -2,7 +2,7 @@ import type { Resource } from "./resources";
 import { sources as s } from "./sources";
 export const resourceEnhancements: Record<string, Partial<Resource>> = {
   "account-safety": {
-    updatedAt: "2026-10-08",
+    updatedAt: "2026-10-09",
     sourceCheckedAt: "2026-10-08",
     sections: [
       {
@@ -10,12 +10,12 @@ export const resourceEnhancements: Record<string, Partial<Resource>> = {
         title: "Plan how you would regain access",
         paragraphs: [
           "Check which recovery email or phone number belongs to the account. If you no longer control it, update it through the genuine service. Keep recovery codes somewhere private and accessible to you, separate from a shared workshop worksheet.",
-          "If you lose access, use the provider’s official recovery process. After regaining control, review recovery settings and other signed-in sessions. Warn contacts if your account sent messages in your name. A stranger promising instant recovery is not the provider’s support team.",
+          "If you lose access, use the provider’s official recovery process. After regaining control, sign out other sessions and check recovery settings. In email settings, remove forwarding rules you did not create so new messages do not keep going to someone else. Warn contacts if your account sent messages in your name. A stranger promising instant recovery is not the provider’s support team.",
         ],
         sourceUrls: [s.accounts.url],
       },
     ],
-    sources: [s.accounts, s.phishing, s.recovery],
+    sources: [s.accounts, s.phishing, s.mfa, s.recovery],
     related: [
       "after-a-scam",
       "teen-online-safety",
@@ -23,6 +23,7 @@ export const resourceEnhancements: Record<string, Partial<Resource>> = {
     ],
   },
   "recognize-a-scam": {
+    updatedAt: "2026-10-09",
     related: [
       "verify-before-you-trust",
       "human-targeted-attacks",
@@ -31,7 +32,7 @@ export const resourceEnhancements: Record<string, Partial<Resource>> = {
     ],
   },
   "suspicious-message": {
-    updatedAt: "2026-10-08",
+    updatedAt: "2026-10-09",
     sourceCheckedAt: "2026-10-08",
     sections: [
       {
@@ -44,7 +45,8 @@ export const resourceEnhancements: Record<string, Partial<Resource>> = {
         sourceUrls: [s.phishing.url],
       },
     ],
-    sources: [s.phishing, s.recovery],
+    sources: [s.phishing, s.recovery, s.cybertip, s.takeItDown],
+    helpLinks: [s.cybertip, s.takeItDown, { label: "FTC: Report an ordinary scam or phishing attempt", url: "https://reportfraud.ftc.gov/" }],
     related: [
       "qr-link-safety",
       "account-safety",
@@ -55,9 +57,9 @@ export const resourceEnhancements: Record<string, Partial<Resource>> = {
   },
   "verify-before-you-trust": {
     summary:
-      "Verification means independently checking both who is asking and what they want before you send money, credentials or access. Use a contact route you already trust, not one supplied by the suspicious request.",
+      "Verification means independently checking both who is asking and what they want before you send money, passwords or sign-in codes, or grant account access. Use a contact route you already trust, not one supplied by the suspicious request.",
     readingMinutes: 5,
-    updatedAt: "2026-10-07",
+    updatedAt: "2026-10-09",
     editorial: { reviewedAt: "2026-10-07" },
     sections: [
       {
@@ -71,9 +73,9 @@ export const resourceEnhancements: Record<string, Partial<Resource>> = {
       },
       {
         id: "separate-channel",
-        title: "What out-of-band verification means",
+        title: "Check through a separate contact route",
         paragraphs: [
-          "Out-of-band means using a separate communication route that the unexpected sender does not control. For example, stop reading a new message and call a number already saved in your contacts. For your bank, use the number on your card or an established app.",
+          "Use contact details established before the unexpected request. This is sometimes called out-of-band verification. For example, stop reading a new message and call a number already saved in your contacts. For your bank, use the number on your card or an established app.",
           "Do not take the callback number, support link or second contact from the suspicious conversation. In a workplace, use the established directory and approval process. Check the details of the transaction, not merely whether the person exists.",
         ],
         sourceUrls: [s.nist.url],
@@ -100,8 +102,8 @@ export const resourceEnhancements: Record<string, Partial<Resource>> = {
     title: "What is AI impersonation fraud?",
     summary:
       "AI impersonation fraud uses generated or altered voices, images, video or text to pretend to be a trusted person or organization. Verify the request independently before sending money or sharing account access.",
-    readingMinutes: 5,
-    updatedAt: "2026-10-07",
+    readingMinutes: 6,
+    updatedAt: "2026-10-09",
     editorial: { reviewedAt: "2026-10-07" },
     intro:
       "A convincing representation is not the same as a verified identity. You do not need to decide whether a call is technically a deepfake before pausing it. Check who is asking and why through an established, separate channel.",
@@ -111,7 +113,7 @@ export const resourceEnhancements: Record<string, Partial<Resource>> = {
         title: "What AI can imitate",
         paragraphs: [
           "Voice cloning produces speech that resembles another person. Synthetic audio may be used in a false family crisis. Generated video can portray a supposed executive or official. Text tools can produce fluent messages and believable profiles.",
-          "The underlying fraud still depends on a request: transfer money, disclose credentials, trust a false investment, or bypass a normal check. AI is a tool in the scheme, not proof that every unfamiliar message is AI-generated.",
+          "The underlying fraud still depends on a request: transfer money, disclose passwords or sign-in codes, trust a false investment, or bypass a normal check. AI is a tool in the scheme, not proof that every unfamiliar message is AI-generated.",
         ],
         sourceUrls: [s.ai.url],
       },
@@ -125,6 +127,15 @@ export const resourceEnhancements: Record<string, Partial<Resource>> = {
         sourceUrls: [s.accounts.url, s.nist.url, s.family.url],
       },
       {
+        id: "image-threats",
+        title: "Threats can involve fabricated images",
+        paragraphs: [
+          "Someone can alter an ordinary photo into a sexual image and use it to threaten the person depicted. You do not need to prove whether an image is genuine before seeking help. The person making the threat is responsible for the harm.",
+          "Do not pay or send more images. If a child or teen is targeted, involve a trusted adult and report suspected exploitation to NCMEC’s CyberTipline. Do not download or circulate intimate images to investigate or prove the threat. Ask NCMEC about appropriate help for altered images; do not assume an image-removal tool covers every case.",
+        ],
+        sourceUrls: [s.aiExploitation.url, s.cybertip.url, s.takeItDown.url],
+      },
+      {
         id: "limits-of-detection",
         title: "What appearance cannot establish",
         paragraphs: [
@@ -136,7 +147,11 @@ export const resourceEnhancements: Record<string, Partial<Resource>> = {
         ],
       },
     ],
+    helpLinks: [s.cybertip, s.takeItDown, { label: "FBI / IC3: Report internet-enabled fraud", url: "https://www.ic3.gov/" }],
     sources: [
+      s.aiExploitation,
+      s.cybertip,
+      s.takeItDown,
       s.ai,
       s.accounts,
       s.nist,

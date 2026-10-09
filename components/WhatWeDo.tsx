@@ -9,19 +9,19 @@ const areas = [
   },
   {
     name: "Equip",
-    text: "Practical training, resources, and tools for the people and organizations that need them.",
+    text: "Printable guides now, with training approaches and facilitator materials in development.",
     link: "Programs & initiatives",
     href: "/programs",
   },
   {
     name: "Research",
-    text: "Research into how scams are changing and which prevention efforts actually work.",
+    text: "Research priorities on changing scams and how to evaluate prevention education.",
     link: "Research",
     href: "/research",
   },
   {
     name: "Collaborate",
-    text: "Partnerships that bring digital safety programs to more communities.",
+    text: "Invitations to shape future community education and research collaborations.",
     link: "Partner with us",
     href: "/partner",
   },
@@ -38,8 +38,8 @@ export function WhatWeDo() {
             </h2>
           </div>
           <p>
-            Each area supports the others. Communities tell us what they need,
-            research shows what works, and programs put it into practice.
+            Our guides draw on public sources. We are developing program and
+            research plans and welcome community input on what would be useful.
           </p>
         </div>
         <div className="work-list">

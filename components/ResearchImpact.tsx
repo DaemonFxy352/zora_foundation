@@ -26,7 +26,7 @@ export function ResearchImpact() {
         <div>
           <p className="eyebrow">Research & impact</p>
           <h2 id="research-heading">
-            Research that leads to real-world prevention.
+            A research direction grounded in prevention.
           </h2>
           <ol className="research-steps">
             {steps.map(([name, text]) => (
@@ -40,8 +40,9 @@ export function ResearchImpact() {
             ))}
           </ol>
           <p className="research-note">
-            We evaluate programs to understand whether people leave better able
-            to recognize risk and make safer decisions.
+            This is our planned approach, not a report of completed studies.
+            Future evaluation would examine what learners understand and can
+            do; no Foundation program outcomes have been published here.
           </p>
           <Link className="text-link" href="/research">
             Explore Research <Arrow />
