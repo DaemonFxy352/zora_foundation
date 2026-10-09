@@ -2,6 +2,8 @@
 
 **No Foundation approval or professional review is asserted.**
 
+Phase 4.5: use the [eight shared owner decisions](owner-decisions.md) and focused [child/teen](child-teen-review.md) and [fraud/recovery](fraud-recovery-review.md) packets to resolve repeated questions. These do not replace the item records below.
+
 `editorial-manifest.json` inventories 37 review items: 17 public educational guides, ten public organizational pages, seven private handouts and three private curricula. It records audience, source URLs, sensitive-topic flags, required expertise, priority, source location, content hash and changes relative to main commit `5ba89820ddcf57351e467223fda43b9a4d4a0c49`. That Git baseline is verified; the separately investigated production deployment is b092812 (see phase42-deployment-safety.md). “New” means new against that baseline, not newly published.
 
 `review-decisions.json` starts with every decision pending. The release gate requires approvals for the 27 public items; private drafts can remain pending because they are not served. Approval of a draft record does not create a public route or authorize deployment.

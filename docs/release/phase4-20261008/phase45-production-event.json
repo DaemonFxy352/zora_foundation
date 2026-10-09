@@ -1,0 +1,42 @@
+{
+  "id": "dpl_GTQR1z5gXKugwJLAFfX5pKiDFzSq",
+  "url": "zora-foundation-bxumnupgu-zora-safe.vercel.app",
+  "target": "production",
+  "source": "redeploy",
+  "createdAt": 1791525119043,
+  "ready": 1791525133195,
+  "readyState": "READY",
+  "meta": {
+    "githubCommitRef": "seo/foundation-phase2-authority-20261007",
+    "githubCommitSha": "bf0d45aea4aced34fa6037697051f58b537076a7",
+    "githubOrg": "DaemonFxy352",
+    "githubRepo": "zora_foundation",
+    "action": "promote",
+    "originalDeploymentId": "dpl_BnztKg1VmJjTTsMUkYr39Ss9oCGX"
+  },
+  "createdAtUTC": "2026-10-09T05:51:59.043000+00:00",
+  "activity": [
+    {
+      "id": "uev_DrNitpQsYop0rb7dU4wqwD94",
+      "type": "deployment",
+      "target": "production",
+      "account": "zorasafe",
+      "createdAt": 1791525119125
+    },
+    {
+      "id": "uev_jnvOmulB0jRafOIOS69cnWgA",
+      "type": "aliases-assigned",
+      "deploymentId": "dpl_GTQR1z5gXKugwJLAFfX5pKiDFzSq",
+      "createdAt": 1791525133507
+    },
+    {
+      "id": "uev_XEYZQOY0lqSwQcbpocfOhLtS",
+      "type": "deployment",
+      "target": null,
+      "commit": "32d3d6e3f0c85c71c179df5bcc63aa4247de9c3a",
+      "deploymentId": "dpl_24tTyA2yMHxX1ryLdfDMFF1JzDPD",
+      "createdAt": 1791525147644
+    }
+  ],
+  "attributionLimit": "Account observed; initiating human/session/automation not established in this phase. No production mutation issued by this task."
+}

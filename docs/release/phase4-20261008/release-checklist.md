@@ -14,10 +14,12 @@
 | Accessibility acceptance | PENDING, release blocker | Accessibility reviewer / AT user | Keyboard, screen reader, real mobile, native 200% zoom, contrast and focus tested; issues resolved and worksheet signed. |
 | Print acceptance | PENDING, release blocker | Editorial/print reviewer | Every page of supplied Letter PDF plus representative guide prints accepted, including required A4 checks; no clipped/missing text. Internal draft acceptance does not publish drafts. |
 | Security disposition | PENDING, release blocker | Authorized security owner | [Five HIGH development entries](phase41-security.md#phase-43-owner-disposition-worksheet): approved compatible remediation or explicit time-bounded disposition; fresh audit before release. |
-| Deployment isolation | Verified in Phase 4.2; recheck for each push/release | Engineering/owner | [Investigation](phase42-deployment-safety.md): main production branch plus hooks/workflows/aliases/project evidence. Separate website-session promotion is not attributed to feature Git automation. Recheck settings/aliases; no production mutations in this task. |
+| Deployment isolation | Phase 4.5 push hold: separate recurring promotion needs attribution | Engineering/owner | [Investigation](phase42-deployment-safety.md): main production branch plus hooks/workflows/aliases/project evidence. Separate website-session promotion is not attributed to feature Git automation. Recheck settings/aliases; no production mutations in this task. |
 | Final candidate / authorization | NOT AUTHORIZED | Foundation release owner | Record final SHA, completed approvals, security decision, deployment target and explicit production authorization. A green workflow alone is insufficient. |
 | Rollback readiness | PENDING before authorization | Deployment owner | Record current production deployment/aliases, identify an owner-approved known-good target, verify access and rollback procedure. Previous target `dpl_HSToV8c9QBfocbwKWMZjugGE1juc` is historical evidence, not an approved rollback choice. Do not execute now. |
 | Post-deployment smoke test | NOT RUN; contingent on later authorization | Release engineer + owner | After authorized deployment, verify intended SHA/domains, homepage/hub/guides/navigation/filter/search/contact, sitemap/robots/canonical, draft 404s, print and error monitoring. Define rollback trigger and decision maker beforehand. |
+
+Use the [Phase 4.5 consolidated decisions](owner-decisions.md) for owner answers and focused specialist packets; existing approval gates below remain mandatory. See [current readiness](readiness.md) for the new promotion evidence.
 
 ## Owner handoff and sequence
 

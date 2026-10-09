@@ -1,4 +1,26 @@
-# Phase 4.4 current status — substantive corrections
+# Phase 4.5 current decision handoff
+
+**Production NO-GO. No approvals granted.** This documentation-only phase consolidates the remaining questions into **eight organizational owner decisions**, **eleven specialist issues (six child/teen, five fraud/recovery)**, **one security disposition covering five HIGH entries**, and **one manual acceptance decision with nine focused checks**. These grouped decisions inform, but do not replace, the 27 current-hash public approvals. All 27 remain pending; the three approval recommendations and 22 conditional recommendations are not final approval. Ten internal drafts remain unpublished.
+
+- [Owner decisions O1–O8](owner-decisions.md): exact current wording, shared-page scope, alternatives, recommendations and consequences.
+- [Child/teen C1–C6](child-teen-review.md): only unresolved sensitive guidance, with exact excerpts and primary references.
+- [Fraud/recovery F1–F5](fraud-recovery-review.md): payment, verification, reporting, account and recovery limitations.
+- [Security S1](security-decision.md): fresh audits still report five HIGH development entries and zero production findings; no compatible automatic remediation is reported. No dependency change or risk acceptance.
+- [Manual acceptance M1](manual-qa-decision.md): existing preview/artifact links and concise actual-testing decisions.
+
+**Implementation pending decisions:** no website wording changed in this phase. Proposed changes include ownership-dependent leadership/support/status/relationship disclosures, image captions or removal if needed, and specialist consideration of the “Report, then remove” heading. Only selected, authorized replacements should be implemented, validated and re-reviewed. No new public page, program or resource was created.
+
+**Validation:** all quoted owner text matches current source after whitespace normalization; specialist excerpts match the composed resource records. Document links/counts, current 37-item manifest and Git whitespace checks pass. `review-decisions.json` is byte-for-byte unchanged. Browser evidence remains the successful Phase 4.4 run at `bf0d45a` (46 passed, two expected skips); no new browser run is needed or claimed for this documentation-only change.
+
+**New deployment finding / push hold:** read-only checks found production and its www alias now target `dpl_GTQR1z5gXKugwJLAFfX5pKiDFzSq`, a separate `source: redeploy`, `action: promote` of `bf0d45a` from preview `dpl_BnztKg1VmJjTTsMUkYr39Ss9oCGX` at **2026-10-09 05:51:59 UTC**. Activity associates the promotion with `zorasafe`; it does not establish the initiating human/session/automation. The following `32d3d6e` push created a target-null preview. Main production-branch configuration, hooks, domains and the QA workflow remain as previously inspected, but the newly recurring promotion is not attributed sufficiently to resume this turn’s push. See [configuration](phase45-deployment-safety.json) and [sanitized event evidence](phase45-production-event.json). No deployment, promotion, alias change or rollback was issued here. Changes will be committed locally; do not infer production approval from the externally promoted candidate.
+
+**Additional release-control action:** the owner must identify the initiating session/automation and authorization for event `uev_DrNitpQsYop0rb7dU4wqwD94` and alias event `uev_jnvOmulB0jRafOIOS69cnWgA` in Vercel Activity/audit records. The question is who can promote previews and whether that path is deliberately controlled; a configured main branch alone is insufficient. This is separate from the eight organizational-copy decisions. No settings change or rollback is authorized by this document.
+
+**Owner response needed now:** return O1–O8 choices with the requested facts; assign real qualified reviewers for C/F and S1; provide M1 tester decisions. Record genuine page approvals only after any selected corrections and re-review. Keep production release authorization withheld while any of these gates or the promotion attribution remains unresolved.
+
+---
+
+# Historical Phase 4.4 status — substantive corrections
 
 **27 complete public items reviewed and improved. Production remains NO-GO.** Actual content changes are in the guides and organizational pages, not only release documents. The [updated workbook](editorial-review.md) and [per-item results](phase44-editorial-results.json) record findings, implemented corrections, primary references, remaining questions and recommendations. All 27 human approvals remain pending; the decision registry is unchanged.
 
