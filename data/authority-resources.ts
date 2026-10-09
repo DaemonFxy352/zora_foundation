@@ -11,7 +11,6 @@ const common = {
   ] as Resource["audience"],
   format: "quick-guide" as const,
   updatedAt: "2026-10-09",
-  editorial: { reviewedAt: "2026-10-07" },
   printView: true,
 };
 // No original publication date is assigned to an unreleased page. Set it on first release.

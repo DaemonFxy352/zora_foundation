@@ -3,68 +3,10 @@ import { programPathways } from "@/data/program-pathways";
 import { InteriorPage, PageHero, CTASection } from "@/components/interior/Page";
 import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata(
-  "Programs",
-  "Four Foundation program areas connecting digital safety education, practical skills, family learning, and technology access with communities.",
+  "Digital safety education programs",
+  "Explore planned digital safety workshops for schools, families, libraries, and older adults. Read public guides now or inquire about future pilot development.",
   "/programs",
 );
-const programs = [
-  {
-    name: "Community Digital Safety Education",
-    intro:
-      "Plain-language learning about scams, fraud, privacy, and everyday digital decisions, planned for places people already know and trust.",
-    audience:
-      "Older adults, families, caregivers, and communities with fewer digital safety resources.",
-    activities: [
-      "Guided conversations about suspicious calls and messages",
-      "Practice using a separate channel to verify a request",
-      "Printed take-home guidance and small-group discussion",
-    ],
-    partner:
-      "A library, senior center, school, or nonprofit can help identify local questions, plan an accessible setting, and shape examples that feel relevant.",
-  },
-  {
-    name: "Digital Confidence & Skills Training",
-    intro:
-      "Patient instruction that connects practical technology skills with safer habits. People need room to ask questions and repeat steps without being rushed.",
-    audience:
-      "People learning to use new devices or online services, and anyone who wants more confidence with everyday technology.",
-    activities: [
-      "Practice finding account settings and recognizing sign-in prompts",
-      "Understand password managers and recovery options",
-      "Learn how to find an organization’s genuine contact information",
-    ],
-    partner:
-      "Partners can share common learning barriers, device-access needs, and preferred session formats. We can explore a pace and approach that work for participants.",
-  },
-  {
-    name: "Youth & Family Digital Safety",
-    intro:
-      "Age-appropriate learning that helps young people and adults talk about scams, privacy, online manipulation, and AI-generated content.",
-    audience:
-      "Young people, parents, caregivers, educators, and organizations working with families.",
-    activities: [
-      "Family conversations about unexpected requests and online trust",
-      "Practice asking a trusted adult for help",
-      "Discuss what a photo, video, or familiar voice can and cannot prove",
-    ],
-    partner:
-      "Schools and family-serving groups can help shape age-appropriate examples, accessible materials, and ways to involve caregivers without blame or fear.",
-  },
-  {
-    name: "Pilots & Technology Access",
-    intro:
-      "Small, carefully scoped pilots can explore whether tools, devices, and training materials help people put safer habits into practice.",
-    audience:
-      "Communities facing barriers to devices, practical safety tools, or training opportunities.",
-    activities: [
-      "Identify an access barrier with a local partner",
-      "Test an approach with clear goals and participant feedback",
-      "Evaluate what people can use independently after a pilot",
-    ],
-    partner:
-      "Partners can identify needs, discuss available resources, and help define what a useful pilot would measure. No device-distribution or grant application is currently open.",
-  },
-];
 export default function ProgramsPage() {
   return (
     <InteriorPage>
@@ -74,33 +16,24 @@ export default function ProgramsPage() {
         title="Bringing digital safety into communities."
         intro="We are developing practical digital safety education for families, schools, older adults, and community organizations. We welcome inquiries about pilot workshops, curriculum development, and future hosting opportunities. Workshops are not currently scheduled or bookable."
       />
-      <section className="interior-section">
-        <div className="container program-details">
-          {programs.map((p, i) => (
-            <section
-              className="program-detail"
-              key={p.name}
-              aria-labelledby={`program-${i}`}
-            >
-              <div>
-                <p className="eyebrow">Program area 0{i + 1}</p>
-                <h2 id={`program-${i}`}>{p.name}</h2>
-                <p>{p.intro}</p>
-              </div>
-              <div>
-                <h3>Who it can serve</h3>
-                <p>{p.audience}</p>
-                <h3>Activities we can explore</h3>
-                <ul>
-                  {p.activities.map((a) => (
-                    <li key={a}>{a}</li>
-                  ))}
-                </ul>
-                <h3>How a partner can participate</h3>
-                <p>{p.partner}</p>
-              </div>
-            </section>
-          ))}
+      <section className="interior-section" aria-labelledby="program-status">
+        <div className="container section-intro">
+          <h2 id="program-status">Read a guide now; help shape a future workshop.</h2>
+          <p>
+            The Foundation’s <Link href="/education#resources">free digital safety guides</Link>{" "}
+            are available to read and print. They cover scam recognition,
+            checking unexpected requests, safer accounts, and family conversations.
+            Instructor-led workshops, facilitator curricula, and technology-access
+            pilots are in development. There is no registration, certification,
+            device-distribution scheme, or public workshop schedule.
+          </p>
+          <nav aria-label="Program development pathways">
+            <ul>
+              {programPathways.map((pathway) => (
+                <li key={pathway.id}><a href={`#${pathway.id}`}>{pathway.title}</a></li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </section>
       <section
@@ -137,15 +70,11 @@ export default function ProgramsPage() {
                   </p>
                 </div>
                 <div>
-                  <p>
-                    <strong>Learning objective:</strong> {pathway.objective}
-                  </p>
-                  <p>
-                    <strong>Possible format:</strong> {pathway.format}
-                  </p>
-                  <p>
-                    <strong>Accessibility:</strong> {pathway.access}
-                  </p>
+                  <dl className="program-facts">
+                    <dt>Learning objective</dt><dd>{pathway.objective}</dd>
+                    <dt>Possible format</dt><dd>{pathway.format}</dd>
+                    <dt>Accessibility planning</dt><dd>{pathway.access}</dd>
+                  </dl>
                   <Link className="text-link" href="/contact#training">
                     Discuss {pathway.title.toLowerCase()}
                   </Link>
@@ -153,11 +82,25 @@ export default function ProgramsPage() {
               </section>
             ))}
           </div>
-          <p>
-            In your inquiry, describe the audience, learning goals, preferred
-            language, accessibility needs, and possible host setting. Please do
-            not include participants’ private account or incident information.
-          </p>
+          <section aria-labelledby="pilot-inquiry">
+            <h2 id="pilot-inquiry">How to inquire about a future pilot</h2>
+            <ol>
+              <li>Choose a learning need and try a relevant public guide first.
+                A school might start with teen privacy; a senior center might
+                start with checking an unexpected phone call.</li>
+              <li>Describe the audience, age range, learning goals, language,
+                accessibility needs, and proposed host setting. Use fictional
+                examples instead of participants’ private experiences.</li>
+              <li>Use the <Link href="/contact#training">community training inquiry instructions</Link>{" "}
+                or <Link href="/contact#schools-families">school and family education contact</Link>.
+                An inquiry does not reserve a session or confirm that the
+                Foundation can deliver it. The contact page explains the
+                current limits of email delivery.</li>
+            </ol>
+            <p>Any future pilot would need agreement on scope, qualified
+              facilitation, safeguarding, accessibility, and participant feedback.
+              No fees, dates, or delivery commitments are announced here.</p>
+          </section>
         </div>
       </section>
       <section className="topic-surface">

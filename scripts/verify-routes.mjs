@@ -61,6 +61,7 @@ try {
   for (const route of [
     "/sitemap.xml",
     "/robots.txt",
+    "/llms.txt",
     "/brand/zorasafe-foundation-social1.png",
   ])
     await request(route, 200);

@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/metadata";
+import Link from "next/link";
 export const metadata = pageMetadata(
   "Accessibility statement",
   "How ZoraSafe Foundation supports accessible digital safety education, and how to request help or report a website accessibility issue.",
@@ -16,12 +17,27 @@ export default function Accessibility() {
           zoom, and to follow the Web Content Accessibility Guidelines (WCAG)
           2.2 at Level AA.
         </p>
+        <p>
+          This is an accessibility goal, not a claim of certified conformance.
+          Manual testing with assistive technologies and feedback from visitors
+          are still needed to identify barriers.
+        </p>
         <h2>Using this website</h2>
         <p>
           You can skip directly to the main content, navigate menus using a
           keyboard, and use your browser’s text size and zoom controls. Images
           include text descriptions, and the website respects reduced-motion
           preferences.
+        </p>
+        <h2>Reading and printing guides</h2>
+        <p>
+          The <Link href="/education#resources">digital safety resource library</Link>{" "}
+          links to HTML guides you can read without downloading a document.
+          Each guide has links to its warning signs, protective steps, recovery
+          help, and sources. Use “Print or save as PDF” to open your browser’s
+          print dialog; printer settings and PDF accessibility depend on your
+          browser and device. The HTML guide remains available if a printed
+          copy does not meet your needs.
         </p>
         <h2>Help us improve</h2>
         <p>

@@ -1,0 +1,134 @@
+{
+  "checkedAt": "2026-10-09T22:03:35.552774+00:00",
+  "branch": "seo/foundation-phase2-authority-20261007",
+  "baseline": "d5d9704c19e9108eb62e118d4f0b0b3efc77bb",
+  "runtime": "Node 24.21.0 / Next.js 16.4.0; unchanged lockfile",
+  "checks": [
+    {
+      "command": "npm run build",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:content",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:materials",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:build",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:seo",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:routes",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:accessibility",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:release",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run verify:review",
+      "exitCode": 0
+    }
+  ],
+  "browser": {
+    "initialSandboxAttempt": "Failed before tests: local server listen EPERM; rerun with authorized escalation",
+    "fullRun": {
+      "command": "npm run verify:browser -- --output=test-results/phase5",
+      "passed": 58,
+      "failed": 0,
+      "expectedSkipped": 2,
+      "duration": "1.1 minutes"
+    },
+    "finalFocusedRun": {
+      "command": "npm run verify:browser -- tests/browser/seo-discovery.spec.ts --output=test-results/phase5-final",
+      "passed": 9,
+      "failed": 0,
+      "durationSeconds": 15.9,
+      "reason": "Final sticky-header anchor spacing and screenshot position adjustment; no second full-suite claim"
+    },
+    "coverage": [
+      "Chromium desktop",
+      "Chromium mobile",
+      "Firefox",
+      "programs at 1440/390/320 CSS pixels",
+      "JavaScript-disabled library and guide navigation",
+      "exact public llms.txt text and robots policy",
+      "existing search, keyboard, draft, image, print and no-tracking checks"
+    ],
+    "visualReview": "Final Chromium 1440px and 390px Programs screenshots inspected; readable responsive columns, clear development status, intact navigation/CTA. Screenshot evidence is local only; formal manual acceptance remains pending.",
+    "artifacts": [
+      {
+        "path": "test-results/phase5-final/seo-discovery-program-path-ab540-sable-on-desktop-and-mobile-desktop/programs-1440.png",
+        "sha256": "d53c6b908ddfece5f2962c547b8e8cf6dc42881e9a241e6fdbac20e2d547d562"
+      },
+      {
+        "path": "test-results/phase5-final/seo-discovery-program-path-ab540-sable-on-desktop-and-mobile-desktop/programs-320.png",
+        "sha256": "76ecf718adb5c033142b8e175d94e8ff1ab7a313f259b828dcc82d2afd90c6ce"
+      },
+      {
+        "path": "test-results/phase5-final/seo-discovery-program-path-ab540-sable-on-desktop-and-mobile-desktop/programs-390.png",
+        "sha256": "9f1129879cce78cdc10dec0f3a0b60e7d96c6e6d08a239f7fba7075f6e9c7070"
+      },
+      {
+        "path": "test-results/phase5-final/seo-discovery-program-path-ab540-sable-on-desktop-and-mobile-firefox/programs-1440.png",
+        "sha256": "eaab1c0ca8cef8700ca523304b6da8eba0b204d123b75cf9dfb1c8843541a9a7"
+      },
+      {
+        "path": "test-results/phase5-final/seo-discovery-program-path-ab540-sable-on-desktop-and-mobile-firefox/programs-320.png",
+        "sha256": "be5c0d0a969cbc514255108733e2e1b10117355dd6de495d2e6ba9798b138423"
+      },
+      {
+        "path": "test-results/phase5-final/seo-discovery-program-path-ab540-sable-on-desktop-and-mobile-firefox/programs-390.png",
+        "sha256": "71f43c277165a07343b454b62ed19f6e503e2bb5f02db2126acd569f2cc14cac"
+      },
+      {
+        "path": "test-results/phase5-final/seo-discovery-program-path-ab540-sable-on-desktop-and-mobile-mobile/programs-1440.png",
+        "sha256": "85ef9449f41cbb7b8035b6dfa5551fee9add4f42a6dad6732e4e1d462e7b0fc1"
+      },
+      {
+        "path": "test-results/phase5-final/seo-discovery-program-path-ab540-sable-on-desktop-and-mobile-mobile/programs-320.png",
+        "sha256": "1b95ae82a43e4409d951b8e658496ab4cd7386de1e206650c75c7d0f3c6962d5"
+      },
+      {
+        "path": "test-results/phase5-final/seo-discovery-program-path-ab540-sable-on-desktop-and-mobile-mobile/programs-390.png",
+        "sha256": "29274e4fdb16010c70f554f7dd4531f2a68044600c5b85077edc0ab73522eda6"
+      }
+    ]
+  },
+  "editorialGate": {
+    "command": "npm run release:editorial",
+    "exitCode": 1,
+    "expected": "NO-GO: 27 public entries lack current documented approvals",
+    "reviewDecisionsUnchanged": true,
+    "reviewRecords": 37
+  },
+  "releaseIsolation": "Seven handouts, three workshop drafts, unpublished research, both policy drafts and five held images remain inaccessible; original isolation checks passed.",
+  "productionChanges": [],
+  "phase5Push": false,
+  "measurementLimits": [
+    "No Semrush recrawl",
+    "No Search Console performance/index data",
+    "No independent AI-answer citation measurement",
+    "No new Core Web Vitals claim",
+    "No new dependency audit or human acceptance"
+  ]
+}

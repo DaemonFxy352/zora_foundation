@@ -1,0 +1,825 @@
+{
+  "method": "Local prerendered HTML. Text removes scripts/styles/tags and normalizes whitespace; includes CSS-hidden text. Ratio is UTF-8 text bytes / HTML bytes, not Semrush's proprietary calculation. No network/Core Web Vitals score inferred.",
+  "publicPages": 28,
+  "pages": [
+    {
+      "path": "/",
+      "title": "ZoraSafe Foundation",
+      "titleCharacters": 19,
+      "description": "Practical scam-prevention and digital safety guides for families and communities. Training and research pathways in development.",
+      "descriptionCharacters": 128,
+      "htmlBytes": 50586,
+      "scriptBytes": 32074,
+      "mainWords": 563,
+      "textToHtmlPercent": 9.44,
+      "mainInternalLinks": [
+        "/programs",
+        "/partner",
+        "/education",
+        "/research",
+        "/contact#training",
+        "/support"
+      ],
+      "incomingMainPages": [
+        "/about",
+        "/contact",
+        "/editorial-standards",
+        "/education",
+        "/education/account-safety",
+        "/education/after-a-scam",
+        "/education/ai-impersonation",
+        "/education/family-emergency-scams",
+        "/education/gaming-scams",
+        "/education/government-impersonation",
+        "/education/human-targeted-attacks",
+        "/education/internet-safety-parents",
+        "/education/online-safety-kids",
+        "/education/online-safety-older-adults",
+        "/education/payment-redirection",
+        "/education/phone-impersonation",
+        "/education/qr-link-safety",
+        "/education/recognize-a-scam",
+        "/education/suspicious-message",
+        "/education/teen-online-safety",
+        "/education/verify-before-you-trust",
+        "/leadership",
+        "/partner",
+        "/programs",
+        "/research",
+        "/support"
+      ]
+    },
+    {
+      "path": "/about",
+      "title": "About | ZoraSafe Foundation",
+      "titleCharacters": 27,
+      "description": "The ZoraSafe Foundation’s mission is closing the digital safety knowledge gap through public-interest education, research, prevention, and access.",
+      "descriptionCharacters": 146,
+      "htmlBytes": 31425,
+      "scriptBytes": 20598,
+      "mainWords": 263,
+      "textToHtmlPercent": 8.6,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/research",
+        "/programs",
+        "/partner",
+        "/leadership"
+      ],
+      "incomingMainPages": [
+        "/education/account-safety",
+        "/education/after-a-scam",
+        "/education/ai-impersonation",
+        "/education/family-emergency-scams",
+        "/education/gaming-scams",
+        "/education/government-impersonation",
+        "/education/human-targeted-attacks",
+        "/education/internet-safety-parents",
+        "/education/online-safety-kids",
+        "/education/online-safety-older-adults",
+        "/education/payment-redirection",
+        "/education/phone-impersonation",
+        "/education/qr-link-safety",
+        "/education/recognize-a-scam",
+        "/education/suspicious-message",
+        "/education/teen-online-safety",
+        "/education/verify-before-you-trust",
+        "/leadership"
+      ]
+    },
+    {
+      "path": "/accessibility",
+      "title": "Accessibility statement | ZoraSafe Foundation",
+      "titleCharacters": 45,
+      "description": "How ZoraSafe Foundation supports accessible digital safety education, and how to request help or report a website accessibility issue.",
+      "descriptionCharacters": 134,
+      "htmlBytes": 24476,
+      "scriptBytes": 15893,
+      "mainWords": 123,
+      "textToHtmlPercent": 6.96,
+      "mainInternalLinks": [],
+      "incomingMainPages": []
+    },
+    {
+      "path": "/contact",
+      "title": "Contact | ZoraSafe Foundation",
+      "titleCharacters": 29,
+      "description": "Contact the ZoraSafe Foundation about educational resources, developing workshops, partnerships, research, support, or editorial corrections.",
+      "descriptionCharacters": 141,
+      "htmlBytes": 34524,
+      "scriptBytes": 22153,
+      "mainWords": 378,
+      "textToHtmlPercent": 10.17,
+      "mainInternalLinks": [
+        "/",
+        "/education/after-a-scam"
+      ],
+      "incomingMainPages": [
+        "/",
+        "/education",
+        "/leadership",
+        "/partner",
+        "/programs",
+        "/research"
+      ]
+    },
+    {
+      "path": "/editorial-standards",
+      "title": "Editorial standards and corrections | ZoraSafe Foundation",
+      "titleCharacters": 57,
+      "description": "How Foundation educational guidance uses sources, dates and contributor attribution, and how to request a correction.",
+      "descriptionCharacters": 117,
+      "htmlBytes": 28630,
+      "scriptBytes": 18666,
+      "mainWords": 267,
+      "textToHtmlPercent": 9.55,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/research"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/account-safety",
+        "/education/after-a-scam",
+        "/education/ai-impersonation",
+        "/education/family-emergency-scams",
+        "/education/gaming-scams",
+        "/education/government-impersonation",
+        "/education/human-targeted-attacks",
+        "/education/internet-safety-parents",
+        "/education/online-safety-kids",
+        "/education/online-safety-older-adults",
+        "/education/payment-redirection",
+        "/education/phone-impersonation",
+        "/education/qr-link-safety",
+        "/education/recognize-a-scam",
+        "/education/suspicious-message",
+        "/education/teen-online-safety",
+        "/education/verify-before-you-trust"
+      ]
+    },
+    {
+      "path": "/education",
+      "title": "Education & Resources | ZoraSafe Foundation",
+      "titleCharacters": 43,
+      "description": "Practical digital safety guides, checklists, and training pathways for individuals, families, caregivers, and community organizations.",
+      "descriptionCharacters": 134,
+      "htmlBytes": 70612,
+      "scriptBytes": 33448,
+      "mainWords": 1451,
+      "textToHtmlPercent": 15.06,
+      "mainInternalLinks": [
+        "/",
+        "/contact#training",
+        "/education/internet-safety-parents",
+        "/education/online-safety-kids",
+        "/education/teen-online-safety",
+        "/education/online-safety-older-adults",
+        "/programs#community-pathways",
+        "/research",
+        "/education/recognize-a-scam",
+        "/education/verify-before-you-trust",
+        "/education/ai-impersonation",
+        "/education/suspicious-message",
+        "/education/account-safety",
+        "/education/human-targeted-attacks",
+        "/education/after-a-scam",
+        "/education/qr-link-safety",
+        "/education/phone-impersonation",
+        "/education/family-emergency-scams",
+        "/education/gaming-scams",
+        "/education/government-impersonation",
+        "/education/payment-redirection",
+        "/editorial-standards"
+      ],
+      "incomingMainPages": [
+        "/",
+        "/about",
+        "/editorial-standards",
+        "/education/account-safety",
+        "/education/after-a-scam",
+        "/education/ai-impersonation",
+        "/education/family-emergency-scams",
+        "/education/gaming-scams",
+        "/education/government-impersonation",
+        "/education/human-targeted-attacks",
+        "/education/internet-safety-parents",
+        "/education/online-safety-kids",
+        "/education/online-safety-older-adults",
+        "/education/payment-redirection",
+        "/education/phone-impersonation",
+        "/education/qr-link-safety",
+        "/education/recognize-a-scam",
+        "/education/suspicious-message",
+        "/education/teen-online-safety",
+        "/education/verify-before-you-trust",
+        "/programs"
+      ]
+    },
+    {
+      "path": "/education/account-safety",
+      "title": "Make your accounts safer | ZoraSafe Foundation",
+      "titleCharacters": 46,
+      "description": "Build a manageable routine for passwords, extra sign-in protection, and account recovery.",
+      "descriptionCharacters": 89,
+      "htmlBytes": 55645,
+      "scriptBytes": 37834,
+      "mainWords": 926,
+      "textToHtmlPercent": 12.01,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/after-a-scam",
+        "/education/teen-online-safety",
+        "/education/online-safety-older-adults",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/after-a-scam",
+        "/education/gaming-scams",
+        "/education/online-safety-older-adults",
+        "/education/payment-redirection",
+        "/education/qr-link-safety",
+        "/education/suspicious-message",
+        "/education/teen-online-safety"
+      ]
+    },
+    {
+      "path": "/education/after-a-scam",
+      "title": "What to do after a scam | ZoraSafe Foundation",
+      "titleCharacters": 45,
+      "description": "Stop the interaction, contact the payment provider, and secure affected accounts. Preserve evidence and report what happened. Acting promptly matters, but getting money back is not guaranteed.",
+      "descriptionCharacters": 192,
+      "htmlBytes": 64273,
+      "scriptBytes": 43549,
+      "mainWords": 1221,
+      "textToHtmlPercent": 13.55,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/account-safety",
+        "/education/verify-before-you-trust",
+        "/education/phone-impersonation",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/contact",
+        "/education",
+        "/education/account-safety",
+        "/education/ai-impersonation",
+        "/education/family-emergency-scams",
+        "/education/government-impersonation",
+        "/education/human-targeted-attacks",
+        "/education/online-safety-older-adults",
+        "/education/payment-redirection",
+        "/education/phone-impersonation",
+        "/education/qr-link-safety",
+        "/education/recognize-a-scam",
+        "/education/suspicious-message",
+        "/education/verify-before-you-trust"
+      ]
+    },
+    {
+      "path": "/education/ai-impersonation",
+      "title": "What is AI impersonation fraud? | ZoraSafe Foundation",
+      "titleCharacters": 53,
+      "description": "AI impersonation fraud uses generated or altered voices, images, video or text to pretend to be a trusted person or organization. Verify the request independently before sending money or sharing account access.",
+      "descriptionCharacters": 210,
+      "htmlBytes": 71926,
+      "scriptBytes": 48930,
+      "mainWords": 1343,
+      "textToHtmlPercent": 12.9,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/verify-before-you-trust",
+        "/education/phone-impersonation",
+        "/education/family-emergency-scams",
+        "/education/human-targeted-attacks",
+        "/education/after-a-scam",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/family-emergency-scams",
+        "/education/human-targeted-attacks",
+        "/education/phone-impersonation",
+        "/education/teen-online-safety",
+        "/education/verify-before-you-trust",
+        "/research"
+      ]
+    },
+    {
+      "path": "/education/family-emergency-scams",
+      "title": "Family emergency scams: pause and check | ZoraSafe Foundation",
+      "titleCharacters": 61,
+      "description": "A family emergency scam uses a false crisis involving a relative to pressure you into paying. Contact your loved one or another trusted person independently before sending money, even if the voice sounds familiar.",
+      "descriptionCharacters": 213,
+      "htmlBytes": 58706,
+      "scriptBytes": 39714,
+      "mainWords": 978,
+      "textToHtmlPercent": 11.9,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/verify-before-you-trust",
+        "/education/phone-impersonation",
+        "/education/ai-impersonation",
+        "/education/after-a-scam",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/ai-impersonation",
+        "/education/online-safety-older-adults",
+        "/education/phone-impersonation",
+        "/education/verify-before-you-trust",
+        "/programs"
+      ]
+    },
+    {
+      "path": "/education/gaming-scams",
+      "title": "Gaming scams: a guide for players and parents | ZoraSafe Foundation",
+      "titleCharacters": 67,
+      "description": "Treat offers of free currency, account upgrades, or trades as requests to check—not reasons to share a password. Practice safer purchases and know how to report unwanted contact.",
+      "descriptionCharacters": 178,
+      "htmlBytes": 57819,
+      "scriptBytes": 39345,
+      "mainWords": 882,
+      "textToHtmlPercent": 11.09,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/account-safety",
+        "/education/suspicious-message",
+        "/education/teen-online-safety",
+        "/education/internet-safety-parents",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/internet-safety-parents",
+        "/education/online-safety-kids",
+        "/education/suspicious-message",
+        "/education/teen-online-safety"
+      ]
+    },
+    {
+      "path": "/education/government-impersonation",
+      "title": "Government impersonation scams: check before you respond | ZoraSafe Foundation",
+      "titleCharacters": 78,
+      "description": "Do not let a claimed badge, agency name, or threat rush a payment. End the exchange and check the specific request through the agency’s genuine contact route.",
+      "descriptionCharacters": 158,
+      "htmlBytes": 55961,
+      "scriptBytes": 37916,
+      "mainWords": 909,
+      "textToHtmlPercent": 11.95,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/phone-impersonation",
+        "/education/verify-before-you-trust",
+        "/education/after-a-scam",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/recognize-a-scam"
+      ]
+    },
+    {
+      "path": "/education/human-targeted-attacks",
+      "title": "What is a human-targeted attack? | ZoraSafe Foundation",
+      "titleCharacters": 54,
+      "description": "A human-targeted attack uses deception to influence a person into giving money, information, or access. The immediate target is a decision, not necessarily a software weakness.",
+      "descriptionCharacters": 176,
+      "htmlBytes": 57275,
+      "scriptBytes": 38836,
+      "mainWords": 870,
+      "textToHtmlPercent": 11.52,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/verify-before-you-trust",
+        "/education/ai-impersonation",
+        "/education/recognize-a-scam",
+        "/education/after-a-scam",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/ai-impersonation",
+        "/education/recognize-a-scam",
+        "/research"
+      ]
+    },
+    {
+      "path": "/education/internet-safety-parents",
+      "title": "Internet safety for parents: a practical family guide | ZoraSafe Foundation",
+      "titleCharacters": 75,
+      "description": "Build a family routine for privacy, online contact, purchases, and asking for help. Start with one device and one conversation, then revisit the plan as children grow.",
+      "descriptionCharacters": 167,
+      "htmlBytes": 58919,
+      "scriptBytes": 39825,
+      "mainWords": 986,
+      "textToHtmlPercent": 12.11,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/online-safety-kids",
+        "/education/teen-online-safety",
+        "/education/gaming-scams",
+        "/education/verify-before-you-trust",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/gaming-scams",
+        "/education/online-safety-kids",
+        "/education/teen-online-safety",
+        "/programs"
+      ]
+    },
+    {
+      "path": "/education/online-safety-kids",
+      "title": "Online safety for kids: practice with a trusted adult | ZoraSafe Foundation",
+      "titleCharacters": 75,
+      "description": "Pause, ask, and get help when a game or message asks for something unexpected. These short activities are for children and a trusted adult to read together.",
+      "descriptionCharacters": 156,
+      "htmlBytes": 51253,
+      "scriptBytes": 34862,
+      "mainWords": 812,
+      "textToHtmlPercent": 11.08,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/internet-safety-parents",
+        "/education/gaming-scams",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/internet-safety-parents"
+      ]
+    },
+    {
+      "path": "/education/online-safety-older-adults",
+      "title": "Online safety for older adults: a practical guide | ZoraSafe Foundation",
+      "titleCharacters": 71,
+      "description": "Build a comfortable routine for banking, messages, device help, and family requests. Choose a pace that works for you and keep control of your private information.",
+      "descriptionCharacters": 163,
+      "htmlBytes": 57566,
+      "scriptBytes": 38947,
+      "mainWords": 954,
+      "textToHtmlPercent": 11.73,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/phone-impersonation",
+        "/education/family-emergency-scams",
+        "/education/after-a-scam",
+        "/education/account-safety",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/account-safety",
+        "/programs"
+      ]
+    },
+    {
+      "path": "/education/payment-redirection",
+      "title": "Payment redirection scams: verify changed payment details | ZoraSafe Foundation",
+      "titleCharacters": 79,
+      "description": "Treat an unexpected change of bank details or payment instructions as a reason to pause. Verify the exact change through an established contact before sending money.",
+      "descriptionCharacters": 165,
+      "htmlBytes": 58501,
+      "scriptBytes": 39540,
+      "mainWords": 929,
+      "textToHtmlPercent": 11.98,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/verify-before-you-trust",
+        "/education/suspicious-message",
+        "/education/account-safety",
+        "/education/after-a-scam",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/suspicious-message"
+      ]
+    },
+    {
+      "path": "/education/phone-impersonation",
+      "title": "How to handle a phone impersonation scam | ZoraSafe Foundation",
+      "titleCharacters": 62,
+      "description": "Caller ID is not proof of identity. If a caller pressures you for money, codes or access, hang up and contact the person or organization through a number you already trust.",
+      "descriptionCharacters": 172,
+      "htmlBytes": 57606,
+      "scriptBytes": 39095,
+      "mainWords": 935,
+      "textToHtmlPercent": 11.52,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/verify-before-you-trust",
+        "/education/family-emergency-scams",
+        "/education/ai-impersonation",
+        "/education/after-a-scam",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/after-a-scam",
+        "/education/ai-impersonation",
+        "/education/family-emergency-scams",
+        "/education/government-impersonation",
+        "/education/online-safety-older-adults",
+        "/education/verify-before-you-trust",
+        "/programs"
+      ]
+    },
+    {
+      "path": "/education/qr-link-safety",
+      "title": "QR code and suspicious link safety | ZoraSafe Foundation",
+      "titleCharacters": 56,
+      "description": "Treat a QR code as a link you have not yet checked. Preview the destination, and use a known app or website for unexpected payments or sign-ins instead of trusting the code or message.",
+      "descriptionCharacters": 184,
+      "htmlBytes": 57734,
+      "scriptBytes": 39390,
+      "mainWords": 913,
+      "textToHtmlPercent": 11.3,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/suspicious-message",
+        "/education/account-safety",
+        "/education/after-a-scam",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/suspicious-message"
+      ]
+    },
+    {
+      "path": "/education/recognize-a-scam",
+      "title": "Recognize a scam | ZoraSafe Foundation",
+      "titleCharacters": 38,
+      "description": "Notice pressure, unusual payment requests, and stories that need an independent check.",
+      "descriptionCharacters": 86,
+      "htmlBytes": 51023,
+      "scriptBytes": 34639,
+      "mainWords": 746,
+      "textToHtmlPercent": 10.59,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/verify-before-you-trust",
+        "/education/human-targeted-attacks",
+        "/education/after-a-scam",
+        "/education/government-impersonation",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/human-targeted-attacks"
+      ]
+    },
+    {
+      "path": "/education/suspicious-message",
+      "title": "What to do with a suspicious message | ZoraSafe Foundation",
+      "titleCharacters": 58,
+      "description": "A simple checklist for unexpected texts, emails, and direct messages.",
+      "descriptionCharacters": 69,
+      "htmlBytes": 57841,
+      "scriptBytes": 39318,
+      "mainWords": 949,
+      "textToHtmlPercent": 11.48,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/qr-link-safety",
+        "/education/account-safety",
+        "/education/after-a-scam",
+        "/education/gaming-scams",
+        "/education/payment-redirection",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/gaming-scams",
+        "/education/payment-redirection",
+        "/education/qr-link-safety",
+        "/programs"
+      ]
+    },
+    {
+      "path": "/education/teen-online-safety",
+      "title": "Teen online safety: privacy, scams, and getting help | ZoraSafe Foundation",
+      "titleCharacters": 74,
+      "description": "Protect your accounts and personal boundaries without handling threats alone. Check unexpected requests, choose what you share, and know where to get support.",
+      "descriptionCharacters": 158,
+      "htmlBytes": 62388,
+      "scriptBytes": 42487,
+      "mainWords": 1078,
+      "textToHtmlPercent": 12.08,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/account-safety",
+        "/education/ai-impersonation",
+        "/education/gaming-scams",
+        "/education/internet-safety-parents",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/account-safety",
+        "/education/gaming-scams",
+        "/education/internet-safety-parents",
+        "/programs"
+      ]
+    },
+    {
+      "path": "/education/verify-before-you-trust",
+      "title": "Verify before you trust | ZoraSafe Foundation",
+      "titleCharacters": 45,
+      "description": "Verification means independently checking both who is asking and what they want before you send money, passwords or sign-in codes, or grant account access. Use a contact route you already trust, not one supplied by the suspicious request.",
+      "descriptionCharacters": 238,
+      "htmlBytes": 64298,
+      "scriptBytes": 43617,
+      "mainWords": 1159,
+      "textToHtmlPercent": 12.5,
+      "mainInternalLinks": [
+        "/",
+        "/education",
+        "/about",
+        "/editorial-standards",
+        "/education/ai-impersonation",
+        "/education/phone-impersonation",
+        "/education/family-emergency-scams",
+        "/education/after-a-scam",
+        "/education#resources"
+      ],
+      "incomingMainPages": [
+        "/education",
+        "/education/after-a-scam",
+        "/education/ai-impersonation",
+        "/education/family-emergency-scams",
+        "/education/government-impersonation",
+        "/education/human-targeted-attacks",
+        "/education/internet-safety-parents",
+        "/education/payment-redirection",
+        "/education/phone-impersonation",
+        "/education/recognize-a-scam",
+        "/programs",
+        "/research"
+      ]
+    },
+    {
+      "path": "/leadership",
+      "title": "Leadership | ZoraSafe Foundation",
+      "titleCharacters": 32,
+      "description": "Leadership information for the ZoraSafe Foundation, with a contact pathway for organizational and governance inquiries.",
+      "descriptionCharacters": 119,
+      "htmlBytes": 27005,
+      "scriptBytes": 17926,
+      "mainWords": 104,
+      "textToHtmlPercent": 5.89,
+      "mainInternalLinks": [
+        "/",
+        "/about",
+        "/contact"
+      ],
+      "incomingMainPages": [
+        "/about"
+      ]
+    },
+    {
+      "path": "/partner",
+      "title": "Partner With Us | ZoraSafe Foundation",
+      "titleCharacters": 37,
+      "description": "Explore community education, training, research, and access partnerships with the ZoraSafe Foundation.",
+      "descriptionCharacters": 102,
+      "htmlBytes": 31236,
+      "scriptBytes": 20463,
+      "mainWords": 286,
+      "textToHtmlPercent": 9.24,
+      "mainInternalLinks": [
+        "/",
+        "/contact#partnerships"
+      ],
+      "incomingMainPages": [
+        "/",
+        "/about"
+      ]
+    },
+    {
+      "path": "/programs",
+      "title": "Programs | ZoraSafe Foundation",
+      "titleCharacters": 30,
+      "description": "Four Foundation program areas connecting digital safety education, practical skills, family learning, and technology access with communities.",
+      "descriptionCharacters": 141,
+      "htmlBytes": 53220,
+      "scriptBytes": 33873,
+      "mainWords": 1077,
+      "textToHtmlPercent": 16.38,
+      "mainInternalLinks": [
+        "/",
+        "/education/online-safety-older-adults",
+        "/contact#training",
+        "/education/internet-safety-parents",
+        "/education/teen-online-safety",
+        "/education/suspicious-message",
+        "/education/verify-before-you-trust",
+        "/education#resources",
+        "/education/family-emergency-scams",
+        "/education/phone-impersonation"
+      ],
+      "incomingMainPages": [
+        "/",
+        "/about",
+        "/education"
+      ]
+    },
+    {
+      "path": "/research",
+      "title": "Research | ZoraSafe Foundation",
+      "titleCharacters": 30,
+      "description": "Explore the Foundation’s Study, Translate, Prevent model and research priorities for practical digital safety education and prevention.",
+      "descriptionCharacters": 135,
+      "htmlBytes": 34060,
+      "scriptBytes": 22200,
+      "mainWords": 365,
+      "textToHtmlPercent": 10.13,
+      "mainInternalLinks": [
+        "/",
+        "/education/human-targeted-attacks",
+        "/education/ai-impersonation",
+        "/education/verify-before-you-trust",
+        "/contact#research"
+      ],
+      "incomingMainPages": [
+        "/",
+        "/about",
+        "/editorial-standards",
+        "/education"
+      ]
+    },
+    {
+      "path": "/support",
+      "title": "Support Our Work | ZoraSafe Foundation",
+      "titleCharacters": 38,
+      "description": "Learn how support can help develop community workshops, education, research, training materials, and technology access.",
+      "descriptionCharacters": 119,
+      "htmlBytes": 28769,
+      "scriptBytes": 18971,
+      "mainWords": 196,
+      "textToHtmlPercent": 7.86,
+      "mainInternalLinks": [
+        "/"
+      ],
+      "incomingMainPages": [
+        "/"
+      ]
+    }
+  ]
+}

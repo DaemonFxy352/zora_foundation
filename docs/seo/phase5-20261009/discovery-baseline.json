@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-09",
+  "surface": "Available web-search tool; queries submitted in two batches, not authenticated AI-product answer sessions",
+  "observation": "No Foundation URL appeared in the returned result samples. A site-restricted query also returned no Foundation result in this tool. This is not a count of Google/Bing indexed pages, a rank, or proof of non-indexing. Search responses are selected samples, not an exhaustive SERP.",
+  "queries": [
+    {
+      "question": "How can I tell whether an AI voice call is a scam?",
+      "intendedPage": "/education/ai-impersonation",
+      "foundationURLObservedInSample": false,
+      "AIAnswerCitationObserved": null,
+      "AIAnswerMentionObserved": null
+    },
+    {
+      "question": "How can older adults avoid phone scams?",
+      "intendedPage": "/education/online-safety-older-adults",
+      "foundationURLObservedInSample": false,
+      "AIAnswerCitationObserved": null,
+      "AIAnswerMentionObserved": null
+    },
+    {
+      "question": "What should parents teach children about online scams?",
+      "intendedPage": "/education/internet-safety-parents",
+      "foundationURLObservedInSample": false,
+      "AIAnswerCitationObserved": null,
+      "AIAnswerMentionObserved": null
+    },
+    {
+      "question": "How do I verify a bank impersonation call?",
+      "intendedPage": "/education/phone-impersonation",
+      "foundationURLObservedInSample": false,
+      "AIAnswerCitationObserved": null,
+      "AIAnswerMentionObserved": null
+    },
+    {
+      "question": "What should I do after sending money to a scammer?",
+      "intendedPage": "/education/after-a-scam",
+      "foundationURLObservedInSample": false,
+      "AIAnswerCitationObserved": null,
+      "AIAnswerMentionObserved": null
+    },
+    {
+      "question": "Where can schools find digital safety education resources?",
+      "intendedPage": "/programs#school-education",
+      "foundationURLObservedInSample": false,
+      "AIAnswerCitationObserved": null,
+      "AIAnswerMentionObserved": null
+    }
+  ],
+  "AIProductBaseline": "Not measured: no authenticated independent ChatGPT, Gemini, Copilot, Claude or Perplexity evaluation session/report is available. Do not convert missing measurements into zero citations.",
+  "searchConsole": "No Search Console connector or authorized performance export is available. Verification file delivery is established separately; Google ownership confirmation, indexing, impressions and queries are unknown.",
+  "repeatProtocol": [
+    "Keep these exact six questions. Use fresh sessions and record provider/product/model, date, locale, login/personalization, search mode and full answer evidence.",
+    "Record explicit linked Foundation citations separately from unlinked mentions and from ordinary search listings. Save target URLs, exact excerpts and screenshots in approved storage.",
+    "Repeat across the same surfaces after an authorized release and sufficient crawl time; compare like-for-like observations without claiming ranking causality.",
+    "Use verified-property Search Console indexing/performance and Bing AI Performance exports when access is supplied. Keep prompt observations separate from platform-reported totals."
+  ]
+}

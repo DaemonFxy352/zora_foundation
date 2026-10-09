@@ -97,7 +97,14 @@ const entries = resources.map((r) => {
     "data/resources.ts (composed catalog)",
     r.audience.map((id) => audiences.find((a) => a.id === id).label),
     "educational resource",
-    r,
+    {
+      resource: r,
+      presentationSources: [
+        "app/education/[slug]/page.tsx",
+        "components/content/EditorialResponsibility.tsx",
+        "lib/structured-data.ts",
+      ].map((source) => ({ source, text: readFileSync(source, "utf8") })),
+    },
     [...r.sources, ...(r.helpLinks ?? [])],
     old
       ? { kind: "modified", fields, baselineContentSha256: hash(old) }

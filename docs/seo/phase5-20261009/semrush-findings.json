@@ -1,0 +1,33 @@
+{
+  "sourceFile": "zorasafefoundation.org_mega_export_20261009.csv",
+  "sha256": "1121e6e3daf2774fc5aaa87b580f04d1c909bb478b632fe06814c613af205159",
+  "rows": 34,
+  "columns": 102,
+  "findings": {
+    "Title element is too long": [
+      "https://www.zorasafefoundation.org/education/government-impersonation",
+      "https://www.zorasafefoundation.org/education/payment-redirection"
+    ],
+    "Low text to HTML ratio": [
+      "https://www.zorasafefoundation.org/",
+      "https://www.zorasafefoundation.org/about",
+      "https://www.zorasafefoundation.org/accessibility",
+      "https://www.zorasafefoundation.org/contact",
+      "https://www.zorasafefoundation.org/editorial-standards",
+      "https://www.zorasafefoundation.org/leadership",
+      "https://www.zorasafefoundation.org/partner",
+      "https://www.zorasafefoundation.org/research",
+      "https://www.zorasafefoundation.org/support"
+    ],
+    "Low word count": [
+      "https://www.zorasafefoundation.org/accessibility",
+      "https://www.zorasafefoundation.org/leadership"
+    ],
+    "Llms.txt not found": [
+      "https://www.zorasafefoundation.org/llms.txt"
+    ],
+    "Content not optimized": [
+      "https://www.zorasafefoundation.org/programs"
+    ]
+  }
+}

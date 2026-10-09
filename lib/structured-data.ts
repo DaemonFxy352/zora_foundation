@@ -61,7 +61,7 @@ export function resourceSchema(resource: Resource) {
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": url,
-      ...(resource.editorial?.reviewedAt
+      ...(resource.editorial?.reviewedAt && resource.editorial.reviewers?.length
         ? { lastReviewed: resource.editorial.reviewedAt }
         : {}),
       ...(resource.editorial?.reviewers?.length

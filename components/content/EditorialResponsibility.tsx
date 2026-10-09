@@ -57,12 +57,12 @@ export function EditorialResponsibility({ value }: { value?: Responsibility }) {
           )}
         </div>
       ))}
-      {value?.reviewedAt && (
+      {value?.reviewedAt && value.reviewers?.length ? (
         <p>
-          Content reviewed <DateLabel date={value.reviewedAt} />. This date
-          records a content and source check, not formal peer review.
+          Content reviewed <DateLabel date={value.reviewedAt} /> by the named
+          reviewer above. This does not imply formal peer review.
         </p>
-      )}
+      ) : null}
       <p>
         <Link href="/editorial-standards">
           Editorial standards and corrections

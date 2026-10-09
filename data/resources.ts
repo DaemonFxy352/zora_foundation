@@ -5,6 +5,7 @@ import { fraudResources } from "./fraud-resources";
 import { familyResources } from "./family-resources";
 import { authorityResources } from "./authority-resources";
 import { resourceEnhancements } from "./resource-enhancements";
+import { resourceSearchMetadata } from "./resource-search-metadata";
 import {
   audiences,
   type AudienceId,
@@ -17,6 +18,8 @@ export type Resource = {
   slug: string;
   title: string;
   summary: string;
+  searchTitle?: string;
+  searchDescription?: string;
   audience: AudienceId[];
   topics: TopicId[];
   format: FormatId;
@@ -353,7 +356,7 @@ export const resources: Resource[] = [
   ...authorityResources,
   ...familyResources,
   ...fraudResources,
-];
+].map((resource) => ({ ...resource, ...resourceSearchMetadata[resource.slug] }));
 
 export function getResource(slug: string) {
   return resources.find((resource) => resource.slug === slug);

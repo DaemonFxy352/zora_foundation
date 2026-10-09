@@ -52,6 +52,22 @@ for (const page of pages) {
   );
   titles.add(title);
   descriptions.add(description);
+  // Editorial budgets, not promises about search-engine truncation/ranking.
+  assert.ok(decode(title).length <= 65, `${path}: title exceeds 65 characters including branding`);
+  assert.ok(decode(description).length <= 165, `${path}: description exceeds 165 characters`);
+  for (const [attribute, name, expected] of [
+    ["property", "og:title", title],
+    ["name", "twitter:title", title],
+    ["property", "og:description", description],
+    ["name", "twitter:description", description],
+  ]) {
+    const value = html.match(new RegExp(`<meta ${attribute}="${name}" content="([^"]+)"`))?.[1];
+    assert.equal(value && decode(value), decode(expected), `${path}: inconsistent ${name}`);
+  }
+  const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1] ?? "";
+  assert.ok(main.includes("<h1"), `${path}: main heading must be in initial HTML`);
+  assert.ok(main.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, "").replace(/<[^>]*>/g, "").trim().length > 150,
+    `${path}: meaningful server-rendered main content missing`);
   const visible = decode(
     html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, ""),
   );
@@ -129,6 +145,11 @@ for (const page of pages) {
     assert.equal(guide.url, `${origin}${path}`);
     assert.equal(guide.publisher["@id"], orgs[0]["@id"]);
     assert.equal(guide.author, undefined, "Do not invent author attribution");
+    if (!guide.mainEntityOfPage.reviewedBy?.length) {
+      assert.equal(guide.mainEntityOfPage.lastReviewed, undefined,
+        "A source check is not a documented human review");
+      assert.ok(!visible.includes("Content reviewed"));
+    }
     assert.ok(html.includes("Published by"));
     if (guide.datePublished)
       assert.ok(html.includes(`dateTime="${guide.datePublished}"`));
@@ -167,6 +188,26 @@ assert.ok(robots.includes("User-Agent: *\nAllow: /"));
 assert.equal(robots.includes(`Sitemap: ${origin}/sitemap.xml`), !preview);
 const missing = read("_not-found.html");
 assert.ok(missing.includes('name="robots" content="noindex"'));
+// A short, optional navigation aid; not an indexing/training permission file.
+const llms = readFileSync("public/llms.txt", "utf8");
+assert.ok(llms.startsWith("# ZoraSafe Foundation\n"));
+assert.ok(Buffer.byteLength(llms) < 4000, "Keep llms.txt a concise directory");
+const llmsLinks = [...llms.matchAll(/\]\((https:[^)]+)\)/g)].map((m) => m[1]);
+assert.ok(llmsLinks.length >= 5 && llmsLinks.length <= 15);
+assert.equal(new Set(llmsLinks).size, llmsLinks.length);
+for (const link of llmsLinks) {
+  const url = new URL(link);
+  assert.equal(url.origin, origin);
+  const route = url.pathname === "/" ? "index" : url.pathname.slice(1);
+  assert.ok(pages.includes(route), `llms.txt links only built public pages: ${link}`);
+  assert.ok(!/handouts|internal|workshops|privacy|terms/.test(route), `Draft link in llms.txt: ${link}`);
+  assert.ok(!url.search && !url.hash, "Use canonical URLs in llms.txt");
+}
+// Check in-content discoverability, excluding shared header/footer navigation.
+const mains = pages.map((page) => read(`${page}.html`).match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1] ?? "");
+for (const page of pages.filter((p) => p.startsWith("education/"))) {
+  assert.ok(mains.some((main, i) => pages[i] !== page && main.includes(`href="/${page}"`)), `Orphaned resource: ${page}`);
+}
 console.log(
   `PASS SEO: ${pages.length} pages; canonical uniqueness; Organization, breadcrumbs and LearningResource validation; visible publisher, audience, dates and citations; ${locations.length} sitemap entries; truthful lastmod; ${preview ? "preview noindex" : "production indexing"}; 404 noindex.`,
 );

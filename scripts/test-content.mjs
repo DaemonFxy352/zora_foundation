@@ -116,11 +116,12 @@ for (const r of resources) {
       "Do not backdate an unreleased page",
     );
     assert.equal(schema.datePublished, undefined);
-    assert.ok(r.editorial.reviewedAt);
+    assert.equal(r.editorial?.reviewedAt, undefined, "No review date without recorded human review");
     assert.ok(r.sections.length);
   }
-  if (r.editorial)
-    assert.equal(schema.mainEntityOfPage.lastReviewed, r.editorial.reviewedAt);
+  if (r.editorial?.reviewedAt) assert.ok(r.editorial.reviewers?.length, "A review needs a named, approved reviewer");
+  assert.equal(schema.mainEntityOfPage.lastReviewed,
+    r.editorial?.reviewers?.length ? r.editorial.reviewedAt : undefined);
 }
 // Exercise the exact search helper used by the client, with real summary data.
 const { resourceSummaries } = load("data/resources.ts");

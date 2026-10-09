@@ -1,0 +1,26 @@
+# ZoraSafe Foundation
+
+> Practical digital safety education for families and communities, focused on recognizing scams, checking unexpected requests, and finding appropriate help.
+
+This is a concise navigation aid to canonical public pages, not a research corpus or a grant of training/reuse rights. Educational guidance is not individual legal, financial, or emergency advice. Workshops and research programs are in development; no original research reports are currently published. Publisher identification does not imply independent expert review. Consult each guide's sources and revision information.
+
+## Public hubs
+
+- [About the Foundation](https://www.zorasafefoundation.org/about): Mission and organizational information.
+- [Digital safety resource library](https://www.zorasafefoundation.org/education): Public HTML guides with browser print support.
+- [Program development](https://www.zorasafefoundation.org/programs): Intended audiences, possible workshop formats, and future pilot inquiries; not a booking service.
+- [Research direction](https://www.zorasafefoundation.org/research): Priorities and publication status, not completed studies or measured outcomes.
+- [Editorial standards](https://www.zorasafefoundation.org/editorial-standards): Source use, review limitations, and corrections.
+
+## Practical starting points
+
+- [Recognize a scam](https://www.zorasafefoundation.org/education/recognize-a-scam): Pressure, unusual payments, and independent checks.
+- [AI impersonation](https://www.zorasafefoundation.org/education/ai-impersonation): Check the request without needing to identify a deepfake.
+- [Phone impersonation](https://www.zorasafefoundation.org/education/phone-impersonation): Verify a caller through a separate contact route.
+- [Online safety for older adults](https://www.zorasafefoundation.org/education/online-safety-older-adults): Practical habits and support that respects independence.
+- [Internet safety for parents](https://www.zorasafefoundation.org/education/internet-safety-parents): Family conversations, settings, and help plans.
+- [After a scam](https://www.zorasafefoundation.org/education/after-a-scam): Payment-provider contact, account security, official reporting, and recovery-scam warnings.
+
+## Contact
+
+- [Contact instructions](https://www.zorasafefoundation.org/contact): Educational and organizational inquiries and current email-delivery limitations; not emergency response or an incident-reporting service.

@@ -1,0 +1,102 @@
+{
+  "checkedAt": "2026-10-09T21:57:34.411027+00:00",
+  "method": "Ordinary unauthenticated requests, no crawler impersonation; not evidence of real bot IP/WAF access",
+  "responses": [
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "xRobotsTag": null,
+      "server": "Vercel",
+      "body": "User-Agent: *\nAllow: /\n\nSitemap: https://www.zorasafefoundation.org/sitemap.xml\n"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "contentType": "application/xml",
+      "xRobotsTag": null,
+      "server": "Vercel",
+      "locations": [
+        "https://www.zorasafefoundation.org/",
+        "https://www.zorasafefoundation.org/education",
+        "https://www.zorasafefoundation.org/programs",
+        "https://www.zorasafefoundation.org/research",
+        "https://www.zorasafefoundation.org/about",
+        "https://www.zorasafefoundation.org/leadership",
+        "https://www.zorasafefoundation.org/partner",
+        "https://www.zorasafefoundation.org/contact",
+        "https://www.zorasafefoundation.org/support",
+        "https://www.zorasafefoundation.org/education/recognize-a-scam",
+        "https://www.zorasafefoundation.org/education/verify-before-you-trust",
+        "https://www.zorasafefoundation.org/education/ai-impersonation",
+        "https://www.zorasafefoundation.org/education/suspicious-message",
+        "https://www.zorasafefoundation.org/education/account-safety",
+        "https://www.zorasafefoundation.org/education/human-targeted-attacks",
+        "https://www.zorasafefoundation.org/education/after-a-scam",
+        "https://www.zorasafefoundation.org/education/qr-link-safety",
+        "https://www.zorasafefoundation.org/education/phone-impersonation",
+        "https://www.zorasafefoundation.org/education/family-emergency-scams",
+        "https://www.zorasafefoundation.org/education/internet-safety-parents",
+        "https://www.zorasafefoundation.org/education/online-safety-kids",
+        "https://www.zorasafefoundation.org/education/teen-online-safety",
+        "https://www.zorasafefoundation.org/education/gaming-scams",
+        "https://www.zorasafefoundation.org/education/online-safety-older-adults",
+        "https://www.zorasafefoundation.org/education/government-impersonation",
+        "https://www.zorasafefoundation.org/education/payment-redirection"
+      ]
+    },
+    {
+      "path": "/llms.txt",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "server": "Vercel",
+      "metaRobots": [
+        "noindex",
+        "index, follow"
+      ],
+      "canonical": [
+        "https://www.zorasafefoundation.org"
+      ]
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "server": "Vercel",
+      "metaRobots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://www.zorasafefoundation.org"
+      ]
+    },
+    {
+      "path": "/education/ai-impersonation",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "server": "Vercel",
+      "metaRobots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://www.zorasafefoundation.org/education/ai-impersonation"
+      ]
+    },
+    {
+      "path": "/programs",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "server": "Vercel",
+      "metaRobots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://www.zorasafefoundation.org/programs"
+      ]
+    }
+  ]
+}

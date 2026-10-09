@@ -30,8 +30,8 @@ export async function generateMetadata({
   const resource = getResource(slug);
   if (!resource) notFound();
   return pageMetadata(
-    resource.title,
-    resource.summary,
+    resource.searchTitle ?? resource.title,
+    resource.searchDescription ?? resource.summary,
     `/education/${resource.slug}`,
   );
 }
@@ -111,12 +111,21 @@ export default async function ResourcePage({
               )}
             </div>
           </header>
+          <nav className="guide-contents no-print" aria-label="On this guide">
+            <h2>On this guide</h2>
+            <ul>
+              <li><a href="#warning-signs">Recognize the warning signs</a></li>
+              <li><a href="#protective-actions">Steps to protect yourself</a></li>
+              <li><a href="#recovery-help">If it already happened</a></li>
+              <li><a href="#sources">Sources and further reading</a></li>
+            </ul>
+          </nav>
           <section className="guide-section">
             <h2>Why this matters</h2>
             <p>{r.intro}</p>
           </section>
           <ContentSections sections={r.sections ?? []} sources={r.sources} />
-          <section className="guide-section">
+          <section className="guide-section" id="warning-signs">
             <h2>Key warning signs</h2>
             <ul>
               {r.warningSigns.map((text) => (
@@ -124,7 +133,7 @@ export default async function ResourcePage({
               ))}
             </ul>
           </section>
-          <section className="guide-section">
+          <section className="guide-section" id="protective-actions">
             <h2>What to do</h2>
             <ol className="action-steps">
               {r.actions.map((action) => (
@@ -143,7 +152,7 @@ export default async function ResourcePage({
               ))}
             </ul>
           </section>
-          <section className="guide-section help-note">
+          <section className="guide-section help-note" id="recovery-help">
             <h2>What to do if it already happened</h2>
             <p>{r.help}</p>
             {r.helpLinks ? (
@@ -182,7 +191,7 @@ export default async function ResourcePage({
             <h3>A safer next step</h3>
             <p>{r.practice.response}</p>
           </section>
-          <section className="guide-section resource-sources">
+          <section className="guide-section resource-sources" id="sources">
             <h2>Sources & further reading</h2>
             <p>
               These public guidance sources informed this resource. Their

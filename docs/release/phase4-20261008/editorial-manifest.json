@@ -19,7 +19,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "ef6c8d229c8ea80f00e96132e1a1d10986da9fd133c58e6199d0ff6b5a6e0e5b",
+      "contentSha256": "d4a7d08ad07b49ce60078911ef3c9dc0db607dc95ca9649fad6f6ccff114ef05",
       "sources": [
         {
           "label": "FTC: How to avoid a scam",
@@ -69,7 +69,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "645591dc25cb68545894fae6fff86c34c3e70636a4b8d1d2e30af29cce030556",
+      "contentSha256": "05ac6e9382720f5816cb03aa48e3ffcb5458b1536ed7e29990ca6c32f8a5ac62",
       "sources": [
         {
           "label": "NIST: Phishing guidance",
@@ -117,8 +117,8 @@
           "related",
           "actions",
           "sources",
-          "editorial",
-          "sections"
+          "sections",
+          "searchDescription"
         ],
         "baselineContentSha256": "75b5423c95e1e4ecead600618949bad443b937640275c963500192ae4e91c409"
       },
@@ -139,7 +139,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "2817825b96861af596f8b425f54aeeed1d8ecd9f7cd1496d0508429ab02502cf",
+      "contentSha256": "78cc6545ccc95b8a2fcce3c14320172ee3ea905ed2f9e9d3118440b3c39884a4",
       "sources": [
         {
           "label": "FBI / IC3: Manipulated images and sextortion",
@@ -215,9 +215,9 @@
           "related",
           "intro",
           "sources",
-          "editorial",
           "sections",
-          "helpLinks"
+          "helpLinks",
+          "searchDescription"
         ],
         "baselineContentSha256": "d2fb02ada49e6167194d27557288411205b0d9c052f9706273faf95fde14080c"
       },
@@ -240,7 +240,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "9f382c048ceb78fee248afb9b8fefe92e4b096061babd986a1e94d123f97be3c",
+      "contentSha256": "45e2d4d58dfe0d5475ea80089f3f3a4f30961ca9e98d29eab9634d722eaa8454",
       "sources": [
         {
           "label": "FTC: Recognize and avoid phishing scams",
@@ -320,7 +320,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "011cb83a925ced8be04a4fdb363f43e104ff21ca5c2c1128d6a709e985a82083",
+      "contentSha256": "a0fa67e53f26b13a9a94e5ec9f3ecbc1fa87652fd3bfc45f85daefed68b3b7b7",
       "sources": [
         {
           "label": "FTC: Recover a hacked email or social media account",
@@ -384,7 +384,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "3b024ad039902c2ada76969ef432dcf70782678ba0712e2d85dcffe097805967",
+      "contentSha256": "e4ac9ccc34796a1e07899ff65e14f50bbff894015ec79241a3f02a943c22f18a",
       "sources": [
         {
           "label": "NIST: Phishing guidance",
@@ -433,7 +433,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "4ad53cf4f24ffce0a262f7c5e087a54771259b6b81e12374ced44a93688d6974",
+      "contentSha256": "3d31c510cad2c5ebf94e4fc815c735f503d293390a5f158a00dbe87836d36e36",
       "sources": [
         {
           "label": "FTC: What to do if you were scammed",
@@ -502,7 +502,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "f229312d5b039e0433019aa298a6f5907afdd355c23147db8ca1f18dd424c02d",
+      "contentSha256": "a015665c0bdab77ec4b5028e8ba1237317d43337d91c7c31a07670f6c5a1a6aa",
       "sources": [
         {
           "label": "FTC: Harmful links hidden in QR codes",
@@ -556,7 +556,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "2c7d7401b017f99706f465cf804d204904ac3dbfd5268def65d6caf457b0f403",
+      "contentSha256": "2a6585327347c1061bdc4ec55ea1b3de732996e00b5080f182ad2c304b89b209",
       "sources": [
         {
           "label": "FTC: Phone scams",
@@ -610,7 +610,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "0492882d4821d1c75fb60da0d1cc0e89f429f6fdf00fd44492104b93024726b2",
+      "contentSha256": "926e0a76b452566db907ca6f602d4866dc63511946aa67cf5b15b0569da2ebe6",
       "sources": [
         {
           "label": "FTC: Scammers use fake emergencies to steal your money",
@@ -656,7 +656,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "2d8e793b1d781d856015efc5b5f1c7e1b32321ea75eeaf7f802b403ab96bcc92",
+      "contentSha256": "10cbdd2051a4e0cccd96939de5eb1d5fb2ac8df42299b5da45950cccdad5ab72",
       "sources": [
         {
           "label": "FTC: Kids and video games",
@@ -718,7 +718,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "c9f2b9aff01b3774ad71a924d36f119af6b75cd109b7c21a3a62efebc4273d74",
+      "contentSha256": "6ba5e6b92f7ff4b81632ad311704ff05040251c8b67d6e0a611dfe06912126d0",
       "sources": [
         {
           "label": "NCMEC: Tips for tweens",
@@ -745,6 +745,7 @@
       "sensitiveTopicFlags": [
         "child-safety",
         "exploitation-and-safe-reporting",
+        "financial-fraud",
         "recovery-and-reporting"
       ],
       "requiredReviewerExpertise": [
@@ -770,7 +771,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "9754054865abe71787e08afeaec9936133a87ec84dc138ac2ebaac283be81411",
+      "contentSha256": "443772d09813734837aa930094795b72402d52381404e34f0a07f056ea5ef894",
       "sources": [
         {
           "label": "NCMEC CyberTipline: report suspected child sexual exploitation",
@@ -820,6 +821,7 @@
       "sensitiveTopicFlags": [
         "child-safety",
         "exploitation-and-safe-reporting",
+        "financial-fraud",
         "recovery-and-reporting"
       ],
       "requiredReviewerExpertise": [
@@ -845,7 +847,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "b8fb8641c8083b3f4a698645cdac02c8802ffe585c539711fa0664a29ab1306e",
+      "contentSha256": "82d954eb5a2f599ed66d6355de6c2063f0227bd95b819195fd50d6b1b75e6b68",
       "sources": [
         {
           "label": "FTC: Kids and video games",
@@ -911,7 +913,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "5efd0a45f6e1408baeeda80072233407294f286b81c1ce6f62ef76c11c63e8d2",
+      "contentSha256": "10c51ad18bc6fd77c3bc5e5d7bbb29a18e3bf51526b66a47b9df0296a6e91c21",
       "sources": [
         {
           "label": "FTC: Recognize and avoid phishing scams",
@@ -953,7 +955,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "d0227618dd06ec349f34b202f092fc41bd5e9d3b3b9477e9799bdbac9b31a356",
+      "contentSha256": "a308a054d69cd0ca99ae6b4e291acb8ca080d72f568cc0cef5e63e6e564673b4",
       "sources": [
         {
           "label": "FTC: Avoid government impersonation scams",
@@ -996,7 +998,7 @@
       ],
       "contentType": "educational resource",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "ceb85a4d7568828460b21ee9ca2e10fa332cbd281e22d5ff974c04f779db7465",
+      "contentSha256": "4b423e857d357186a7eb503a23c1940b4f731ea7d340784e65605b01119dd964",
       "sources": [
         {
           "label": "FBI: Business email compromise and payment verification",
@@ -1916,7 +1918,7 @@
       ],
       "contentType": "organizational page",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "e1baa8912a8e6704b907b204ddf247a0a0f78912cfb868f2fe119cae0bf29d73",
+      "contentSha256": "974d3c3e6f55076a926caa9d3197733b14da0af745c31c87feb176d7b4bd7fcb",
       "sources": [],
       "sensitiveTopicFlags": [
         "child-safety",
@@ -1943,13 +1945,12 @@
       ],
       "contentType": "organizational page",
       "reviewStatus": "REQUIRES HUMAN REVIEW",
-      "contentSha256": "4330f2472ebdd5a834c2b6c1329ed71e9b756dbdcc0fb11e4a6bacc647da3826",
+      "contentSha256": "91b9d56607d12b32e7cfca0aa365431e92cfe19ad01b83d39cd77b5b9b5490a2",
       "sources": [],
       "sensitiveTopicFlags": [
         "child-safety",
         "exploitation-and-safe-reporting",
-        "financial-fraud",
-        "recovery-and-reporting"
+        "financial-fraud"
       ],
       "requiredReviewerExpertise": [
         "Foundation editorial/organizational authority",

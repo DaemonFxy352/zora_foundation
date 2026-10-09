@@ -60,7 +60,6 @@ export const resourceEnhancements: Record<string, Partial<Resource>> = {
       "Verification means independently checking both who is asking and what they want before you send money, passwords or sign-in codes, or grant account access. Use a contact route you already trust, not one supplied by the suspicious request.",
     readingMinutes: 5,
     updatedAt: "2026-10-09",
-    editorial: { reviewedAt: "2026-10-07" },
     sections: [
       {
         id: "why-verify",
@@ -104,7 +103,6 @@ export const resourceEnhancements: Record<string, Partial<Resource>> = {
       "AI impersonation fraud uses generated or altered voices, images, video or text to pretend to be a trusted person or organization. Verify the request independently before sending money or sharing account access.",
     readingMinutes: 6,
     updatedAt: "2026-10-09",
-    editorial: { reviewedAt: "2026-10-07" },
     intro:
       "A convincing representation is not the same as a verified identity. You do not need to decide whether a call is technically a deepfake before pausing it. Check who is asking and why through an established, separate channel.",
     sections: [

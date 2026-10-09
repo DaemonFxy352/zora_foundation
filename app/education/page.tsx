@@ -87,6 +87,12 @@ export default function Education() {
             . Use the library below to narrow resources by audience, topic, and
             available format.
           </p>
+          <h3>Start with the situation you are facing.</h3>
+          <ul>
+            <li><Link href="/education/ai-impersonation">Check an urgent call that sounds like someone you know</Link>.</li>
+            <li><Link href="/education/phone-impersonation">Verify a caller claiming to be your bank or another organization</Link>.</li>
+            <li><Link href="/education/after-a-scam">Find next steps after sending money or sharing account access</Link>.</li>
+          </ul>
         </div>
       </section>
       <ResourceBrowser items={resourceSummaries()} />
