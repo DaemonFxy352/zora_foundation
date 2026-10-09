@@ -4,7 +4,13 @@
 
 The outstanding mobile locator correction is validated locally. Phase 4.2 build, lint, TypeScript, content, curricula, build HTML, SEO, routes, static accessibility, release isolation, and review-manifest checks passed. The fresh audits still report five high development entries and zero production findings; see [development audit](phase42-audit.json), [production audit](phase42-audit-production.json), and [classification/remediation](phase41-security.md). No dependency upgrades were made.
 
-GitHub validation of the final mobile fix is pending at this commit; the last completed GitHub run remains 45 passed, one failed, two expected skips. The historical Phase 4.1 record below preserves that distinction. The final CI result will be recorded after the workflow completes. Twenty-seven editorial approvals, manual acceptance, and security disposition remain required.
+The final mobile fix passed [GitHub run 37879482352](https://github.com/DaemonFxy352/zora_foundation/actions/runs/37879482352) at commit `411bafc52b1ca106de5e4e212b59d9f6006810f9`: **46 passed, two expected skips, no failures or retries (39.4 seconds)**. Checkout logs confirm the exact SHA and Node 24.21.0. All workflow steps succeeded. The complete local rerun also passed 46 cases, two expected skips (49.3 seconds).
+
+[Artifact 11593357988](https://github.com/DaemonFxy352/zora_foundation/actions/runs/37879482352/artifacts/11593357988) contains the HTML report, 36 screenshots and one Letter PDF; no failure traces exist because no tests failed. Its SHA-256 was checked against GitHub. Downloaded at `/private/tmp/foundation-ci-37879482352/`. It expires 2026-11-08 03:30:55 UTC. Initial artifact spot checks found a below-fold homepage image still represented by its lazy-loading blur placeholder. The existing route tests now scroll images into view and assert successful loading before capture; the full CI revalidation of that evidence improvement is pending at this commit.
+
+Post-push alias verification confirms production remains on `dpl_BfVnysyySx24LGgptYcwyqUktrxq`; only the feature preview moved to `dpl_6vMSqTjQLSXLAMfhAPdv93epWJR9`. Twelve public draft/internal URLs also returned real 404s, including all seven handouts, internal source/curriculum paths, and draft research URLs.
+
+**Remaining gates:** 27 current public editorial approvals; authorized manual visual, screen-reader, native zoom, mobile and Letter/A4 print acceptance; owner/security disposition of the development advisory. No content was approved. No merge, production promotion, rollback, or deployment-setting mutation occurred. Exact next release action after final evidence validation: assign the authorized editorial/specialist reviewers and manual QA reviewers, record their decisions, and resolve/accept the security finding before seeking separate release authorization.
 
 ---
 

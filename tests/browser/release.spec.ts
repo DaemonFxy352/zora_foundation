@@ -20,6 +20,16 @@ for (const route of routes) {
     await expect(page.locator("main h1")).toHaveCount(1);
     await expect(page.locator("main h1")).toBeVisible();
     await page.evaluate(() => document.fonts.ready);
+    // Full-page capture does not scroll lazy images into view on its own.
+    // Exercise normal loading and fail on broken images before saving evidence.
+    for (const image of await page.locator("main img").all()) {
+      await image.scrollIntoViewIfNeeded();
+      await expect(image).toHaveJSProperty("complete", true);
+      expect(
+        await image.evaluate((element) => (element as HTMLImageElement).naturalWidth),
+      ).toBeGreaterThan(0);
+    }
+    await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= window.innerWidth + 1,

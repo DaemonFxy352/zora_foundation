@@ -36,7 +36,7 @@ The Phase 4.1 run results are recorded in readiness.md. Narrow-viewport reflow c
 
 The job runs build and all technical validations before browser tests. Its always-run artifact step retains `playwright-report/` and `test-results/` for 30 days, including full-page screenshots, a Letter PDF, and failure traces/screenshots. Successful tests do not retain traces. Two non-desktop PDF cases intentionally skip; the complete suite collects 48 cases.
 
-The second run exposed a mobile-toggle locator that still requested “Menu” after the name changed to “Close”. The local correction accepts either name and asserts the transition and expanded state. The corrected local suite passed 46 cases with two expected PDF skips; that fix has not been pushed or verified in GitHub.
+The second run exposed a mobile-toggle locator that still requested “Menu” after the name changed to “Close”. The local correction accepts either name and asserts the transition and expanded state. The corrected local suite passed 46 cases with two expected PDF skips; GitHub run 37879482352 subsequently confirmed the same result at commit 411bafc. Screenshot loading was then strengthened to avoid capturing lazy-image placeholders; consult readiness.md for final evidence validation.
 
 The first run exposed a selector mismatch: the exact implicit-label text included option text, while the accessible combobox names were correct. Tests now use exact semantic combobox names. The old CSS-root-zoom simulation enlarged content without changing responsive media queries. It was replaced with the CSS viewport equivalent of 200% browser zoom (640px from 1280px), plus 320px reflow. The no-horizontal-overflow assertion remains and menu visibility is also checked. Native browser zoom remains manual.
 
