@@ -1,0 +1,54 @@
+[
+  {
+    "run": {
+      "id": 37879482352,
+      "head_sha": "411bafc52b1ca106de5e4e212b59d9f6006810f9",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/DaemonFxy352/zora_foundation/actions/runs/37879482352",
+      "created_at": "2026-10-09T03:29:07Z",
+      "updated_at": "2026-10-09T03:31:02Z"
+    },
+    "browser": {
+      "passed": 46,
+      "skipped": 2,
+      "failed": 0,
+      "retries": 0
+    },
+    "artifacts": [
+      {
+        "id": 11593357988,
+        "name": "foundation-release-browser-evidence",
+        "size_in_bytes": 42415251,
+        "digest": "sha256:62a2925ab2c8574feacc655e615705f9c2ed59366bd8010abbdc13c6db9677f8",
+        "expires_at": "2026-11-08T03:30:55Z"
+      }
+    ]
+  },
+  {
+    "run": {
+      "id": 37879843490,
+      "head_sha": "0ed94b1dcf3e4669622bd29ac9b8844c0a432a90",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/DaemonFxy352/zora_foundation/actions/runs/37879843490",
+      "created_at": "2026-10-09T03:33:47Z",
+      "updated_at": "2026-10-09T03:37:13Z"
+    },
+    "browser": {
+      "passed": 46,
+      "skipped": 2,
+      "failed": 0,
+      "retries": 0
+    },
+    "artifacts": [
+      {
+        "id": 11594142270,
+        "name": "foundation-release-browser-evidence",
+        "size_in_bytes": 45247551,
+        "digest": "sha256:5e628b10d3841f4f62779bd36cf02d19e1e4803f667483277dc21bdf86064cec",
+        "expires_at": "2026-11-08T03:37:08Z"
+      }
+    ]
+  }
+]
