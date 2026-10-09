@@ -89,9 +89,12 @@ test("keyboard navigation, mobile menu and focus", async ({ page }) => {
   ).toBeFocused();
   await page.keyboard.press("Enter");
   await expect(page.locator("#main-content")).toBeFocused();
-  const menu = page.getByRole("button", { name: "Menu", exact: false });
+  // The same toggle is named Close while expanded; locators resolve on each use.
+  const menu = page.getByRole("button", { name: /^(Menu|Close)$/ });
   if (await menu.isVisible()) {
+    await expect(menu).toHaveAccessibleName("Menu");
     await menu.click();
+    await expect(menu).toHaveAccessibleName("Close");
     await expect(menu).toHaveAttribute("aria-expanded", "true");
   }
   const group = page.getByRole("button", { name: "What We Do", exact: true });

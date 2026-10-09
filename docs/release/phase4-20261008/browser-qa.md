@@ -1,8 +1,8 @@
 # Browser release QA
 
-Status: **BLOCKED in this session; no browser pass or screenshots claimed.**
+Status: Phase 4 local failures below are historical. Phase 4.1 executes this suite in GitHub Actions; see [current release readiness](readiness.md) for run results and evidence. Manual acceptance remains outstanding.
 
-## Observed failures (2026-10-08)
+## Historical Phase 4 local failures (2026-10-08)
 
 - Host is macOS arm64. System Chrome 154.0.8037.98 is a universal arm64/x86_64 executable. It exists and is architecture-compatible.
 - Playwright 1.62.1 with system Chrome, headless and `chromiumSandbox: true`, terminated with `SIGABRT`; cleanup returned `kill EPERM` and `Target page, context or browser has been closed`. These errors do not prove a missing browser dependency. OS policy versus headless/executable compatibility cannot be conclusively isolated here.
@@ -26,13 +26,21 @@ npx playwright show-report
 
 On Linux, use `npx playwright install --with-deps chromium firefox` if system dependencies are missing. Keep the browser sandbox enabled. Ensure port 3100 is free; the suite starts its own production server and refuses to reuse another server. No deployment credentials are needed.
 
-The suite covers representative routes, desktop/mobile overflow, one H1, footer navigation, search, audience/topic combinations, empty/reset states, keyboard menu behavior, focus, inquiry links, draft 404s, CSS 200% zoom approximation, and print CSS. It captures full-page PNGs for ten routes per browser project, a zoom screenshot, a Chromium Letter PDF, and failure traces. Output is ignored by Git under `test-results/` and `playwright-report/`.
+The suite covers representative routes, desktop/mobile overflow, one H1, footer navigation, search, audience/topic combinations, empty/reset states, keyboard menu behavior, focus, inquiry links, draft 404s, 640px zoom-equivalent and 320px reflow, and print CSS. It captures full-page PNGs for ten routes per browser project, two reflow screenshots, a Chromium Letter PDF, and failure traces. Output is ignored by Git under `test-results/` and `playwright-report/`.
 
-These tests have not yet run successfully; correct any test assumptions or implementation failures based on actual browser evidence before marking PASS. CSS zoom does not replace native browser zoom. Chromium device emulation is not real iOS Safari testing.
+The Phase 4.1 run results are recorded in readiness.md. Narrow-viewport reflow checks do not replace native browser zoom. Chromium device emulation is not real iOS Safari testing.
 
-## Optional GitHub Actions
+## GitHub Actions
 
-`.github/workflows/release-qa.yml` defines a manual `workflow_dispatch` job: Node 24, managed Chromium/Firefox, production build, static/content/route checks and browser tests, with seven-day artifacts. It has read-only repository permissions and no deployment step. It has **not run**. The owner must authorize pushing/introducing the workflow and check GitHub's workflow availability before dispatching it; this task does not authorize a push. Do not merge just to run QA—use the host procedure first if necessary.
+`.github/workflows/release-qa.yml` runs on pushes to the exact feature branch `seo/foundation-phase2-authority-20261007` and retains manual dispatch. It uses Ubuntu 22.04, Node 24, `npm ci`, and `playwright install --with-deps chromium firefox`. Playwright starts `next start` on `127.0.0.1:3100`, waits up to 60 seconds for HTTP readiness, and refuses to reuse an existing server. Chromium sandboxing stays enabled. Ubuntu 24.04 rejected the downloaded Chromium sandbox in the first CI run; no OS security setting was disabled.
+
+The job runs build and all technical validations before browser tests. Its always-run artifact step retains `playwright-report/` and `test-results/` for 30 days, including full-page screenshots, a Letter PDF, and failure traces/screenshots. Successful tests do not retain traces. Two non-desktop PDF cases intentionally skip; the complete suite collects 48 cases.
+
+The second run exposed a mobile-toggle locator that still requested “Menu” after the name changed to “Close”. The local correction accepts either name and asserts the transition and expanded state. The corrected local suite passed 46 cases with two expected PDF skips; that fix has not been pushed or verified in GitHub.
+
+The first run exposed a selector mismatch: the exact implicit-label text included option text, while the accessible combobox names were correct. Tests now use exact semantic combobox names. The old CSS-root-zoom simulation enlarged content without changing responsive media queries. It was replaced with the CSS viewport equivalent of 200% browser zoom (640px from 1280px), plus 320px reflow. The no-horizontal-overflow assertion remains and menu visibility is also checked. Native browser zoom remains manual.
+
+**Phase 4.2 safety review:** the earlier push hold is lifted for feature-only QA after activity/credential records identified a separate website-session promotion and subsequent Git/alias evidence confirmed preview isolation. See [deployment investigation](phase42-deployment-safety.md). No production action is authorized.
 
 References: [Playwright browser installation](https://playwright.dev/docs/browsers), [Playwright CI guidance](https://playwright.dev/docs/ci-intro).
 

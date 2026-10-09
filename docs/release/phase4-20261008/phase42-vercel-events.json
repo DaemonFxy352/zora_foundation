@@ -1,0 +1,110 @@
+[
+  {
+    "id": "uev_aJ9TvMR0SeI2QsLkJb9Ag5dW",
+    "createdAt": 1791515320052,
+    "type": "aliases-assigned",
+    "principal": {
+      "uid": "mGrEJ8NnVE1R0qgMbHJZPgqM",
+      "username": "zorasafe"
+    },
+    "requestId": null,
+    "websiteSessionCredential": false,
+    "projectId": "prj_lSHh3vDrPHNIMgXYqd2JzOkGsBJ6",
+    "deploymentId": "dpl_HPijWuzdKE5sCkdBHgV3hkBDvzSz",
+    "target": null,
+    "aliasCount": 1,
+    "commit": "cd2397306134f51c2e054b0920092b82844e4c97",
+    "action": null,
+    "originalDeploymentId": null
+  },
+  {
+    "id": "uev_LjlxKWhO2pHrpZ4TtcuiWYrA",
+    "createdAt": 1791515305529,
+    "type": "deployment",
+    "principal": {
+      "uid": "mGrEJ8NnVE1R0qgMbHJZPgqM",
+      "username": "zorasafe"
+    },
+    "requestId": "4lgcd-1791515305094-b4942722deeb",
+    "websiteSessionCredential": false,
+    "projectId": "prj_lSHh3vDrPHNIMgXYqd2JzOkGsBJ6",
+    "deploymentId": "dpl_HPijWuzdKE5sCkdBHgV3hkBDvzSz",
+    "target": null,
+    "aliasCount": null,
+    "commit": "cd2397306134f51c2e054b0920092b82844e4c97",
+    "action": null,
+    "originalDeploymentId": null
+  },
+  {
+    "id": "uev_0qfUtgkv8QSP2Y8Y9XNeCDyQ",
+    "createdAt": 1791515048012,
+    "type": "aliases-assigned",
+    "principal": {
+      "uid": "mGrEJ8NnVE1R0qgMbHJZPgqM",
+      "username": "zorasafe"
+    },
+    "requestId": null,
+    "websiteSessionCredential": false,
+    "projectId": "prj_lSHh3vDrPHNIMgXYqd2JzOkGsBJ6",
+    "deploymentId": "dpl_BfVnysyySx24LGgptYcwyqUktrxq",
+    "target": null,
+    "aliasCount": 5,
+    "commit": "b0928124b89cfb1703a496c8221b06e819dff9b3",
+    "action": "promote",
+    "originalDeploymentId": "dpl_DCHUCaNHLXHEq8GMB45nusMH1RhY"
+  },
+  {
+    "id": "uev_6hi2IIIcugI6O1LjK2h26Rqd",
+    "createdAt": 1791515033240,
+    "type": "deployment",
+    "principal": {
+      "uid": "mGrEJ8NnVE1R0qgMbHJZPgqM",
+      "username": "zorasafe"
+    },
+    "requestId": "46zgk-1791515031743-9633cc7ff9a9",
+    "websiteSessionCredential": true,
+    "projectId": "prj_lSHh3vDrPHNIMgXYqd2JzOkGsBJ6",
+    "deploymentId": "dpl_BfVnysyySx24LGgptYcwyqUktrxq",
+    "target": "production",
+    "aliasCount": null,
+    "commit": "b0928124b89cfb1703a496c8221b06e819dff9b3",
+    "action": "promote",
+    "originalDeploymentId": "dpl_DCHUCaNHLXHEq8GMB45nusMH1RhY"
+  },
+  {
+    "id": "uev_P4macvwSDNPhdQQFwWm0QZIX",
+    "createdAt": 1791514843570,
+    "type": "aliases-assigned",
+    "principal": {
+      "uid": "mGrEJ8NnVE1R0qgMbHJZPgqM",
+      "username": "zorasafe"
+    },
+    "requestId": null,
+    "websiteSessionCredential": false,
+    "projectId": "prj_lSHh3vDrPHNIMgXYqd2JzOkGsBJ6",
+    "deploymentId": "dpl_DCHUCaNHLXHEq8GMB45nusMH1RhY",
+    "target": null,
+    "aliasCount": 1,
+    "commit": "b0928124b89cfb1703a496c8221b06e819dff9b3",
+    "action": null,
+    "originalDeploymentId": null
+  },
+  {
+    "id": "uev_krj3i6LfSKLVGc1thsW5RmbH",
+    "createdAt": 1791514831262,
+    "type": "deployment",
+    "principal": {
+      "uid": "mGrEJ8NnVE1R0qgMbHJZPgqM",
+      "username": "zorasafe"
+    },
+    "requestId": "m659f-1791514830795-f058bb087768",
+    "websiteSessionCredential": false,
+    "projectId": "prj_lSHh3vDrPHNIMgXYqd2JzOkGsBJ6",
+    "deploymentId": "dpl_DCHUCaNHLXHEq8GMB45nusMH1RhY",
+    "target": null,
+    "aliasCount": null,
+    "commit": "b0928124b89cfb1703a496c8221b06e819dff9b3",
+    "action": null,
+    "originalDeploymentId": null
+  }
+]
