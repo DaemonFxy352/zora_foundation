@@ -60,8 +60,8 @@ test("search, audiences, combined filters, empty and reset states", async ({
   await page.getByRole("button", { name: "Reset filters" }).click();
   await expect(search).toHaveValue("");
   await expect(page.getByRole("status")).toHaveText("17 resources available");
-  await page.getByLabel("Audience", { exact: true }).selectOption("teenagers");
-  await page.getByLabel("Topic", { exact: true }).selectOption("privacy");
+  await page.getByRole("combobox", { name: "Audience", exact: true }).selectOption("teenagers");
+  await page.getByRole("combobox", { name: "Topic", exact: true }).selectOption("privacy");
   await expect(page.locator("#resource-results")).toContainText(
     "Teen online safety",
   );
@@ -69,7 +69,7 @@ test("search, audiences, combined filters, empty and reset states", async ({
   await expect(page.locator("#resource-results")).toContainText("Gaming scams");
   await page.getByRole("button", { name: "Reset filters" }).click();
   await page
-    .getByLabel("Audience", { exact: true })
+    .getByRole("combobox", { name: "Audience", exact: true })
     .selectOption("older-adults");
   await expect(page.locator("#resource-results")).toContainText(
     "Online safety for older adults",
@@ -77,7 +77,7 @@ test("search, audiences, combined filters, empty and reset states", async ({
   await expect(page.locator('a[href*="/handouts/"]')).toHaveCount(0);
   await expect(
     page
-      .getByLabel("Format", { exact: true })
+      .getByRole("combobox", { name: "Format", exact: true })
       .locator('option[value="handout"]'),
   ).toHaveCount(0);
 });
@@ -127,25 +127,29 @@ test("pathway inquiry links and local contact flows", async ({ page }) => {
     /hello@zorasafefoundation.org/,
   );
 });
-test("reflow and 200 percent CSS zoom approximation", async ({
+test("reflow at 200 percent zoom equivalent and 320 CSS pixels", async ({
   page,
 }, info) => {
-  await page.setViewportSize({ width: 1280, height: 900 });
-  await page.goto("/education");
-  await page.evaluate(() => {
-    document.documentElement.style.zoom = "2";
-  });
-  await expect(page.getByRole("searchbox")).toBeVisible();
-  expect(
-    await page.evaluate(
-      () => document.documentElement.scrollWidth <= window.innerWidth + 1,
-    ),
-  ).toBe(true);
-  await page.screenshot({
-    path: info.outputPath("education-css-zoom-200.png"),
-    fullPage: true,
-  });
-  // Native browser zoom and assistive-tech behavior remain manual release gates.
+  // Browser zoom reduces the CSS viewport and activates responsive breakpoints.
+  // CSS zoom on <html> leaves media queries at 1280px, so it is not an
+  // equivalent simulation. 640px models 200% zoom from a 1280px viewport;
+  // 320px additionally checks the WCAG reflow width. Native zoom stays manual.
+  for (const width of [640, 320]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto("/education");
+    await page.evaluate(() => document.fonts.ready);
+    await expect(page.getByRole("searchbox")).toBeVisible();
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= window.innerWidth + 1,
+      ),
+    ).toBe(true);
+    await expect(page.getByRole("button", { name: "Menu", exact: false })).toBeVisible();
+    await page.screenshot({
+      path: info.outputPath(`education-reflow-${width}.png`),
+      fullPage: true,
+    });
+  }
 });
 test("print styles and Letter PDF artifact", async ({ page }, info) => {
   test.skip(
