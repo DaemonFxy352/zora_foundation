@@ -1,4 +1,22 @@
-# Phase 4.2 current status
+# Phase 4.3 current release decision — 2026-10-09
+
+**NO-GO for production; review preparation complete.** The actionable [27-item editorial workbook](editorial-review.md), [browser evidence and human acceptance worksheet](reviewer-qa.md), [security disposition form](phase41-security.md#phase-43-owner-disposition-worksheet), and [single release checklist](release-checklist.md) are ready for assigned reviewers. The existing 37-item manifest and decision registry remain authoritative; no human decision was changed or approval invented.
+
+All 17 public guides and ten organizational pages still need current-hash approval. The highest-priority questions are child/teen exploitation reporting and safe evidence handling; recovery expectations and payment verification; and present-tense homepage/program/evaluation claims that need owner substantiation or authorized revision. The workbook gives each item its audience, purpose, sources, factual claims, risk boundaries, required roles, preview URL and decision space. Ten internal drafts remain unpublished.
+
+Editorial preflight found conflicting citation-retrieval results: direct checks returned twelve FTC 404s and one FBI 403, while alternate retrieval returned their page content. These are not confirmed broken citations. Reviewers must verify those links in a normal browser. No substantive public advice or source URLs were changed without sufficient verification; recommended corrections remain explicit reviewer questions. Documentation now makes these questions actionable instead of implying editorial readiness.
+
+**Automated evidence:** the last completed browser run remains [37879843490](https://github.com/DaemonFxy352/zora_foundation/actions/runs/37879843490), application commit `0ed94b1dcf3e4669622bd29ac9b8844c0a432a90`, **46 passed, two expected skips, zero failures**. Phase 4.3 changes only release documentation/evidence; application, tests, dependencies and workflows are unchanged. No new browser run is claimed. The QA worksheet indexes all representative captures and the Letter PDF in the retained artifact, distinguishes assertions from missing interaction-state captures, and leaves all human acceptance pending.
+
+Phase 4.3 reruns: content, three internal curricula, 37-record manifest, release isolation, SEO, HTTP routes and static accessibility checks passed. Documentation links, actual artifact paths and Git whitespace checks also passed. Workbook coverage checks matched all 27 public IDs and hashes. `release:editorial` correctly failed with exactly 27 pending public entries. Fresh [full audit](phase43-audit.json) confirms five HIGH development entries; [production-only audit](phase43-audit-production.json) has zero. No dependency changes or organizational risk acceptance were performed.
+
+**Deployment isolation:** [fresh read-only evidence](phase43-deployment-safety.json) confirms production branch main, no deploy hooks, no branch/custom-environment domain overrides, no repository/team webhooks, and only one accessible team project linked to this repository. The sole GitHub workflow has read-only permissions and no deploy/promotion step. Production project target and direct www alias still identify `dpl_BfVnysyySx24LGgptYcwyqUktrxq`. Together with the [observed preview events and separate website-session promotion](phase42-deployment-safety.md), this supports a documentation-only feature push. This does not prevent an authorized user from independently promoting a preview. No deployment settings were changed.
+
+**Exact owner action:** assign the named editorial, safeguarding, fraud, visual/accessibility/print and security reviewers using the release checklist; provide preview access and retain the artifact before 2026-11-08. Resolve flagged claims, record all 27 genuine approvals, complete manual acceptance and explicitly dispose of the security finding. Then request a separate final-candidate production authorization and approve rollback readiness. No merge, production deployment, promotion or rollback is authorized here.
+
+---
+
+# Historical Phase 4.2 status
 
 **NO-GO for production.** The [deployment investigation](phase42-deployment-safety.md) now attributes the separate promotion to a Vercel website session under `zorasafe`. Two Git-triggered previews and direct alias checks establish that normal feature pushes are isolated from production; the Phase 4.1 push hold is lifted for the authorized QA push only. No deployment settings were changed. Human identity behind the session is not conclusively proven.
 

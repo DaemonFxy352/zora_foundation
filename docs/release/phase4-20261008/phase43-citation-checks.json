@@ -1,0 +1,145 @@
+{
+  "checkedAt": "2026-10-09T03:53:27.716713+00:00",
+  "method": "HTTP GET with redirects; status is reachability, not factual approval",
+  "results": [
+    {
+      "url": "https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam",
+      "status": 404,
+      "finalUrl": "https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam"
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/how-avoid-scam",
+      "status": 404,
+      "finalUrl": "https://consumer.ftc.gov/articles/how-avoid-scam"
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams",
+      "status": 404,
+      "finalUrl": "https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams"
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account",
+      "status": 404,
+      "finalUrl": "https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account"
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams",
+      "status": 404,
+      "finalUrl": "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams"
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/kids-video-games",
+      "status": 404,
+      "finalUrl": "https://consumer.ftc.gov/articles/kids-video-games"
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/phone-scams",
+      "status": 404,
+      "finalUrl": "https://consumer.ftc.gov/articles/phone-scams"
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/protecting-your-childs-privacy-online",
+      "status": 404,
+      "finalUrl": "https://consumer.ftc.gov/articles/protecting-your-childs-privacy-online"
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/refund-and-recovery-scams",
+      "status": 404,
+      "finalUrl": "https://consumer.ftc.gov/articles/refund-and-recovery-scams"
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money",
+      "status": 404,
+      "finalUrl": "https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money"
+    },
+    {
+      "url": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed",
+      "status": 404,
+      "finalUrl": "https://consumer.ftc.gov/articles/what-do-if-you-were-scammed"
+    },
+    {
+      "url": "https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information",
+      "status": 404,
+      "finalUrl": "https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information"
+    },
+    {
+      "url": "https://reportfraud.ftc.gov/",
+      "status": 200,
+      "finalUrl": "https://reportfraud.ftc.gov/",
+      "title": "ReportFraud.ftc.gov"
+    },
+    {
+      "url": "https://takeitdown.ncmec.org/",
+      "status": 200,
+      "finalUrl": "https://takeitdown.ncmec.org/",
+      "title": "Take It Down"
+    },
+    {
+      "url": "https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise",
+      "status": 403,
+      "finalUrl": "https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise"
+    },
+    {
+      "url": "https://www.ic3.gov/",
+      "status": 200,
+      "finalUrl": "https://www.ic3.gov/",
+      "title": "Home Page - Internet Crime Complaint Center (IC3)"
+    },
+    {
+      "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+      "status": 200,
+      "finalUrl": "https://www.ic3.gov/PSA/2024/PSA241203",
+      "title": "Internet Crime Complaint Center (IC3) | Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud"
+    },
+    {
+      "url": "https://www.identitytheft.gov/",
+      "status": 200,
+      "finalUrl": "https://www.identitytheft.gov/",
+      "title": "IdentityTheft.gov"
+    },
+    {
+      "url": "https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips",
+      "status": 200,
+      "finalUrl": "https://www.missingkids.org/blog/2019/post-update/your-netsmartz-tween-tips",
+      "title": "Your NetSmartz"
+    },
+    {
+      "url": "https://www.missingkids.org/gethelpnow/cybertipline",
+      "status": 200,
+      "finalUrl": "https://www.missingkids.org/gethelpnow/cybertipline",
+      "title": "CyberTipline"
+    },
+    {
+      "url": "https://www.missingkids.org/netsmartz/topics/gaming",
+      "status": 200,
+      "finalUrl": "https://www.missingkids.org/netsmartz/topics/gaming",
+      "title": "Gaming"
+    },
+    {
+      "url": "https://www.missingkids.org/netsmartz/topics/sextortion",
+      "status": 200,
+      "finalUrl": "https://www.missingkids.org/netsmartz/topics/sextortion",
+      "title": "Sextortion"
+    },
+    {
+      "url": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+      "status": 200,
+      "finalUrl": "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing",
+      "title": "Phishing | NIST"
+    },
+    {
+      "url": "https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content",
+      "status": 200,
+      "finalUrl": "https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content",
+      "title": "Reducing Risks Posed by Synthetic Content An Overview of Technical Approaches to Digital Content Transparency | NIST"
+    },
+    {
+      "url": "https://www.usa.gov/agency-index",
+      "status": 200,
+      "finalUrl": "https://www.usa.gov/agency-index",
+      "title": "A-Z index of U.S. government departments and agencies | USAGov"
+    }
+  ],
+  "interpretation": "Twelve FTC direct 404 responses and one FBI 403 were contradicted by alternate web retrieval of the same URLs. Normal-browser verification remains pending; no citation classified as confirmed broken.",
+  "alternateRetrieval": "Web tool opened all twelve affected FTC URLs and the FBI BEC URL and returned page content during Phase 4.3. This is not human reviewer acceptance."
+}
